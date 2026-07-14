@@ -1,16 +1,12 @@
 {
-  "name": "site-inspiresurety",
+  "name": "inspiresurety-site",
   "version": "1.0.0",
-  "description": "",
-  "main": ".eleventy.js",
+  "description": "InspireSurety Eleventy site",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "eleventy",
+    "start": "eleventy --serve"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "@11ty/eleventy": "^3.1.6"
+    "@11ty/eleventy": "^2.0.0"
   }
 }
