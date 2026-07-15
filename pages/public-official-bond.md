@@ -1,4 +1,4 @@
-﻿\---
+\---
 
 title: "Public Official Bond"
 

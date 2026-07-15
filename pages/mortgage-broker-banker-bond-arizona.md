@@ -1,4 +1,4 @@
-﻿\---
+\---
 
 title: "Arizona Mortgage Broker"
 

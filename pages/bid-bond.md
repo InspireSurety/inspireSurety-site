@@ -1,4 +1,4 @@
-﻿\---
+\---
 
 title: "Bid Bond"
 

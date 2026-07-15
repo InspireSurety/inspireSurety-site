@@ -1,4 +1,4 @@
-﻿\---
+\---
 
 title: "Court and Fiduciary Bond Guide"
 

@@ -1,4 +1,4 @@
-﻿\---
+\---
 
 title: "Construction \& Contractor Bond Guide"
 

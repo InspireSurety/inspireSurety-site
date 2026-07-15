@@ -1,4 +1,4 @@
-﻿\---
+\---
 
 title: "Appeal Bond (Supersedeas Bond)"
 

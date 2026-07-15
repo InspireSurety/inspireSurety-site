@@ -1,4 +1,4 @@
-﻿\---
+\---
 
 title: "Health Club Bonds"
 

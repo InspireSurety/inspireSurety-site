@@ -1,4 +1,4 @@
-﻿\---
+\---
 
 title: "Standby Trust Agreement"
 

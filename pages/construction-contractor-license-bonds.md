@@ -1,4 +1,4 @@
-﻿\---
+\---
 
 title: "Construction Bonds: The Complete Guide for Contractors, Developers \& Project Owners"
 

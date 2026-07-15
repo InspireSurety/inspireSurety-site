@@ -1,4 +1,4 @@
-﻿---
+---
 title: TEST PAGE
 layout: layout.njk
 ---

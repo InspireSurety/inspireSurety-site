@@ -1,4 +1,4 @@
-﻿\---
+\---
 
 title: "Texas Health Club Bond"
 

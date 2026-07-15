@@ -1,4 +1,4 @@
-﻿\---
+\---
 
 title: "Agriculture \& Food Bond Hub
 

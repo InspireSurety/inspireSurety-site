@@ -1,4 +1,4 @@
-﻿\---
+\---
 
 title: "Arizona Auto Dealer Bond"
 
