@@ -1,6 +1,6 @@
 ---
 
-title: "Florida Construction \& Contractor License Bonds"
+title: "Florida Construction & Contractor License Bonds"
 
 layout: "layout.njk"
 

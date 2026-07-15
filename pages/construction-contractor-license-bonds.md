@@ -1,6 +1,6 @@
 ---
 
-title: "Construction Bonds: The Complete Guide for Contractors, Developers \& Project Owners"
+title: "Construction Bonds: The Complete Guide for Contractors, Developers & Project Owners"
 
 layout: "layout.njk"
 

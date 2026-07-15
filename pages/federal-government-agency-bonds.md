@@ -1,6 +1,6 @@
 ---
 
-title: "Federal Government \& Agency Bonds"
+title: "Federal Government & Agency Bonds"
 
 layout: "layout.njk"
 

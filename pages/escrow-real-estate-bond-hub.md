@@ -1,6 +1,6 @@
 ---
 
-title: "Escrow \& Real Estate Bond Hub"
+title: "Escrow & Real Estate Bond Hub"
 
 layout: "layout.njk"
 

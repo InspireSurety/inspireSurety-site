@@ -1,6 +1,6 @@
 ---
 
-title: "Guardian \& Conservator Bond"
+title: "Guardian & Conservator Bond"
 
 layout: "layout.njk"
 

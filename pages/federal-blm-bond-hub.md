@@ -1,6 +1,6 @@
 ---
 
-title: "Federal \& BLM Bond Hub"
+title: "Federal & BLM Bond Hub"
 
 layout: "layout.njk"
 

@@ -1,6 +1,6 @@
 ---
 
-title: "Agriculture \& Food Bond Hub
+title: "Agriculture & Food Bond Hub
 
 "
 

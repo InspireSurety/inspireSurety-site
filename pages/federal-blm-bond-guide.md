@@ -1,6 +1,6 @@
 ---
 
-title: "Federal \& BLM Bond Guide"
+title: "Federal & BLM Bond Guide"
 
 layout: "layout.njk"
 

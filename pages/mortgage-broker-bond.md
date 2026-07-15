@@ -1,6 +1,6 @@
 ---
 
-title: "Mortgage Broker \& MLO Bond"
+title: "Mortgage Broker & MLO Bond"
 
 layout: "layout.njk"
 

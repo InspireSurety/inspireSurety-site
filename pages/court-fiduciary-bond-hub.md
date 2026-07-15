@@ -1,6 +1,6 @@
 ---
 
-title: "Court \& Fiduciary Bond Hub"
+title: "Court & Fiduciary Bond Hub"
 
 layout: "layout.njk"
 

@@ -1,6 +1,6 @@
 ---
 
-title: "Environmental \& Reclamation Bond Guide"
+title: "Environmental & Reclamation Bond Guide"
 
 layout: "layout.njk"
 

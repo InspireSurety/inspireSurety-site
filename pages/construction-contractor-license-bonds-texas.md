@@ -1,6 +1,6 @@
 ---
 
-title: "Texas Construction \& Contractor License Bonds"
+title: "Texas Construction & Contractor License Bonds"
 
 layout: "layout.njk"
 

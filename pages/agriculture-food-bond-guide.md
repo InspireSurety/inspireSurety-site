@@ -1,6 +1,6 @@
 ---
 
-title: "Agriculture \& Food Bond Guide"
+title: "Agriculture & Food Bond Guide"
 
 layout: "layout.njk"
 

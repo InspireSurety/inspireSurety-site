@@ -1,6 +1,6 @@
 ---
 
-title: "Arizona Construction \& Contractor License Bonds"
+title: "Arizona Construction & Contractor License Bonds"
 
 layout: "layout.njk"
 

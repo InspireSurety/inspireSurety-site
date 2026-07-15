@@ -1,6 +1,6 @@
 ---
 
-title: "License \& Permit Bond Guide"
+title: "License & Permit Bond Guide"
 
 layout: "layout.njk"
 

@@ -1,6 +1,6 @@
 ---
 
-title: "Oil \& Gas Bonds"
+title: "Oil & Gas Bonds"
 
 layout: "layout.njk"
 

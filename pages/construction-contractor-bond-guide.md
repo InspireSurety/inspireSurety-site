@@ -1,6 +1,6 @@
 ---
 
-title: "Construction \& Contractor Bond Guide"
+title: "Construction & Contractor Bond Guide"
 
 layout: "layout.njk"
 

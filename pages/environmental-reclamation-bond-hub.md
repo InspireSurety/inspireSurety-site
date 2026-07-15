@@ -1,6 +1,6 @@
 ---
 
-title: "Environmental \& Reclamation Bond Hub"
+title: "Environmental & Reclamation Bond Hub"
 
 layout: "layout.njk"
 

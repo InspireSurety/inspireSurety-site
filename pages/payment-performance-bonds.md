@@ -1,6 +1,6 @@
 ---
 
-title: "Payment \& Performance Bonds"
+title: "Payment & Performance Bonds"
 
 layout: "layout.njk"
 

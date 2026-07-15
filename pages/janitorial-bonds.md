@@ -1,6 +1,6 @@
 ---
 
-title: "Business Service \& Janitorial Bonds"
+title: "Business Service & Janitorial Bonds"
 
 layout: "layout.njk"
 
