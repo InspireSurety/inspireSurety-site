@@ -1,15 +1,18 @@
-{
-  "name": "inspiresurety-site",
-  "version": "1.0.0",
-  "description": "InspireSurety Eleventy site",
-  "scripts": {
-    "build": "eleventy",
-    "start": "eleventy --serve"
-  },
-  "dependencies": {
-    "markdown-it": "13.0.2"
-  },
-  "devDependencies": {
-    "@11ty/eleventy": "^3.1.6"
-  }
-}
+module.exports = function(eleventyConfig) {
+
+  // Pass through assets
+  eleventyConfig.addPassthroughCopy("assets");
+
+  return {
+    templateFormats: ["md", "njk", "html"],
+    markdownTemplateEngine: "liquid",
+    htmlTemplateEngine: "njk",
+    dir: {
+      input: ".",
+      includes: "_includes",
+      layouts: "_includes",
+      data: "_data",
+      output: "_site"
+    }
+  };
+};
