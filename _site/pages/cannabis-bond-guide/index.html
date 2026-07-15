@@ -6,7 +6,6 @@
 <title>Cannabis Bond Guide
  | InspireSurety</title>
 <meta name="description" content="">
-<link rel="icon" type="image/png" href="/assets/images/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
@@ -51,30 +50,185 @@
   .prose tr:nth-child(even) td{background:#f8f9fc}
   .prose blockquote{border-left:4px solid #4a3ac8;background:#eef1ff;padding:1rem 1.25rem;border-radius:0 .75rem .75rem 0;margin:1.5rem 0}
   .prose blockquote p{color:#352c81;font-weight:500;margin:0}
+
+  /* HEADER DROPDOWNS */
+  .nav-item { position: relative; }
+  .nav-dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 12px 32px -8px rgba(0,0,0,0.15);
+    min-width: 220px;
+    padding: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: all 0.2s ease;
+    z-index: 100;
+  }
+  .nav-item:hover .nav-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .nav-dropdown a {
+    display: block;
+    padding: 10px 14px;
+    font-size: 13.5px;
+    color: #334155;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+  }
+  .nav-dropdown a:hover { background: #eef1ff; color: #4a3ac8; }
+  .nav-chevron { transition: transform 0.2s ease; }
+  .nav-item:hover .nav-chevron { transform: rotate(180deg); }
+
+  /* SEARCH */
+  .search-wrap { position: relative; }
+  .search-results {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 12px 32px -8px rgba(0,0,0,0.2);
+    width: 320px;
+    max-height: 360px;
+    overflow-y: auto;
+    display: none;
+    z-index: 200;
+  }
+  .search-results.active { display: block; }
+  .search-result-item {
+    display: block;
+    padding: 12px 16px;
+    font-size: 13.5px;
+    color: #334155;
+    text-decoration: none;
+    border-bottom: 1px solid #f1f5f9;
+  }
+  .search-result-item:last-child { border-bottom: none; }
+  .search-result-item:hover { background: #eef1ff; color: #4a3ac8; }
+  .search-empty { padding: 16px; font-size: 13px; color: #94a3b8; text-align: center; }
 </style>
 </head>
 <body class="bg-white text-slate-800">
 
 <!-- HEADER -->
 <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
-  <div class="max-w-7xl mx-auto flex items-center justify-between px-5 sm:px-8 h-16">
-    <a href="/" class="flex items-center gap-2.5 shrink-0">
-      <div class="h-9 w-9 rounded-lg overflow-hidden flex items-center justify-center bg-white shadow-sm border border-slate-200">
-        <img src="/assets/images/logo.png" alt="InspireSurety" class="h-full w-full object-contain p-1">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-5 sm:px-8 h-16 gap-4">
+
+    <!-- LOGO: WORDS ONLY -->
+    <a href="/" class="flex items-center shrink-0">
+      <span class="text-[18px] font-extrabold tracking-tight text-slate-900">Inspire<span class="text-brand-700">Surety</span></span>
+    </a>
+
+    <!-- NAV -->
+    <nav class="hidden lg:flex items-center gap-1 text-[13.5px] font-semibold text-slate-600">
+      <div class="nav-item">
+        <button class="flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-slate-50 hover:text-brand-700 transition-colors">
+          Construction Bonds
+          <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="nav-dropdown">
+          <a href="/pages/contractors-construction-bond-hub/">Construction Bond Hub</a>
+          <a href="/pages/bid-bond/">Bid Bond</a>
+          <a href="/pages/payment-performance-bonds/">Payment &amp; Performance Bonds</a>
+          <a href="/pages/subdivision-bond/">Subdivision Bond</a>
+          <a href="/pages/maintenance-bond-guide/">Maintenance Bond</a>
+        </div>
       </div>
-      <span class="text-[17px] font-extrabold tracking-tight text-slate-900">Inspire<span class="text-brand-700">Surety</span></span>
-    </a>
 
-    <ul class="hidden md:flex items-center gap-8 text-[13.5px] font-semibold text-slate-500">
-      <li><a href="/" class="hover:text-brand-700 transition-colors">Home</a></li>
-      <li><a href="/pages/surety-bonds/" class="hover:text-brand-700 transition-colors">Bond Categories</a></li>
-      <li><a href="/blog/" class="hover:text-brand-700 transition-colors">Resources</a></li>
-      <li><a href="/pages/contact/" class="hover:text-brand-700 transition-colors">Contact</a></li>
-    </ul>
+      <div class="nav-item">
+        <button class="flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-slate-50 hover:text-brand-700 transition-colors">
+          License &amp; Permit Bonds
+          <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="nav-dropdown">
+          <a href="/pages/license-permit-bond-hub/">License &amp; Permit Hub</a>
+          <a href="/pages/notary-bond/">Notary Bond</a>
+          <a href="/pages/motor-vehicle-dealer-bond/">Auto Dealer Bond</a>
+          <a href="/pages/mortgage-broker-bond/">Mortgage Broker Bond</a>
+          <a href="/pages/money-transmitter-bond/">Money Transmitter Bond</a>
+        </div>
+      </div>
 
-    <a href="/pages/contact/" class="text-[13px] font-bold text-white px-5 py-2.5 rounded-lg shadow-sm transition" style="background:#4a3ac8" onmouseover="this.style.background='#3d31a2'" onmouseout="this.style.background='#4a3ac8'">
-      Get a Bond
-    </a>
+      <div class="nav-item">
+        <button class="flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-slate-50 hover:text-brand-700 transition-colors">
+          Court &amp; Fiduciary Bonds
+          <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="nav-dropdown">
+          <a href="/pages/court-fiduciary-bond-hub/">Court &amp; Fiduciary Hub</a>
+          <a href="/pages/probate-bonds/">Probate Bond</a>
+          <a href="/pages/guardian-bonds/">Guardian Bond</a>
+          <a href="/pages/trustee-bonds/">Trustee Bond</a>
+          <a href="/pages/public-official-bond/">Public Official Bond</a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <button class="flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-slate-50 hover:text-brand-700 transition-colors">
+          More Bonds
+          <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="nav-dropdown">
+          <a href="/pages/environmental-reclamation-bond-hub/">Environmental &amp; Reclamation</a>
+          <a href="/pages/federal-blm-bond-hub/">Federal &amp; BLM Bonds</a>
+          <a href="/pages/escrow-real-estate-bond-hub/">Escrow &amp; Real Estate</a>
+          <a href="/pages/cannabis-bond-hub/">Cannabis Bonds</a>
+          <a href="/pages/agriculture-food-bond-hub/">Agriculture &amp; Food</a>
+          <a href="/pages/surety-bond-learning-center/" style="font-weight:700;color:#4a3ac8;">Learning Center →</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- RIGHT SIDE: SEARCH, PHONE, CTA -->
+    <div class="flex items-center gap-3 shrink-0">
+
+      <!-- SEARCH -->
+      <div class="search-wrap">
+        <button id="search-toggle" class="h-9 w-9 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center transition-colors" aria-label="Search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="2.3"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        </button>
+        <div id="search-panel" class="search-results">
+          <div class="p-2">
+            <input id="search-input" type="text" placeholder="Search bonds... e.g. Notary" class="w-full px-3 py-2.5 text-sm border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-400">
+          </div>
+          <div id="search-output"></div>
+        </div>
+      </div>
+
+      <!-- PHONE -->
+      <a href="tel:+19282270054" class="hidden md:flex items-center gap-1.5 text-[13px] font-semibold text-slate-600 hover:text-brand-700 transition-colors">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +1 928-227-0054
+      </a>
+
+      <!-- CTA -->
+      <a href="/pages/surety-bonds/" class="text-[13px] font-bold text-white px-5 py-2.5 rounded-lg shadow-sm transition" style="background:#4a3ac8" onmouseover="this.style.background='#3d31a2'" onmouseout="this.style.background='#4a3ac8'">
+        View Our Bonds
+      </a>
+
+      <!-- MOBILE MENU BUTTON -->
+      <button id="mobile-menu-btn" class="lg:hidden h-9 w-9 flex items-center justify-center text-slate-700">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" class="lg:hidden hidden border-t border-slate-200 bg-white px-5 py-4 space-y-1">
+    <a href="/pages/contractors-construction-bond-hub/" class="block py-2.5 text-sm font-semibold text-slate-700">Construction Bonds</a>
+    <a href="/pages/license-permit-bond-hub/" class="block py-2.5 text-sm font-semibold text-slate-700">License &amp; Permit Bonds</a>
+    <a href="/pages/court-fiduciary-bond-hub/" class="block py-2.5 text-sm font-semibold text-slate-700">Court &amp; Fiduciary Bonds</a>
+    <a href="/pages/surety-bond-learning-center/" class="block py-2.5 text-sm font-semibold text-slate-700">More Bonds / Learning Center</a>
+    <a href="tel:+19282270054" class="block py-2.5 text-sm font-semibold text-brand-700">+1 928-227-0054</a>
   </div>
 </header>
 
@@ -82,7 +236,6 @@
 <main>
   
 
-  <!-- DEFAULT PAGE LAYOUT -->
   <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12">
     <div class="prose max-w-none">
       <p>Cannabis Bond Guide</p>
@@ -156,18 +309,15 @@
 <footer class="bg-slate-950 text-slate-400 mt-8">
   <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid grid-cols-2 sm:grid-cols-4 gap-8">
     <div class="col-span-2 sm:col-span-1">
-      <a href="/" class="flex items-center gap-2 mb-4">
-        <div class="h-8 w-8 rounded-lg overflow-hidden flex items-center justify-center bg-white">
-          <img src="/assets/images/logo.png" alt="InspireSurety" class="h-full w-full object-contain p-1">
-        </div>
-        <span class="font-extrabold text-white text-[15px]">InspireSurety</span>
+      <a href="/" class="flex items-center mb-4">
+        <span class="text-[17px] font-extrabold tracking-tight text-white">Inspire<span class="text-brand-400">Surety</span></span>
       </a>
       <p class="text-xs leading-relaxed text-slate-500">Nationwide surety bond marketplace. Licensed in all 50 states.</p>
     </div>
     <div>
       <h4 class="text-white text-sm font-bold mb-4">Bond Categories</h4>
       <ul class="space-y-2.5 text-xs">
-        <li><a href="/pages/contractors-construction-bond-hub/" class="hover:text-white transition">Contract Bonds</a></li>
+        <li><a href="/pages/contractors-construction-bond-hub/" class="hover:text-white transition">Construction Bonds</a></li>
         <li><a href="/pages/license-permit-bond-hub/" class="hover:text-white transition">License &amp; Permit</a></li>
         <li><a href="/pages/court-fiduciary-bond-hub/" class="hover:text-white transition">Court &amp; Fiduciary</a></li>
         <li><a href="/pages/environmental-reclamation-bond-hub/" class="hover:text-white transition">Environmental</a></li>
@@ -206,6 +356,101 @@
     </div>
   </div>
 </footer>
+
+<script>
+  // Mobile menu toggle
+  document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+
+  // Simple search index
+  const bondPages = [
+    { name: "Notary Bond", url: "/pages/notary-bond/" },
+    { name: "Notary Bond Guide", url: "/blog/notary-bond-guide/" },
+    { name: "Notary Bond Arizona", url: "/pages/notary-bond-arizona/" },
+    { name: "Notary Bond Texas", url: "/pages/notary-bond-texas/" },
+    { name: "Auto Dealer Bond / Motor Vehicle Dealer Bond", url: "/pages/motor-vehicle-dealer-bond/" },
+    { name: "Mortgage Broker Bond", url: "/pages/mortgage-broker-bond/" },
+    { name: "Money Transmitter Bond", url: "/pages/money-transmitter-bond/" },
+    { name: "Collection Agency Bond", url: "/pages/collection-agency-bond/" },
+    { name: "Bid Bond", url: "/pages/bid-bond/" },
+    { name: "Payment & Performance Bonds", url: "/pages/payment-performance-bonds/" },
+    { name: "Subdivision Bond", url: "/pages/subdivision-bond/" },
+    { name: "Maintenance Bond Guide", url: "/pages/maintenance-bond-guide/" },
+    { name: "Probate Bond", url: "/pages/probate-bonds/" },
+    { name: "Guardian Bond", url: "/pages/guardian-bonds/" },
+    { name: "Trustee Bond", url: "/pages/trustee-bonds/" },
+    { name: "Public Official Bond", url: "/pages/public-official-bond/" },
+    { name: "Appeal Bond", url: "/pages/appeal-bond/" },
+    { name: "Environmental Bond", url: "/pages/environmental-bond/" },
+    { name: "Reclamation Bond", url: "/pages/reclamation-bond/" },
+    { name: "Cannabis Bond", url: "/pages/cannabis-bonds/" },
+    { name: "Auctioneer Bond", url: "/pages/auctioneer-bond/" },
+    { name: "Liquor License Bond", url: "/pages/liquor-license-bond/" },
+    { name: "Health Club Bond", url: "/pages/health-club-bonds/" },
+    { name: "Employment Agency Bond", url: "/pages/employment-agency-bond/" },
+    { name: "Driving School Bond", url: "/pages/driving-schools-bond/" },
+    { name: "Distributor Bond", url: "/pages/distributor-bond/" },
+    { name: "Freight Broker Bond", url: "/pages/freight-broker-bonds/" },
+    { name: "Utility Deposit Bond", url: "/pages/utility-deposit-bonds/" },
+    { name: "U.S. Customs Bond", url: "/pages/u-s-customs-bonds/" },
+    { name: "USDA Bonds", url: "/pages/usda-bonds/" },
+    { name: "BLM Bonds", url: "/pages/blm-bonds/" },
+    { name: "Tax Bond", url: "/pages/tax-bond/" },
+    { name: "Union Bonds", url: "/pages/union-bonds/" },
+    { name: "Escrow Agent Bond", url: "/pages/escrow-agent-bond/" },
+    { name: "Contractor License Bond", url: "/pages/contractor-license-bond/" },
+    { name: "Surety Bonds (All Types)", url: "/pages/surety-bonds/" },
+    { name: "License & Permit Bond Hub", url: "/pages/license-permit-bond-hub/" },
+    { name: "Contractors & Construction Bond Hub", url: "/pages/contractors-construction-bond-hub/" },
+    { name: "Court & Fiduciary Bond Hub", url: "/pages/court-fiduciary-bond-hub/" },
+    { name: "Environmental & Reclamation Bond Hub", url: "/pages/environmental-reclamation-bond-hub/" },
+    { name: "Federal & BLM Bond Hub", url: "/pages/federal-blm-bond-hub/" },
+    { name: "Escrow & Real Estate Bond Hub", url: "/pages/escrow-real-estate-bond-hub/" },
+    { name: "Cannabis Bond Hub", url: "/pages/cannabis-bond-hub/" },
+    { name: "Agriculture & Food Bond Hub", url: "/pages/agriculture-food-bond-hub/" }
+  ];
+
+  const searchToggle = document.getElementById('search-toggle');
+  const searchPanel = document.getElementById('search-panel');
+  const searchInput = document.getElementById('search-input');
+  const searchOutput = document.getElementById('search-output');
+
+  searchToggle.addEventListener('click', function(e) {
+    e.stopPropagation();
+    searchPanel.classList.toggle('active');
+    if (searchPanel.classList.contains('active')) {
+      searchInput.focus();
+    }
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!searchPanel.contains(e.target) && e.target !== searchToggle) {
+      searchPanel.classList.remove('active');
+    }
+  });
+
+  searchInput.addEventListener('input', function() {
+    const query = this.value.toLowerCase().trim();
+    searchOutput.innerHTML = '';
+    if (query.length < 2) return;
+
+    const results = bondPages.filter(page => page.name.toLowerCase().includes(query));
+
+    if (results.length === 0) {
+      searchOutput.innerHTML = '<div class="search-empty">No bonds found. Try "notary" or "contractor".</div>';
+      return;
+    }
+
+    results.slice(0, 8).forEach(page => {
+      const a = document.createElement('a');
+      a.href = page.url;
+      a.className = 'search-result-item';
+      a.textContent = page.name;
+      searchOutput.appendChild(a);
+    });
+  });
+</script>
 
 </body>
 </html>

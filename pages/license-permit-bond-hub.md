@@ -1,428 +1,361 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ title }} | InspireSurety</title>
-<meta name="description" content="{{ description }}">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        fontFamily: { sans: ['Inter','sans-serif'] },
-        colors: {
-          brand: {
-            50:'#eef1ff',100:'#e0e4ff',200:'#c7cdfe',300:'#a5aefc',
-            400:'#8288f8',500:'#6a67f0',600:'#5849e4',700:'#4a3ac8',
-            800:'#3d31a2',900:'#352c81',950:'#1e1856'
-          }
-        }
-      }
-    }
-  }
-</script>
+---
+title: "License & Permit Bond Hub"
+layout: "layout.njk"
+---
+
 <style>
-  html{scroll-behavior:smooth}
-  body{font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased}
-  .lift{transition:transform .22s cubic-bezier(.2,.8,.2,1),box-shadow .22s ease,border-color .22s ease}
-  .lift:hover{transform:translateY(-4px);box-shadow:0 14px 36px -8px rgba(74,58,200,.22);border-color:#c7cdfe}
-  .dot-w{background-image:radial-gradient(rgba(255,255,255,.11) 1.5px,transparent 1.5px);background-size:24px 24px}
+.is-lp *, .is-lp *::before, .is-lp *::after { box-sizing: border-box; }
+.is-lp {
+  font-family: inherit;
+  color: #0f172a;
+  margin: 0 calc(-50vw + 50%);
+  width: 100vw;
+  padding: 0;
+}
+.is-lp .is-inner { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
 
-  .prose h1{font-size:2rem;font-weight:900;color:#0f172a;margin-bottom:1rem;line-height:1.1}
-  .prose h2{font-size:1.5rem;font-weight:800;color:#1e293b;margin-top:2.5rem;margin-bottom:1rem;line-height:1.2;padding-bottom:.6rem;border-bottom:2px solid #eef1ff}
-  .prose h3{font-size:1.15rem;font-weight:700;color:#1e293b;margin-top:1.5rem;margin-bottom:.5rem}
-  .prose p{color:#475569;line-height:1.75;margin-bottom:1rem;font-size:.9375rem}
-  .prose ul{list-style:none;padding:0;margin-bottom:1rem}
-  .prose ul li{color:#475569;font-size:.9375rem;line-height:1.75;padding-left:1.5rem;position:relative;margin-bottom:.35rem}
-  .prose ul li::before{content:"";position:absolute;left:0;top:.65em;height:8px;width:8px;border-radius:50%;background:#4a3ac8}
-  .prose ol{padding-left:1.5rem;margin-bottom:1rem}
-  .prose ol li{color:#475569;font-size:.9375rem;line-height:1.75;margin-bottom:.35rem}
-  .prose a{color:#4a3ac8;font-weight:600;text-decoration:underline;text-underline-offset:3px}
-  .prose a:hover{color:#352c81}
-  .prose strong{color:#1e293b;font-weight:700}
-  .prose table{width:100%;border-collapse:collapse;margin-bottom:1.5rem;font-size:.875rem}
-  .prose th{background:#eef1ff;color:#352c81;font-weight:700;padding:.75rem 1rem;text-align:left;border:1px solid #c7cdfe}
-  .prose td{padding:.7rem 1rem;border:1px solid #e2e8f0;color:#475569;vertical-align:top}
-  .prose tr:nth-child(even) td{background:#f8f9fc}
-  .prose blockquote{border-left:4px solid #4a3ac8;background:#eef1ff;padding:1rem 1.25rem;border-radius:0 .75rem .75rem 0;margin:1.5rem 0}
-  .prose blockquote p{color:#352c81;font-weight:500;margin:0}
+/* ---- HERO ---- */
+.is-lp .is-hero-wrap {
+  background: linear-gradient(135deg, #0c1e3d 0%, #1e40af 60%, #0891b2 100%);
+  padding: 68px 0 60px;
+  position: relative;
+  overflow: hidden;
+}
+.is-lp .is-hero-wrap::before {
+  content: "";
+  position: absolute;
+  top: -100px; right: -100px;
+  width: 380px; height: 380px;
+  background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.is-lp .is-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #bfdbfe;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+  position: relative; z-index: 1;
+}
+.is-lp .is-hero-wrap h1 {
+  font-size: clamp(28px, 4.5vw, 44px) !important;
+  font-weight: 900 !important;
+  color: #fff !important;
+  line-height: 1.15 !important;
+  margin: 0 0 16px !important;
+  position: relative; z-index: 1;
+  letter-spacing: -0.02em;
+  max-width: 640px;
+}
+.is-lp .is-hero-wrap p {
+  font-size: 16px;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.7;
+  max-width: 620px;
+  margin: 0;
+  position: relative; z-index: 1;
+}
 
-  /* ===== HEADER STYLES ===== */
-  .nav-item { position: relative; }
-  .nav-link {
-    display: flex; align-items: center; gap: 4px;
-    font-size: 14px; font-weight: 600; color: #334155;
-    padding: 8px 4px; transition: color 0.15s;
-  }
-  .nav-link:hover { color: var(--nav-color, #4a3ac8); }
-  .nav-caret { width: 14px; height: 14px; transition: transform 0.2s; }
-  .nav-item:hover .nav-caret { transform: rotate(180deg); }
+/* ---- TOC ---- */
+.is-lp .is-toc {
+  background: #0f172a;
+  border-radius: 20px;
+  padding: 30px 34px;
+  margin: -32px auto 0;
+  max-width: 940px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+}
+.is-lp .is-toc-title { font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #7dd3fc; margin-bottom: 14px; }
+.is-lp .is-toc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 24px; }
+.is-lp .is-toc-grid a { font-size: 14px; color: #e2e8f0; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; }
+.is-lp .is-toc-grid a::before { content: "→"; color: #60a5fa; }
+.is-lp .is-toc-grid a:hover { color: #7dd3fc; }
 
-  .nav-dropdown {
-    position: absolute; top: 100%; left: 0;
-    background: #fff; border: 1px solid #e2e8f0;
-    border-radius: 12px; box-shadow: 0 12px 32px rgba(0,0,0,0.12);
-    padding: 8px; min-width: 220px;
-    opacity: 0; visibility: hidden; transform: translateY(8px);
-    transition: all 0.2s ease;
-    z-index: 100;
-  }
-  .nav-item:hover .nav-dropdown { opacity: 1; visibility: visible; transform: translateY(4px); }
-  .nav-dropdown a {
-    display: block; padding: 10px 14px; border-radius: 8px;
-    font-size: 13.5px; font-weight: 500; color: #334155;
-    text-decoration: none; transition: background 0.15s;
-  }
-  .nav-dropdown a:hover { background: #f8fafc; color: var(--nav-color, #4a3ac8); }
+/* ---- SECTIONS ---- */
+.is-lp .is-sec-white { background: #fff; padding: 60px 0; }
+.is-lp .is-sec-gray { background: #f8fafc; padding: 60px 0; }
+.is-lp .is-sec-tint { background: linear-gradient(135deg, #eff6ff, #f0f9ff); padding: 60px 0; }
+.is-lp .is-sec h2 { font-size: clamp(21px, 2.6vw, 28px) !important; font-weight: 900 !important; color: #0f172a !important; margin: 0 0 8px !important; letter-spacing: -0.01em; }
+.is-lp .is-eyebrow { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #1e40af; margin-bottom: 10px; }
+.is-lp .is-sec > p.is-desc { font-size: 15px; color: #64748b; margin: 0 0 26px; max-width: 620px; }
 
-  .construction-color { --nav-color: #c2410c; }
-  .license-color { --nav-color: #1e40af; }
-  .court-color { --nav-color: #6d28d9; }
-  .more-color { --nav-color: #0f766e; }
+/* ---- WHY LIST ---- */
+.is-lp .is-why-list { display: flex; flex-direction: column; gap: 0; margin: 20px 0; }
+.is-lp .is-why-item { display: flex; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid #e2e8f0; }
+.is-lp .is-why-item:last-child { border-bottom: none; }
+.is-lp .is-why-num { width: 30px; height: 30px; border-radius: 50%; background: #eff6ff; color: #1e40af; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.is-lp .is-why-item span { font-size: 14.5px; color: #334155; }
 
-  .search-wrap { position: relative; }
-  .search-input {
-    width: 0; opacity: 0; padding: 0;
-    border: none; outline: none; font-size: 13.5px;
-    transition: width 0.25s ease, opacity 0.2s ease, padding 0.25s ease;
-  }
-  .search-wrap.active .search-input {
-    width: 200px; opacity: 1; padding: 8px 12px;
-  }
-  .search-results {
-    position: absolute; top: 100%; right: 0; margin-top: 8px;
-    background: #fff; border: 1px solid #e2e8f0; border-radius: 12px;
-    box-shadow: 0 12px 32px rgba(0,0,0,0.15);
-    width: 280px; max-height: 320px; overflow-y: auto;
-    display: none; z-index: 200;
-  }
-  .search-results.show { display: block; }
-  .search-results a {
-    display: block; padding: 10px 16px; font-size: 13.5px;
-    color: #334155; text-decoration: none; border-bottom: 1px solid #f1f5f9;
-  }
-  .search-results a:last-child { border-bottom: none; }
-  .search-results a:hover { background: #f8fafc; color: #4a3ac8; }
-  .search-empty { padding: 16px; font-size: 13px; color: #94a3b8; text-align: center; }
+/* ---- ICON TILE GRID ---- */
+.is-lp .is-tile-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 24px 0; }
+.is-lp .is-tile { background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px; display: flex; gap: 14px; align-items: flex-start; transition: all 0.2s; }
+.is-lp .is-tile:hover { border-color: #93c5fd; box-shadow: 0 8px 24px rgba(30,64,175,0.1); transform: translateY(-2px); }
+.is-lp .is-tile-icon { width: 42px; height: 42px; border-radius: 10px; background: #eff6ff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 20px; }
+.is-lp .is-tile h4 { font-size: 14.5px !important; font-weight: 700 !important; color: #0f172a !important; margin: 0 0 4px !important; }
+.is-lp .is-tile p { font-size: 13px; color: #64748b; margin: 0; line-height: 1.5; }
+
+/* ---- GUIDE LIST: NOW WITH COLOR ---- */
+.is-lp .is-guide-list { display: flex; flex-direction: column; gap: 10px; margin: 24px 0; }
+.is-lp .is-guide-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 22px;
+  background: #0f172a;
+  border-radius: 14px;
+  transition: all 0.2s;
+  border-left: 4px solid #0891b2;
+}
+.is-lp .is-guide-row:hover {
+  background: #1e293b;
+  transform: translateX(4px);
+  border-left-color: #22d3ee;
+}
+.is-lp .is-guide-row a {
+  font-size: 14.5px;
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 600;
+  flex: 1;
+}
+.is-lp .is-guide-row a:hover { color: #fff; }
+.is-lp .is-guide-arrow {
+  color: #22d3ee;
+  flex-shrink: 0;
+  font-weight: 700;
+}
+.is-lp .is-guide-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: rgba(34,211,238,0.15);
+  color: #67e8f9;
+  font-size: 12px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ---- STATE TABLE ---- */
+.is-lp .is-state-table { border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; margin: 20px 0; }
+.is-lp .is-state-table table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.is-lp .is-state-table thead th { background: linear-gradient(135deg, #1e40af, #0891b2); color: #fff; text-align: left; padding: 12px 18px; font-weight: 700; border-bottom: 1px solid #e2e8f0; font-size: 13px; }
+.is-lp .is-state-table tbody td { padding: 12px 18px; border-bottom: 1px solid #f1f5f9; color: #334155; }
+.is-lp .is-state-table tbody tr:last-child td { border-bottom: none; }
+.is-lp .is-state-table tbody tr:hover td { background: #f8fafc; }
+.is-lp .is-state-table a { color: #1e40af; text-decoration: none; font-weight: 600; margin-right: 14px; }
+.is-lp .is-state-table a:hover { text-decoration: underline; }
+
+/* ---- SIMPLE PILLS ---- */
+.is-lp .is-simple-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0; }
+.is-lp .is-simple-links a { font-size: 13.5px; color: #1e40af; background: #eff6ff; border: 1px solid #bfdbfe; padding: 9px 18px; border-radius: 999px; text-decoration: none; font-weight: 600; transition: all 0.15s; }
+.is-lp .is-simple-links a:hover { background: #1e40af; color: #fff; border-color: #1e40af; }
+
+/* ---- TOOL CARDS ---- */
+.is-lp .is-tool-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 20px 0; }
+.is-lp .is-tool-card { background: #0f172a; border-radius: 14px; padding: 24px 18px; text-align: center; }
+.is-lp .is-tool-icon { font-size: 26px; margin-bottom: 10px; }
+.is-lp .is-tool-card h4 { font-size: 13.5px !important; font-weight: 700 !important; color: #fff !important; margin: 0; line-height: 1.4; }
+.is-lp .is-tool-card a { color: inherit; text-decoration: none; }
+
+/* ---- FINAL CTA ---- */
+.is-lp .is-final-wrap {
+  background: linear-gradient(135deg, #0c1e3d, #1e40af, #0891b2);
+  padding: 68px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.is-lp .is-final-wrap::before { content: ""; position: absolute; top: -80px; left: -80px; width: 300px; height: 300px; background: rgba(255,255,255,0.06); border-radius: 50%; }
+.is-lp .is-final-wrap::after { content: ""; position: absolute; bottom: -100px; right: -60px; width: 360px; height: 360px; background: rgba(255,255,255,0.04); border-radius: 50%; }
+.is-lp .is-final-wrap h2 { font-size: clamp(24px, 3.2vw, 34px) !important; color: #fff !important; margin: 0 0 12px !important; position: relative; z-index: 1; font-weight: 900 !important; }
+.is-lp .is-final-wrap p { font-size: 15.5px; color: rgba(255,255,255,0.85); margin: 0 auto 28px; max-width: 460px; position: relative; z-index: 1; }
+.is-lp .is-btn-white { display: inline-block; background: #fff; color: #1e40af !important; padding: 15px 36px; border-radius: 12px; font-size: 15px; font-weight: 800; text-decoration: none !important; position: relative; z-index: 1; transition: all 0.2s; box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+.is-lp .is-btn-white:hover { background: #eff6ff; transform: translateY(-3px); }
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 720px) {
+  .is-lp .is-toc { margin: -24px 20px 0; padding: 24px 22px; }
+  .is-lp .is-toc-grid { grid-template-columns: 1fr; }
+  .is-lp .is-tile-grid { grid-template-columns: 1fr; }
+  .is-lp .is-tool-grid { grid-template-columns: 1fr; }
+  .is-lp .is-state-table { overflow-x: auto; }
+  .is-lp .is-hero-wrap { padding: 44px 0 52px; }
+  .is-lp .is-sec-white, .is-lp .is-sec-gray, .is-lp .is-sec-tint { padding: 40px 0; }
+}
 </style>
-</head>
-<body class="bg-white text-slate-800">
 
-<!-- HEADER -->
-<header class="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
-  <div class="max-w-7xl mx-auto flex items-center justify-between px-5 sm:px-8 h-16 gap-6">
+<div class="is-lp">
 
-    <!-- LOGO: WORDS ONLY -->
-    <a href="/" class="flex items-center shrink-0">
-      <span class="text-[19px] font-extrabold tracking-tight text-slate-900">Inspire<span class="text-brand-700">Surety</span></span>
-    </a>
-
-    <!-- NAV MENU -->
-    <nav class="hidden lg:flex items-center gap-7">
-      <div class="nav-item construction-color">
-        <a href="/pages/contractors-construction-bond-hub/" class="nav-link">
-          Construction Bonds
-          <svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
-        </a>
-        <div class="nav-dropdown">
-          <a href="/pages/contractors-construction-bond-hub/">All Construction Bonds</a>
-          <a href="/pages/construction-contractor-license-bonds/">Contractor License Bonds</a>
-          <a href="/pages/bid-bond/">Bid Bonds</a>
-          <a href="/pages/payment-performance-bonds/">Payment &amp; Performance Bonds</a>
-          <a href="/pages/subdivision-bond/">Subdivision Bonds</a>
-        </div>
-      </div>
-
-      <div class="nav-item license-color">
-        <a href="/pages/license-permit-bond-hub/" class="nav-link">
-          License &amp; Permit Bonds
-          <svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
-        </a>
-        <div class="nav-dropdown">
-          <a href="/pages/license-permit-bond-hub/">All License &amp; Permit Bonds</a>
-          <a href="/pages/notary-bond/">Notary Bond</a>
-          <a href="/pages/motor-vehicle-dealer-bond/">Auto Dealer Bond</a>
-          <a href="/pages/mortgage-broker-bond/">Mortgage Broker Bond</a>
-          <a href="/pages/money-transmitter-bond/">Money Transmitter Bond</a>
-          <a href="/pages/collection-agency-bond/">Collection Agency Bond</a>
-        </div>
-      </div>
-
-      <div class="nav-item court-color">
-        <a href="/pages/court-fiduciary-bond-hub/" class="nav-link">
-          Court &amp; Fiduciary Bonds
-          <svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
-        </a>
-        <div class="nav-dropdown">
-          <a href="/pages/court-fiduciary-bond-hub/">All Court &amp; Fiduciary Bonds</a>
-          <a href="/pages/probate-bonds/">Probate Bonds</a>
-          <a href="/pages/guardian-bonds/">Guardian Bonds</a>
-          <a href="/pages/trustee-bonds/">Trustee Bonds</a>
-          <a href="/pages/public-official-bond/">Public Official Bond</a>
-        </div>
-      </div>
-
-      <div class="nav-item more-color">
-        <a href="/pages/surety-bond-learning-center/" class="nav-link">
-          More Bonds
-          <svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
-        </a>
-        <div class="nav-dropdown">
-          <a href="/pages/environmental-reclamation-bond-hub/">Environmental &amp; Reclamation</a>
-          <a href="/pages/federal-blm-bond-hub/">Federal &amp; BLM</a>
-          <a href="/pages/escrow-real-estate-bond-hub/">Escrow &amp; Real Estate</a>
-          <a href="/pages/cannabis-bond-hub/">Cannabis Bonds</a>
-          <a href="/pages/agriculture-food-bond-hub/">Agriculture &amp; Food</a>
-          <a href="/pages/surety-bond-learning-center/" style="font-weight:700;border-top:1px solid #f1f5f9;margin-top:4px;padding-top:12px;">Surety Bond Learning Center →</a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- RIGHT SIDE: SEARCH, PHONE, ACCOUNT, CTA -->
-    <div class="flex items-center gap-4 shrink-0">
-
-      <!-- SEARCH -->
-      <div class="search-wrap flex items-center" id="searchWrap">
-        <input type="text" id="searchInput" class="search-input bg-slate-100 rounded-full text-slate-700" placeholder="Search bonds...">
-        <button id="searchToggle" class="h-9 w-9 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center transition shrink-0" aria-label="Search">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-        </button>
-        <div class="search-results" id="searchResults"></div>
-      </div>
-
-      <!-- PHONE -->
-      <a href="tel:+19282270054" class="hidden md:flex items-center gap-1.5 text-[13.5px] font-semibold text-slate-600 hover:text-brand-700 transition">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        +1 928-227-0054
-      </a>
-
-      <!-- CTA -->
-      <a href="/pages/surety-bonds/" class="text-[13px] font-bold text-white px-5 py-2.5 rounded-lg shadow-sm transition whitespace-nowrap" style="background:#4a3ac8" onmouseover="this.style.background='#3d31a2'" onmouseout="this.style.background='#4a3ac8'">
-        View Our Bonds
-      </a>
-
-      <!-- MOBILE MENU BUTTON -->
-      <button class="lg:hidden h-9 w-9 flex items-center justify-center text-slate-700" id="mobileMenuBtn" aria-label="Menu">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      </button>
+  <div class="is-hero-wrap">
+    <div class="is-inner">
+      <div class="is-hero-badge">License &amp; Permit Bonds</div>
+      <h1>Your Complete Resource for License, Permit &amp; Commercial Compliance Bonds</h1>
+      <p>License and permit bonds are required by state agencies to ensure businesses operate ethically, follow regulations, and protect consumers from financial harm. This hub organizes all your license-related bond content into one authoritative, easy-to-navigate resource.</p>
     </div>
   </div>
 
-  <!-- MOBILE MENU -->
-  <div class="lg:hidden hidden border-t border-slate-200 bg-white" id="mobileMenu">
-    <div class="px-5 py-4 space-y-1">
-      <a href="/pages/contractors-construction-bond-hub/" class="block py-2.5 text-sm font-semibold text-slate-700 border-b border-slate-100">Construction Bonds</a>
-      <a href="/pages/license-permit-bond-hub/" class="block py-2.5 text-sm font-semibold text-slate-700 border-b border-slate-100">License &amp; Permit Bonds</a>
-      <a href="/pages/court-fiduciary-bond-hub/" class="block py-2.5 text-sm font-semibold text-slate-700 border-b border-slate-100">Court &amp; Fiduciary Bonds</a>
-      <a href="/pages/surety-bond-learning-center/" class="block py-2.5 text-sm font-semibold text-slate-700 border-b border-slate-100">More Bonds</a>
-      <a href="tel:+19282270054" class="block py-2.5 text-sm font-semibold text-brand-700">Call +1 928-227-0054</a>
+  <div class="is-toc">
+    <div class="is-toc-title">On This Page</div>
+    <div class="is-toc-grid">
+      <a href="#what-are">What Are License &amp; Permit Bonds?</a>
+      <a href="#core-types">Core Bond Types</a>
+      <a href="#guides">License &amp; Permit Bond Guides</a>
+      <a href="#states">State-Specific Pages</a>
+      <a href="#resources">Educational Resources</a>
+      <a href="#tools">Tools &amp; Checklists</a>
     </div>
   </div>
-</header>
 
-<!-- PAGE CONTENT -->
-<main>
-  {% if layout == 'home' %}
-
-  <!-- HOME HERO -->
-  <section class="relative overflow-hidden" style="background:linear-gradient(145deg,#0f0c29,#1e1b4b,#312e81)">
-    <div class="absolute inset-0 dot-w pointer-events-none"></div>
-    <div class="absolute -top-32 right-0 w-[500px] h-[500px] rounded-full pointer-events-none" style="background:radial-gradient(circle,rgba(99,102,241,.22) 0%,transparent 70%)"></div>
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-28 text-center">
-      <div class="inline-flex items-center gap-2 border border-brand-400/25 bg-white/5 text-brand-300 text-[11px] font-bold tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">
-        <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-        Licensed in All 50 States
+  <div class="is-sec-white" id="what-are">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Overview</span>
+      <h2>What Are License &amp; Permit Bonds?</h2>
+      <p class="is-desc">License and permit bonds are financial guarantees required as part of a business's licensing process. They ensure:</p>
+      <div class="is-why-list">
+        <div class="is-why-item"><div class="is-why-num">1</div><span>Compliance with state and local regulations</span></div>
+        <div class="is-why-item"><div class="is-why-num">2</div><span>Ethical business practices</span></div>
+        <div class="is-why-item"><div class="is-why-num">3</div><span>Protection of consumers and the public</span></div>
+        <div class="is-why-item"><div class="is-why-num">4</div><span>Payment of taxes, fees, and penalties</span></div>
+        <div class="is-why-item"><div class="is-why-num">5</div><span>Financial accountability</span></div>
       </div>
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.06] tracking-tight max-w-3xl mx-auto">{{ title }}</h1>
-      <p class="mt-5 text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">{{ description }}</p>
-      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/pages/surety-bonds/" class="inline-flex items-center justify-center gap-2 font-bold text-[15px] text-white px-8 py-4 rounded-xl shadow-lg transition" style="background:#5849e4" onmouseover="this.style.background='#4a3ac8'" onmouseout="this.style.background='#5849e4'">
-          Browse Bonds
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a href="/pages/contact/" class="inline-flex items-center justify-center gap-2 font-bold text-[15px] text-brand-200 border border-brand-400/40 px-8 py-4 rounded-xl hover:bg-white/5 transition">
-          Talk to an Agent
-        </a>
+      <p style="font-size:14.5px;color:#64748b;margin-top:16px;">These bonds apply across dozens of industries — from auto dealers to money transmitters to private schools.</p>
+    </div>
+  </div>
+
+  <div class="is-sec-gray" id="core-types">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Core Bond Types</span>
+      <h2>Core Types of License &amp; Permit Bonds</h2>
+      <p class="is-desc">The most common bonds businesses need to get licensed and stay compliant.</p>
+      <div class="is-tile-grid">
+        <div class="is-tile"><div class="is-tile-icon">🚗</div><div><h4>Auto Dealer Bonds</h4><p>Required for new and used motor vehicle dealers to ensure ethical sales practices.</p></div></div>
+        <div class="is-tile"><div class="is-tile-icon">🏦</div><div><h4>Mortgage Broker Bonds</h4><p>Guarantee compliance with lending laws and consumer protection regulations.</p></div></div>
+        <div class="is-tile"><div class="is-tile-icon">📋</div><div><h4>Insurance Adjuster Bonds</h4><p>Required for adjusters to ensure honest claims handling.</p></div></div>
+        <div class="is-tile"><div class="is-tile-icon">💼</div><div><h4>Employment Agency Bonds</h4><p>Protect job seekers from fraudulent or unethical agency practices.</p></div></div>
+        <div class="is-tile"><div class="is-tile-icon">💰</div><div><h4>Money Transmitter Bonds</h4><p>Guarantee compliance with financial reporting and consumer protection laws.</p></div></div>
+        <div class="is-tile"><div class="is-tile-icon">🚛</div><div><h4>Freight Broker Bonds (BMC-84)</h4><p>Required by the FMCSA to ensure payment to carriers and shippers.</p></div></div>
+        <div class="is-tile"><div class="is-tile-icon">⚡</div><div><h4>Utility Deposit Bonds</h4><p>Allow businesses to avoid large cash deposits with utility providers.</p></div></div>
+        <div class="is-tile"><div class="is-tile-icon">🎓</div><div><h4>School Bonds</h4><p>Required for private schools, trade schools, and vocational programs.</p></div></div>
+        <div class="is-tile"><div class="is-tile-icon">🏋️</div><div><h4>Health Club Bonds</h4><p>Protect consumers in case a gym closes or fails to honor contracts.</p></div></div>
+        <div class="is-tile"><div class="is-tile-icon">🍷</div><div><h4>Liquor License Bonds</h4><p>Ensure compliance with alcohol tax and regulatory requirements.</p></div></div>
+        <div class="is-tile"><div class="is-tile-icon">📞</div><div><h4>Collection Agency Bonds</h4><p>Guarantee ethical debt collection practices.</p></div></div>
+        <div class="is-tile"><div class="is-tile-icon">📄</div><div><h4>Certificate of Title Bonds</h4><p>Used when a vehicle title is missing or defective.</p></div></div>
+        <div class="is-tile"><div class="is-tile-icon">🔨</div><div><h4>Auctioneer Bonds</h4><p>Required for auctioneers to ensure proper handling of funds.</p></div></div>
+        <div class="is-tile"><div class="is-tile-icon">📦</div><div><h4>Distributor &amp; Wholesale Bonds</h4><p>Guarantee compliance with distribution, tax, and licensing rules.</p></div></div>
       </div>
-      <div class="mt-14 grid grid-cols-3 max-w-sm mx-auto divide-x divide-white/10 border-t border-white/10 pt-8">
-        <div><p class="text-2xl font-black text-white">8,000+</p><p class="text-xs text-slate-400 mt-0.5">Bond Types</p></div>
-        <div><p class="text-2xl font-black text-white">50</p><p class="text-xs text-slate-400 mt-0.5">States</p></div>
-        <div><p class="text-2xl font-black text-white">24hr</p><p class="text-xs text-slate-400 mt-0.5">Issuance</p></div>
+    </div>
+  </div>
+
+  <div class="is-sec-tint" id="guides">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Deep Dives</span>
+      <h2>License &amp; Permit Bond Guides</h2>
+      <p class="is-desc">Detailed guides on specific bond types, requirements, and costs.</p>
+      <div class="is-guide-list">
+        <div class="is-guide-row"><div class="is-guide-num">1</div><a href="/pages/business-services-bond-what-it-is-and-why-it-matters/">Business Services Bond</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">2</div><a href="/pages/money-transmitter-bond/">Money Transmitter Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">3</div><a href="/pages/freight-broker-bonds/">Freight Broker Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">4</div><a href="/pages/janitorial-bonds/">Janitorial Service Bond Overview</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">5</div><a href="/pages/warehouse-operator-bond/">Warehouse Operator Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">6</div><a href="/pages/utility-deposit-bonds/">Utility Deposit Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">7</div><a href="/pages/union-bonds/">Union Wage &amp; Welfare Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">8</div><a href="/pages/trade-schools-bond/">Trade School Surety Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">9</div><a href="/pages/private-schools-bond/">Private School Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">10</div><a href="/pages/pharmacy-benefit-manager-pbm-bonds/">PBM Surety Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">11</div><a href="/pages/motor-vehicle-dealer-bond/">Auto Dealer Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">12</div><a href="/pages/liquor-license-bond/">Liquor License Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">13</div><a href="/pages/insurance-adjuster-bond/">Insurance Adjuster Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">14</div><a href="/pages/health-club-bonds/">Health Club Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">15</div><a href="/pages/employment-agency-bond/">Employment Agency Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">16</div><a href="/pages/driving-schools-bond/">Driving School Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">17</div><a href="/pages/distributor-bond/">Distributor Surety Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">18</div><a href="/pages/collection-agency-bond/">Collection Agency Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">19</div><a href="/pages/auctioneer-bond/">Auctioneer Bond Guide</a><span class="is-guide-arrow">→</span></div>
       </div>
     </div>
-  </section>
-
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-16">
-    <div class="prose max-w-none">
-      {{ content | safe }}
-    </div>
   </div>
 
-  {% elif layout == 'blog' %}
-
-  <div class="bg-slate-50 border-b border-slate-200 py-10">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8">
-      <div class="flex items-center gap-2 text-xs text-slate-400 mb-4 font-medium">
-        <a href="/" class="hover:text-brand-700">Home</a>
-        <span>›</span>
-        <a href="/blog/" class="hover:text-brand-700">Resources</a>
-        <span>›</span>
-        <span class="text-slate-600">{{ title }}</span>
+  <div class="is-sec-white" id="states">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">By State</span>
+      <h2>State-Specific License &amp; Permit Bond Pages</h2>
+      <p class="is-desc">Requirements vary by state — find your bond type and location below.</p>
+      <div class="is-state-table">
+        <table>
+          <thead><tr><th>Bond Type</th><th>Available States</th></tr></thead>
+          <tbody>
+            <tr><td>Motor Vehicle Dealer Bonds</td><td><a href="/pages/motor-vehicle-dealer-bond-arizona/">Arizona</a><a href="/pages/motor-vehicle-dealer-bond-florida/">Florida</a><a href="/pages/motor-vehicle-dealer-bond-texas/">Texas</a></td></tr>
+            <tr><td>Mortgage Broker Bonds</td><td><a href="/pages/mortgage-broker-banker-bond-arizona/">Arizona</a></td></tr>
+            <tr><td>Collection Agency Bonds</td><td><a href="/pages/collection-agency-bond-arizona/">Arizona</a><a href="/pages/collection-agency-bond-florida/">Florida</a><a href="/pages/collection-agency-bond-texas/">Texas</a></td></tr>
+            <tr><td>Health Club Bonds</td><td><a href="/pages/health-club-bonds-arizona/">Arizona</a><a href="/pages/health-club-bonds-florida/">Florida</a><a href="/pages/health-club-bonds-texas/">Texas</a></td></tr>
+            <tr><td>Money Transmitter Bonds</td><td><a href="/pages/money-transmitter-bond-arizona/">Arizona</a><a href="/pages/money-transmitter-bond-texas/">Texas</a></td></tr>
+          </tbody>
+        </table>
       </div>
-      {% if tags %}
-      <div class="flex flex-wrap gap-2 mb-3">
-        {% for tag in tags %}
-        {% if tag != "blog" %}
-        <span class="text-[11px] font-bold uppercase tracking-wide bg-brand-100 text-brand-700 px-3 py-1 rounded-full">{{ tag }}</span>
-        {% endif %}
-        {% endfor %}
+    </div>
+  </div>
+
+  <div class="is-sec-gray" id="resources">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Learn More</span>
+      <h2>Educational Resources</h2>
+      <p class="is-desc">From the Learning Center — background on how bonds work.</p>
+      <div class="is-simple-links">
+        <a href="/pages/how-surety-bond-cost-are-calculated/">How Bond Underwriting Works for Small Businesses</a>
+        <a href="/pages/how-surety-bond-cost-are-calculated/">What Affects the Cost of a License &amp; Permit Bond</a>
+        <a href="/pages/surety-bond-basics-guide/">Surety Bond vs. Insurance</a>
+        <a href="/pages/surety-bond-basics-guide/">How Bond Claims Work</a>
+        <a href="/pages/how-surety-bond-cost-are-calculated/">How Bond Rates Are Calculated</a>
       </div>
-      {% endif %}
-      <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight max-w-3xl">{{ title }}</h1>
-      {% if description %}<p class="mt-3 text-lg text-slate-500 max-w-2xl leading-relaxed">{{ description }}</p>{% endif %}
     </div>
   </div>
 
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12">
-    <div class="prose max-w-none">
-      {{ content | safe }}
+  <div class="is-sec-tint" id="tools">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Tools</span>
+      <h2>Tools &amp; Checklists</h2>
+      <div class="is-tool-grid">
+        <div class="is-tool-card"><div class="is-tool-icon">🧮</div><h4>License &amp; Permit Bond Cost Calculator</h4></div>
+        <div class="is-tool-card"><div class="is-tool-icon">✅</div><h4>State Licensing Requirement Checklists</h4></div>
+        <div class="is-tool-card"><div class="is-tool-icon">📖</div><h4><a href="/pages/glossary-of-surety-bond-terms/">Glossary of License &amp; Permit Bond Terms</a></h4></div>
+      </div>
     </div>
   </div>
 
-  {% else %}
-
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12">
-    <div class="prose max-w-none">
-      {{ content | safe }}
+  <div class="is-sec-white">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Why It Matters</span>
+      <h2>Why Businesses Need License &amp; Permit Bonds</h2>
+      <p class="is-desc">License and permit bonds help businesses:</p>
+      <div class="is-why-list">
+        <div class="is-why-item"><div class="is-why-num">1</div><span>Meet state licensing requirements</span></div>
+        <div class="is-why-item"><div class="is-why-num">2</div><span>Build trust with customers</span></div>
+        <div class="is-why-item"><div class="is-why-num">3</div><span>Avoid penalties and license suspension</span></div>
+        <div class="is-why-item"><div class="is-why-num">4</div><span>Demonstrate financial responsibility</span></div>
+        <div class="is-why-item"><div class="is-why-num">5</div><span>Operate legally and ethically</span></div>
+      </div>
     </div>
   </div>
 
-  {% endif %}
-</main>
-
-<!-- FOOTER -->
-<footer class="bg-slate-950 text-slate-400 mt-8">
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid grid-cols-2 sm:grid-cols-4 gap-8">
-    <div class="col-span-2 sm:col-span-1">
-      <a href="/" class="flex items-center mb-4">
-        <span class="text-[17px] font-extrabold text-white">Inspire<span style="color:#a5aefc;">Surety</span></span>
-      </a>
-      <p class="text-xs leading-relaxed text-slate-500">Nationwide surety bond marketplace. Licensed in all 50 states.</p>
-    </div>
-    <div>
-      <h4 class="text-white text-sm font-bold mb-4">Bond Categories</h4>
-      <ul class="space-y-2.5 text-xs">
-        <li><a href="/pages/contractors-construction-bond-hub/" class="hover:text-white transition">Contract Bonds</a></li>
-        <li><a href="/pages/license-permit-bond-hub/" class="hover:text-white transition">License &amp; Permit</a></li>
-        <li><a href="/pages/court-fiduciary-bond-hub/" class="hover:text-white transition">Court &amp; Fiduciary</a></li>
-        <li><a href="/pages/environmental-reclamation-bond-hub/" class="hover:text-white transition">Environmental</a></li>
-        <li><a href="/pages/federal-blm-bond-hub/" class="hover:text-white transition">Federal &amp; BLM</a></li>
-        <li><a href="/pages/surety-bonds/" class="hover:text-white transition">All Bonds</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4 class="text-white text-sm font-bold mb-4">Company</h4>
-      <ul class="space-y-2.5 text-xs">
-        <li><a href="/pages/about/" class="hover:text-white transition">About</a></li>
-        <li><a href="/pages/our-services/" class="hover:text-white transition">Our Services</a></li>
-        <li><a href="/blog/" class="hover:text-white transition">Resources</a></li>
-        <li><a href="/pages/contact/" class="hover:text-white transition">Contact</a></li>
-        <li><a href="/pages/glossary-of-surety-bond-terms/" class="hover:text-white transition">Glossary</a></li>
-        <li><a href="/pages/surety-bond-learning-center/" class="hover:text-white transition">Learning Center</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4 class="text-white text-sm font-bold mb-4">Legal</h4>
-      <ul class="space-y-2.5 text-xs">
-        <li><a href="/pages/privacy-policy/" class="hover:text-white transition">Privacy Policy</a></li>
-        <li><a href="/pages/terms/" class="hover:text-white transition">Terms of Use</a></li>
-        <li><a href="/pages/contact/" class="hover:text-white transition">Contact Us</a></li>
-      </ul>
+  <div class="is-final-wrap">
+    <div class="is-inner">
+      <h2>Get Your License or Permit Bond Today</h2>
+      <p>Fast approvals. Competitive rates. A-rated surety partners. Licensed nationwide where permitted.</p>
+      <a href="/pages/contact/" class="is-btn-white">Apply Now</a>
     </div>
   </div>
-  <div class="border-t border-white/10 py-8 px-5 sm:px-8">
-    <div class="max-w-7xl mx-auto space-y-4">
-      <p class="text-[11px] text-slate-500 leading-relaxed font-medium uppercase tracking-wide">
-        THE INFORMATION ON THIS WEBSITE IS PROVIDED FOR INFORMATIONAL PURPOSES ONLY. Nothing on this website should be construed as a solicitation, proposal, offer, recommendation, endorsement, or advice regarding any surety or insurance product. The information on this website is of a general nature and is not intended as a substitute for individual consultation with a licensed insurance professional. YOU ARE RESPONSIBLE FOR DETERMINING WHAT INSURANCE PRODUCTS YOU NEED AND IN WHAT AMOUNTS, BASED ON YOUR UNIQUE EXPOSURE TO RISKS AND ABILITY TO BEAR LOSSES. Stephen Wright is a licensed insurance agent in Arizona. Insurance products and features are subject to underwriting criteria and may not be available in all states.
-      </p>
-      <p class="text-[12px] text-slate-600 font-medium">
-        Copyright © 2026 | Inspire Risk Advisors LLC, dba Inspire Surety | All Rights Reserved.
-      </p>
-    </div>
-  </div>
-</footer>
 
-<!-- SEARCH FUNCTIONALITY -->
-<script>
-  const bondPages = [
-    { name: "Notary Bond", url: "/pages/notary-bond/" },
-    { name: "Notary Bond Guide", url: "/blog/notary-bond-guide/" },
-    { name: "Auto Dealer Bond", url: "/pages/motor-vehicle-dealer-bond/" },
-    { name: "Mortgage Broker Bond", url: "/pages/mortgage-broker-bond/" },
-    { name: "Money Transmitter Bond", url: "/pages/money-transmitter-bond/" },
-    { name: "Collection Agency Bond", url: "/pages/collection-agency-bond/" },
-    { name: "Freight Broker Bond", url: "/pages/freight-broker-bonds/" },
-    { name: "Utility Deposit Bond", url: "/pages/utility-deposit-bonds/" },
-    { name: "Health Club Bond", url: "/pages/health-club-bonds/" },
-    { name: "Liquor License Bond", url: "/pages/liquor-license-bond/" },
-    { name: "Auctioneer Bond", url: "/pages/auctioneer-bond/" },
-    { name: "Bid Bond", url: "/pages/bid-bond/" },
-    { name: "Payment & Performance Bond", url: "/pages/payment-performance-bonds/" },
-    { name: "Subdivision Bond", url: "/pages/subdivision-bond/" },
-    { name: "Probate Bond", url: "/pages/probate-bonds/" },
-    { name: "Guardian Bond", url: "/pages/guardian-bonds/" },
-    { name: "Trustee Bond", url: "/pages/trustee-bonds/" },
-    { name: "Public Official Bond", url: "/pages/public-official-bond/" },
-    { name: "License & Permit Bond Hub", url: "/pages/license-permit-bond-hub/" },
-    { name: "Construction Bond Hub", url: "/pages/contractors-construction-bond-hub/" },
-    { name: "Court & Fiduciary Bond Hub", url: "/pages/court-fiduciary-bond-hub/" },
-    { name: "All Surety Bonds", url: "/pages/surety-bonds/" }
-  ];
-
-  const searchWrap = document.getElementById('searchWrap');
-  const searchToggle = document.getElementById('searchToggle');
-  const searchInput = document.getElementById('searchInput');
-  const searchResults = document.getElementById('searchResults');
-
-  searchToggle.addEventListener('click', function() {
-    searchWrap.classList.toggle('active');
-    if (searchWrap.classList.contains('active')) {
-      setTimeout(() => searchInput.focus(), 100);
-    } else {
-      searchResults.classList.remove('show');
-    }
-  });
-
-  searchInput.addEventListener('input', function() {
-    const query = this.value.toLowerCase().trim();
-    if (query.length < 2) {
-      searchResults.classList.remove('show');
-      return;
-    }
-    const matches = bondPages.filter(p => p.name.toLowerCase().includes(query));
-    if (matches.length === 0) {
-      searchResults.innerHTML = '<div class="search-empty">No bonds found. Try "notary" or "auto dealer".</div>';
-    } else {
-      searchResults.innerHTML = matches.map(p => `<a href="${p.url}">${p.name}</a>`).join('');
-    }
-    searchResults.classList.add('show');
-  });
-
-  document.addEventListener('click', function(e) {
-    if (!searchWrap.contains(e.target)) {
-      searchResults.classList.remove('show');
-    }
-  });
-
-  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-  const mobileMenu = document.getElementById('mobileMenu');
-  mobileMenuBtn.addEventListener('click', function() {
-    mobileMenu.classList.toggle('hidden');
-  });
-</script>
-
-</body>
-</html>
+</div>

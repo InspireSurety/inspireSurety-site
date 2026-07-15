@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Notary Bond Guide | InspireSurety</title>
 <meta name="description" content="">
-<link rel="icon" type="image/png" href="/assets/images/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
@@ -50,30 +49,185 @@
   .prose tr:nth-child(even) td{background:#f8f9fc}
   .prose blockquote{border-left:4px solid #4a3ac8;background:#eef1ff;padding:1rem 1.25rem;border-radius:0 .75rem .75rem 0;margin:1.5rem 0}
   .prose blockquote p{color:#352c81;font-weight:500;margin:0}
+
+  /* HEADER DROPDOWNS */
+  .nav-item { position: relative; }
+  .nav-dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 12px 32px -8px rgba(0,0,0,0.15);
+    min-width: 220px;
+    padding: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: all 0.2s ease;
+    z-index: 100;
+  }
+  .nav-item:hover .nav-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .nav-dropdown a {
+    display: block;
+    padding: 10px 14px;
+    font-size: 13.5px;
+    color: #334155;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+  }
+  .nav-dropdown a:hover { background: #eef1ff; color: #4a3ac8; }
+  .nav-chevron { transition: transform 0.2s ease; }
+  .nav-item:hover .nav-chevron { transform: rotate(180deg); }
+
+  /* SEARCH */
+  .search-wrap { position: relative; }
+  .search-results {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 12px 32px -8px rgba(0,0,0,0.2);
+    width: 320px;
+    max-height: 360px;
+    overflow-y: auto;
+    display: none;
+    z-index: 200;
+  }
+  .search-results.active { display: block; }
+  .search-result-item {
+    display: block;
+    padding: 12px 16px;
+    font-size: 13.5px;
+    color: #334155;
+    text-decoration: none;
+    border-bottom: 1px solid #f1f5f9;
+  }
+  .search-result-item:last-child { border-bottom: none; }
+  .search-result-item:hover { background: #eef1ff; color: #4a3ac8; }
+  .search-empty { padding: 16px; font-size: 13px; color: #94a3b8; text-align: center; }
 </style>
 </head>
 <body class="bg-white text-slate-800">
 
 <!-- HEADER -->
 <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
-  <div class="max-w-7xl mx-auto flex items-center justify-between px-5 sm:px-8 h-16">
-    <a href="/" class="flex items-center gap-2.5 shrink-0">
-      <div class="h-9 w-9 rounded-lg overflow-hidden flex items-center justify-center bg-white shadow-sm border border-slate-200">
-        <img src="/assets/images/logo.png" alt="InspireSurety" class="h-full w-full object-contain p-1">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-5 sm:px-8 h-16 gap-4">
+
+    <!-- LOGO: WORDS ONLY -->
+    <a href="/" class="flex items-center shrink-0">
+      <span class="text-[18px] font-extrabold tracking-tight text-slate-900">Inspire<span class="text-brand-700">Surety</span></span>
+    </a>
+
+    <!-- NAV -->
+    <nav class="hidden lg:flex items-center gap-1 text-[13.5px] font-semibold text-slate-600">
+      <div class="nav-item">
+        <button class="flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-slate-50 hover:text-brand-700 transition-colors">
+          Construction Bonds
+          <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="nav-dropdown">
+          <a href="/pages/contractors-construction-bond-hub/">Construction Bond Hub</a>
+          <a href="/pages/bid-bond/">Bid Bond</a>
+          <a href="/pages/payment-performance-bonds/">Payment &amp; Performance Bonds</a>
+          <a href="/pages/subdivision-bond/">Subdivision Bond</a>
+          <a href="/pages/maintenance-bond-guide/">Maintenance Bond</a>
+        </div>
       </div>
-      <span class="text-[17px] font-extrabold tracking-tight text-slate-900">Inspire<span class="text-brand-700">Surety</span></span>
-    </a>
 
-    <ul class="hidden md:flex items-center gap-8 text-[13.5px] font-semibold text-slate-500">
-      <li><a href="/" class="hover:text-brand-700 transition-colors">Home</a></li>
-      <li><a href="/pages/surety-bonds/" class="hover:text-brand-700 transition-colors">Bond Categories</a></li>
-      <li><a href="/blog/" class="hover:text-brand-700 transition-colors">Resources</a></li>
-      <li><a href="/pages/contact/" class="hover:text-brand-700 transition-colors">Contact</a></li>
-    </ul>
+      <div class="nav-item">
+        <button class="flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-slate-50 hover:text-brand-700 transition-colors">
+          License &amp; Permit Bonds
+          <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="nav-dropdown">
+          <a href="/pages/license-permit-bond-hub/">License &amp; Permit Hub</a>
+          <a href="/pages/notary-bond/">Notary Bond</a>
+          <a href="/pages/motor-vehicle-dealer-bond/">Auto Dealer Bond</a>
+          <a href="/pages/mortgage-broker-bond/">Mortgage Broker Bond</a>
+          <a href="/pages/money-transmitter-bond/">Money Transmitter Bond</a>
+        </div>
+      </div>
 
-    <a href="/pages/contact/" class="text-[13px] font-bold text-white px-5 py-2.5 rounded-lg shadow-sm transition" style="background:#4a3ac8" onmouseover="this.style.background='#3d31a2'" onmouseout="this.style.background='#4a3ac8'">
-      Get a Bond
-    </a>
+      <div class="nav-item">
+        <button class="flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-slate-50 hover:text-brand-700 transition-colors">
+          Court &amp; Fiduciary Bonds
+          <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="nav-dropdown">
+          <a href="/pages/court-fiduciary-bond-hub/">Court &amp; Fiduciary Hub</a>
+          <a href="/pages/probate-bonds/">Probate Bond</a>
+          <a href="/pages/guardian-bonds/">Guardian Bond</a>
+          <a href="/pages/trustee-bonds/">Trustee Bond</a>
+          <a href="/pages/public-official-bond/">Public Official Bond</a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <button class="flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-slate-50 hover:text-brand-700 transition-colors">
+          More Bonds
+          <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="nav-dropdown">
+          <a href="/pages/environmental-reclamation-bond-hub/">Environmental &amp; Reclamation</a>
+          <a href="/pages/federal-blm-bond-hub/">Federal &amp; BLM Bonds</a>
+          <a href="/pages/escrow-real-estate-bond-hub/">Escrow &amp; Real Estate</a>
+          <a href="/pages/cannabis-bond-hub/">Cannabis Bonds</a>
+          <a href="/pages/agriculture-food-bond-hub/">Agriculture &amp; Food</a>
+          <a href="/pages/surety-bond-learning-center/" style="font-weight:700;color:#4a3ac8;">Learning Center →</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- RIGHT SIDE: SEARCH, PHONE, CTA -->
+    <div class="flex items-center gap-3 shrink-0">
+
+      <!-- SEARCH -->
+      <div class="search-wrap">
+        <button id="search-toggle" class="h-9 w-9 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center transition-colors" aria-label="Search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="2.3"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        </button>
+        <div id="search-panel" class="search-results">
+          <div class="p-2">
+            <input id="search-input" type="text" placeholder="Search bonds... e.g. Notary" class="w-full px-3 py-2.5 text-sm border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-400">
+          </div>
+          <div id="search-output"></div>
+        </div>
+      </div>
+
+      <!-- PHONE -->
+      <a href="tel:+19282270054" class="hidden md:flex items-center gap-1.5 text-[13px] font-semibold text-slate-600 hover:text-brand-700 transition-colors">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +1 928-227-0054
+      </a>
+
+      <!-- CTA -->
+      <a href="/pages/surety-bonds/" class="text-[13px] font-bold text-white px-5 py-2.5 rounded-lg shadow-sm transition" style="background:#4a3ac8" onmouseover="this.style.background='#3d31a2'" onmouseout="this.style.background='#4a3ac8'">
+        View Our Bonds
+      </a>
+
+      <!-- MOBILE MENU BUTTON -->
+      <button id="mobile-menu-btn" class="lg:hidden h-9 w-9 flex items-center justify-center text-slate-700">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" class="lg:hidden hidden border-t border-slate-200 bg-white px-5 py-4 space-y-1">
+    <a href="/pages/contractors-construction-bond-hub/" class="block py-2.5 text-sm font-semibold text-slate-700">Construction Bonds</a>
+    <a href="/pages/license-permit-bond-hub/" class="block py-2.5 text-sm font-semibold text-slate-700">License &amp; Permit Bonds</a>
+    <a href="/pages/court-fiduciary-bond-hub/" class="block py-2.5 text-sm font-semibold text-slate-700">Court &amp; Fiduciary Bonds</a>
+    <a href="/pages/surety-bond-learning-center/" class="block py-2.5 text-sm font-semibold text-slate-700">More Bonds / Learning Center</a>
+    <a href="tel:+19282270054" class="block py-2.5 text-sm font-semibold text-brand-700">+1 928-227-0054</a>
   </div>
 </header>
 
@@ -81,385 +235,240 @@
 <main>
   
 
-  <!-- DEFAULT PAGE LAYOUT -->
   <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12">
     <div class="prose max-w-none">
       <style>
-.is-nb *, .is-nb *::before, .is-nb *::after { box-sizing: border-box; }
-.is-nb {
+.is-lpg *, .is-lpg *::before, .is-lpg *::after { box-sizing: border-box; }
+.is-lpg {
   font-family: inherit;
   color: #0f172a;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 0 40px;
+  margin: 0 calc(-50vw + 50%);
+  width: 100vw;
+  padding: 0;
 }
+.is-lpg .is-inner { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
 
-/* ---- HERO ---- */
-.is-nb .is-hero {
-  text-align: center;
-  padding: 64px 32px 56px;
-  background:
-    radial-gradient(ellipse at 20% 50%, rgba(37,99,235,0.07) 0%, transparent 55%),
-    radial-gradient(ellipse at 80% 50%, rgba(8,145,178,0.05) 0%, transparent 55%);
-  border-radius: 24px;
-  margin-bottom: 56px;
+/* ---- HERO: LEVEL 2 (blue to sky) ---- */
+.is-lpg .is-hero-wrap {
+  background: linear-gradient(135deg, #1e40af 0%, #2563eb 60%, #0ea5e9 100%);
+  padding: 68px 0 60px;
+  position: relative;
+  overflow: hidden;
 }
-.is-nb .is-hero-badge {
+.is-lpg .is-hero-wrap::before {
+  content: "";
+  position: absolute;
+  top: -100px; right: -100px;
+  width: 380px; height: 380px;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.is-lpg .is-hero-badge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #eff6ff;
-  color: #1d4ed8;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #dbeafe;
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   padding: 6px 16px;
   border-radius: 999px;
-  border: 1px solid #bfdbfe;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+  position: relative; z-index: 1;
 }
-.is-nb .is-hero h1 {
-  font-size: clamp(24px, 3.5vw, 38px) !important;
+.is-lpg .is-hero-wrap h1 {
+  font-size: clamp(28px, 4.5vw, 46px) !important;
   font-weight: 900 !important;
-  color: #0f172a !important;
-  line-height: 1.15 !important;
-  letter-spacing: -0.02em;
-  margin: 0 0 16px !important;
-}
-.is-nb .is-hero .is-sub {
-  font-size: clamp(15px, 1.8vw, 18px);
-  color: #475569;
-  max-width: 640px;
-  margin: 0 auto;
-  line-height: 1.65;
-}
-.is-nb .is-btn-primary {
-  display: inline-block;
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
   color: #fff !important;
-  padding: 15px 32px;
-  border-radius: 12px;
-  font-size: 15px;
-  font-weight: 700;
-  text-decoration: none !important;
-  transition: all 0.2s;
-  box-shadow: 0 4px 16px rgba(37,99,235,0.3);
-  margin-top: 28px;
+  line-height: 1.1 !important;
+  margin: 0 0 16px !important;
+  position: relative; z-index: 1;
+  letter-spacing: -0.02em;
 }
-.is-nb .is-btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(37,99,235,0.38); }
+.is-lpg .is-hero-wrap p {
+  font-size: 16px;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.7;
+  max-width: 620px;
+  margin: 0;
+  position: relative; z-index: 1;
+}
+
+/* ---- TOC ---- */
+.is-lpg .is-toc {
+  background: #0f172a;
+  border-radius: 20px;
+  padding: 30px 34px;
+  margin: -32px auto 0;
+  max-width: 940px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+}
+.is-lpg .is-toc-title { font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #93c5fd; margin-bottom: 14px; }
+.is-lpg .is-toc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 24px; }
+.is-lpg .is-toc-grid a { font-size: 14px; color: #e2e8f0; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; }
+.is-lpg .is-toc-grid a::before { content: "→"; color: #60a5fa; }
+.is-lpg .is-toc-grid a:hover { color: #93c5fd; }
 
 /* ---- SECTIONS ---- */
-.is-nb .is-sec { margin-bottom: 60px; }
-.is-nb .is-label {
-  display: inline-block;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #2563eb;
-  margin-bottom: 10px;
-}
-.is-nb .is-sec h2 {
-  font-size: clamp(20px, 2.5vw, 27px) !important;
-  font-weight: 800 !important;
-  color: #0f172a !important;
-  margin: 0 0 12px !important;
-}
-.is-nb .is-sec > p.is-desc { font-size: 15px; color: #64748b; margin: 0 0 24px; max-width: 640px; line-height: 1.7; }
-.is-nb .is-divider { height: 1px; background: linear-gradient(90deg, transparent, #e2e8f0, transparent); margin: 0 0 60px; }
+.is-lpg .is-sec-white { background: #fff; padding: 60px 0; }
+.is-lpg .is-sec-gray { background: #f8fafc; padding: 60px 0; }
+.is-lpg .is-sec-tint { background: linear-gradient(135deg, #eff6ff, #f0f9ff); padding: 60px 0; }
+.is-lpg .is-sec h2 { font-size: clamp(21px, 2.6vw, 28px) !important; font-weight: 900 !important; color: #0f172a !important; margin: 0 0 14px !important; letter-spacing: -0.01em; }
+.is-lpg .is-eyebrow { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #2563eb; margin-bottom: 10px; }
+.is-lpg .is-sec p { font-size: 15px; color: #475569; line-height: 1.75; margin: 0 0 12px; }
 
 /* ---- MEANING CALLOUT ---- */
-.is-nb .is-meaning {
-  background: #fff;
-  border: 1px solid #e2e8f0;
-  border-left: 5px solid #2563eb;
-  border-radius: 16px;
-  padding: 32px 28px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-}
-.is-nb .is-meaning p { font-size: 15px; color: #334155; line-height: 1.75; margin: 0 0 14px; }
-.is-nb .is-meaning p:last-child { margin: 0; }
+.is-lpg .is-meaning { background: #fff; border: 1px solid #e2e8f0; border-left: 5px solid #2563eb; border-radius: 16px; padding: 30px 26px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); margin: 20px 0; }
+.is-lpg .is-meaning p { font-size: 15px; color: #334155; line-height: 1.75; margin: 0 0 14px; }
+.is-lpg .is-meaning p:last-child { margin: 0; }
 
-/* ---- REASONS: NUMBERED CARDS ---- */
-.is-nb .is-reasons { display: flex; flex-direction: column; gap: 18px; }
-.is-nb .is-reason {
-  background: #fff;
-  border: 1px solid #e2e8f0;
-  border-radius: 16px;
-  padding: 26px 24px;
-  display: grid;
-  grid-template-columns: 40px 1fr;
-  gap: 16px;
-  align-items: start;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
-  transition: box-shadow 0.2s, transform 0.2s;
-}
-.is-nb .is-reason:hover { box-shadow: 0 10px 28px rgba(37,99,235,0.1); transform: translateY(-2px); }
-.is-nb .is-reason-num {
-  width: 40px; height: 40px;
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 800;
-  flex-shrink: 0;
-}
-.is-nb .is-reason h3 { font-size: 15.5px !important; font-weight: 700 !important; color: #0f172a !important; margin: 0 0 6px !important; }
-.is-nb .is-reason p { font-size: 14.5px; color: #475569; margin: 0; line-height: 1.65; }
+/* ---- REASONS ---- */
+.is-lpg .is-reasons { display: flex; flex-direction: column; gap: 0; margin: 24px 0; }
+.is-lpg .is-reason { display: grid; grid-template-columns: 56px 1fr; gap: 20px; align-items: start; padding: 26px 0; border-bottom: 1px solid #e2e8f0; }
+.is-lpg .is-reason:last-child { border-bottom: none; }
+.is-lpg .is-reason-num { width: 52px; height: 52px; background: linear-gradient(135deg, #2563eb, #0ea5e9); border-radius: 16px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 20px; font-weight: 900; flex-shrink: 0; box-shadow: 0 6px 16px rgba(37,99,235,0.3); }
+.is-lpg .is-reason h3 { font-size: 17px !important; font-weight: 800 !important; color: #0f172a !important; margin: 0 0 8px !important; }
+.is-lpg .is-reason p { font-size: 14.5px; color: #475569; margin: 0; line-height: 1.65; }
 
 /* ---- STEPS ---- */
-.is-nb .is-steps { display: flex; flex-direction: column; gap: 16px; }
-.is-nb .is-step {
-  display: grid;
-  grid-template-columns: 48px 1fr;
-  gap: 18px;
-  align-items: start;
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 14px;
-  padding: 22px 20px;
-}
-.is-nb .is-step-num {
-  width: 48px; height: 48px;
-  background: linear-gradient(135deg, #0891b2, #0e7490);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 800;
-  flex-shrink: 0;
-  box-shadow: 0 4px 10px rgba(8,145,178,0.28);
-}
-.is-nb .is-step h3 { font-size: 15px !important; font-weight: 700 !important; color: #0f172a !important; margin: 0 0 5px !important; }
-.is-nb .is-step p { font-size: 14px; color: #475569; margin: 0; line-height: 1.6; }
+.is-lpg .is-steps { display: flex; flex-direction: column; gap: 0; margin: 24px 0; }
+.is-lpg .is-step { display: grid; grid-template-columns: 64px 1fr; gap: 22px; align-items: start; padding: 24px 0; border-bottom: 1px solid #e2e8f0; }
+.is-lpg .is-step:last-child { border-bottom: none; }
+.is-lpg .is-step-num { width: 56px; height: 56px; background: linear-gradient(135deg, #0ea5e9, #06b6d4); border-radius: 16px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 22px; font-weight: 900; flex-shrink: 0; box-shadow: 0 6px 16px rgba(14,165,233,0.3); }
+.is-lpg .is-step h3 { font-size: 16.5px !important; font-weight: 800 !important; color: #0f172a !important; margin: 0 0 6px !important; }
+.is-lpg .is-step p { font-size: 14px; color: #475569; margin: 0; line-height: 1.6; }
 
-/* ---- COST TABLE ---- */
-.is-nb .is-table-wrap { border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; }
-.is-nb .is-table { width: 100%; border-collapse: collapse; font-size: 14px; }
-.is-nb .is-table thead th { background: #f1f5f9; text-align: left; padding: 12px 16px; font-weight: 700; color: #475569; border-bottom: 2px solid #e2e8f0; font-size: 13px; }
-.is-nb .is-table tbody td { padding: 13px 16px; border-bottom: 1px solid #f8fafc; color: #334155; }
-.is-nb .is-table tbody tr:last-child td { border-bottom: none; }
-.is-nb .is-table tbody tr:hover td { background: #f8fafc; }
+/* ---- STAT BAND ---- */
+.is-lpg .is-stat-band { display: flex; background: #fff; border: 1px solid #e2e8f0; border-radius: 18px; overflow: hidden; margin: 24px 0; box-shadow: 0 8px 28px rgba(0,0,0,0.06); }
+.is-lpg .is-stat-cell { flex: 1; text-align: center; padding: 26px 16px; border-right: 1px solid #f1f5f9; }
+.is-lpg .is-stat-cell:last-child { border-right: none; }
+.is-lpg .is-stat-cell-big { background: linear-gradient(135deg, #2563eb, #0ea5e9); color: #fff; }
+.is-lpg .is-stat-num { font-size: 26px; font-weight: 900; color: #1d4ed8; line-height: 1; }
+.is-lpg .is-stat-cell-big .is-stat-num { color: #fff; }
+.is-lpg .is-stat-label { font-size: 11px; color: #64748b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; margin-top: 8px; }
+.is-lpg .is-stat-cell-big .is-stat-label { color: rgba(255,255,255,0.85); }
 
 /* ---- FAQ ---- */
-.is-nb .is-faq-list { display: flex; flex-direction: column; gap: 10px; }
-.is-nb .is-faq-item {
-  border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  background: #fff;
-  overflow: hidden;
-}
-.is-nb .is-faq-item[open] { border-color: #bfdbfe; box-shadow: 0 4px 16px rgba(37,99,235,0.08); }
-.is-nb .is-faq-item summary {
-  font-size: 14.5px;
-  font-weight: 700;
-  color: #0f172a;
-  padding: 16px 20px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  gap: 14px;
-}
-.is-nb .is-faq-item summary::-webkit-details-marker { display: none; }
-.is-nb .is-faq-item summary::after {
-  content: "+";
-  font-size: 20px;
-  font-weight: 300;
-  color: #2563eb;
-  flex-shrink: 0;
-  transition: transform 0.25s;
-  line-height: 1;
-}
-.is-nb .is-faq-item[open] summary::after { transform: rotate(45deg); }
-.is-nb .is-faq-body { padding: 0 20px 18px; }
-.is-nb .is-faq-body p { font-size: 14px; color: #475569; margin: 0; line-height: 1.7; }
+.is-lpg .is-faq-list { display: flex; flex-direction: column; gap: 10px; margin: 20px 0; }
+.is-lpg .is-faq-item { border: 1px solid #e2e8f0; border-radius: 14px; background: #fff; overflow: hidden; }
+.is-lpg .is-faq-item[open] { border-color: #93c5fd; box-shadow: 0 6px 20px rgba(37,99,235,0.1); }
+.is-lpg .is-faq-item summary { font-size: 14.5px; font-weight: 700; color: #0f172a; padding: 17px 22px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; gap: 14px; }
+.is-lpg .is-faq-item summary::-webkit-details-marker { display: none; }
+.is-lpg .is-faq-item summary::after { content: "+"; font-size: 20px; font-weight: 300; color: #2563eb; flex-shrink: 0; transition: transform 0.25s; line-height: 1; }
+.is-lpg .is-faq-item[open] summary::after { transform: rotate(45deg); }
+.is-lpg .is-faq-body { padding: 0 22px 18px; }
+.is-lpg .is-faq-body p { font-size: 14px; color: #475569; margin: 0; line-height: 1.7; }
 
 /* ---- FINAL CTA ---- */
-.is-nb .is-final {
-  text-align: center;
-  background: linear-gradient(135deg, #0c4a6e, #1e40af);
-  border-radius: 24px;
-  padding: 52px 40px;
-  position: relative;
-  overflow: hidden;
-}
-.is-nb .is-final::before {
-  content: "";
-  position: absolute;
-  top: -60px; right: -60px;
-  width: 260px; height: 260px;
-  background: rgba(255,255,255,0.05);
-  border-radius: 50%;
-}
-.is-nb .is-final h2 { font-size: clamp(20px, 2.8vw, 28px) !important; color: #fff !important; margin: 0 0 10px !important; position: relative; z-index: 1; }
-.is-nb .is-final p { font-size: 14.5px; color: rgba(255,255,255,0.8); margin: 0 0 24px; position: relative; z-index: 1; }
-.is-nb .is-btn-white {
-  display: inline-block;
-  background: #fff;
-  color: #1e40af !important;
-  padding: 14px 32px;
-  border-radius: 10px;
-  font-size: 15px;
-  font-weight: 800;
-  text-decoration: none !important;
-  position: relative; z-index: 1;
-  transition: all 0.2s;
-}
-.is-nb .is-btn-white:hover { background: #eff6ff; transform: translateY(-2px); }
+.is-lpg .is-final-wrap { background: linear-gradient(135deg, #1e40af, #2563eb, #0ea5e9); padding: 68px 0; text-align: center; position: relative; overflow: hidden; }
+.is-lpg .is-final-wrap::before { content: ""; position: absolute; top: -80px; left: -80px; width: 300px; height: 300px; background: rgba(255,255,255,0.08); border-radius: 50%; }
+.is-lpg .is-final-wrap::after { content: ""; position: absolute; bottom: -100px; right: -60px; width: 360px; height: 360px; background: rgba(255,255,255,0.05); border-radius: 50%; }
+.is-lpg .is-final-wrap h2 { font-size: clamp(24px, 3.2vw, 34px) !important; color: #fff !important; margin: 0 0 12px !important; position: relative; z-index: 1; font-weight: 900 !important; }
+.is-lpg .is-final-wrap p { font-size: 15.5px; color: rgba(255,255,255,0.9); margin: 0 auto 28px; max-width: 460px; position: relative; z-index: 1; }
+.is-lpg .is-btn-white { display: inline-block; background: #fff; color: #1e40af !important; padding: 15px 36px; border-radius: 12px; font-size: 15px; font-weight: 800; text-decoration: none !important; position: relative; z-index: 1; transition: all 0.2s; box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+.is-lpg .is-btn-white:hover { background: #eff6ff; transform: translateY(-3px); }
 
 /* ---- RESPONSIVE ---- */
-@media (max-width: 640px) {
-  .is-nb .is-hero { padding: 40px 20px 36px; }
-  .is-nb .is-reason { grid-template-columns: 1fr; gap: 12px; }
-  .is-nb .is-step { grid-template-columns: 1fr; gap: 12px; }
-  .is-nb .is-table-wrap { overflow-x: auto; }
-  .is-nb .is-final { padding: 40px 24px; }
+@media (max-width: 720px) {
+  .is-lpg .is-toc { margin: -24px 20px 0; padding: 24px 22px; }
+  .is-lpg .is-toc-grid { grid-template-columns: 1fr; }
+  .is-lpg .is-stat-band { flex-wrap: wrap; }
+  .is-lpg .is-stat-cell { flex: 1 1 50%; border-bottom: 1px solid #f1f5f9; }
+  .is-lpg .is-reason { grid-template-columns: 1fr; gap: 12px; }
+  .is-lpg .is-step { grid-template-columns: 1fr; gap: 12px; }
+  .is-lpg .is-hero-wrap { padding: 44px 0 52px; }
+  .is-lpg .is-sec-white, .is-lpg .is-sec-gray, .is-lpg .is-sec-tint { padding: 40px 0; }
 }
 </style>
-<div class="is-nb">
-  <!-- HERO -->
-  <div class="is-hero">
-    <div class="is-hero-badge">License &amp; Permit Bond</div>
-    <h1>Notary Bond Guide</h1>
-    <p class="is-sub">Notaries public serve as gatekeepers of trust in transactions large and small. A notary bond or notary public bond is a surety guarantee that the notary will follow the law, perform duties with honesty, and protect the public from fraud or misconduct.</p>
-    <a href="/pages/notary-bond/" class="is-btn-primary">Get Your Notary Bond →</a>
-  </div>
-  <!-- WHAT IT MEANS -->
-  <div class="is-sec">
-    <span class="is-label">Overview</span>
-    <h2>What Is a Notary Bond?</h2>
-    <p class="is-desc">Understanding the purpose behind this required credential.</p>
-    <div class="is-meaning">
-      <p>A notary bond is a type of license and permit bond required by most states before a person can be commissioned as a notary public. It is not insurance for the notary — it is a guarantee to the public and the state that the notary will perform their duties honestly, accurately, and in compliance with state notary laws.</p>
-      <p>If a notary commits fraud, negligence, or a procedural error that causes financial harm to someone relying on their notarization, the injured party can file a claim against the bond. The surety company pays the claim up to the bond amount, and the notary is then responsible for reimbursing the surety.</p>
-      <p>Because notaries handle high-stakes documents — real estate closings, powers of attorney, affidavits, loan documents — states require this bond to ensure there is financial recourse if something goes wrong.</p>
+<div class="is-lpg">
+  <div class="is-hero-wrap">
+    <div class="is-inner">
+      <div class="is-hero-badge">License &amp; Permit Bond Guide</div>
+      <h1>Notary Bond Guide</h1>
+      <p>Notaries public serve as gatekeepers of trust in transactions large and small. A notary bond or notary public bond is a surety guarantee that the notary will follow the law, perform duties with honesty, and protect the public from fraud or misconduct.</p>
     </div>
   </div>
-  <div class="is-divider"></div>
-  <!-- WHY YOU NEED ONE -->
-  <div class="is-sec">
-    <span class="is-label">Requirements</span>
-    <h2>Why Notaries Are Required to Carry This Bond</h2>
-    <p class="is-desc">Three reasons states mandate notary bonds before commissioning.</p>
-    <div class="is-reasons">
-      <div class="is-reason">
-        <div class="is-reason-num">1</div>
-        <div>
-          <h3>Protects the Public From Notary Errors</h3>
-          <p>If a notary improperly notarizes a document, fails to verify identity correctly, or makes a procedural mistake that causes financial loss, the affected party has a financial remedy through the bond.</p>
-        </div>
-      </div>
-      <div class="is-reason">
-        <div class="is-reason-num">2</div>
-        <div>
-          <h3>Required for State Commissioning</h3>
-          <p>Nearly every state requires proof of a notary bond as part of the application or renewal process before issuing a notary commission. Without it, you cannot legally perform notarial acts.</p>
-        </div>
-      </div>
-      <div class="is-reason">
-        <div class="is-reason-num">3</div>
-        <div>
-          <h3>Builds Trust With Clients and Employers</h3>
-          <p>Being bonded signals to employers, title companies, and clients that you are a legitimate, state-compliant notary — which is often a requirement for notary jobs in real estate, legal, and financial industries.</p>
-        </div>
+  <div class="is-toc">
+    <div class="is-toc-title">On This Page</div>
+    <div class="is-toc-grid">
+      <a href="#what-is">What Is a Notary Bond?</a>
+      <a href="#why">Why Notaries Need This Bond</a>
+      <a href="#how">How to Get Your Notary Bond</a>
+      <a href="#cost">Typical Bond Amounts by State</a>
+      <a href="#faq">Notary Bond FAQ</a>
+    </div>
+  </div>
+  <div class="is-sec-white" id="what-is">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Overview</span>
+      <h2>What Is a Notary Bond?</h2>
+      <div class="is-meaning">
+        <p>A notary bond is a type of license and permit bond required by most states before a person can be commissioned as a notary public. It is not insurance for the notary — it is a guarantee to the public and the state that the notary will perform their duties honestly, accurately, and in compliance with state notary laws.</p>
+        <p>If a notary commits fraud, negligence, or a procedural error that causes financial harm to someone relying on their notarization, the injured party can file a claim against the bond. The surety company pays the claim up to the bond amount, and the notary is then responsible for reimbursing the surety.</p>
+        <p>Because notaries handle high-stakes documents — real estate closings, powers of attorney, affidavits, loan documents — states require this bond to ensure there is financial recourse if something goes wrong.</p>
       </div>
     </div>
   </div>
-  <div class="is-divider"></div>
-  <!-- HOW TO GET BONDED -->
-  <div class="is-sec">
-    <span class="is-label">Process</span>
-    <h2>How to Get Your Notary Bond</h2>
-    <p class="is-desc">A simple, fast process to get commissioned.</p>
-    <div class="is-steps">
-      <div class="is-step">
-        <div class="is-step-num">1</div>
-        <div>
-          <h3>Check Your State's Bond Requirement</h3>
-          <p>Bond amounts vary by state — typically ranging from $1,000 to $25,000 depending on your state's notary laws.</p>
-        </div>
-      </div>
-      <div class="is-step">
-        <div class="is-step-num">2</div>
-        <div>
-          <h3>Apply for Your Bond</h3>
-          <p>Complete a simple application with your name and state requirement. Most notary bonds do not require a credit check due to their low risk and low cost.</p>
-        </div>
-      </div>
-      <div class="is-step">
-        <div class="is-step-num">3</div>
-        <div>
-          <h3>Receive Your Bond Certificate</h3>
-          <p>Once issued, you'll receive your bond certificate to submit with your notary commission application to your state.</p>
-        </div>
+  <div class="is-sec-gray" id="why">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Requirements</span>
+      <h2>Why Notaries Are Required to Carry This Bond</h2>
+      <p>Three reasons states mandate notary bonds before commissioning.</p>
+      <div class="is-reasons">
+        <div class="is-reason"><div class="is-reason-num">1</div><div><h3>Protects the Public From Notary Errors</h3><p>If a notary improperly notarizes a document, fails to verify identity correctly, or makes a procedural mistake that causes financial loss, the affected party has a financial remedy through the bond.</p></div></div>
+        <div class="is-reason"><div class="is-reason-num">2</div><div><h3>Required for State Commissioning</h3><p>Nearly every state requires proof of a notary bond as part of the application or renewal process before issuing a notary commission. Without it, you cannot legally perform notarial acts.</p></div></div>
+        <div class="is-reason"><div class="is-reason-num">3</div><div><h3>Builds Trust With Clients and Employers</h3><p>Being bonded signals to employers, title companies, and clients that you are a legitimate, state-compliant notary — which is often a requirement for notary jobs in real estate, legal, and financial industries.</p></div></div>
       </div>
     </div>
   </div>
-  <div class="is-divider"></div>
-  <!-- COST TABLE -->
-  <div class="is-sec">
-    <span class="is-label">Pricing</span>
-    <h2>Typical Notary Bond Amounts by State</h2>
-    <p class="is-desc">Bond requirements vary — here are common examples.</p>
-    <div class="is-table-wrap">
-      <table class="is-table">
-        <thead>
-          <tr><th>Requirement</th><th>Typical Range</th><th>Notes</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Bond Amount</td><td>$1,000 – $25,000</td><td>Set by state law, not by risk assessment</td></tr>
-          <tr><td>Bond Term</td><td>4 – 10 years</td><td>Matches your notary commission term</td></tr>
-          <tr><td>Credit Check</td><td>Rarely required</td><td>Low-cost bonds are typically instant-issue</td></tr>
-          <tr><td>Premium Cost</td><td>Low, fixed rate</td><td>Based on bond amount and state, not credit</td></tr>
-        </tbody>
-      </table>
+  <div class="is-sec-tint" id="how">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Process</span>
+      <h2>How to Get Your Notary Bond</h2>
+      <p>A simple, fast process to get commissioned.</p>
+      <div class="is-steps">
+        <div class="is-step"><div class="is-step-num">1</div><div><h3>Check Your State's Bond Requirement</h3><p>Bond amounts vary by state — typically ranging from $1,000 to $25,000 depending on your state's notary laws.</p></div></div>
+        <div class="is-step"><div class="is-step-num">2</div><div><h3>Apply for Your Bond</h3><p>Complete a simple application with your name and state requirement. Most notary bonds do not require a credit check due to their low risk and low cost.</p></div></div>
+        <div class="is-step"><div class="is-step-num">3</div><div><h3>Receive Your Bond Certificate</h3><p>Once issued, you'll receive your bond certificate to submit with your notary commission application to your state.</p></div></div>
+      </div>
     </div>
   </div>
-  <div class="is-divider"></div>
-  <!-- FAQ -->
-  <div class="is-sec">
-    <span class="is-label">Common Questions</span>
-    <h2>Notary Bond FAQ</h2>
-    <div class="is-faq-list">
-      <details class="is-faq-item">
-        <summary>Is a notary bond the same as notary insurance?</summary>
-        <div class="is-faq-body">
-          <p>No. A notary bond protects the public and is paid back by the notary if a claim occurs. Notary errors and omissions (E&amp;O) insurance protects the notary themselves from having to pay out of pocket. Many notaries carry both.</p>
-        </div>
-      </details>
-      <details class="is-faq-item">
-        <summary>How much does a notary bond cost?</summary>
-        <div class="is-faq-body">
-          <p>Cost depends on your state's required bond amount and term length, but notary bonds are generally inexpensive due to their low risk profile.</p>
-        </div>
-      </details>
-      <details class="is-faq-item">
-        <summary>Do I need a notary bond in every state?</summary>
-        <div class="is-faq-body">
-          <p>Most states require one, though requirements and amounts vary. Some states do not require a bond at all — check your specific state's notary commissioning requirements.</p>
-        </div>
-      </details>
-      <details class="is-faq-item">
-        <summary>What happens if a claim is filed against my bond?</summary>
-        <div class="is-faq-body">
-          <p>The surety company pays the claim up to the bond amount, then the notary is responsible for reimbursing the surety for the amount paid.</p>
-        </div>
-      </details>
+  <div class="is-sec-white" id="cost">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Pricing</span>
+      <h2>Typical Notary Bond Amounts by State</h2>
+      <p>Bond requirements vary — here are common examples.</p>
+      <div class="is-stat-band">
+        <div class="is-stat-cell"><div class="is-stat-num">$1K–$25K</div><div class="is-stat-label">Bond Amount</div></div>
+        <div class="is-stat-cell is-stat-cell-big"><div class="is-stat-num">4–10 Yrs</div><div class="is-stat-label">Bond Term</div></div>
+        <div class="is-stat-cell"><div class="is-stat-num">Instant</div><div class="is-stat-label">Most Issuance</div></div>
+      </div>
+      <p>Credit checks are rarely required, and premiums are based on bond amount and state — not credit history.</p>
     </div>
   </div>
-  <!-- FINAL CTA -->
-  <div class="is-final">
-    <h2>Ready to Get Commissioned?</h2>
-    <p>Fast, affordable notary bonds available in all states that require one.</p>
-    <a href="/pages/notary-bond/" class="is-btn-white">Get My Notary Bond</a>
+  <div class="is-sec-gray" id="faq">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Common Questions</span>
+      <h2>Notary Bond FAQ</h2>
+      <div class="is-faq-list">
+        <details class="is-faq-item"><summary>Is a notary bond the same as notary insurance?</summary><div class="is-faq-body"><p>No. A notary bond protects the public and is paid back by the notary if a claim occurs. Notary errors and omissions (E&amp;O) insurance protects the notary themselves from having to pay out of pocket. Many notaries carry both.</p></div></details>
+        <details class="is-faq-item"><summary>How much does a notary bond cost?</summary><div class="is-faq-body"><p>Cost depends on your state's required bond amount and term length, but notary bonds are generally inexpensive due to their low risk profile.</p></div></details>
+        <details class="is-faq-item"><summary>Do I need a notary bond in every state?</summary><div class="is-faq-body"><p>Most states require one, though requirements and amounts vary. Some states do not require a bond at all — check your specific state's notary commissioning requirements.</p></div></details>
+        <details class="is-faq-item"><summary>What happens if a claim is filed against my bond?</summary><div class="is-faq-body"><p>The surety company pays the claim up to the bond amount, then the notary is responsible for reimbursing the surety for the amount paid.</p></div></details>
+      </div>
+    </div>
+  </div>
+  <div class="is-final-wrap">
+    <div class="is-inner">
+      <h2>Ready to Get Commissioned?</h2>
+      <p>Fast, affordable notary bonds available in all states that require one.</p>
+      <a href="/pages/notary-bond/" class="is-btn-white">Get My Notary Bond</a>
+    </div>
   </div>
 </div>
     </div>
@@ -472,18 +481,15 @@
 <footer class="bg-slate-950 text-slate-400 mt-8">
   <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid grid-cols-2 sm:grid-cols-4 gap-8">
     <div class="col-span-2 sm:col-span-1">
-      <a href="/" class="flex items-center gap-2 mb-4">
-        <div class="h-8 w-8 rounded-lg overflow-hidden flex items-center justify-center bg-white">
-          <img src="/assets/images/logo.png" alt="InspireSurety" class="h-full w-full object-contain p-1">
-        </div>
-        <span class="font-extrabold text-white text-[15px]">InspireSurety</span>
+      <a href="/" class="flex items-center mb-4">
+        <span class="text-[17px] font-extrabold tracking-tight text-white">Inspire<span class="text-brand-400">Surety</span></span>
       </a>
       <p class="text-xs leading-relaxed text-slate-500">Nationwide surety bond marketplace. Licensed in all 50 states.</p>
     </div>
     <div>
       <h4 class="text-white text-sm font-bold mb-4">Bond Categories</h4>
       <ul class="space-y-2.5 text-xs">
-        <li><a href="/pages/contractors-construction-bond-hub/" class="hover:text-white transition">Contract Bonds</a></li>
+        <li><a href="/pages/contractors-construction-bond-hub/" class="hover:text-white transition">Construction Bonds</a></li>
         <li><a href="/pages/license-permit-bond-hub/" class="hover:text-white transition">License &amp; Permit</a></li>
         <li><a href="/pages/court-fiduciary-bond-hub/" class="hover:text-white transition">Court &amp; Fiduciary</a></li>
         <li><a href="/pages/environmental-reclamation-bond-hub/" class="hover:text-white transition">Environmental</a></li>
@@ -522,6 +528,101 @@
     </div>
   </div>
 </footer>
+
+<script>
+  // Mobile menu toggle
+  document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+
+  // Simple search index
+  const bondPages = [
+    { name: "Notary Bond", url: "/pages/notary-bond/" },
+    { name: "Notary Bond Guide", url: "/blog/notary-bond-guide/" },
+    { name: "Notary Bond Arizona", url: "/pages/notary-bond-arizona/" },
+    { name: "Notary Bond Texas", url: "/pages/notary-bond-texas/" },
+    { name: "Auto Dealer Bond / Motor Vehicle Dealer Bond", url: "/pages/motor-vehicle-dealer-bond/" },
+    { name: "Mortgage Broker Bond", url: "/pages/mortgage-broker-bond/" },
+    { name: "Money Transmitter Bond", url: "/pages/money-transmitter-bond/" },
+    { name: "Collection Agency Bond", url: "/pages/collection-agency-bond/" },
+    { name: "Bid Bond", url: "/pages/bid-bond/" },
+    { name: "Payment & Performance Bonds", url: "/pages/payment-performance-bonds/" },
+    { name: "Subdivision Bond", url: "/pages/subdivision-bond/" },
+    { name: "Maintenance Bond Guide", url: "/pages/maintenance-bond-guide/" },
+    { name: "Probate Bond", url: "/pages/probate-bonds/" },
+    { name: "Guardian Bond", url: "/pages/guardian-bonds/" },
+    { name: "Trustee Bond", url: "/pages/trustee-bonds/" },
+    { name: "Public Official Bond", url: "/pages/public-official-bond/" },
+    { name: "Appeal Bond", url: "/pages/appeal-bond/" },
+    { name: "Environmental Bond", url: "/pages/environmental-bond/" },
+    { name: "Reclamation Bond", url: "/pages/reclamation-bond/" },
+    { name: "Cannabis Bond", url: "/pages/cannabis-bonds/" },
+    { name: "Auctioneer Bond", url: "/pages/auctioneer-bond/" },
+    { name: "Liquor License Bond", url: "/pages/liquor-license-bond/" },
+    { name: "Health Club Bond", url: "/pages/health-club-bonds/" },
+    { name: "Employment Agency Bond", url: "/pages/employment-agency-bond/" },
+    { name: "Driving School Bond", url: "/pages/driving-schools-bond/" },
+    { name: "Distributor Bond", url: "/pages/distributor-bond/" },
+    { name: "Freight Broker Bond", url: "/pages/freight-broker-bonds/" },
+    { name: "Utility Deposit Bond", url: "/pages/utility-deposit-bonds/" },
+    { name: "U.S. Customs Bond", url: "/pages/u-s-customs-bonds/" },
+    { name: "USDA Bonds", url: "/pages/usda-bonds/" },
+    { name: "BLM Bonds", url: "/pages/blm-bonds/" },
+    { name: "Tax Bond", url: "/pages/tax-bond/" },
+    { name: "Union Bonds", url: "/pages/union-bonds/" },
+    { name: "Escrow Agent Bond", url: "/pages/escrow-agent-bond/" },
+    { name: "Contractor License Bond", url: "/pages/contractor-license-bond/" },
+    { name: "Surety Bonds (All Types)", url: "/pages/surety-bonds/" },
+    { name: "License & Permit Bond Hub", url: "/pages/license-permit-bond-hub/" },
+    { name: "Contractors & Construction Bond Hub", url: "/pages/contractors-construction-bond-hub/" },
+    { name: "Court & Fiduciary Bond Hub", url: "/pages/court-fiduciary-bond-hub/" },
+    { name: "Environmental & Reclamation Bond Hub", url: "/pages/environmental-reclamation-bond-hub/" },
+    { name: "Federal & BLM Bond Hub", url: "/pages/federal-blm-bond-hub/" },
+    { name: "Escrow & Real Estate Bond Hub", url: "/pages/escrow-real-estate-bond-hub/" },
+    { name: "Cannabis Bond Hub", url: "/pages/cannabis-bond-hub/" },
+    { name: "Agriculture & Food Bond Hub", url: "/pages/agriculture-food-bond-hub/" }
+  ];
+
+  const searchToggle = document.getElementById('search-toggle');
+  const searchPanel = document.getElementById('search-panel');
+  const searchInput = document.getElementById('search-input');
+  const searchOutput = document.getElementById('search-output');
+
+  searchToggle.addEventListener('click', function(e) {
+    e.stopPropagation();
+    searchPanel.classList.toggle('active');
+    if (searchPanel.classList.contains('active')) {
+      searchInput.focus();
+    }
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!searchPanel.contains(e.target) && e.target !== searchToggle) {
+      searchPanel.classList.remove('active');
+    }
+  });
+
+  searchInput.addEventListener('input', function() {
+    const query = this.value.toLowerCase().trim();
+    searchOutput.innerHTML = '';
+    if (query.length < 2) return;
+
+    const results = bondPages.filter(page => page.name.toLowerCase().includes(query));
+
+    if (results.length === 0) {
+      searchOutput.innerHTML = '<div class="search-empty">No bonds found. Try "notary" or "contractor".</div>';
+      return;
+    }
+
+    results.slice(0, 8).forEach(page => {
+      const a = document.createElement('a');
+      a.href = page.url;
+      a.className = 'search-result-item';
+      a.textContent = page.name;
+      searchOutput.appendChild(a);
+    });
+  });
+</script>
 
 </body>
 </html>
