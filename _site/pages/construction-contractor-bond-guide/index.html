@@ -32,7 +32,7 @@
   .dot-w{background-image:radial-gradient(rgba(255,255,255,.11) 1.5px,transparent 1.5px);background-size:24px 24px}
 
   .prose h1{font-size:2rem;font-weight:900;color:#0f172a;margin-bottom:1rem;line-height:1.1}
-  .prose h2{font-size:1.5rem;font-weight:800;color:#1e293b;margin-top:2rem;margin-bottom:.75rem;line-height:1.2}
+  .prose h2{font-size:1.5rem;font-weight:800;color:#1e293b;margin-top:2.5rem;margin-bottom:1rem;line-height:1.2;padding-bottom:.6rem;border-bottom:2px solid #eef1ff}
   .prose h3{font-size:1.15rem;font-weight:700;color:#1e293b;margin-top:1.5rem;margin-bottom:.5rem}
   .prose p{color:#475569;line-height:1.75;margin-bottom:1rem;font-size:.9375rem}
   .prose ul{list-style:none;padding:0;margin-bottom:1rem}
@@ -52,7 +52,7 @@
 
   /* PREMIUM COMPONENT STYLES */
   .premium-hero{background:linear-gradient(135deg,#f8f9fc,#eef1ff);border-radius:1.5rem;padding:2.5rem;margin:2rem 0;border:1px solid #e0e4ff}
-  .premium-hero p{font-size:1.05rem}
+  .premium-hero p{font-size:1.05rem;margin-bottom:0}
   .hero-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1rem;margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid #c7cdfe}
   .hero-stat{text-align:center}
   .hero-stat-num{display:block;font-size:1.75rem;font-weight:900;color:#4a3ac8}
@@ -66,8 +66,9 @@
   .step-text{font-size:.9rem;color:#64748b;line-height:1.6;margin:0}
 
   .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin:2rem 0}
-  .testimonial-card{background:#f8f9fc;border:1px solid #e2e8f0;border-radius:1rem;padding:1.75rem}
-  .testimonial-text{font-size:.9rem;color:#334155;line-height:1.7;font-style:italic;margin-bottom:1rem}
+  .testimonial-card{background:#fff;border:1px solid #e2e8f0;border-left:4px solid #4a3ac8;border-radius:0 1rem 1rem 0;padding:1.75rem;position:relative;box-shadow:0 2px 8px -2px rgba(0,0,0,0.04)}
+  .testimonial-card::before{content:'"';position:absolute;top:.25rem;left:1.1rem;font-size:3rem;color:#e0e4ff;font-family:Georgia,serif;line-height:1}
+  .testimonial-text{font-size:.9rem;color:#334155;line-height:1.7;font-style:italic;margin-bottom:1rem;margin-top:.5rem}
   .testimonial-author{display:flex;flex-direction:column}
   .testimonial-name{font-weight:700;color:#1e293b;font-size:.875rem}
   .testimonial-role{font-size:.75rem;color:#94a3b8}
@@ -75,10 +76,13 @@
   .checklist-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:.75rem;margin:1.5rem 0}
   .check-item{display:flex;align-items:center;gap:.6rem;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:.6rem;padding:.75rem 1rem;font-size:.875rem;color:#166534;font-weight:500}
 
-  .cta-banner{background:linear-gradient(135deg,#4a3ac8,#352c81);border-radius:1.25rem;padding:2.25rem;text-align:center;margin:2.5rem 0}
-  .cta-text{color:#fff;font-size:1.15rem;font-weight:600;margin-bottom:1.25rem}
+  .cta-banner{background:linear-gradient(135deg,#4a3ac8,#352c81);border-radius:1.25rem;padding:2.5rem;text-align:center;margin:2.5rem 0}
+  .cta-text{color:#f1f0ff;font-size:1.2rem;font-weight:700;margin-bottom:1.5rem;line-height:1.5}
   .cta-button{display:inline-flex;align-items:center;gap:.5rem;background:#fff;color:#4a3ac8;font-weight:700;padding:.85rem 2rem;border-radius:.75rem;text-decoration:none;transition:background .2s ease}
   .cta-button:hover{background:#eef1ff}
+
+  .premium-figure{margin:2rem 0;border-radius:1rem;overflow:hidden;border:1px solid #e2e8f0}
+  .premium-figure img{width:100%;height:auto;display:block;margin:0;border-radius:0}
 </style>
 </head>
 <body class="bg-white text-slate-800">
@@ -113,23 +117,23 @@
 <main>
   
 
-<!-- DEFAULT PAGE LAYOUT -->
-<div class="bg-slate-50 border-b border-slate-200 py-10">
-  <div class="max-w-7xl mx-auto px-5 sm:px-8">
-    <div class="flex items-center gap-2 text-xs text-slate-400 mb-4 font-medium">
-      <a href="/" class="hover:text-brand-700">Home</a>
-      <span>›</span>
-      <span class="text-slate-600">Construction &amp; Contractor Bond Guide</span>
+  <!-- DEFAULT PAGE LAYOUT -->
+  <div class="bg-slate-50 border-b border-slate-200 py-10">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex items-center gap-2 text-xs text-slate-400 mb-4 font-medium">
+        <a href="/" class="hover:text-brand-700">Home</a>
+        <span>›</span>
+        <span class="text-slate-600">Construction &amp; Contractor Bond Guide</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight max-w-3xl">Construction &amp; Contractor Bond Guide</h1>
+      
     </div>
-    <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight max-w-3xl">Construction &amp; Contractor Bond Guide</h1>
-    
   </div>
-</div>
 
-<div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid lg:grid-cols-3 gap-10">
-  <article class="lg:col-span-2">
-    <div class="prose max-w-none">
-      <p>Construction &amp; Contractor Bond Guide</p>
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid lg:grid-cols-3 gap-10">
+    <article class="lg:col-span-2">
+      <div class="prose max-w-none">
+        <p>Construction &amp; Contractor Bond Guide</p>
 <p>In this Construction &amp; Contractor Bond Guide, you’ll learn how the most common construction bonds—bid, performance, payment, and maintenance—work together to protect project owners, ensure subcontractors and suppliers are paid, and keep public funds secure.</p>
 <p>We’ll break down why these bonds are required, what each one guarantees, how they support project completion, and what contractors should prepare before bidding or applying.</p>
 <p>By the end, you’ll understand the essential role surety bonds play in building trust, reducing risk, and supporting successful construction projects.</p>
@@ -229,30 +233,93 @@
 <p>Agriculture &amp; Food Bond Hub</p>
 <p>Surety Bond Learning Center</p>
 
-    </div>
-  </article>
-
-  <aside class="lg:col-span-1">
-    <div class="sticky top-24 space-y-5">
-      <div class="rounded-2xl p-6 text-white" style="background:linear-gradient(135deg,#4a3ac8,#352c81)">
-        <h3 class="font-bold text-lg">Get Bonded Today</h3>
-        <p class="mt-2 text-brand-200 text-sm leading-relaxed">Fast issuance, all 50 states, licensed agents standing by.</p>
-        <a href="/pages/contact/" class="mt-4 flex items-center justify-center gap-2 bg-white text-brand-700 font-bold text-sm px-5 py-3 rounded-xl hover:bg-brand-50 transition">
-          Apply Now
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
       </div>
-      <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
-        <h3 class="font-bold text-slate-900 mb-3">Bond Categories</h3>
-        <ul class="space-y-2 text-sm">
-          <li><a href="/pages/contractors-construction-bond-hub/" class="text-brand-700 hover:underline font-medium">Contract Bonds</a></li>
-          <li><a href="/pages/license-permit-bond-hub/" class="text-brand-700 hover:underline font-medium">License &amp; Permit Bonds</a></li>
-          <li><a href="/pages/court-fiduciary-bond-hub/" class="text-brand-700 hover:underline font-medium">Court &amp; Fiduciary Bonds</a></li>
-          <li><a href="/pages/environmental-reclamation-bond-hub/" class="text-brand-700 hover:underline font-medium">Environmental Bonds</a></li>
-          <li><a href="/pages/federal-blm-bond-hub/" class="text-brand-700 hover:underline font-medium">Federal &amp; BLM Bonds</a></li>
-        </ul>
-      </div>
-    </div>
-  </aside>
-</div>
+    </article>
 
+    <aside class="lg:col-span-1">
+      <div class="sticky top-24 space-y-5">
+        <div class="rounded-2xl p-6 text-white" style="background:linear-gradient(135deg,#4a3ac8,#352c81)">
+          <h3 class="font-bold text-lg">Get Bonded Today</h3>
+          <p class="mt-2 text-brand-200 text-sm leading-relaxed">Fast issuance, all 50 states, licensed agents standing by.</p>
+          <a href="/pages/contact/" class="mt-4 flex items-center justify-center gap-2 bg-white text-brand-700 font-bold text-sm px-5 py-3 rounded-xl hover:bg-brand-50 transition">
+            Apply Now
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
+          <h3 class="font-bold text-slate-900 mb-3">Bond Categories</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/pages/contractors-construction-bond-hub/" class="text-brand-700 hover:underline font-medium">Contract Bonds</a></li>
+            <li><a href="/pages/license-permit-bond-hub/" class="text-brand-700 hover:underline font-medium">License &amp; Permit Bonds</a></li>
+            <li><a href="/pages/court-fiduciary-bond-hub/" class="text-brand-700 hover:underline font-medium">Court &amp; Fiduciary Bonds</a></li>
+            <li><a href="/pages/environmental-reclamation-bond-hub/" class="text-brand-700 hover:underline font-medium">Environmental Bonds</a></li>
+            <li><a href="/pages/federal-blm-bond-hub/" class="text-brand-700 hover:underline font-medium">Federal &amp; BLM Bonds</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-slate-950 text-slate-400 mt-8">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid grid-cols-2 sm:grid-cols-4 gap-8">
+    <div class="col-span-2 sm:col-span-1">
+      <a href="/" class="flex items-center gap-2 mb-4">
+        <div class="h-8 w-8 rounded-lg flex items-center justify-center" style="background:linear-gradient(135deg,#5849e4,#352c81)">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.3">
+            <path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z"/>
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+        </div>
+        <span class="font-extrabold text-white text-[15px]">InspireSurety</span>
+      </a>
+      <p class="text-xs leading-relaxed text-slate-500">Nationwide surety bond marketplace. Licensed in all 50 states.</p>
+    </div>
+    <div>
+      <h4 class="text-white text-sm font-bold mb-4">Bond Categories</h4>
+      <ul class="space-y-2.5 text-xs">
+        <li><a href="/pages/contractors-construction-bond-hub/" class="hover:text-white transition">Contract Bonds</a></li>
+        <li><a href="/pages/license-permit-bond-hub/" class="hover:text-white transition">License &amp; Permit</a></li>
+        <li><a href="/pages/court-fiduciary-bond-hub/" class="hover:text-white transition">Court &amp; Fiduciary</a></li>
+        <li><a href="/pages/environmental-reclamation-bond-hub/" class="hover:text-white transition">Environmental</a></li>
+        <li><a href="/pages/federal-blm-bond-hub/" class="hover:text-white transition">Federal &amp; BLM</a></li>
+        <li><a href="/pages/surety-bonds/" class="hover:text-white transition">All Bonds</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white text-sm font-bold mb-4">Company</h4>
+      <ul class="space-y-2.5 text-xs">
+        <li><a href="/pages/about/" class="hover:text-white transition">About</a></li>
+        <li><a href="/pages/our-services/" class="hover:text-white transition">Our Services</a></li>
+        <li><a href="/blog/" class="hover:text-white transition">Resources</a></li>
+        <li><a href="/pages/contact/" class="hover:text-white transition">Contact</a></li>
+        <li><a href="/pages/glossary-of-surety-bond-terms/" class="hover:text-white transition">Glossary</a></li>
+        <li><a href="/pages/surety-bond-learning-center/" class="hover:text-white transition">Learning Center</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white text-sm font-bold mb-4">Legal</h4>
+      <ul class="space-y-2.5 text-xs">
+        <li><a href="/pages/privacy-policy/" class="hover:text-white transition">Privacy Policy</a></li>
+        <li><a href="/pages/terms/" class="hover:text-white transition">Terms of Use</a></li>
+        <li><a href="/pages/contact/" class="hover:text-white transition">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10 py-8 px-5 sm:px-8">
+    <div class="max-w-7xl mx-auto space-y-4">
+      <p class="text-[11px] text-slate-500 leading-relaxed font-medium uppercase tracking-wide">
+        THE INFORMATION ON THIS WEBSITE IS PROVIDED FOR INFORMATIONAL PURPOSES ONLY. Nothing on this website should be construed as a solicitation, proposal, offer, recommendation, endorsement, or advice regarding any surety or insurance product. The information on this website is of a general nature and is not intended as a substitute for individual consultation with a licensed insurance professional. YOU ARE RESPONSIBLE FOR DETERMINING WHAT INSURANCE PRODUCTS YOU NEED AND IN WHAT AMOUNTS, BASED ON YOUR UNIQUE EXPOSURE TO RISKS AND ABILITY TO BEAR LOSSES. Stephen Wright is a licensed insurance agent in Arizona. Insurance products and features are subject to underwriting criteria and may not be available in all states.
+      </p>
+      <p class="text-[12px] text-slate-600 font-medium">
+        Copyright © 2026 | Inspire Risk Advisors LLC, dba Inspire Surety | All Rights Reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
