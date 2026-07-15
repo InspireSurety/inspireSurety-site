@@ -14,7 +14,7 @@ layout: "layout.njk"
 }
 .is-lp .is-inner { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
 
-/* ---- HERO ---- */
+/* ---- HERO: LEVEL 1 (deep navy to blue to cyan) ---- */
 .is-lp .is-hero-wrap {
   background: linear-gradient(135deg, #0c1e3d 0%, #1e40af 60%, #0891b2 100%);
   padding: 68px 0 60px;
@@ -86,20 +86,20 @@ layout: "layout.njk"
 .is-lp .is-sec-gray { background: #f8fafc; padding: 60px 0; }
 .is-lp .is-sec-tint { background: linear-gradient(135deg, #eff6ff, #f0f9ff); padding: 60px 0; }
 .is-lp .is-sec h2 { font-size: clamp(21px, 2.6vw, 28px) !important; font-weight: 900 !important; color: #0f172a !important; margin: 0 0 8px !important; letter-spacing: -0.01em; }
-.is-lp .is-eyebrow { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #2563eb; margin-bottom: 10px; }
+.is-lp .is-eyebrow { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #1e40af; margin-bottom: 10px; }
 .is-lp .is-sec > p.is-desc { font-size: 15px; color: #64748b; margin: 0 0 26px; max-width: 620px; }
 
 /* ---- WHY LIST ---- */
 .is-lp .is-why-list { display: flex; flex-direction: column; gap: 0; margin: 20px 0; }
 .is-lp .is-why-item { display: flex; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid #e2e8f0; }
 .is-lp .is-why-item:last-child { border-bottom: none; }
-.is-lp .is-why-num { width: 30px; height: 30px; border-radius: 50%; background: #eff6ff; color: #2563eb; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.is-lp .is-why-num { width: 30px; height: 30px; border-radius: 50%; background: #eff6ff; color: #1e40af; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .is-lp .is-why-item span { font-size: 14.5px; color: #334155; }
 
 /* ---- ICON TILE GRID ---- */
 .is-lp .is-tile-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 24px 0; }
 .is-lp .is-tile { background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px; display: flex; gap: 14px; align-items: flex-start; transition: all 0.2s; }
-.is-lp .is-tile:hover { border-color: #93c5fd; box-shadow: 0 8px 24px rgba(37,99,235,0.1); transform: translateY(-2px); }
+.is-lp .is-tile:hover { border-color: #93c5fd; box-shadow: 0 8px 24px rgba(30,64,175,0.1); transform: translateY(-2px); }
 .is-lp .is-tile-icon { width: 42px; height: 42px; border-radius: 10px; background: #eff6ff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 20px; }
 .is-lp .is-tile h4 { font-size: 14.5px !important; font-weight: 700 !important; color: #0f172a !important; margin: 0 0 4px !important; }
 .is-lp .is-tile p { font-size: 13px; color: #64748b; margin: 0; line-height: 1.5; }
@@ -110,7 +110,7 @@ layout: "layout.njk"
 .is-lp .is-guide-row:last-child { border-bottom: none; }
 .is-lp .is-guide-row:hover { background: #f8fafc; }
 .is-lp .is-guide-row a { font-size: 14.5px; color: #1e293b; text-decoration: none; font-weight: 500; flex: 1; }
-.is-lp .is-guide-row a:hover { color: #2563eb; }
+.is-lp .is-guide-row a:hover { color: #1e40af; }
 .is-lp .is-guide-arrow { color: #93c5fd; flex-shrink: 0; }
 
 /* ---- STATE TABLE ---- */
@@ -120,13 +120,13 @@ layout: "layout.njk"
 .is-lp .is-state-table tbody td { padding: 12px 18px; border-bottom: 1px solid #f1f5f9; color: #334155; }
 .is-lp .is-state-table tbody tr:last-child td { border-bottom: none; }
 .is-lp .is-state-table tbody tr:hover td { background: #f8fafc; }
-.is-lp .is-state-table a { color: #2563eb; text-decoration: none; font-weight: 600; margin-right: 14px; }
+.is-lp .is-state-table a { color: #1e40af; text-decoration: none; font-weight: 600; margin-right: 14px; }
 .is-lp .is-state-table a:hover { text-decoration: underline; }
 
 /* ---- SIMPLE PILLS ---- */
 .is-lp .is-simple-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0; }
 .is-lp .is-simple-links a { font-size: 13.5px; color: #1e40af; background: #eff6ff; border: 1px solid #bfdbfe; padding: 9px 18px; border-radius: 999px; text-decoration: none; font-weight: 600; transition: all 0.15s; }
-.is-lp .is-simple-links a:hover { background: #2563eb; color: #fff; border-color: #2563eb; }
+.is-lp .is-simple-links a:hover { background: #1e40af; color: #fff; border-color: #1e40af; }
 
 /* ---- TOOL CARDS ---- */
 .is-lp .is-tool-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 20px 0; }
@@ -164,7 +164,6 @@ layout: "layout.njk"
 
 <div class="is-lp">
 
-  <!-- HERO -->
   <div class="is-hero-wrap">
     <div class="is-inner">
       <div class="is-hero-badge">License &amp; Permit Bonds</div>
@@ -173,7 +172,6 @@ layout: "layout.njk"
     </div>
   </div>
 
-  <!-- TOC -->
   <div class="is-toc">
     <div class="is-toc-title">On This Page</div>
     <div class="is-toc-grid">
@@ -186,7 +184,6 @@ layout: "layout.njk"
     </div>
   </div>
 
-  <!-- WHAT ARE THEY: WHITE -->
   <div class="is-sec-white" id="what-are">
     <div class="is-inner is-sec">
       <span class="is-eyebrow">Overview</span>
@@ -203,7 +200,6 @@ layout: "layout.njk"
     </div>
   </div>
 
-  <!-- CORE TYPES: GRAY -->
   <div class="is-sec-gray" id="core-types">
     <div class="is-inner is-sec">
       <span class="is-eyebrow">Core Bond Types</span>
@@ -228,7 +224,6 @@ layout: "layout.njk"
     </div>
   </div>
 
-  <!-- GUIDES: TINT -->
   <div class="is-sec-tint" id="guides">
     <div class="is-inner is-sec">
       <span class="is-eyebrow">Deep Dives</span>
@@ -258,7 +253,6 @@ layout: "layout.njk"
     </div>
   </div>
 
-  <!-- STATE TABLE: WHITE -->
   <div class="is-sec-white" id="states">
     <div class="is-inner is-sec">
       <span class="is-eyebrow">By State</span>
@@ -279,7 +273,6 @@ layout: "layout.njk"
     </div>
   </div>
 
-  <!-- RESOURCES: GRAY -->
   <div class="is-sec-gray" id="resources">
     <div class="is-inner is-sec">
       <span class="is-eyebrow">Learn More</span>
@@ -295,7 +288,6 @@ layout: "layout.njk"
     </div>
   </div>
 
-  <!-- TOOLS: TINT -->
   <div class="is-sec-tint" id="tools">
     <div class="is-inner is-sec">
       <span class="is-eyebrow">Tools</span>
@@ -308,7 +300,6 @@ layout: "layout.njk"
     </div>
   </div>
 
-  <!-- WHY IT MATTERS: WHITE -->
   <div class="is-sec-white">
     <div class="is-inner is-sec">
       <span class="is-eyebrow">Why It Matters</span>
@@ -324,7 +315,6 @@ layout: "layout.njk"
     </div>
   </div>
 
-  <!-- FINAL CTA -->
   <div class="is-final-wrap">
     <div class="is-inner">
       <h2>Get Your License or Permit Bond Today</h2>
