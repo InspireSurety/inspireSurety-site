@@ -1,270 +1,481 @@
 ---
-
 title: "License & Permit Bond Hub"
-
 layout: "layout.njk"
-
 ---
 
-
-
-License \& Permit Bond Hub
-
-
-
-Your Complete Resource for License, Permit \& Commercial Compliance Bonds
-
-License and permit bonds are required by state agencies to ensure businesses operate ethically, follow regulations, and protect consumers from financial harm. This hub organizes all your license‑related bond content into one authoritative, easy‑to‑navigate resource.
-
-
-
-What Are License \& Permit Bonds?
-
-
-
-License and permit bonds are financial guarantees required as part of a business’s licensing process. They ensure:
-
-
-
-Compliance with state and local regulations
-
-Ethical business practices
-
-Protection of consumers and the public
-
-Payment of taxes, fees, and penalties
-
-Financial accountability
-
-These bonds apply across dozens of industries — from auto dealers to money transmitters to private schools.
-
-
-
-Core Types of License \& Permit Bonds
-
-Auto Dealer Bonds - Required for new and used motor vehicle dealers to ensure ethical sales practices.
-
-
-
-Mortgage Broker Bonds - Guarantee compliance with lending laws and consumer protection regulations.
-
-
-
-Insurance Adjuster Bonds - Required for adjusters to ensure honest claims handling.
-
-
-
-Employment Agency Bonds - Protect job seekers from fraudulent or unethical agency practices.
-
-
-
-Money Transmitter Bonds - Guarantee compliance with financial reporting and consumer protection laws.
-
-
-
-Freight Broker Bonds (BMC‑84) - Required by the FMCSA to ensure payment to carriers and shippers.
-
-
-
-Utility Deposit Bonds - Allow businesses to avoid large cash deposits with utility providers.
-
-
-
-School Bonds - Required for private schools, trade schools, and vocational programs.
-
-
-
-Health Club Bonds - Protect consumers in case a gym closes or fails to honor contracts.
-
-
-
-Liquor License Bonds - Ensure compliance with alcohol tax and regulatory requirements.
-
-
-
-Collection Agency Bonds - Guarantee ethical debt collection practices.
-
-
-
-Certificate of Title Bonds - Used when a vehicle title is missing or defective.
-
-
-
-Auctioneer Bonds - Required for auctioneers to ensure proper handling of funds.
-
-
-
-Distributor \& Wholesale Bonds - Guarantee compliance with distribution, tax, and licensing rules.
-
-
-
-License \& Permit Bond Guides
-
-Business Services Bond
-
-Money Transmitter Bond Guide
-
-Freight Broker Bond Guide
-
-Janitorial Service Bond Overview
-
-Warehouse Operator Bond Guide
-
-Utility Deposit Bond Guide
-
-Union Wage \& Welfare Bond Guide
-
-Union Wage \& Fringe Bond Guide
-
-Trade School Surety Bond Guide
-
-Private School Bond Guide
-
-PBM Surety Bond Guide
-
-FMC Bond Guide (FMC‑48 \& FMC‑69)
-
-Auto Dealer Bond Guide
-
-Liquor License Bond Guide
-
-Insurance Adjuster Bond Guide
-
-Health Club Bond Guide
-
-Fuel Tax License Bond Guide
-
-Employment Agency Bond Guide
-
-Driving School Bond Guide
-
-Distributor Surety Bond Guide
-
-Collection Agency Bond Guide
-
-Certificate of Title Bond Guide
-
-Auctioneer Bond Guide
-
-State‑Specific License \& Permit Bond Pages
-
-Motor Vehicle Dealer Bonds by State
-
-
-
-Arizona
-
-Florida
-
-Texas
-
-Mortgage Broker Bonds by State
-
-
-
-Arizona
-
-
-
-​Collection Agency Bonds by State
-
-
-
-Arizona
-
-Florida
-
-Texas
-
-Health Club Bonds by State
-
-
-
-Arizona
-
-Florida
-
-Texas
-
-Money Transmitter Bonds by State
-
-
-
-Arizona
-
-Texas
-
-Educational Resources (From the Learning Center)
-
-How Bond Underwriting Works for Small Businesses
-
-What Affects the Cost of a License \& Permit Bond
-
-Surety Bond vs. Insurance
-
-How Bond Claims Work
-
-How Bond Rates Are Calculated
-
-Tools \& Checklists
-
-License \& Permit Bond Cost Calculator
-
-State Licensing Requirement Checklists
-
-Industry‑Specific Compliance Checklists
-
-Glossary of License \& Permit Bond Terms
-
-Why Businesses Need License \& Permit Bonds
-
-License and permit bonds help businesses:
-
-
-
-Meet state licensing requirements
-
-Build trust with customers
-
-Avoid penalties and license suspension
-
-Demonstrate financial responsibility
-
-Operate legally and ethically
-
-Get Your License or Permit Bond Today
-
-Fast approvals. Competitive rates. A‑rated surety partners. Licensed nationwide where permitted.
-
-
-
-
-
-License \& Permit Bond Resources
-
-License \& Permit Bond Guide
-
-Employment Agency Bonds
-
-Driving School Bonds
-
-Liquor License Bonds
-
-Private School Bonds
-
-Trade School Bonds
-
-Collection Agency Bonds
-
-Insurance Adjuster Bonds
-
-Distributor Bonds
-
-License \& Permit Bond Guides
-
-Surety Bond Basics Guide
-
-State‑by‑State Bond Requirement Guides
-
-License \& Permit Bond Blog Articles
-
+<style>
+.is-lp *, .is-lp *::before, .is-lp *::after { box-sizing: border-box; }
+.is-lp {
+  font-family: inherit;
+  color: #0f172a;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 0 40px;
+}
+
+/* ---- HERO (distinct: dark, left-aligned, icon badge) ---- */
+.is-lp .is-hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+  border-radius: 24px;
+  padding: 48px 40px;
+  margin-bottom: 56px;
+  position: relative;
+  overflow: hidden;
+}
+.is-lp .is-hero::before {
+  content: "";
+  position: absolute;
+  top: -80px; right: -80px;
+  width: 260px; height: 260px;
+  background: radial-gradient(circle, rgba(88,73,228,0.25) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.is-lp .is-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(165,174,252,0.25);
+  color: #a5aefc;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+  position: relative; z-index: 1;
+}
+.is-lp .is-hero h1 {
+  font-size: clamp(26px, 3.5vw, 36px) !important;
+  font-weight: 900 !important;
+  color: #fff !important;
+  line-height: 1.15 !important;
+  margin: 0 0 14px !important;
+  max-width: 560px;
+  position: relative; z-index: 1;
+}
+.is-lp .is-hero p {
+  font-size: 15.5px;
+  color: #cbd5e1;
+  max-width: 560px;
+  line-height: 1.7;
+  margin: 0;
+  position: relative; z-index: 1;
+}
+
+/* ---- SECTION LABELS ---- */
+.is-lp .is-sec { margin-bottom: 60px; }
+.is-lp .is-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #4a3ac8;
+  margin-bottom: 10px;
+}
+.is-lp .is-sec h2 {
+  font-size: clamp(20px, 2.5vw, 26px) !important;
+  font-weight: 800 !important;
+  color: #0f172a !important;
+  margin: 0 0 8px !important;
+}
+.is-lp .is-sec > p.is-desc { font-size: 15px; color: #64748b; margin: 0 0 28px; max-width: 620px; }
+
+/* ---- CORE BOND TYPES: ICON TILE GRID ---- */
+.is-lp .is-tile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+.is-lp .is-tile {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  transition: all 0.2s;
+}
+.is-lp .is-tile:hover {
+  border-color: #c7cdfe;
+  box-shadow: 0 8px 24px rgba(74,58,200,0.1);
+  transform: translateY(-2px);
+}
+.is-lp .is-tile-icon {
+  width: 42px; height: 42px;
+  border-radius: 10px;
+  background: #eef1ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 20px;
+}
+.is-lp .is-tile h4 { font-size: 14.5px !important; font-weight: 700 !important; color: #0f172a !important; margin: 0 0 4px !important; }
+.is-lp .is-tile p { font-size: 13px; color: #64748b; margin: 0; line-height: 1.5; }
+
+/* ---- GUIDES: TAGGED LINK LIST ---- */
+.is-lp .is-guide-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.is-lp .is-guide-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 20px;
+  background: #fff;
+  border-bottom: 1px solid #f1f5f9;
+  transition: background 0.15s;
+}
+.is-lp .is-guide-row:last-child { border-bottom: none; }
+.is-lp .is-guide-row:hover { background: #f8fafc; }
+.is-lp .is-guide-row a {
+  font-size: 14.5px;
+  color: #1e293b;
+  text-decoration: none;
+  font-weight: 500;
+  flex: 1;
+}
+.is-lp .is-guide-row a:hover { color: #4a3ac8; }
+.is-lp .is-guide-arrow { color: #c7cdfe; flex-shrink: 0; }
+
+/* ---- STATE PAGES: COMPACT TABLE ---- */
+.is-lp .is-state-table {
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.is-lp .is-state-table table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.is-lp .is-state-table thead th {
+  background: #f8fafc;
+  text-align: left;
+  padding: 12px 18px;
+  font-weight: 700;
+  color: #475569;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 13px;
+}
+.is-lp .is-state-table tbody td {
+  padding: 12px 18px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+}
+.is-lp .is-state-table tbody tr:last-child td { border-bottom: none; }
+.is-lp .is-state-table tbody tr:hover td { background: #f8fafc; }
+.is-lp .is-state-table a { color: #4a3ac8; text-decoration: none; font-weight: 600; margin-right: 14px; }
+.is-lp .is-state-table a:hover { text-decoration: underline; }
+
+/* ---- TOOLS: HIGHLIGHT CARDS ---- */
+.is-lp .is-tool-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.is-lp .is-tool-card {
+  background: linear-gradient(135deg, #eef1ff, #f8f9fc);
+  border: 1px solid #c7cdfe;
+  border-radius: 14px;
+  padding: 22px 18px;
+  text-align: center;
+}
+.is-lp .is-tool-icon { font-size: 26px; margin-bottom: 10px; }
+.is-lp .is-tool-card h4 { font-size: 13.5px !important; font-weight: 700 !important; color: #352c81 !important; margin: 0; line-height: 1.4; }
+
+/* ---- SIMPLE LINKS (educational resources) ---- */
+.is-lp .is-simple-links { display: flex; flex-wrap: wrap; gap: 10px; }
+.is-lp .is-simple-links a {
+  font-size: 13.5px;
+  color: #475569;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 8px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+.is-lp .is-simple-links a:hover { background: #eef1ff; border-color: #c7cdfe; color: #4a3ac8; }
+
+/* ---- WHY SECTION: NUMBERED INLINE ---- */
+.is-lp .is-why-list { display: flex; flex-direction: column; gap: 0; }
+.is-lp .is-why-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+.is-lp .is-why-item:last-child { border-bottom: none; }
+.is-lp .is-why-num {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: #eef1ff;
+  color: #4a3ac8;
+  font-size: 13px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.is-lp .is-why-item span { font-size: 14.5px; color: #334155; }
+
+/* ---- FINAL CTA ---- */
+.is-lp .is-final {
+  text-align: center;
+  background: linear-gradient(135deg, #1e1b4b, #4a3ac8, #5849e4);
+  border-radius: 24px;
+  padding: 52px 40px;
+  position: relative;
+  overflow: hidden;
+}
+.is-lp .is-final::before {
+  content: "";
+  position: absolute;
+  top: -60px; right: -60px;
+  width: 260px; height: 260px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 50%;
+}
+.is-lp .is-final h2 { font-size: clamp(20px, 2.8vw, 28px) !important; color: #fff !important; margin: 0 0 10px !important; position: relative; z-index: 1; }
+.is-lp .is-final p { font-size: 14.5px; color: rgba(255,255,255,0.8); margin: 0 0 24px; position: relative; z-index: 1; }
+.is-lp .is-btn-white {
+  display: inline-block;
+  background: #fff;
+  color: #4a3ac8 !important;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 800;
+  text-decoration: none !important;
+  position: relative; z-index: 1;
+  transition: all 0.2s;
+}
+.is-lp .is-btn-white:hover { background: #eef1ff; transform: translateY(-2px); }
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 640px) {
+  .is-lp .is-tile-grid { grid-template-columns: 1fr; }
+  .is-lp .is-tool-grid { grid-template-columns: 1fr; }
+  .is-lp .is-hero { padding: 32px 24px; }
+  .is-lp .is-state-table { overflow-x: auto; }
+  .is-lp .is-final { padding: 40px 24px; }
+}
+</style>
+
+<div class="is-lp">
+
+  <!-- HERO -->
+  <div class="is-hero">
+    <div class="is-hero-badge">License &amp; Permit Bonds</div>
+    <h1>Your Complete Resource for License, Permit &amp; Commercial Compliance Bonds</h1>
+    <p>License and permit bonds are required by state agencies to ensure businesses operate ethically, follow regulations, and protect consumers from financial harm. This hub organizes all your license-related bond content into one authoritative, easy-to-navigate resource.</p>
+  </div>
+
+  <!-- WHAT ARE THEY -->
+  <div class="is-sec">
+    <span class="is-label">Overview</span>
+    <h2>What Are License &amp; Permit Bonds?</h2>
+    <p class="is-desc">License and permit bonds are financial guarantees required as part of a business's licensing process. They ensure:</p>
+    <div class="is-why-list">
+      <div class="is-why-item"><div class="is-why-num">1</div><span>Compliance with state and local regulations</span></div>
+      <div class="is-why-item"><div class="is-why-num">2</div><span>Ethical business practices</span></div>
+      <div class="is-why-item"><div class="is-why-num">3</div><span>Protection of consumers and the public</span></div>
+      <div class="is-why-item"><div class="is-why-num">4</div><span>Payment of taxes, fees, and penalties</span></div>
+      <div class="is-why-item"><div class="is-why-num">5</div><span>Financial accountability</span></div>
+    </div>
+    <p style="font-size:14.5px;color:#64748b;margin-top:20px;">These bonds apply across dozens of industries — from auto dealers to money transmitters to private schools.</p>
+  </div>
+
+  <!-- CORE TYPES: ICON TILES -->
+  <div class="is-sec">
+    <span class="is-label">Core Bond Types</span>
+    <h2>Core Types of License &amp; Permit Bonds</h2>
+    <p class="is-desc">The most common bonds businesses need to get licensed and stay compliant.</p>
+    <div class="is-tile-grid">
+      <div class="is-tile">
+        <div class="is-tile-icon">🚗</div>
+        <div><h4>Auto Dealer Bonds</h4><p>Required for new and used motor vehicle dealers to ensure ethical sales practices.</p></div>
+      </div>
+      <div class="is-tile">
+        <div class="is-tile-icon">🏦</div>
+        <div><h4>Mortgage Broker Bonds</h4><p>Guarantee compliance with lending laws and consumer protection regulations.</p></div>
+      </div>
+      <div class="is-tile">
+        <div class="is-tile-icon">📋</div>
+        <div><h4>Insurance Adjuster Bonds</h4><p>Required for adjusters to ensure honest claims handling.</p></div>
+      </div>
+      <div class="is-tile">
+        <div class="is-tile-icon">💼</div>
+        <div><h4>Employment Agency Bonds</h4><p>Protect job seekers from fraudulent or unethical agency practices.</p></div>
+      </div>
+      <div class="is-tile">
+        <div class="is-tile-icon">💰</div>
+        <div><h4>Money Transmitter Bonds</h4><p>Guarantee compliance with financial reporting and consumer protection laws.</p></div>
+      </div>
+      <div class="is-tile">
+        <div class="is-tile-icon">🚛</div>
+        <div><h4>Freight Broker Bonds (BMC-84)</h4><p>Required by the FMCSA to ensure payment to carriers and shippers.</p></div>
+      </div>
+      <div class="is-tile">
+        <div class="is-tile-icon">⚡</div>
+        <div><h4>Utility Deposit Bonds</h4><p>Allow businesses to avoid large cash deposits with utility providers.</p></div>
+      </div>
+      <div class="is-tile">
+        <div class="is-tile-icon">🎓</div>
+        <div><h4>School Bonds</h4><p>Required for private schools, trade schools, and vocational programs.</p></div>
+      </div>
+      <div class="is-tile">
+        <div class="is-tile-icon">🏋️</div>
+        <div><h4>Health Club Bonds</h4><p>Protect consumers in case a gym closes or fails to honor contracts.</p></div>
+      </div>
+      <div class="is-tile">
+        <div class="is-tile-icon">🍷</div>
+        <div><h4>Liquor License Bonds</h4><p>Ensure compliance with alcohol tax and regulatory requirements.</p></div>
+      </div>
+      <div class="is-tile">
+        <div class="is-tile-icon">📞</div>
+        <div><h4>Collection Agency Bonds</h4><p>Guarantee ethical debt collection practices.</p></div>
+      </div>
+      <div class="is-tile">
+        <div class="is-tile-icon">📄</div>
+        <div><h4>Certificate of Title Bonds</h4><p>Used when a vehicle title is missing or defective.</p></div>
+      </div>
+      <div class="is-tile">
+        <div class="is-tile-icon">🔨</div>
+        <div><h4>Auctioneer Bonds</h4><p>Required for auctioneers to ensure proper handling of funds.</p></div>
+      </div>
+      <div class="is-tile">
+        <div class="is-tile-icon">📦</div>
+        <div><h4>Distributor &amp; Wholesale Bonds</h4><p>Guarantee compliance with distribution, tax, and licensing rules.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GUIDES: TAGGED LIST -->
+  <div class="is-sec">
+    <span class="is-label">Deep Dives</span>
+    <h2>License &amp; Permit Bond Guides</h2>
+    <p class="is-desc">Detailed guides on specific bond types, requirements, and costs.</p>
+    <div class="is-guide-list">
+      <div class="is-guide-row"><a href="/pages/business-services-bond-what-it-is-and-why-it-matters/">Business Services Bond</a><span class="is-guide-arrow">→</span></div>
+      <div class="is-guide-row"><a href="/pages/money-transmitter-bond/">Money Transmitter Bond Guide</a><span class="is-guide-arrow">→</span></div>
+      <div class="is-guide-row"><a href="/pages/freight-broker-bonds/">Freight Broker Bond Guide</a><span class="is-guide-arrow">→</span></div>
+      <div class="is-guide-row"><a href="/pages/janitorial-bonds/">Janitorial Service Bond Overview</a><span class="is-guide-arrow">→</span></div>
+      <div class="is-guide-row"><a href="/pages/warehouse-operator-bond/">Warehouse Operator Bond Guide</a><span class="is-guide-arrow">→</span></div>
+      <div class="is-guide-row"><a href="/pages/utility-deposit-bonds/">Utility Deposit Bond Guide</a><span class="is-guide-arrow">→</span></div>
+      <div class="is-guide-row"><a href="/pages/union-bonds/">Union Wage &amp; Welfare Bond Guide</a><span class="is-guide-arrow">→</span></div>
+      <div class="is-guide-row"><a href="/pages/trade-schools-bond/">Trade School Surety Bond Guide</a><span class="is-guide-arrow">→</span></div>
+      <div class="is-guide-row"><a href="/pages/private-schools-bond/">Private School Bond Guide</a><span class="is-guide-arrow">→</span></div>
+      <div class="is-guide-row"><a href="/pages/pharmacy-benefit-manager-pbm-bonds/">PBM Surety Bond Guide</a><span class="is-guide-arrow">→</span></div>
+      <div class="is-guide-row"><a href="/pages/motor-vehicle-dealer-bond/">Auto Dealer Bond Guide</a><span class="is-guide-arrow">→</span></div>
+      <div class="is-guide-row"><a href="/pages/liquor-license-bond/">Liquor License Bond Guide</a><span class="is-guide-arrow">→</span></div>
+      <div class="is-guide-row"><a href="/pages/insurance-adjuster-bond/">Insurance Adjuster Bond Guide</a><span class="is-guide-arrow">→</span></div>
+      <div class="is-guide-row"><a href="/pages/health-club-bonds/">Health Club Bond Guide</a><span class="is-guide-arrow">→</span></div>
+      <div class="is-guide-row"><a href="/pages/employment-agency-bond/">Employment Agency Bond Guide</a><span class="is-guide-arrow">→</span></div>
+      <div class="is-guide-row"><a href="/pages/driving-schools-bond/">Driving School Bond Guide</a><span class="is-guide-arrow">→</span></div>
+      <div class="is-guide-row"><a href="/pages/distributor-bond/">Distributor Surety Bond Guide</a><span class="is-guide-arrow">→</span></div>
+      <div class="is-guide-row"><a href="/pages/collection-agency-bond/">Collection Agency Bond Guide</a><span class="is-guide-arrow">→</span></div>
+      <div class="is-guide-row"><a href="/pages/auctioneer-bond/">Auctioneer Bond Guide</a><span class="is-guide-arrow">→</span></div>
+    </div>
+  </div>
+
+  <!-- STATE PAGES: TABLE -->
+  <div class="is-sec">
+    <span class="is-label">By State</span>
+    <h2>State-Specific License &amp; Permit Bond Pages</h2>
+    <p class="is-desc">Requirements vary by state — find your bond type and location below.</p>
+    <div class="is-state-table">
+      <table>
+        <thead>
+          <tr><th>Bond Type</th><th>Available States</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Motor Vehicle Dealer Bonds</td>
+            <td><a href="/pages/motor-vehicle-dealer-bond-arizona/">Arizona</a><a href="/pages/motor-vehicle-dealer-bond-florida/">Florida</a><a href="/pages/motor-vehicle-dealer-bond-texas/">Texas</a></td>
+          </tr>
+          <tr>
+            <td>Mortgage Broker Bonds</td>
+            <td><a href="/pages/mortgage-broker-banker-bond-arizona/">Arizona</a></td>
+          </tr>
+          <tr>
+            <td>Collection Agency Bonds</td>
+            <td><a href="/pages/collection-agency-bond-arizona/">Arizona</a><a href="/pages/collection-agency-bond-florida/">Florida</a><a href="/pages/collection-agency-bond-texas/">Texas</a></td>
+          </tr>
+          <tr>
+            <td>Health Club Bonds</td>
+            <td><a href="/pages/health-club-bonds-arizona/">Arizona</a><a href="/pages/health-club-bonds-florida/">Florida</a><a href="/pages/health-club-bonds-texas/">Texas</a></td>
+          </tr>
+          <tr>
+            <td>Money Transmitter Bonds</td>
+            <td><a href="/pages/money-transmitter-bond-arizona/">Arizona</a><a href="/pages/money-transmitter-bond-texas/">Texas</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- EDUCATIONAL RESOURCES: SIMPLE LINKS -->
+  <div class="is-sec">
+    <span class="is-label">Learn More</span>
+    <h2>Educational Resources</h2>
+    <p class="is-desc">From the Learning Center — background on how bonds work.</p>
+    <div class="is-simple-links">
+      <a href="/pages/how-surety-bond-cost-are-calculated/">How Bond Underwriting Works for Small Businesses</a>
+      <a href="/pages/how-surety-bond-cost-are-calculated/">What Affects the Cost of a License &amp; Permit Bond</a>
+      <a href="/pages/surety-bond-basics-guide/">Surety Bond vs. Insurance</a>
+      <a href="/pages/surety-bond-basics-guide/">How Bond Claims Work</a>
+      <a href="/pages/how-surety-bond-cost-are-calculated/">How Bond Rates Are Calculated</a>
+    </div>
+  </div>
+
+  <!-- TOOLS: HIGHLIGHT CARDS -->
+  <div class="is-sec">
+    <span class="is-label">Tools</span>
+    <h2>Tools &amp; Checklists</h2>
+    <div class="is-tool-grid">
+      <div class="is-tool-card">
+        <div class="is-tool-icon">🧮</div>
+        <h4>License &amp; Permit Bond Cost Calculator</h4>
+      </div>
+      <div class="is-tool-card">
+        <div class="is-tool-icon">✅</div>
+        <h4>State Licensing Requirement Checklists</h4>
+      </div>
+      <div class="is-tool-card">
+        <div class="is-tool-icon">📖</div>
+        <h4><a href="/pages/glossary-of-surety-bond-terms/" style="color:inherit;text-decoration:none;">Glossary of License &amp; Permit Bond Terms</a></h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHY SECTION -->
+  <div class="is-sec">
+    <span class="is-label">Why It Matters</span>
+    <h2>Why Businesses Need License &amp; Permit Bonds</h2>
+    <p class="is-desc">License and permit bonds help businesses:</p>
+    <div class="is-why-list">
+      <div class="is-why-item"><div class="is-why-num">1</div><span>Meet state licensing requirements</span></div>
+      <div class="is-why-item"><div class="is-why-num">2</div><span>Build trust with customers</span></div>
+      <div class="is-why-item"><div class="is-why-num">3</div><span>Avoid penalties and license suspension</span></div>
+      <div class="is-why-item"><div class="is-why-num">4</div><span>Demonstrate financial responsibility</span></div>
+      <div class="is-why-item"><div class="is-why-num">5</div><span>Operate legally and ethically</span></div>
+    </div>
+  </div>
+
+  <!-- FINAL CTA -->
+  <div class="is-final">
+    <h2>Get Your License or Permit Bond Today</h2>
+    <p>Fast approvals. Competitive rates. A-rated surety partners. Licensed nationwide where permitted.</p>
+    <a href="/pages/contact/" class="is-btn-white">Apply Now</a>
+  </div>
+
+</div>
