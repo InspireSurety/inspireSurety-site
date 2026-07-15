@@ -14,7 +14,7 @@ layout: "layout.njk"
 }
 .is-lp .is-inner { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
 
-/* ---- HERO: LEVEL 1 (deep navy to blue to cyan) ---- */
+/* ---- HERO ---- */
 .is-lp .is-hero-wrap {
   background: linear-gradient(135deg, #0c1e3d 0%, #1e40af 60%, #0891b2 100%);
   padding: 68px 0 60px;
@@ -104,19 +104,54 @@ layout: "layout.njk"
 .is-lp .is-tile h4 { font-size: 14.5px !important; font-weight: 700 !important; color: #0f172a !important; margin: 0 0 4px !important; }
 .is-lp .is-tile p { font-size: 13px; color: #64748b; margin: 0; line-height: 1.5; }
 
-/* ---- GUIDE LIST ---- */
-.is-lp .is-guide-list { display: flex; flex-direction: column; gap: 2px; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; margin: 20px 0; }
-.is-lp .is-guide-row { display: flex; align-items: center; gap: 14px; padding: 14px 20px; background: #fff; border-bottom: 1px solid #f1f5f9; }
-.is-lp .is-guide-row:last-child { border-bottom: none; }
-.is-lp .is-guide-row:hover { background: #f8fafc; }
-.is-lp .is-guide-row a { font-size: 14.5px; color: #1e293b; text-decoration: none; font-weight: 500; flex: 1; }
-.is-lp .is-guide-row a:hover { color: #1e40af; }
-.is-lp .is-guide-arrow { color: #93c5fd; flex-shrink: 0; }
+/* ---- GUIDE LIST: NOW WITH COLOR ---- */
+.is-lp .is-guide-list { display: flex; flex-direction: column; gap: 10px; margin: 24px 0; }
+.is-lp .is-guide-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 22px;
+  background: #0f172a;
+  border-radius: 14px;
+  transition: all 0.2s;
+  border-left: 4px solid #0891b2;
+}
+.is-lp .is-guide-row:hover {
+  background: #1e293b;
+  transform: translateX(4px);
+  border-left-color: #22d3ee;
+}
+.is-lp .is-guide-row a {
+  font-size: 14.5px;
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 600;
+  flex: 1;
+}
+.is-lp .is-guide-row a:hover { color: #fff; }
+.is-lp .is-guide-arrow {
+  color: #22d3ee;
+  flex-shrink: 0;
+  font-weight: 700;
+}
+.is-lp .is-guide-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: rgba(34,211,238,0.15);
+  color: #67e8f9;
+  font-size: 12px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
 
 /* ---- STATE TABLE ---- */
 .is-lp .is-state-table { border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; margin: 20px 0; }
 .is-lp .is-state-table table { width: 100%; border-collapse: collapse; font-size: 14px; }
-.is-lp .is-state-table thead th { background: #f8fafc; text-align: left; padding: 12px 18px; font-weight: 700; color: #475569; border-bottom: 1px solid #e2e8f0; font-size: 13px; }
+.is-lp .is-state-table thead th { background: linear-gradient(135deg, #1e40af, #0891b2); color: #fff; text-align: left; padding: 12px 18px; font-weight: 700; border-bottom: 1px solid #e2e8f0; font-size: 13px; }
 .is-lp .is-state-table tbody td { padding: 12px 18px; border-bottom: 1px solid #f1f5f9; color: #334155; }
 .is-lp .is-state-table tbody tr:last-child td { border-bottom: none; }
 .is-lp .is-state-table tbody tr:hover td { background: #f8fafc; }
@@ -230,25 +265,25 @@ layout: "layout.njk"
       <h2>License &amp; Permit Bond Guides</h2>
       <p class="is-desc">Detailed guides on specific bond types, requirements, and costs.</p>
       <div class="is-guide-list">
-        <div class="is-guide-row"><a href="/pages/business-services-bond-what-it-is-and-why-it-matters/">Business Services Bond</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/money-transmitter-bond/">Money Transmitter Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/freight-broker-bonds/">Freight Broker Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/janitorial-bonds/">Janitorial Service Bond Overview</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/warehouse-operator-bond/">Warehouse Operator Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/utility-deposit-bonds/">Utility Deposit Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/union-bonds/">Union Wage &amp; Welfare Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/trade-schools-bond/">Trade School Surety Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/private-schools-bond/">Private School Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/pharmacy-benefit-manager-pbm-bonds/">PBM Surety Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/motor-vehicle-dealer-bond/">Auto Dealer Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/liquor-license-bond/">Liquor License Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/insurance-adjuster-bond/">Insurance Adjuster Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/health-club-bonds/">Health Club Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/employment-agency-bond/">Employment Agency Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/driving-schools-bond/">Driving School Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/distributor-bond/">Distributor Surety Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/collection-agency-bond/">Collection Agency Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/auctioneer-bond/">Auctioneer Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">1</div><a href="/pages/business-services-bond-what-it-is-and-why-it-matters/">Business Services Bond</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">2</div><a href="/pages/money-transmitter-bond/">Money Transmitter Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">3</div><a href="/pages/freight-broker-bonds/">Freight Broker Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">4</div><a href="/pages/janitorial-bonds/">Janitorial Service Bond Overview</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">5</div><a href="/pages/warehouse-operator-bond/">Warehouse Operator Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">6</div><a href="/pages/utility-deposit-bonds/">Utility Deposit Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">7</div><a href="/pages/union-bonds/">Union Wage &amp; Welfare Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">8</div><a href="/pages/trade-schools-bond/">Trade School Surety Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">9</div><a href="/pages/private-schools-bond/">Private School Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">10</div><a href="/pages/pharmacy-benefit-manager-pbm-bonds/">PBM Surety Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">11</div><a href="/pages/motor-vehicle-dealer-bond/">Auto Dealer Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">12</div><a href="/pages/liquor-license-bond/">Liquor License Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">13</div><a href="/pages/insurance-adjuster-bond/">Insurance Adjuster Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">14</div><a href="/pages/health-club-bonds/">Health Club Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">15</div><a href="/pages/employment-agency-bond/">Employment Agency Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">16</div><a href="/pages/driving-schools-bond/">Driving School Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">17</div><a href="/pages/distributor-bond/">Distributor Surety Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">18</div><a href="/pages/collection-agency-bond/">Collection Agency Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><div class="is-guide-num">19</div><a href="/pages/auctioneer-bond/">Auctioneer Bond Guide</a><span class="is-guide-arrow">→</span></div>
       </div>
     </div>
   </div>
