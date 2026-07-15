@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Public Official Bond | InspireSurety</title>
 <meta name="description" content="">
+<link rel="icon" type="image/png" href="/assets/images/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
@@ -49,40 +50,6 @@
   .prose tr:nth-child(even) td{background:#f8f9fc}
   .prose blockquote{border-left:4px solid #4a3ac8;background:#eef1ff;padding:1rem 1.25rem;border-radius:0 .75rem .75rem 0;margin:1.5rem 0}
   .prose blockquote p{color:#352c81;font-weight:500;margin:0}
-
-  /* PREMIUM COMPONENT STYLES */
-  .premium-hero{background:linear-gradient(135deg,#f8f9fc,#eef1ff);border-radius:1.5rem;padding:2.5rem;margin:2rem 0;border:1px solid #e0e4ff}
-  .premium-hero p{font-size:1.05rem;margin-bottom:0}
-  .hero-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1rem;margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid #c7cdfe}
-  .hero-stat{text-align:center}
-  .hero-stat-num{display:block;font-size:1.75rem;font-weight:900;color:#4a3ac8}
-  .hero-stat-label{display:block;font-size:.75rem;color:#64748b;font-weight:600;margin-top:.25rem}
-
-  .steps-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;margin:2rem 0}
-  .step-card{background:#fff;border:1px solid #e2e8f0;border-radius:1rem;padding:1.75rem;position:relative;transition:all .2s ease}
-  .step-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px -8px rgba(74,58,200,.18);border-color:#c7cdfe}
-  .step-number{width:2.75rem;height:2.75rem;border-radius:50%;background:linear-gradient(135deg,#5849e4,#352c81);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:1.1rem;margin-bottom:1rem}
-  .step-title{font-size:1.05rem;font-weight:700;color:#1e293b;margin-bottom:.5rem}
-  .step-text{font-size:.9rem;color:#64748b;line-height:1.6;margin:0}
-
-  .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin:2rem 0}
-  .testimonial-card{background:#fff;border:1px solid #e2e8f0;border-left:4px solid #4a3ac8;border-radius:0 1rem 1rem 0;padding:1.75rem;position:relative;box-shadow:0 2px 8px -2px rgba(0,0,0,0.04)}
-  .testimonial-card::before{content:'"';position:absolute;top:.25rem;left:1.1rem;font-size:3rem;color:#e0e4ff;font-family:Georgia,serif;line-height:1}
-  .testimonial-text{font-size:.9rem;color:#334155;line-height:1.7;font-style:italic;margin-bottom:1rem;margin-top:.5rem}
-  .testimonial-author{display:flex;flex-direction:column}
-  .testimonial-name{font-weight:700;color:#1e293b;font-size:.875rem}
-  .testimonial-role{font-size:.75rem;color:#94a3b8}
-
-  .checklist-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:.75rem;margin:1.5rem 0}
-  .check-item{display:flex;align-items:center;gap:.6rem;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:.6rem;padding:.75rem 1rem;font-size:.875rem;color:#166534;font-weight:500}
-
-  .cta-banner{background:linear-gradient(135deg,#4a3ac8,#352c81);border-radius:1.25rem;padding:2.5rem;text-align:center;margin:2.5rem 0}
-  .cta-text{color:#f1f0ff;font-size:1.2rem;font-weight:700;margin-bottom:1.5rem;line-height:1.5}
-  .cta-button{display:inline-flex;align-items:center;gap:.5rem;background:#fff;color:#4a3ac8;font-weight:700;padding:.85rem 2rem;border-radius:.75rem;text-decoration:none;transition:background .2s ease}
-  .cta-button:hover{background:#eef1ff}
-
-  .premium-figure{margin:2rem 0;border-radius:1rem;overflow:hidden;border:1px solid #e2e8f0}
-  .premium-figure img{width:100%;height:auto;display:block;margin:0;border-radius:0}
 </style>
 </head>
 <body class="bg-white text-slate-800">
@@ -91,11 +58,8 @@
 <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
   <div class="max-w-7xl mx-auto flex items-center justify-between px-5 sm:px-8 h-16">
     <a href="/" class="flex items-center gap-2.5 shrink-0">
-      <div class="h-9 w-9 rounded-lg flex items-center justify-center shadow-sm" style="background:linear-gradient(135deg,#5849e4,#352c81)">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.3">
-          <path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z"/>
-          <path d="M9 12l2 2 4-4"/>
-        </svg>
+      <div class="h-9 w-9 rounded-lg overflow-hidden flex items-center justify-center bg-white shadow-sm border border-slate-200">
+        <img src="/assets/images/logo.png" alt="InspireSurety" class="h-full w-full object-contain p-1">
       </div>
       <span class="text-[17px] font-extrabold tracking-tight text-slate-900">Inspire<span class="text-brand-700">Surety</span></span>
     </a>
@@ -118,22 +82,9 @@
   
 
   <!-- DEFAULT PAGE LAYOUT -->
-  <div class="bg-slate-50 border-b border-slate-200 py-10">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8">
-      <div class="flex items-center gap-2 text-xs text-slate-400 mb-4 font-medium">
-        <a href="/" class="hover:text-brand-700">Home</a>
-        <span>›</span>
-        <span class="text-slate-600">Public Official Bond</span>
-      </div>
-      <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight max-w-3xl">Public Official Bond</h1>
-      
-    </div>
-  </div>
-
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid lg:grid-cols-3 gap-10">
-    <article class="lg:col-span-2">
-      <div class="prose max-w-none">
-        <p>Public Official Bond</p>
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12">
+    <div class="prose max-w-none">
+      <p>Public Official Bond</p>
 <p>Fast Approval &amp; Lowest Rates</p>
 <p>Fast approvals. Lowest rates. Guaranteed compliance with state and local requirements. Licensed nationwide. A‑rated surety partners.</p>
 <p>A public official bond ensures that elected and appointed officials carry out their duties with honesty, integrity, and full adherence to the law.</p>
@@ -234,31 +185,7 @@
 <p>Agriculture &amp; Food Bond Hub</p>
 <p>Surety Bond Learning Center</p>
 
-      </div>
-    </article>
-
-    <aside class="lg:col-span-1">
-      <div class="sticky top-24 space-y-5">
-        <div class="rounded-2xl p-6 text-white" style="background:linear-gradient(135deg,#4a3ac8,#352c81)">
-          <h3 class="font-bold text-lg">Get Bonded Today</h3>
-          <p class="mt-2 text-brand-200 text-sm leading-relaxed">Fast issuance, all 50 states, licensed agents standing by.</p>
-          <a href="/pages/contact/" class="mt-4 flex items-center justify-center gap-2 bg-white text-brand-700 font-bold text-sm px-5 py-3 rounded-xl hover:bg-brand-50 transition">
-            Apply Now
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-        </div>
-        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
-          <h3 class="font-bold text-slate-900 mb-3">Bond Categories</h3>
-          <ul class="space-y-2 text-sm">
-            <li><a href="/pages/contractors-construction-bond-hub/" class="text-brand-700 hover:underline font-medium">Contract Bonds</a></li>
-            <li><a href="/pages/license-permit-bond-hub/" class="text-brand-700 hover:underline font-medium">License &amp; Permit Bonds</a></li>
-            <li><a href="/pages/court-fiduciary-bond-hub/" class="text-brand-700 hover:underline font-medium">Court &amp; Fiduciary Bonds</a></li>
-            <li><a href="/pages/environmental-reclamation-bond-hub/" class="text-brand-700 hover:underline font-medium">Environmental Bonds</a></li>
-            <li><a href="/pages/federal-blm-bond-hub/" class="text-brand-700 hover:underline font-medium">Federal &amp; BLM Bonds</a></li>
-          </ul>
-        </div>
-      </div>
-    </aside>
+    </div>
   </div>
 
   
@@ -269,11 +196,8 @@
   <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid grid-cols-2 sm:grid-cols-4 gap-8">
     <div class="col-span-2 sm:col-span-1">
       <a href="/" class="flex items-center gap-2 mb-4">
-        <div class="h-8 w-8 rounded-lg flex items-center justify-center" style="background:linear-gradient(135deg,#5849e4,#352c81)">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.3">
-            <path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z"/>
-            <path d="M9 12l2 2 4-4"/>
-          </svg>
+        <div class="h-8 w-8 rounded-lg overflow-hidden flex items-center justify-center bg-white">
+          <img src="/assets/images/logo.png" alt="InspireSurety" class="h-full w-full object-contain p-1">
         </div>
         <span class="font-extrabold text-white text-[15px]">InspireSurety</span>
       </a>
