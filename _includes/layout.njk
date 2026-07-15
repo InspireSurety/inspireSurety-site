@@ -1,19 +1,410 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>{{ title }}</title>
-  <link rel="stylesheet" href="/assets/css/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ title }} | InspireSurety</title>
+<meta name="description" content="{{ description }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: { sans: ['Inter','sans-serif'] },
+        colors: {
+          brand: {
+            50:'#eef1ff',100:'#e0e4ff',200:'#c7cdfe',300:'#a5aefc',
+            400:'#8288f8',500:'#6a67f0',600:'#5849e4',700:'#4a3ac8',
+            800:'#3d31a2',900:'#352c81',950:'#1e1856'
+          }
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased}
+  .lift{transition:transform .22s cubic-bezier(.2,.8,.2,1),box-shadow .22s ease,border-color .22s ease}
+  .lift:hover{transform:translateY(-4px);box-shadow:0 14px 36px -8px rgba(74,58,200,.22);border-color:#c7cdfe}
+  .dot-w{background-image:radial-gradient(rgba(255,255,255,.11) 1.5px,transparent 1.5px);background-size:24px 24px}
+  .prose h1{font-size:2rem;font-weight:900;color:#0f172a;margin-bottom:1rem;line-height:1.1}
+  .prose h2{font-size:1.4rem;font-weight:800;color:#1e293b;margin-top:2rem;margin-bottom:.75rem;border-bottom:2px solid #eef1ff;padding-bottom:.5rem}
+  .prose h3{font-size:1.1rem;font-weight:700;color:#1e293b;margin-top:1.5rem;margin-bottom:.5rem}
+  .prose p{color:#475569;line-height:1.8;margin-bottom:1rem;font-size:.9375rem}
+  .prose ul{list-style:none;padding:0;margin-bottom:1rem}
+  .prose ul li{color:#475569;font-size:.9375rem;line-height:1.75;padding-left:1.5rem;position:relative;margin-bottom:.4rem}
+  .prose ul li::before{content:"";position:absolute;left:0;top:.65em;height:7px;width:7px;border-radius:50%;background:#4a3ac8}
+  .prose ol{padding-left:1.5rem;margin-bottom:1rem}
+  .prose ol li{color:#475569;font-size:.9375rem;line-height:1.75;margin-bottom:.4rem}
+  .prose a{color:#4a3ac8;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+  .prose a:hover{color:#352c81}
+  .prose strong{color:#1e293b;font-weight:700}
+  .prose table{width:100%;border-collapse:collapse;margin-bottom:1.5rem;font-size:.875rem}
+  .prose th{background:#eef1ff;color:#352c81;font-weight:700;padding:.75rem 1rem;text-align:left;border:1px solid #c7cdfe}
+  .prose td{padding:.7rem 1rem;border:1px solid #e2e8f0;color:#475569;vertical-align:top}
+  .prose tr:nth-child(even) td{background:#f8f9fc}
+  .prose blockquote{border-left:4px solid #4a3ac8;background:#eef1ff;padding:1rem 1.25rem;border-radius:0 .75rem .75rem 0;margin:1.5rem 0}
+  .prose blockquote p{color:#352c81;font-weight:500;margin:0}
+  @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+  .r1{animation:rise .6s ease both}
+  .r2{animation:rise .6s .1s ease both}
+  .r3{animation:rise .6s .2s ease both}
+</style>
 </head>
-<body>
+<body class="bg-white text-slate-800">
 
-  {% include "header.njk" %}
+<!-- ======= HEADER ======= -->
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-5 sm:px-8 h-16">
 
-  <main>
-    {{ content | safe }}
-  </main>
+    <a href="/" class="flex items-center gap-2.5 shrink-0">
+      <div class="h-9 w-9 rounded-lg flex items-center justify-center shadow-sm" style="background:linear-gradient(135deg,#5849e4,#352c81)">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.3">
+          <path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z"/>
+          <path d="M9 12l2 2 4-4"/>
+        </svg>
+      </div>
+      <span class="text-[17px] font-extrabold tracking-tight text-slate-900">Inspire<span class="text-brand-700">Surety</span></span>
+    </a>
 
-  {% include "footer.njk" %}
+    <ul class="hidden md:flex items-center gap-8 text-[13.5px] font-semibold text-slate-500">
+      <li><a href="/" class="hover:text-brand-700 transition-colors">Home</a></li>
+      <li><a href="/pages/surety-bonds/" class="hover:text-brand-700 transition-colors">Bond Categories</a></li>
+      <li><a href="/blog/" class="hover:text-brand-700 transition-colors">Resources</a></li>
+      <li><a href="/pages/contact/" class="hover:text-brand-700 transition-colors">Contact</a></li>
+    </ul>
+
+    <div class="flex items-center gap-3">
+      <a href="/pages/contact/" class="hidden sm:block text-[13px] font-bold text-brand-700 border border-brand-200 hover:bg-brand-50 px-4 py-2 rounded-lg transition">Talk to an Agent</a>
+      <a href="/pages/surety-bonds/" class="text-[13px] font-bold text-white px-5 py-2.5 rounded-lg shadow-sm transition" style="background:#4a3ac8" onmouseover="this.style.background='#3d31a2'" onmouseout="this.style.background='#4a3ac8'">Get a Bond</a>
+    </div>
+
+  </div>
+</header>
+
+<!-- ======= MAIN ======= -->
+<main>
+
+  {% if page.url == "/" %}
+
+  <!-- ========================================
+       HOME PAGE
+  ======================================== -->
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden" style="background:linear-gradient(145deg,#0f0c29,#1e1b4b,#312e81)">
+    <div class="absolute inset-0 dot-w pointer-events-none"></div>
+    <div class="absolute -top-32 right-0 w-[500px] h-[500px] rounded-full pointer-events-none" style="background:radial-gradient(circle,rgba(99,102,241,.22) 0%,transparent 70%)"></div>
+    <div class="absolute bottom-0 -left-16 w-[380px] h-[380px] rounded-full pointer-events-none" style="background:radial-gradient(circle,rgba(79,70,229,.14) 0%,transparent 70%)"></div>
+
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-28 grid lg:grid-cols-2 gap-14 items-center">
+      <div>
+        <div class="r1 inline-flex items-center gap-2 border border-brand-400/25 bg-white/5 text-brand-300 text-[11px] font-bold tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">
+          <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          Licensed in All 50 States
+        </div>
+        <h1 class="r1 text-4xl sm:text-5xl lg:text-[3.25rem] font-black text-white leading-[1.06] tracking-tight">Your Trusted<br>Surety Bond<br>Partner</h1>
+        <p class="r2 mt-5 text-slate-300 text-[15px] sm:text-base leading-relaxed max-w-lg">Focused. Fast. Nationwide. Secure projects, licenses, and business obligations with a reliable surety bond partner — backed by access to over 8,000 commercial surety bond solutions for niche and large-scale needs.</p>
+        <div class="r3 mt-8 flex flex-wrap items-center gap-4">
+          <a href="/pages/surety-bonds/" class="inline-flex items-center gap-2 font-bold text-[15px] text-white px-7 py-3.5 rounded-xl shadow-lg transition" style="background:#5849e4" onmouseover="this.style.background='#4a3ac8'" onmouseout="this.style.background='#5849e4'">
+            Browse Bonds
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="/pages/contact/" class="text-[14px] font-semibold text-brand-200 hover:text-white transition underline underline-offset-4">Talk to an Agent</a>
+        </div>
+        <div class="mt-12 grid grid-cols-3 max-w-sm divide-x divide-white/10 border-t border-white/10 pt-8">
+          <div class="text-center"><p class="text-2xl font-black text-white">8,000+</p><p class="text-xs text-slate-400 mt-0.5">Bond Types</p></div>
+          <div class="text-center"><p class="text-2xl font-black text-white">50</p><p class="text-xs text-slate-400 mt-0.5">States</p></div>
+          <div class="text-center"><p class="text-2xl font-black text-white">24hr</p><p class="text-xs text-slate-400 mt-0.5">Issuance</p></div>
+        </div>
+      </div>
+
+      <!-- Hero right panel -->
+      <div class="hidden lg:grid grid-cols-2 gap-3">
+        <div class="col-span-2 rounded-2xl p-5 border border-white/10" style="background:rgba(255,255,255,.05)">
+          <p class="text-white/40 text-[10px] font-bold tracking-widest uppercase mb-3">Bond Programs</p>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="rounded-xl p-4" style="background:rgba(255,255,255,.07)">
+              <p class="text-[2rem] font-black text-white leading-none">8,000<span class="text-brand-400">+</span></p>
+              <p class="text-slate-400 text-[12px] mt-1">Bond Solutions</p>
+            </div>
+            <div class="rounded-xl p-4" style="background:rgba(255,255,255,.07)">
+              <p class="text-[2rem] font-black text-white leading-none">$20<span class="text-brand-400">M</span></p>
+              <p class="text-slate-400 text-[12px] mt-1">Max Program Size</p>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-2xl p-5 border flex flex-col gap-2" style="background:rgba(88,73,228,.35);border-color:rgba(165,174,252,.2)">
+          <div class="h-8 w-8 rounded-lg flex items-center justify-center" style="background:rgba(255,255,255,.12)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a5aefc" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg>
+          </div>
+          <p class="text-white font-bold text-sm mt-1">Fast Issuance</p>
+          <p class="text-white/45 text-xs leading-relaxed">Bids, permits &amp; contract starts</p>
+        </div>
+        <div class="rounded-2xl p-5 border flex flex-col gap-2" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.09)">
+          <div class="h-8 w-8 rounded-lg flex items-center justify-center" style="background:rgba(255,255,255,.10)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a5aefc" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M2.5 9h19M2.5 15h19M12 3c2.5 2.6 3.8 5.8 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.8-3.8-9S9.5 5.6 12 3z"/></svg>
+          </div>
+          <p class="text-white font-bold text-sm mt-1">Nationwide</p>
+          <p class="text-white/45 text-xs leading-relaxed">All 50 states covered</p>
+        </div>
+        <div class="rounded-2xl p-5 border flex flex-col gap-2" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.09)">
+          <div class="h-8 w-8 rounded-lg flex items-center justify-center" style="background:rgba(255,255,255,.10)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a5aefc" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z"/></svg>
+          </div>
+          <p class="text-white font-bold text-sm mt-1">License Compliance</p>
+          <p class="text-white/45 text-xs leading-relaxed">All industries covered</p>
+        </div>
+        <div class="rounded-2xl p-5 border flex flex-col gap-2" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.09)">
+          <div class="h-8 w-8 rounded-lg flex items-center justify-center" style="background:rgba(255,255,255,.10)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a5aefc" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+          </div>
+          <p class="text-white font-bold text-sm mt-1">Same-Day Approvals</p>
+          <p class="text-white/45 text-xs leading-relaxed">Many cases approved instantly</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES STRIP -->
+  <section class="py-14 bg-white border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="lift bg-white border border-slate-200 rounded-2xl overflow-hidden">
+        <div class="h-1 w-full" style="background:linear-gradient(90deg,#5849e4,#8288f8)"></div>
+        <div class="p-6">
+          <div class="h-11 w-11 rounded-xl flex items-center justify-center mb-4" style="background:#eef1ff">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4a3ac8" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg>
+          </div>
+          <h3 class="font-bold text-slate-900">Fast Issuance</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">Prequalification and bond issuance for bids, permits, and contract starts, including contract bond placements for public and private projects.</p>
+        </div>
+      </div>
+      <div class="lift bg-white border border-slate-200 rounded-2xl overflow-hidden">
+        <div class="h-1 w-full" style="background:linear-gradient(90deg,#059669,#34d399)"></div>
+        <div class="p-6">
+          <div class="h-11 w-11 rounded-xl flex items-center justify-center mb-4" style="background:#d1fae5">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+          </div>
+          <h3 class="font-bold text-slate-900">License Compliance</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">Streamlined contractor license bond support for state and local requirements across multiple industries and professions.</p>
+        </div>
+      </div>
+      <div class="lift bg-white border border-slate-200 rounded-2xl overflow-hidden">
+        <div class="h-1 w-full" style="background:linear-gradient(90deg,#d97706,#fbbf24)"></div>
+        <div class="p-6">
+          <div class="h-11 w-11 rounded-xl flex items-center justify-center mb-4" style="background:#fffbeb">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z"/></svg>
+          </div>
+          <h3 class="font-bold text-slate-900">Business Protection</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">Fidelity bond options designed to safeguard companies from employee dishonesty and protect client assets.</p>
+        </div>
+      </div>
+      <div class="lift bg-white border border-slate-200 rounded-2xl overflow-hidden">
+        <div class="h-1 w-full" style="background:linear-gradient(90deg,#0891b2,#38bdf8)"></div>
+        <div class="p-6">
+          <div class="h-11 w-11 rounded-xl flex items-center justify-center mb-4" style="background:#ecfeff">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0891b2" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M2.5 9h19M2.5 15h19M12 3c2.5 2.6 3.8 5.8 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.8-3.8-9S9.5 5.6 12 3z"/></svg>
+          </div>
+          <h3 class="font-bold text-slate-900">Nationwide Coverage</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">Compliant documentation and experienced agents supporting multi-jurisdictional filings and bonded work across all states.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOME MARKDOWN CONTENT -->
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14">
+    <div class="prose max-w-none">
+      {{ content | safe }}
+    </div>
+  </div>
+
+  {% elif tags and "blog" in tags %}
+
+  <!-- ========================================
+       BLOG POST
+  ======================================== -->
+  <div class="bg-slate-50 border-b border-slate-200 py-8">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex items-center gap-2 text-xs text-slate-400 mb-4 font-medium">
+        <a href="/" class="hover:text-brand-700">Home</a>
+        <span>›</span>
+        <a href="/blog/" class="hover:text-brand-700">Resources</a>
+        <span>›</span>
+        <span class="text-slate-600">{{ title }}</span>
+      </div>
+      {% if tags %}
+      <div class="flex flex-wrap gap-2 mb-3">
+        {% for tag in tags %}
+        {% if tag != "blog" %}
+        <span class="text-[11px] font-bold uppercase tracking-wide bg-brand-100 text-brand-700 px-3 py-1 rounded-full">{{ tag }}</span>
+        {% endif %}
+        {% endfor %}
+      </div>
+      {% endif %}
+      <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight max-w-3xl">{{ title }}</h1>
+      {% if description %}<p class="mt-3 text-lg text-slate-500 max-w-2xl leading-relaxed">{{ description }}</p>{% endif %}
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid lg:grid-cols-3 gap-10">
+    <article class="lg:col-span-2">
+      <div class="prose max-w-none">
+        {{ content | safe }}
+      </div>
+    </article>
+    <aside class="lg:col-span-1">
+      <div class="sticky top-24 space-y-5">
+        <div class="rounded-2xl p-6 text-white" style="background:linear-gradient(135deg,#4a3ac8,#352c81)">
+          <h3 class="font-bold text-lg">Get This Bond Today</h3>
+          <p class="mt-2 text-brand-200 text-sm leading-relaxed">Fast issuance, nationwide coverage, licensed agents ready to help.</p>
+          <a href="/pages/contact/" class="mt-4 flex items-center justify-center gap-2 bg-white text-brand-700 font-bold text-sm px-5 py-3 rounded-xl hover:bg-brand-50 transition">
+            Apply Now
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
+          <h3 class="font-bold text-slate-900 mb-4">Bond Categories</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/pages/contractors-construction-bond-hub/" class="text-brand-700 hover:underline font-semibold">Contract Bonds</a></li>
+            <li><a href="/pages/license-permit-bond-hub/" class="text-brand-700 hover:underline font-semibold">License &amp; Permit Bonds</a></li>
+            <li><a href="/pages/court-fiduciary-bond-hub/" class="text-brand-700 hover:underline font-semibold">Court &amp; Fiduciary Bonds</a></li>
+            <li><a href="/pages/environmental-reclamation-bond-hub/" class="text-brand-700 hover:underline font-semibold">Environmental Bonds</a></li>
+            <li><a href="/pages/federal-blm-bond-hub/" class="text-brand-700 hover:underline font-semibold">Federal &amp; BLM Bonds</a></li>
+          </ul>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-2xl p-6">
+          <h3 class="font-bold text-slate-900 mb-1">Have Questions?</h3>
+          <p class="text-sm text-slate-500 mb-4">Stephen Wright · Licensed Agent · Arizona</p>
+          <a href="/pages/contact/" class="flex items-center justify-center gap-2 border border-brand-300 text-brand-700 font-bold text-sm px-5 py-2.5 rounded-xl hover:bg-brand-50 transition">Contact Us</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  {% else %}
+
+  <!-- ========================================
+       ALL OTHER PAGES (services, about, etc.)
+  ======================================== -->
+  <div class="bg-slate-50 border-b border-slate-200 py-10">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex items-center gap-2 text-xs text-slate-400 mb-4 font-medium">
+        <a href="/" class="hover:text-brand-700">Home</a>
+        <span>›</span>
+        <span class="text-slate-600">{{ title }}</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight max-w-3xl">{{ title }}</h1>
+      {% if description %}<p class="mt-3 text-lg text-slate-500 max-w-2xl leading-relaxed">{{ description }}</p>{% endif %}
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid lg:grid-cols-3 gap-10">
+    <article class="lg:col-span-2">
+      <div class="prose max-w-none">
+        {{ content | safe }}
+      </div>
+    </article>
+    <aside class="lg:col-span-1">
+      <div class="sticky top-24 space-y-5">
+        <div class="rounded-2xl p-6 text-white" style="background:linear-gradient(135deg,#4a3ac8,#352c81)">
+          <h3 class="font-bold text-lg">Get Bonded Today</h3>
+          <p class="mt-2 text-brand-200 text-sm leading-relaxed">Fast issuance, all 50 states, licensed agents standing by.</p>
+          <a href="/pages/contact/" class="mt-4 flex items-center justify-center gap-2 bg-white text-brand-700 font-bold text-sm px-5 py-3 rounded-xl hover:bg-brand-50 transition">
+            Apply Now
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
+          <h3 class="font-bold text-slate-900 mb-4">Bond Categories</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/pages/contractors-construction-bond-hub/" class="text-brand-700 hover:underline font-semibold">Contract Bonds</a></li>
+            <li><a href="/pages/license-permit-bond-hub/" class="text-brand-700 hover:underline font-semibold">License &amp; Permit Bonds</a></li>
+            <li><a href="/pages/court-fiduciary-bond-hub/" class="text-brand-700 hover:underline font-semibold">Court &amp; Fiduciary Bonds</a></li>
+            <li><a href="/pages/environmental-reclamation-bond-hub/" class="text-brand-700 hover:underline font-semibold">Environmental Bonds</a></li>
+            <li><a href="/pages/federal-blm-bond-hub/" class="text-brand-700 hover:underline font-semibold">Federal &amp; BLM Bonds</a></li>
+          </ul>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-2xl p-6">
+          <h3 class="font-bold text-slate-900 mb-1">Have Questions?</h3>
+          <p class="text-sm text-slate-500 mb-4">Stephen Wright · Licensed Agent · Arizona</p>
+          <a href="/pages/contact/" class="flex items-center justify-center gap-2 border border-brand-300 text-brand-700 font-bold text-sm px-5 py-2.5 rounded-xl hover:bg-brand-50 transition">Contact Us</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  {% endif %}
+
+</main>
+
+<!-- ======= FOOTER ======= -->
+<footer class="bg-slate-950 text-slate-400 mt-8">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid grid-cols-2 sm:grid-cols-4 gap-8">
+
+    <div class="col-span-2 sm:col-span-1">
+      <a href="/" class="flex items-center gap-2 mb-4">
+        <div class="h-8 w-8 rounded-lg flex items-center justify-center" style="background:linear-gradient(135deg,#5849e4,#352c81)">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.3">
+            <path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z"/>
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+        </div>
+        <span class="font-extrabold text-white text-[15px]">InspireSurety</span>
+      </a>
+      <p class="text-xs leading-relaxed text-slate-500">Nationwide surety bond marketplace. Licensed in all 50 states.</p>
+    </div>
+
+    <div>
+      <h4 class="text-white text-sm font-bold mb-4">Bond Categories</h4>
+      <ul class="space-y-2.5 text-xs">
+        <li><a href="/pages/contractors-construction-bond-hub/" class="hover:text-white transition">Contract Bonds</a></li>
+        <li><a href="/pages/license-permit-bond-hub/" class="hover:text-white transition">License &amp; Permit</a></li>
+        <li><a href="/pages/court-fiduciary-bond-hub/" class="hover:text-white transition">Court &amp; Fiduciary</a></li>
+        <li><a href="/pages/environmental-reclamation-bond-hub/" class="hover:text-white transition">Environmental</a></li>
+        <li><a href="/pages/federal-blm-bond-hub/" class="hover:text-white transition">Federal &amp; BLM</a></li>
+        <li><a href="/pages/surety-bonds/" class="hover:text-white transition">All Bonds</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-white text-sm font-bold mb-4">Company</h4>
+      <ul class="space-y-2.5 text-xs">
+        <li><a href="/pages/about/" class="hover:text-white transition">About</a></li>
+        <li><a href="/pages/our-services/" class="hover:text-white transition">Our Services</a></li>
+        <li><a href="/blog/" class="hover:text-white transition">Resources</a></li>
+        <li><a href="/pages/contact/" class="hover:text-white transition">Contact</a></li>
+        <li><a href="/pages/glossary-of-surety-bond-terms/" class="hover:text-white transition">Glossary</a></li>
+        <li><a href="/pages/surety-bond-learning-center/" class="hover:text-white transition">Learning Center</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-white text-sm font-bold mb-4">Legal</h4>
+      <ul class="space-y-2.5 text-xs">
+        <li><a href="/pages/privacy-policy/" class="hover:text-white transition">Privacy Policy</a></li>
+        <li><a href="/pages/terms/" class="hover:text-white transition">Terms of Use</a></li>
+        <li><a href="/pages/contact/" class="hover:text-white transition">Contact Us</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="border-t border-white/10 py-8 px-5 sm:px-8">
+    <div class="max-w-7xl mx-auto space-y-4">
+      <p class="text-[11px] text-slate-500 leading-relaxed font-medium uppercase tracking-wide">
+        THE INFORMATION ON THIS WEBSITE IS PROVIDED FOR INFORMATIONAL PURPOSES ONLY. Nothing on this website should be construed as a solicitation, proposal, offer, recommendation, endorsement, or advice regarding any surety or insurance product. The information on this website is of a general nature and is not intended as a substitute for individual consultation with a licensed insurance professional. YOU ARE RESPONSIBLE FOR DETERMINING WHAT INSURANCE PRODUCTS YOU NEED AND IN WHAT AMOUNTS, BASED ON YOUR UNIQUE EXPOSURE TO RISKS AND ABILITY TO BEAR LOSSES. Stephen Wright is a licensed insurance agent in Arizona. Insurance products and features are subject to underwriting criteria and may not be available in all states.
+      </p>
+      <p class="text-[12px] text-slate-600 font-medium">
+        Copyright © 2026 | Inspire Risk Advisors LLC, dba Inspire Surety | All Rights Reserved.
+      </p>
+    </div>
+  </div>
+
+</footer>
 
 </body>
 </html>
