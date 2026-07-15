@@ -1,4 +1,4 @@
-\---
+---
 
 title: "YOUR TITLE HERE"
 

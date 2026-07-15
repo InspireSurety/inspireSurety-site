@@ -1,4 +1,4 @@
-\---
+---
 
 title: "Licensing checklists"
 
