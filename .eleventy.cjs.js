@@ -3,16 +3,12 @@ module.exports = function(eleventyConfig) {
   // Pass through assets
   eleventyConfig.addPassthroughCopy("assets");
 
-  // Set frontmatter options
-  eleventyConfig.setFrontMatterParsingOptions({
-    excerpt: true,
-    excerpt_separator: "<!-- excerpt -->"
-  });
-
   return {
-    templateFormats: ["md", "njk", "html", "liquid"],
+    templateFormats: ["md", "njk", "html"],
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
+    dataTemplateEngine: "njk",
+    
     dir: {
       input: ".",
       includes: "_includes",
