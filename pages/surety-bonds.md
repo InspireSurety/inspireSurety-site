@@ -3,7 +3,6 @@ title: "Surety Bonds"
 layout: "layout.njk"
 ---
 
-# Surety Bonds
 
 <div class="premium-hero">
 <p>Over 8,000 bond types available. Fast approvals. Lowest rates. Nationwide coverage. A-rated surety partners.</p>

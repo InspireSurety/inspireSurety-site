@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ title }} | InspireSurety</title>
-<meta name="description" content="{{ description }}">
+<title>Standby Trust Agreement | InspireSurety</title>
+<meta name="description" content="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
@@ -111,110 +111,7 @@
 
 <!-- PAGE CONTENT -->
 <main>
-  {% if layout == 'home' %}
-
-  <!-- HOME HERO -->
-  <section class="relative overflow-hidden" style="background:linear-gradient(145deg,#0f0c29,#1e1b4b,#312e81)">
-    <div class="absolute inset-0 dot-w pointer-events-none"></div>
-    <div class="absolute -top-32 right-0 w-[500px] h-[500px] rounded-full pointer-events-none" style="background:radial-gradient(circle,rgba(99,102,241,.22) 0%,transparent 70%)"></div>
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-28 text-center">
-      <div class="inline-flex items-center gap-2 border border-brand-400/25 bg-white/5 text-brand-300 text-[11px] font-bold tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">
-        <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-        Licensed in All 50 States
-      </div>
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.06] tracking-tight max-w-3xl mx-auto">{{ title }}</h1>
-      <p class="mt-5 text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">{{ description }}</p>
-      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/pages/surety-bonds/" class="inline-flex items-center justify-center gap-2 font-bold text-[15px] text-white px-8 py-4 rounded-xl shadow-lg transition" style="background:#5849e4" onmouseover="this.style.background='#4a3ac8'" onmouseout="this.style.background='#5849e4'">
-          Browse Bonds
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a href="/pages/contact/" class="inline-flex items-center justify-center gap-2 font-bold text-[15px] text-brand-200 border border-brand-400/40 px-8 py-4 rounded-xl hover:bg-white/5 transition">
-          Talk to an Agent
-        </a>
-      </div>
-      <div class="mt-14 grid grid-cols-3 max-w-sm mx-auto divide-x divide-white/10 border-t border-white/10 pt-8">
-        <div><p class="text-2xl font-black text-white">8,000+</p><p class="text-xs text-slate-400 mt-0.5">Bond Types</p></div>
-        <div><p class="text-2xl font-black text-white">50</p><p class="text-xs text-slate-400 mt-0.5">States</p></div>
-        <div><p class="text-2xl font-black text-white">24hr</p><p class="text-xs text-slate-400 mt-0.5">Issuance</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOME BODY CONTENT -->
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-16">
-    <div class="prose max-w-none">
-      {{ content | safe }}
-    </div>
-  </div>
-
-  {% elif layout == 'blog' %}
-
-  <!-- BLOG POST LAYOUT -->
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid lg:grid-cols-3 gap-10">
-    <article class="lg:col-span-2">
-      <div class="mb-6">
-        {% if tags %}
-        <div class="flex flex-wrap gap-2 mb-4">
-          {% for tag in tags %}
-          <span class="text-[11px] font-bold uppercase tracking-wide bg-brand-100 text-brand-700 px-3 py-1 rounded-full">{{ tag }}</span>
-          {% endfor %}
-        </div>
-        {% endif %}
-        <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight">{{ title }}</h1>
-        {% if description %}<p class="mt-3 text-lg text-slate-500 leading-relaxed">{{ description }}</p>{% endif %}
-      </div>
-      <div class="h-px bg-slate-200 mb-8"></div>
-      <div class="prose max-w-none">
-        {{ content | safe }}
-      </div>
-    </article>
-
-    <aside class="lg:col-span-1">
-      <div class="sticky top-24 space-y-5">
-        <div class="rounded-2xl p-6 text-white" style="background:linear-gradient(135deg,#4a3ac8,#352c81)">
-          <h3 class="font-bold text-lg">Get This Bond Today</h3>
-          <p class="mt-2 text-brand-200 text-sm leading-relaxed">Fast issuance, nationwide coverage, licensed agents ready to help.</p>
-          <a href="/pages/contact/" class="mt-4 flex items-center justify-center gap-2 bg-white text-brand-700 font-bold text-sm px-5 py-3 rounded-xl hover:bg-brand-50 transition">
-            Apply Now
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-        </div>
-        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
-          <h3 class="font-bold text-slate-900 mb-4">Quick Facts</h3>
-          <ul class="space-y-2.5 text-sm text-slate-600">
-            <li class="flex items-center gap-2">
-              <span class="h-5 w-5 rounded-full flex items-center justify-center shrink-0" style="background:#eef1ff">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#4a3ac8" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
-              </span>
-              Licensed in all 50 states
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="h-5 w-5 rounded-full flex items-center justify-center shrink-0" style="background:#eef1ff">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#4a3ac8" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
-              </span>
-              Same-day approvals available
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="h-5 w-5 rounded-full flex items-center justify-center shrink-0" style="background:#eef1ff">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#4a3ac8" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
-              </span>
-              8,000+ bond solutions
-            </li>
-          </ul>
-        </div>
-        <div class="bg-white border border-slate-200 rounded-2xl p-6">
-          <h3 class="font-bold text-slate-900 mb-1">Have Questions?</h3>
-          <p class="text-sm text-slate-500 mb-4">Stephen Wright, Licensed Agent</p>
-          <a href="/pages/contact/" class="flex items-center justify-center gap-2 border border-brand-300 text-brand-700 font-bold text-sm px-5 py-2.5 rounded-xl hover:bg-brand-50 transition">
-            Contact Us
-          </a>
-        </div>
-      </div>
-    </aside>
-  </div>
-
-{% else %}
+  
 
 <!-- DEFAULT PAGE LAYOUT -->
 <div class="bg-slate-50 border-b border-slate-200 py-10">
@@ -222,17 +119,117 @@
     <div class="flex items-center gap-2 text-xs text-slate-400 mb-4 font-medium">
       <a href="/" class="hover:text-brand-700">Home</a>
       <span>›</span>
-      <span class="text-slate-600">{{ title }}</span>
+      <span class="text-slate-600">Standby Trust Agreement</span>
     </div>
-    <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight max-w-3xl">{{ title }}</h1>
-    {% if description %}<p class="mt-3 text-lg text-slate-500 max-w-2xl leading-relaxed">{{ description }}</p>{% endif %}
+    <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight max-w-3xl">Standby Trust Agreement</h1>
+    
   </div>
 </div>
 
 <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid lg:grid-cols-3 gap-10">
   <article class="lg:col-span-2">
     <div class="prose max-w-none">
-      {{ content | safe }}
+      <p>Standby Trust Agreement</p>
+<p>Closure &amp; Post‑Closure Compliance</p>
+<p>Fast setup. DEP‑approved language. Required for closure and post‑closure financial assurance. Trusted by environmental contractors, waste facilities, and remediation firms nationwide.</p>
+<p>A Standby Trust Agreement (STA) provides the legally required framework for holding financial assurance funds if a closure or post‑closure surety bond is ever triggered. It ensures the Department of Environmental Protection can immediately access and manage funds without delay, protecting public health and the environment.</p>
+<p>With an STA in place, operators demonstrate full regulatory compliance, financial responsibility, and readiness to meet all closure obligations. It also reassures regulators that cleanup and site restoration can proceed smoothly if needed.</p>
+<p>Need environmental or reclamation bond guidance? Visit our Environmental &amp; Reclamation Bond Hub for reclamation, remediation, mining, and oil &amp; gas bond resources.</p>
+<p>![](/assets/images/Bond-Environmental Bond-Standard Trust Agreement.png)</p>
+<p>What Is a Standby Trust Agreement for Closure / Post‑Closure?</p>
+<p> A Standby Trust Agreement (STA) is a legally required trust document used by the Department of Environmental Protection (DEP) when a company provides a closure or post‑closure surety bond. The STA acts as a pre‑approved, empty trust account that becomes active only if the operator fails to meet closure or post‑closure obligations.</p>
+<p>The Standby Trust Agreement ensures:</p>
+<p>Immediate access to funds if the surety bond is triggered</p>
+<p>No delays in environmental cleanup or site closure</p>
+<p>A compliant mechanism for the DEP to receive and manage bond proceeds</p>
+<p>Protection of public health and the environment</p>
+<p>If you use a surety bond to meet closure or post‑closure financial assurance requirements, the DEP will require a Standby Trust Agreement before accepting your bond.</p>
+<p>Why a Standby Trust Agreement Is Required</p>
+<p>A surety bond is a promise to pay, not a financial account. The DEP needs a legally approved trust structure to receive funds immediately if the operator defaults.</p>
+<p>The STA provides:</p>
+<p>A ready‑to‑use trust account</p>
+<p>A trustee (bank or trust company) already in place</p>
+<p>DEP‑approved terms for fund management</p>
+<p>A seamless process for closure or post‑closure cleanup</p>
+<p>Without an STA, the DEP cannot accept a closure or post‑closure bond.</p>
+<p>Who Needs a Standby Trust Agreement?</p>
+<p>You may need a Standby Trust Agreement for Closure/Post‑Closure if you operate:</p>
+<p>Solid waste facilities</p>
+<p>Hazardous waste treatment, storage, or disposal facilities (TSDFs)</p>
+<p>Landfills</p>
+<p>Mining operations</p>
+<p>Industrial sites requiring closure plans</p>
+<p>Facilities with long‑term post‑closure monitoring</p>
+<p>Any operation using a surety bond for environmental financial assurance</p>
+<p>If your facility requires a closure or post‑closure bond, the DEP will require an STA.</p>
+<p>Standby Trust Agreement Requirements &amp; Eligibility</p>
+<p>Most DEP agencies require:</p>
+<p>DEP‑approved Standby Trust Agreement form</p>
+<p>Execution by a qualified bank or trust company</p>
+<p>Signature by the operator</p>
+<p>Surety bond referencing the STA</p>
+<p>Compliance with EPA and state financial assurance rules</p>
+<p>Some facilities may also need:</p>
+<p>Closure cost estimates</p>
+<p>Post‑closure monitoring plans</p>
+<p>Environmental liability insurance</p>
+<p>How the Standby Trust Agreement Process Works</p>
+<p>1</p>
+<p>Complete the DEP‑Approved STA Form</p>
+<p>The operator and trustee sign the Standby Trust Agreement.</p>
+<p>2</p>
+<p>Secure the Closure or Post‑Closure Bond</p>
+<p>The surety issues the bond referencing the STA.</p>
+<p>3</p>
+<p>Submit Both to the DEP</p>
+<p>The DEP reviews and approves the bond + STA package.</p>
+<p>Trust Activates Only if Needed If the operator defaults, the surety deposits funds into the trust for DEP‑managed cleanup.</p>
+<p>![](/assets/images/Image-Small Town Associates.webp)</p>
+<p>Why Companies Choose Us for Closure/Post‑Closure Compliance</p>
+<p>Expertise in DEP and EPA financial assurance requirements</p>
+<p>Guidance on selecting qualified trustees</p>
+<p>Fast coordination between STA and surety bond issuance</p>
+<p>Clear instructions for DEP submission</p>
+<p>Trusted by environmental contractors and waste facilities nationwide</p>
+<p>![](/assets/images/Top-Questions-Image-Associates.webp)</p>
+<p>Top Standby Trust Agreement Questions Answered</p>
+<p>Our most common questions answered efficiently.</p>
+<p>Does a Standby Trust Agreement cost money?</p>
+<p>Does the surety company provide the Standby Trust Agreement?</p>
+<p>Why is the STA required if I already have a bond?</p>
+<p>When does the Standby Trust Agreement become active?</p>
+<p>Ready to Get Your Standby Trust Agreement ?</p>
+<p>Customer testimonials</p>
+<p>What our customers are saying about us.</p>
+<p>“The Standby Trust Agreement process was confusing until Inspire Surety explained everything clearly. Smooth and professional.”</p>
+<p>David M.</p>
+<p>Environmental Compliance</p>
+<p>“They coordinated our closure bond and STA perfectly. DEP approval went through without delays.”</p>
+<p>Rachel S.</p>
+<p>Waste Facility Director</p>
+<p>“Excellent guidance on selecting a trustee and completing the DEP forms. Highly recommended.”</p>
+<p>Patricia G.</p>
+<p>Landfill Operations Supervisor</p>
+<p>“Inspire Surety made the STA and bond submission simple. Their environmental expertise is unmatched.”</p>
+<p>Missie H.</p>
+<p>Remediation Project Lead</p>
+<p>“Fast, accurate, and knowledgeable about closure and post‑closure requirements. Great experience.”</p>
+<p>Eric P.</p>
+<p>Industrial Waste Site Manager</p>
+<p>“We needed a Standby Trust Agreement for multiple facilities. Inspire Surety handled everything efficiently.”</p>
+<p>Peter L..</p>
+<p>Environmental Services Director</p>
+<p>Surety Bond Hubs</p>
+<p>Contractors &amp; Construction Bond Hub</p>
+<p>Court &amp; Fiduciary Bond Hub</p>
+<p>Cannabis Bond Hub</p>
+<p>Environmental &amp; Reclamation Bond Hub</p>
+<p>Federal &amp; BLM Bond Hub</p>
+<p>Escrow &amp; Real Estate Bond Hub</p>
+<p>License &amp; Permit Bond Hub</p>
+<p>Agriculture &amp; Food Bond Hub</p>
+<p>Surety Bond Learning Center</p>
+
     </div>
   </article>
 
@@ -260,4 +257,3 @@
   </aside>
 </div>
 
-{% endif %}

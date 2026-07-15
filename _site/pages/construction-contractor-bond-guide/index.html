@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ title }} | InspireSurety</title>
-<meta name="description" content="{{ description }}">
+<title>Construction &amp; Contractor Bond Guide | InspireSurety</title>
+<meta name="description" content="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
@@ -111,110 +111,7 @@
 
 <!-- PAGE CONTENT -->
 <main>
-  {% if layout == 'home' %}
-
-  <!-- HOME HERO -->
-  <section class="relative overflow-hidden" style="background:linear-gradient(145deg,#0f0c29,#1e1b4b,#312e81)">
-    <div class="absolute inset-0 dot-w pointer-events-none"></div>
-    <div class="absolute -top-32 right-0 w-[500px] h-[500px] rounded-full pointer-events-none" style="background:radial-gradient(circle,rgba(99,102,241,.22) 0%,transparent 70%)"></div>
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-28 text-center">
-      <div class="inline-flex items-center gap-2 border border-brand-400/25 bg-white/5 text-brand-300 text-[11px] font-bold tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">
-        <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-        Licensed in All 50 States
-      </div>
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.06] tracking-tight max-w-3xl mx-auto">{{ title }}</h1>
-      <p class="mt-5 text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">{{ description }}</p>
-      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/pages/surety-bonds/" class="inline-flex items-center justify-center gap-2 font-bold text-[15px] text-white px-8 py-4 rounded-xl shadow-lg transition" style="background:#5849e4" onmouseover="this.style.background='#4a3ac8'" onmouseout="this.style.background='#5849e4'">
-          Browse Bonds
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a href="/pages/contact/" class="inline-flex items-center justify-center gap-2 font-bold text-[15px] text-brand-200 border border-brand-400/40 px-8 py-4 rounded-xl hover:bg-white/5 transition">
-          Talk to an Agent
-        </a>
-      </div>
-      <div class="mt-14 grid grid-cols-3 max-w-sm mx-auto divide-x divide-white/10 border-t border-white/10 pt-8">
-        <div><p class="text-2xl font-black text-white">8,000+</p><p class="text-xs text-slate-400 mt-0.5">Bond Types</p></div>
-        <div><p class="text-2xl font-black text-white">50</p><p class="text-xs text-slate-400 mt-0.5">States</p></div>
-        <div><p class="text-2xl font-black text-white">24hr</p><p class="text-xs text-slate-400 mt-0.5">Issuance</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOME BODY CONTENT -->
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-16">
-    <div class="prose max-w-none">
-      {{ content | safe }}
-    </div>
-  </div>
-
-  {% elif layout == 'blog' %}
-
-  <!-- BLOG POST LAYOUT -->
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid lg:grid-cols-3 gap-10">
-    <article class="lg:col-span-2">
-      <div class="mb-6">
-        {% if tags %}
-        <div class="flex flex-wrap gap-2 mb-4">
-          {% for tag in tags %}
-          <span class="text-[11px] font-bold uppercase tracking-wide bg-brand-100 text-brand-700 px-3 py-1 rounded-full">{{ tag }}</span>
-          {% endfor %}
-        </div>
-        {% endif %}
-        <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight">{{ title }}</h1>
-        {% if description %}<p class="mt-3 text-lg text-slate-500 leading-relaxed">{{ description }}</p>{% endif %}
-      </div>
-      <div class="h-px bg-slate-200 mb-8"></div>
-      <div class="prose max-w-none">
-        {{ content | safe }}
-      </div>
-    </article>
-
-    <aside class="lg:col-span-1">
-      <div class="sticky top-24 space-y-5">
-        <div class="rounded-2xl p-6 text-white" style="background:linear-gradient(135deg,#4a3ac8,#352c81)">
-          <h3 class="font-bold text-lg">Get This Bond Today</h3>
-          <p class="mt-2 text-brand-200 text-sm leading-relaxed">Fast issuance, nationwide coverage, licensed agents ready to help.</p>
-          <a href="/pages/contact/" class="mt-4 flex items-center justify-center gap-2 bg-white text-brand-700 font-bold text-sm px-5 py-3 rounded-xl hover:bg-brand-50 transition">
-            Apply Now
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-        </div>
-        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
-          <h3 class="font-bold text-slate-900 mb-4">Quick Facts</h3>
-          <ul class="space-y-2.5 text-sm text-slate-600">
-            <li class="flex items-center gap-2">
-              <span class="h-5 w-5 rounded-full flex items-center justify-center shrink-0" style="background:#eef1ff">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#4a3ac8" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
-              </span>
-              Licensed in all 50 states
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="h-5 w-5 rounded-full flex items-center justify-center shrink-0" style="background:#eef1ff">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#4a3ac8" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
-              </span>
-              Same-day approvals available
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="h-5 w-5 rounded-full flex items-center justify-center shrink-0" style="background:#eef1ff">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#4a3ac8" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
-              </span>
-              8,000+ bond solutions
-            </li>
-          </ul>
-        </div>
-        <div class="bg-white border border-slate-200 rounded-2xl p-6">
-          <h3 class="font-bold text-slate-900 mb-1">Have Questions?</h3>
-          <p class="text-sm text-slate-500 mb-4">Stephen Wright, Licensed Agent</p>
-          <a href="/pages/contact/" class="flex items-center justify-center gap-2 border border-brand-300 text-brand-700 font-bold text-sm px-5 py-2.5 rounded-xl hover:bg-brand-50 transition">
-            Contact Us
-          </a>
-        </div>
-      </div>
-    </aside>
-  </div>
-
-{% else %}
+  
 
 <!-- DEFAULT PAGE LAYOUT -->
 <div class="bg-slate-50 border-b border-slate-200 py-10">
@@ -222,17 +119,116 @@
     <div class="flex items-center gap-2 text-xs text-slate-400 mb-4 font-medium">
       <a href="/" class="hover:text-brand-700">Home</a>
       <span>›</span>
-      <span class="text-slate-600">{{ title }}</span>
+      <span class="text-slate-600">Construction &amp; Contractor Bond Guide</span>
     </div>
-    <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight max-w-3xl">{{ title }}</h1>
-    {% if description %}<p class="mt-3 text-lg text-slate-500 max-w-2xl leading-relaxed">{{ description }}</p>{% endif %}
+    <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight max-w-3xl">Construction &amp; Contractor Bond Guide</h1>
+    
   </div>
 </div>
 
 <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid lg:grid-cols-3 gap-10">
   <article class="lg:col-span-2">
     <div class="prose max-w-none">
-      {{ content | safe }}
+      <p>Construction &amp; Contractor Bond Guide</p>
+<p>In this Construction &amp; Contractor Bond Guide, you’ll learn how the most common construction bonds—bid, performance, payment, and maintenance—work together to protect project owners, ensure subcontractors and suppliers are paid, and keep public funds secure.</p>
+<p>We’ll break down why these bonds are required, what each one guarantees, how they support project completion, and what contractors should prepare before bidding or applying.</p>
+<p>By the end, you’ll understand the essential role surety bonds play in building trust, reducing risk, and supporting successful construction projects.</p>
+<p>Working on a construction or contractor bond? Visit our Contractors &amp; Construction Bond Hub for guides on bid, performance, payment, subdivision, and contractor license bonds.</p>
+<p>![](/assets/images/Page-Construction Contractor Bond Guide.png)</p>
+<p>Performance Bond vs. Payment Bond</p>
+<p>Performance and payment bonds are often issued together, but they serve different purposes.</p>
+<p>Performance Bond</p>
+<p>A performance bond guarantees that the contractor will complete the project according to the contract terms. If the contractor defaults, the surety may:</p>
+<p>Finance the contractor</p>
+<p>Hire a replacement contractor</p>
+<p>Pay damages up to the bond amount</p>
+<p>Performance bonds protect project owners.</p>
+<p>Payment Bond</p>
+<p>A payment bond guarantees that subcontractors, laborers, and suppliers will be paid. If the contractor fails to pay, claimants can file against the bond.</p>
+<p>Payment bonds protect subcontractors and suppliers.</p>
+<p>Key Difference</p>
+<p>Performance bond: ensures the work gets done</p>
+<p>Payment bond: ensures everyone gets paid</p>
+<p>Both are required on most public projects and many private commercial jobs.</p>
+<p>Key Takeaway -- Performance and payment bonds work as a pair: one guarantees the work gets done, the other guarantees everyone on the project gets paid.</p>
+<p>Bid Bond vs. Performance Bond</p>
+<p>Bid bonds and performance bonds work together during different stages of the project.</p>
+<p>Bid Bond</p>
+<p>A bid bond guarantees that the contractor:</p>
+<p>Submits a serious, accurate bid</p>
+<p>Will sign the contract if awarded</p>
+<p>Will provide performance and payment bonds</p>
+<p>If the contractor backs out, the surety covers the difference between the winning bid and the next lowest bid.</p>
+<p>Performance Bond</p>
+<p>Issued after the contract is awarded, the performance bond guarantees the contractor will complete the project.</p>
+<p>Key Difference</p>
+<p>Bid bond: protects the bidding process</p>
+<p>Performance bond: protects the construction process</p>
+<p>Subdivision Bond vs. Maintenance Bond</p>
+<p>These bonds are common in land development and municipal improvement projects.</p>
+<p>Subdivision Bond</p>
+<p>A subdivision bond guarantees that a developer will complete required public improvements such as:</p>
+<p>Roads</p>
+<p>Sidewalks</p>
+<p>Utilities</p>
+<p>Drainage systems</p>
+<p>Municipalities require these bonds before approving development plans.</p>
+<p>Maintenance Bond</p>
+<p>A maintenance bond guarantees that the contractor will repair defects in workmanship or materials for a specified period after project completion (often 12–24 months).</p>
+<p>Key Difference</p>
+<p>Subdivision bond: guarantees construction of public improvements</p>
+<p>Maintenance bond: guarantees the quality of completed work</p>
+<p>How Surety Bonds Work in Construction</p>
+<p>Construction surety bonds function as a financial guarantee that the contractor will fulfill their obligations. They protect project owners, taxpayers, and subcontractors from financial loss.</p>
+<p>How They Work</p>
+<p>Contractor applies for bonding The surety reviews financials, experience, and credit.</p>
+<p>Bond is issued The contractor pays a premium (usually 1–3%).</p>
+<p>Project begins The contractor performs the work.</p>
+<p>If issues arise The surety investigates claims.</p>
+<p>Surety resolves valid claims Then seeks reimbursement from the contractor.</p>
+<p>Surety bonds are not insurance — they are a credit guarantee.</p>
+<p>Contractor Prequalification Checklist</p>
+<p>Sureties evaluate contractors carefully before issuing bonds. Strong contractors typically demonstrate:</p>
+<p>Financial Strength</p>
+<p>Solid working capital</p>
+<p>Positive net worth</p>
+<p>Clean financial statements</p>
+<p>Experience &amp; Track Record</p>
+<p>Successful completion of similar projects</p>
+<p>Strong project management history</p>
+<p>Operational Capacity</p>
+<p>Adequate staffing</p>
+<p>Equipment and resources</p>
+<p>Proven systems and controls</p>
+<p>Reputation &amp; Character</p>
+<p>Good references</p>
+<p>Ethical business practices</p>
+<p>No major disputes or claims</p>
+<p>Prequalification ensures contractors can responsibly handle bonded work.</p>
+<p>Contractor Bond Costs and How They Work</p>
+<p>Bond premiums are typically a small percentage of the total contract value.</p>
+<p>Typical Rates</p>
+<p>Standard contractors: 1–3%</p>
+<p>New or credit‑challenged contractors: 3–10%</p>
+<p>What Affects Pricing</p>
+<p>Contractor credit</p>
+<p>Financial strength</p>
+<p>Project size and complexity</p>
+<p>Past claims history</p>
+<p>Work program size</p>
+<p>Surety underwriting is similar to extending credit — stronger contractors receive better rates and higher bonding capacity.</p>
+<p>Pro Tip for First‑Time Construction &amp; Contractor Bond Buyers -- Strong credit, clean financials, and a clear explanation of your business operations can significantly reduce your bond rate and speed up approval.</p>
+<p>Surety Bond Hubs</p>
+<p>Contractors &amp; Construction Bond Hub</p>
+<p>Court &amp; Fiduciary Bond Hub</p>
+<p>Cannabis Bond Hub</p>
+<p>Environmental &amp; Reclamation Bond Hub</p>
+<p>Federal &amp; BLM Bond Hub</p>
+<p>Escrow &amp; Real Estate Bond Hub</p>
+<p>License &amp; Permit Bond Hub</p>
+<p>Agriculture &amp; Food Bond Hub</p>
+<p>Surety Bond Learning Center</p>
+
     </div>
   </article>
 
@@ -260,4 +256,3 @@
   </aside>
 </div>
 
-{% endif %}

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ title }} | InspireSurety</title>
-<meta name="description" content="{{ description }}">
+<title>InspireSurety | InspireSurety</title>
+<meta name="description" content="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
@@ -111,110 +111,7 @@
 
 <!-- PAGE CONTENT -->
 <main>
-  {% if layout == 'home' %}
-
-  <!-- HOME HERO -->
-  <section class="relative overflow-hidden" style="background:linear-gradient(145deg,#0f0c29,#1e1b4b,#312e81)">
-    <div class="absolute inset-0 dot-w pointer-events-none"></div>
-    <div class="absolute -top-32 right-0 w-[500px] h-[500px] rounded-full pointer-events-none" style="background:radial-gradient(circle,rgba(99,102,241,.22) 0%,transparent 70%)"></div>
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-28 text-center">
-      <div class="inline-flex items-center gap-2 border border-brand-400/25 bg-white/5 text-brand-300 text-[11px] font-bold tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">
-        <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-        Licensed in All 50 States
-      </div>
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.06] tracking-tight max-w-3xl mx-auto">{{ title }}</h1>
-      <p class="mt-5 text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">{{ description }}</p>
-      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/pages/surety-bonds/" class="inline-flex items-center justify-center gap-2 font-bold text-[15px] text-white px-8 py-4 rounded-xl shadow-lg transition" style="background:#5849e4" onmouseover="this.style.background='#4a3ac8'" onmouseout="this.style.background='#5849e4'">
-          Browse Bonds
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a href="/pages/contact/" class="inline-flex items-center justify-center gap-2 font-bold text-[15px] text-brand-200 border border-brand-400/40 px-8 py-4 rounded-xl hover:bg-white/5 transition">
-          Talk to an Agent
-        </a>
-      </div>
-      <div class="mt-14 grid grid-cols-3 max-w-sm mx-auto divide-x divide-white/10 border-t border-white/10 pt-8">
-        <div><p class="text-2xl font-black text-white">8,000+</p><p class="text-xs text-slate-400 mt-0.5">Bond Types</p></div>
-        <div><p class="text-2xl font-black text-white">50</p><p class="text-xs text-slate-400 mt-0.5">States</p></div>
-        <div><p class="text-2xl font-black text-white">24hr</p><p class="text-xs text-slate-400 mt-0.5">Issuance</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOME BODY CONTENT -->
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-16">
-    <div class="prose max-w-none">
-      {{ content | safe }}
-    </div>
-  </div>
-
-  {% elif layout == 'blog' %}
-
-  <!-- BLOG POST LAYOUT -->
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid lg:grid-cols-3 gap-10">
-    <article class="lg:col-span-2">
-      <div class="mb-6">
-        {% if tags %}
-        <div class="flex flex-wrap gap-2 mb-4">
-          {% for tag in tags %}
-          <span class="text-[11px] font-bold uppercase tracking-wide bg-brand-100 text-brand-700 px-3 py-1 rounded-full">{{ tag }}</span>
-          {% endfor %}
-        </div>
-        {% endif %}
-        <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight">{{ title }}</h1>
-        {% if description %}<p class="mt-3 text-lg text-slate-500 leading-relaxed">{{ description }}</p>{% endif %}
-      </div>
-      <div class="h-px bg-slate-200 mb-8"></div>
-      <div class="prose max-w-none">
-        {{ content | safe }}
-      </div>
-    </article>
-
-    <aside class="lg:col-span-1">
-      <div class="sticky top-24 space-y-5">
-        <div class="rounded-2xl p-6 text-white" style="background:linear-gradient(135deg,#4a3ac8,#352c81)">
-          <h3 class="font-bold text-lg">Get This Bond Today</h3>
-          <p class="mt-2 text-brand-200 text-sm leading-relaxed">Fast issuance, nationwide coverage, licensed agents ready to help.</p>
-          <a href="/pages/contact/" class="mt-4 flex items-center justify-center gap-2 bg-white text-brand-700 font-bold text-sm px-5 py-3 rounded-xl hover:bg-brand-50 transition">
-            Apply Now
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-        </div>
-        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
-          <h3 class="font-bold text-slate-900 mb-4">Quick Facts</h3>
-          <ul class="space-y-2.5 text-sm text-slate-600">
-            <li class="flex items-center gap-2">
-              <span class="h-5 w-5 rounded-full flex items-center justify-center shrink-0" style="background:#eef1ff">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#4a3ac8" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
-              </span>
-              Licensed in all 50 states
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="h-5 w-5 rounded-full flex items-center justify-center shrink-0" style="background:#eef1ff">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#4a3ac8" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
-              </span>
-              Same-day approvals available
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="h-5 w-5 rounded-full flex items-center justify-center shrink-0" style="background:#eef1ff">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#4a3ac8" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
-              </span>
-              8,000+ bond solutions
-            </li>
-          </ul>
-        </div>
-        <div class="bg-white border border-slate-200 rounded-2xl p-6">
-          <h3 class="font-bold text-slate-900 mb-1">Have Questions?</h3>
-          <p class="text-sm text-slate-500 mb-4">Stephen Wright, Licensed Agent</p>
-          <a href="/pages/contact/" class="flex items-center justify-center gap-2 border border-brand-300 text-brand-700 font-bold text-sm px-5 py-2.5 rounded-xl hover:bg-brand-50 transition">
-            Contact Us
-          </a>
-        </div>
-      </div>
-    </aside>
-  </div>
-
-{% else %}
+  
 
 <!-- DEFAULT PAGE LAYOUT -->
 <div class="bg-slate-50 border-b border-slate-200 py-10">
@@ -222,17 +119,101 @@
     <div class="flex items-center gap-2 text-xs text-slate-400 mb-4 font-medium">
       <a href="/" class="hover:text-brand-700">Home</a>
       <span>›</span>
-      <span class="text-slate-600">{{ title }}</span>
+      <span class="text-slate-600">InspireSurety</span>
     </div>
-    <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight max-w-3xl">{{ title }}</h1>
-    {% if description %}<p class="mt-3 text-lg text-slate-500 max-w-2xl leading-relaxed">{{ description }}</p>{% endif %}
+    <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight max-w-3xl">InspireSurety</h1>
+    
   </div>
 </div>
 
 <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid lg:grid-cols-3 gap-10">
   <article class="lg:col-span-2">
     <div class="prose max-w-none">
-      {{ content | safe }}
+      <p>Welcome to InspireSurety.</p>
+<p>Your Trusted Surety Bond Partner
+Focused. Fast. Nationwide. Secure projects, licenses, and business obligations with a reliable surety bond partner — backed by access to over 8,000 commercial surety bond solutions for niche and large-scale needs.</p>
+<p>![](/assets/images/Website-Home Page Image.webp)</p>
+<p>Fast Issuance</p>
+<p>Prequalification and bond issuance for bids, permits, and contract starts, including contract bond placements for public and private projects.</p>
+<p>License Compliance</p>
+<p>Streamlined contractor license bond support for state and local requirements across multiple industries and professions.</p>
+<p>Business Protection</p>
+<p>Fidelity bond options designed to safeguard companies from employee dishonesty and protect client assets.</p>
+<p>Nationwide Coverage</p>
+<p>Compliant documentation and experienced agents supporting multi‑jurisdictional filings and bonded work across all states.</p>
+<p>Inspire Surety provides fast, compliant bond solutions for contractors, professionals, and businesses across all 50 states. Explore our full range of commercial and license bond services to find the right option for your next project or requirement.</p>
+<p>Professional reviewing project files beside a glowing U.S. map, symbolizing multi‑state performance bond programs and ongoing capacity. Clean, corporate, no text.</p>
+<p>![](/assets/images/Website-Home Page Image 3.webp)</p>
+<p>Comprehensive Surety Bond Solutions</p>
+<p>Inspire Surety provides support across license bonds, fidelity bonds, and commercial surety programs, helping businesses secure projects, maintain compliance, and operate with confidence.</p>
+<p>Nationwide surety bond partner with fast issuance</p>
+<p>Construction bond solutions including bid, performance, and payment bonds</p>
+<p>Commercial and license bond options for contractors and regulated businesses</p>
+<p>Bond issuance for bids, permits, and contract starts</p>
+<p>Payment bond protection for subcontractors and suppliers</p>
+<p>Bid bond support for competitive bidding and prequalification</p>
+<p>Modern office scene with a contractor studying documents over a map showing multiple states, representing account‑based bonding. Bright, trustworthy, no text.
+Construction Bonds Simplified - How it Works
+1
+Quick, secure &amp; trusted</p>
+<p>A streamlined process for performance bonds, bid bonds, residential construction bonds, and subdivision construction bonds through a secure online system.</p>
+<p>2
+Fast and reliable</p>
+<p>Efficient quote and bind workflows for performance bonds in construction, including bid and performance bonds and payment and performance bonds.</p>
+<p>3
+Buy securely online</p>
+<p>Reliable issuance for construction bid bonds, public construction bonds, and construction maintenance bonds, with same‑day approvals in many cases.</p>
+<p>![](/assets/images/Website-Home Page Performance Bond Image 2.webp)</p>
+<p>Performance Bond $750K to  $1.5M</p>
+<p>Designed for general contractors requiring mid‑range performance bonds without CPA‑prepared financials. Supports high‑volume residential construction and small to midsize commercial projects through online underwriting and credit‑based evaluations.</p>
+<p>Builder examining project documents for residential and small commercial performance bond needs.
+Explore Performance Bonds</p>
+<p>Large commercial construction site with cranes representing capital‑based construction bonds up to $400M.</p>
+<p>![](/assets/images/Website-Home Page Large Performance Bond Image.webp)</p>
+<p>Commercial Construction Bond to $20M
+Capital‑Based Construction Bonds to $20 Million
+For established contractors with CPA‑prepared financials and professional submissions. Account‑based commercial construction bonds support aggregate program needs up to $20 million for medium‑to‑large companies.</p>
+<p>Inspire Surety emphasizes long‑term partnerships with builders, developers, general contractors, and trade subcontractors, applying a practical, common‑sense approach to surety underwriting. Licensed to write bonds in all 50 states with flexible rating plans through partner sureties.</p>
+<p>We Offer Account Based Performance Bonds
+Account‑based performance bonding supports businesses that require multiple surety bonds across states or jurisdictions. Instead of issuing bonds individually, a dedicated program provides ongoing capacity tailored to operational needs.</p>
+<p>Collage of logistics, finance, energy, healthcare, government, environmental, and auto industries representing multi‑state performance bond users.</p>
+<p>Commercial Surety Bonds
+From freight to fiduciary — broad commercial surety support including:</p>
+<p>Licenses &amp; Permit Bonds
+Mortgage Broker, Auto Dealer, Notary, Collection Agency &amp; Escrow Bonds</p>
+<p>Fiduciary Bonds
+ERISA Bonds, Probate/Guardian, Trustee Bond, Public Official Bonds</p>
+<p>Financial Guarantee Bonds
+Patient Trust Funds Bond, Tax Bonds, Union Bonds, Utility Deposit Bonds</p>
+<p>Government Agency Bonds
+BLM Bonds, US Custom Bonds, Oil &amp; Gas Bonds, USDA Bonds</p>
+<p>Valued Partners
+You are in good company.</p>
+<p>Chubb Surety, Propeller Bonds, RLI Surety, Bond Exchange</p>
+<p>Preferred Surety Bond Partner for Thousands of General Contractors, Sub-Contractors &amp; Trade Specialties!
+Ready to Get a Contractor Bond? Let’s Go. Get your Contractor Surety Bond in seconds. Then get back to doing what you love.</p>
+<p>Our latest Surety Bond content
+Professional &amp; Trust‑Focused. A blog of our most common types of online surety bonds. Quick, secure and trusted. We offer fast, reliable, nationwide surety bonds.</p>
+<p>See all
+Subdivision Bond Explained
+When developers build a new community, they must deliver the public infrastructure that makes it livable. Municipalities enforce this by requiring a subdivision bond so roads, sidewalks, sewer lines, ...</p>
+<p>Cyber Insurance Arizona Guide
+Cyber Insurance Cyber insurance is no longer optional. With rising digital threats, businesses of all sizes need protection against data breaches, ransomware, and online fraud. This page explains what...</p>
+<p>Arizona Reclamation Bond
+Reclamation Bond Arizona Arizona requires reclamation bonds to cover the costs of restoring mined land. These bonds provide assurance that reclamation plans will be completed even if the operator defa...</p>
+<p>Arizona Performance Bond Guide
+Arizona Performance Bond Guide Performance bonds are commonly required on Arizona public works and many private construction contracts. This short, scannable guide explains what a performance bond doe...</p>
+<p>Notary Bond Guide
+Notaries public serve as gatekeepers of trust in transactions large and small. A notary bond or notary public bond is a surety guarantee that the notary will follow the law, perform duties with honest...</p>
+<p>Auctioneer Bond Guide
+An auctioneer bond is a compact but powerful guarantee that keeps auction markets honest. Whether you run a storefront auction house, an online platform, or act as a traveling auctioneer, an auction b...</p>
+<p>Mortgage Broker Bond Guide
+Mortgage brokers and bankers require visible financial guarantees to operate with lender partners, regulators, and consumers. A mortgage broker bond or mortgage broker surety bond provides that guaran...</p>
+<p>Money Transmitter Bond Guide
+Moving money legally and reliably means more than secure servers and contracts — it means guaranteeing trust. A money transmitter bond is the financial promise regulators require to protect consumers ...</p>
+<p>Customize Your Inspire Surety Insider Experience
+Select the topics that interest you most and receive tailored updates, insights, and news directly in your inbox.</p>
+
     </div>
   </article>
 
@@ -260,4 +241,3 @@
   </aside>
 </div>
 
-{% endif %}

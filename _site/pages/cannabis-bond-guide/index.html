@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ title }} | InspireSurety</title>
-<meta name="description" content="{{ description }}">
+<title>Cannabis Bond Guide
+ | InspireSurety</title>
+<meta name="description" content="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
@@ -111,110 +112,7 @@
 
 <!-- PAGE CONTENT -->
 <main>
-  {% if layout == 'home' %}
-
-  <!-- HOME HERO -->
-  <section class="relative overflow-hidden" style="background:linear-gradient(145deg,#0f0c29,#1e1b4b,#312e81)">
-    <div class="absolute inset-0 dot-w pointer-events-none"></div>
-    <div class="absolute -top-32 right-0 w-[500px] h-[500px] rounded-full pointer-events-none" style="background:radial-gradient(circle,rgba(99,102,241,.22) 0%,transparent 70%)"></div>
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-28 text-center">
-      <div class="inline-flex items-center gap-2 border border-brand-400/25 bg-white/5 text-brand-300 text-[11px] font-bold tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">
-        <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-        Licensed in All 50 States
-      </div>
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.06] tracking-tight max-w-3xl mx-auto">{{ title }}</h1>
-      <p class="mt-5 text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">{{ description }}</p>
-      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/pages/surety-bonds/" class="inline-flex items-center justify-center gap-2 font-bold text-[15px] text-white px-8 py-4 rounded-xl shadow-lg transition" style="background:#5849e4" onmouseover="this.style.background='#4a3ac8'" onmouseout="this.style.background='#5849e4'">
-          Browse Bonds
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a href="/pages/contact/" class="inline-flex items-center justify-center gap-2 font-bold text-[15px] text-brand-200 border border-brand-400/40 px-8 py-4 rounded-xl hover:bg-white/5 transition">
-          Talk to an Agent
-        </a>
-      </div>
-      <div class="mt-14 grid grid-cols-3 max-w-sm mx-auto divide-x divide-white/10 border-t border-white/10 pt-8">
-        <div><p class="text-2xl font-black text-white">8,000+</p><p class="text-xs text-slate-400 mt-0.5">Bond Types</p></div>
-        <div><p class="text-2xl font-black text-white">50</p><p class="text-xs text-slate-400 mt-0.5">States</p></div>
-        <div><p class="text-2xl font-black text-white">24hr</p><p class="text-xs text-slate-400 mt-0.5">Issuance</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOME BODY CONTENT -->
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-16">
-    <div class="prose max-w-none">
-      {{ content | safe }}
-    </div>
-  </div>
-
-  {% elif layout == 'blog' %}
-
-  <!-- BLOG POST LAYOUT -->
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid lg:grid-cols-3 gap-10">
-    <article class="lg:col-span-2">
-      <div class="mb-6">
-        {% if tags %}
-        <div class="flex flex-wrap gap-2 mb-4">
-          {% for tag in tags %}
-          <span class="text-[11px] font-bold uppercase tracking-wide bg-brand-100 text-brand-700 px-3 py-1 rounded-full">{{ tag }}</span>
-          {% endfor %}
-        </div>
-        {% endif %}
-        <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight">{{ title }}</h1>
-        {% if description %}<p class="mt-3 text-lg text-slate-500 leading-relaxed">{{ description }}</p>{% endif %}
-      </div>
-      <div class="h-px bg-slate-200 mb-8"></div>
-      <div class="prose max-w-none">
-        {{ content | safe }}
-      </div>
-    </article>
-
-    <aside class="lg:col-span-1">
-      <div class="sticky top-24 space-y-5">
-        <div class="rounded-2xl p-6 text-white" style="background:linear-gradient(135deg,#4a3ac8,#352c81)">
-          <h3 class="font-bold text-lg">Get This Bond Today</h3>
-          <p class="mt-2 text-brand-200 text-sm leading-relaxed">Fast issuance, nationwide coverage, licensed agents ready to help.</p>
-          <a href="/pages/contact/" class="mt-4 flex items-center justify-center gap-2 bg-white text-brand-700 font-bold text-sm px-5 py-3 rounded-xl hover:bg-brand-50 transition">
-            Apply Now
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-        </div>
-        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
-          <h3 class="font-bold text-slate-900 mb-4">Quick Facts</h3>
-          <ul class="space-y-2.5 text-sm text-slate-600">
-            <li class="flex items-center gap-2">
-              <span class="h-5 w-5 rounded-full flex items-center justify-center shrink-0" style="background:#eef1ff">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#4a3ac8" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
-              </span>
-              Licensed in all 50 states
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="h-5 w-5 rounded-full flex items-center justify-center shrink-0" style="background:#eef1ff">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#4a3ac8" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
-              </span>
-              Same-day approvals available
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="h-5 w-5 rounded-full flex items-center justify-center shrink-0" style="background:#eef1ff">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#4a3ac8" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
-              </span>
-              8,000+ bond solutions
-            </li>
-          </ul>
-        </div>
-        <div class="bg-white border border-slate-200 rounded-2xl p-6">
-          <h3 class="font-bold text-slate-900 mb-1">Have Questions?</h3>
-          <p class="text-sm text-slate-500 mb-4">Stephen Wright, Licensed Agent</p>
-          <a href="/pages/contact/" class="flex items-center justify-center gap-2 border border-brand-300 text-brand-700 font-bold text-sm px-5 py-2.5 rounded-xl hover:bg-brand-50 transition">
-            Contact Us
-          </a>
-        </div>
-      </div>
-    </aside>
-  </div>
-
-{% else %}
+  
 
 <!-- DEFAULT PAGE LAYOUT -->
 <div class="bg-slate-50 border-b border-slate-200 py-10">
@@ -222,17 +120,79 @@
     <div class="flex items-center gap-2 text-xs text-slate-400 mb-4 font-medium">
       <a href="/" class="hover:text-brand-700">Home</a>
       <span>›</span>
-      <span class="text-slate-600">{{ title }}</span>
+      <span class="text-slate-600">Cannabis Bond Guide
+</span>
     </div>
-    <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight max-w-3xl">{{ title }}</h1>
-    {% if description %}<p class="mt-3 text-lg text-slate-500 max-w-2xl leading-relaxed">{{ description }}</p>{% endif %}
+    <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight max-w-3xl">Cannabis Bond Guide
+</h1>
+    
   </div>
 </div>
 
 <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid lg:grid-cols-3 gap-10">
   <article class="lg:col-span-2">
     <div class="prose max-w-none">
-      {{ content | safe }}
+      <p>Cannabis Bond Guide</p>
+<p>In this Cannabis Bond Guide, you’ll learn how cannabis bonds support compliance in one of the most heavily regulated industries in the country.</p>
+<p>We’ll break down why state agencies require these bonds, what they guarantee, and how they protect public programs and licensing systems.</p>
+<p>You’ll also understand the different bond requirements by license type, what regulators look for during underwriting, and what operators should prepare before applying.</p>
+<p>By the end, you’ll have a clear understanding of how cannabis bonds help ensure responsible operations, financial accountability, and long‑term regulatory compliance.</p>
+<p>Working in the cannabis industry? Visit our Cannabis Bond Hub for grower, dispensary, and cannabis license bond requirements and application guides.</p>
+<p>![](/assets/images/Page-Cannabis Bond.png)</p>
+<p>What Are Cannabis Bonds?</p>
+<p>Cannabis bonds guarantee that licensed cannabis businesses will:</p>
+<p>Follow state cannabis regulations</p>
+<p>Pay taxes and fees</p>
+<p>Maintain accurate records</p>
+<p>Operate ethically</p>
+<p>Protect state licensing programs from financial loss</p>
+<p>These bonds apply to cultivation, processing, distribution, and retail operations.</p>
+<p>Cannabis Bond Requirements by License Type</p>
+<p>Bond requirements vary by state and license category. Common license types include:</p>
+<p>Cultivation</p>
+<p>Manufacturing / Processing</p>
+<p>Distribution</p>
+<p>Retail / Dispensary</p>
+<p>Testing Laboratories</p>
+<p>Microbusinesses</p>
+<p>Each license type may require a different bond amount and compliance obligations.</p>
+<p>Key Takeaway -- Cannabis bonds protect the state—not the business. If a violation occurs, the operator must reimburse the surety for any claim paid.</p>
+<p>How Cannabis Compliance Bonds Protect State Licensing Programs</p>
+<p>Cannabis bonds protect state agencies by ensuring businesses:</p>
+<p>Pay required taxes</p>
+<p>Follow seed‑to‑sale tracking rules</p>
+<p>Maintain security and safety protocols</p>
+<p>Comply with packaging and labeling laws</p>
+<p>Prevent diversion or illegal sales</p>
+<p>If a business violates regulations, the state may file a claim against the bond.</p>
+<p>Cannabis Licensing Checklist</p>
+<p>A complete checklist will include:</p>
+<p>Required documents</p>
+<p>Financial requirements</p>
+<p>Security plans</p>
+<p>Operational procedures</p>
+<p>Environmental compliance</p>
+<p>Bonding and insurance requirements</p>
+<p>This section will help operators prepare for licensing.</p>
+<p>Why Cannabis Bonds Matter</p>
+<p>Cannabis bonds:</p>
+<p>Protect state programs from financial loss</p>
+<p>Ensure businesses follow strict regulations</p>
+<p>Promote safe and legal cannabis operations</p>
+<p>Support public trust in the industry</p>
+<p>They are essential for maintaining compliance in a rapidly evolving regulatory environment.</p>
+<p>Pro Tip for First‑Time Cannabis Bond Buyers -- Strong credit, clean financials, and a clear explanation of your business operations can significantly reduce your bond rate and speed up approval.</p>
+<p>Surety Bond Hubs</p>
+<p>Contractors &amp; Construction Bond Hub</p>
+<p>Court &amp; Fiduciary Bond Hub</p>
+<p>Cannabis Bond Hub</p>
+<p>Environmental &amp; Reclamation Bond Hub</p>
+<p>Federal &amp; BLM Bond Hub</p>
+<p>Escrow &amp; Real Estate Bond Hub</p>
+<p>License &amp; Permit Bond Hub</p>
+<p>Agriculture &amp; Food Bond Hub</p>
+<p>Surety Bond Learning Center</p>
+
     </div>
   </article>
 
@@ -260,4 +220,3 @@
   </aside>
 </div>
 
-{% endif %}

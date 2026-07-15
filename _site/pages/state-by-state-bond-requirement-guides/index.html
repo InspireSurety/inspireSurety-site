@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ title }} | InspireSurety</title>
-<meta name="description" content="{{ description }}">
+<title>State‑by‑State Bond Requirement Guides | InspireSurety</title>
+<meta name="description" content="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
@@ -111,110 +111,7 @@
 
 <!-- PAGE CONTENT -->
 <main>
-  {% if layout == 'home' %}
-
-  <!-- HOME HERO -->
-  <section class="relative overflow-hidden" style="background:linear-gradient(145deg,#0f0c29,#1e1b4b,#312e81)">
-    <div class="absolute inset-0 dot-w pointer-events-none"></div>
-    <div class="absolute -top-32 right-0 w-[500px] h-[500px] rounded-full pointer-events-none" style="background:radial-gradient(circle,rgba(99,102,241,.22) 0%,transparent 70%)"></div>
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-28 text-center">
-      <div class="inline-flex items-center gap-2 border border-brand-400/25 bg-white/5 text-brand-300 text-[11px] font-bold tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">
-        <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-        Licensed in All 50 States
-      </div>
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.06] tracking-tight max-w-3xl mx-auto">{{ title }}</h1>
-      <p class="mt-5 text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">{{ description }}</p>
-      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/pages/surety-bonds/" class="inline-flex items-center justify-center gap-2 font-bold text-[15px] text-white px-8 py-4 rounded-xl shadow-lg transition" style="background:#5849e4" onmouseover="this.style.background='#4a3ac8'" onmouseout="this.style.background='#5849e4'">
-          Browse Bonds
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a href="/pages/contact/" class="inline-flex items-center justify-center gap-2 font-bold text-[15px] text-brand-200 border border-brand-400/40 px-8 py-4 rounded-xl hover:bg-white/5 transition">
-          Talk to an Agent
-        </a>
-      </div>
-      <div class="mt-14 grid grid-cols-3 max-w-sm mx-auto divide-x divide-white/10 border-t border-white/10 pt-8">
-        <div><p class="text-2xl font-black text-white">8,000+</p><p class="text-xs text-slate-400 mt-0.5">Bond Types</p></div>
-        <div><p class="text-2xl font-black text-white">50</p><p class="text-xs text-slate-400 mt-0.5">States</p></div>
-        <div><p class="text-2xl font-black text-white">24hr</p><p class="text-xs text-slate-400 mt-0.5">Issuance</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOME BODY CONTENT -->
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-16">
-    <div class="prose max-w-none">
-      {{ content | safe }}
-    </div>
-  </div>
-
-  {% elif layout == 'blog' %}
-
-  <!-- BLOG POST LAYOUT -->
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid lg:grid-cols-3 gap-10">
-    <article class="lg:col-span-2">
-      <div class="mb-6">
-        {% if tags %}
-        <div class="flex flex-wrap gap-2 mb-4">
-          {% for tag in tags %}
-          <span class="text-[11px] font-bold uppercase tracking-wide bg-brand-100 text-brand-700 px-3 py-1 rounded-full">{{ tag }}</span>
-          {% endfor %}
-        </div>
-        {% endif %}
-        <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight">{{ title }}</h1>
-        {% if description %}<p class="mt-3 text-lg text-slate-500 leading-relaxed">{{ description }}</p>{% endif %}
-      </div>
-      <div class="h-px bg-slate-200 mb-8"></div>
-      <div class="prose max-w-none">
-        {{ content | safe }}
-      </div>
-    </article>
-
-    <aside class="lg:col-span-1">
-      <div class="sticky top-24 space-y-5">
-        <div class="rounded-2xl p-6 text-white" style="background:linear-gradient(135deg,#4a3ac8,#352c81)">
-          <h3 class="font-bold text-lg">Get This Bond Today</h3>
-          <p class="mt-2 text-brand-200 text-sm leading-relaxed">Fast issuance, nationwide coverage, licensed agents ready to help.</p>
-          <a href="/pages/contact/" class="mt-4 flex items-center justify-center gap-2 bg-white text-brand-700 font-bold text-sm px-5 py-3 rounded-xl hover:bg-brand-50 transition">
-            Apply Now
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-        </div>
-        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
-          <h3 class="font-bold text-slate-900 mb-4">Quick Facts</h3>
-          <ul class="space-y-2.5 text-sm text-slate-600">
-            <li class="flex items-center gap-2">
-              <span class="h-5 w-5 rounded-full flex items-center justify-center shrink-0" style="background:#eef1ff">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#4a3ac8" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
-              </span>
-              Licensed in all 50 states
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="h-5 w-5 rounded-full flex items-center justify-center shrink-0" style="background:#eef1ff">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#4a3ac8" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
-              </span>
-              Same-day approvals available
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="h-5 w-5 rounded-full flex items-center justify-center shrink-0" style="background:#eef1ff">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#4a3ac8" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
-              </span>
-              8,000+ bond solutions
-            </li>
-          </ul>
-        </div>
-        <div class="bg-white border border-slate-200 rounded-2xl p-6">
-          <h3 class="font-bold text-slate-900 mb-1">Have Questions?</h3>
-          <p class="text-sm text-slate-500 mb-4">Stephen Wright, Licensed Agent</p>
-          <a href="/pages/contact/" class="flex items-center justify-center gap-2 border border-brand-300 text-brand-700 font-bold text-sm px-5 py-2.5 rounded-xl hover:bg-brand-50 transition">
-            Contact Us
-          </a>
-        </div>
-      </div>
-    </aside>
-  </div>
-
-{% else %}
+  
 
 <!-- DEFAULT PAGE LAYOUT -->
 <div class="bg-slate-50 border-b border-slate-200 py-10">
@@ -222,17 +119,85 @@
     <div class="flex items-center gap-2 text-xs text-slate-400 mb-4 font-medium">
       <a href="/" class="hover:text-brand-700">Home</a>
       <span>›</span>
-      <span class="text-slate-600">{{ title }}</span>
+      <span class="text-slate-600">State‑by‑State Bond Requirement Guides</span>
     </div>
-    <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight max-w-3xl">{{ title }}</h1>
-    {% if description %}<p class="mt-3 text-lg text-slate-500 max-w-2xl leading-relaxed">{{ description }}</p>{% endif %}
+    <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight max-w-3xl">State‑by‑State Bond Requirement Guides</h1>
+    
   </div>
 </div>
 
 <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid lg:grid-cols-3 gap-10">
   <article class="lg:col-span-2">
     <div class="prose max-w-none">
-      {{ content | safe }}
+      <p>State‑by‑State Bond Requirement Guides</p>
+<p>A complete resource designed to help businesses, contractors, and professionals understand the exact surety bond requirements in every U.S. state.</p>
+<p>These guides break down licensing rules, bond amounts, renewal timelines, and regulatory obligations so you always know what your state requires before applying.</p>
+<p>![](/assets/images/Learning Center Page-Surety Bond Basics Guide.png)</p>
+<p>Why State‑Specific Guides Matter</p>
+<p>Surety bond requirements vary widely across states. Bond amounts, licensing rules, and compliance expectations can differ even within the same industry. These guides give you a clear, organized way to navigate those differences and avoid delays or compliance issues.</p>
+<p>What Each State Guide Includes</p>
+<p>Bond Amounts &amp; Required Bond Types</p>
+<p>Each guide outlines the mandatory bond amounts for major industries, including:</p>
+<p>License &amp; permit bonds</p>
+<p>Contractor and construction bonds</p>
+<p>Auto dealer bonds</p>
+<p>Agriculture &amp; food bonds</p>
+<p>Freight broker and transportation bonds</p>
+<p>Professional and occupational bonds</p>
+<p>You’ll know exactly which bond you need and how much coverage is required.</p>
+<p>Licensing &amp; Application Requirements</p>
+<p>Every state has its own licensing process. Each guide includes:</p>
+<p>Required forms and documentation</p>
+<p>Application steps</p>
+<p>Background or credit check requirements</p>
+<p>State agency contact information</p>
+<p>Filing instructions</p>
+<p>This helps you prepare a complete application the first time.</p>
+<p>Renewal &amp; Compliance Timelines</p>
+<p>To help you stay compliant year‑round, each guide provides:</p>
+<p>Bond renewal deadlines</p>
+<p>License renewal cycles</p>
+<p>Reporting and filing requirements</p>
+<p>Ongoing compliance obligations</p>
+<p>These timelines prevent lapses that could lead to penalties or license suspension.</p>
+<p>Regulatory Agencies by State</p>
+<p>Each guide lists the agencies responsible for regulating your industry, such as:</p>
+<p>Departments of Insurance</p>
+<p>Departments of Agriculture</p>
+<p>Motor Vehicle Divisions</p>
+<p>Contractor Licensing Boards</p>
+<p>Public Utilities Commissions</p>
+<p>You’ll always know who oversees your bond and license.</p>
+<p>Industry‑Specific Notes &amp; Exceptions</p>
+<p>1Some states have unique rules or higher bond amounts for certain industries. Each guide highlights:</p>
+<p>State‑specific exceptions</p>
+<p>Additional compliance requirements</p>
+<p>Special endorsements or filings</p>
+<p>This ensures you’re aware of any extra steps before applying.</p>
+<p>Who These Guides Are For</p>
+<p>These guides are ideal for:</p>
+<p>New businesses applying for their first license</p>
+<p>Companies expanding into multiple states</p>
+<p>Contractors working across state lines</p>
+<p>Auto dealers, freight brokers, and agricultural businesses</p>
+<p>Compliance teams and licensing specialists</p>
+<p>How to Use These Guides</p>
+<p>Select your state.</p>
+<p>Review the bond amounts and licensing requirements.</p>
+<p>Follow the checklist to prepare your application.</p>
+<p>Use the renewal timelines to stay compliant.</p>
+<p>These guides simplify the entire process and help you meet every requirement with confidence.</p>
+<p>Surety Bond Hubs</p>
+<p>Contractors &amp; Construction Bond Hub</p>
+<p>Court &amp; Fiduciary Bond Hub</p>
+<p>Cannabis Bond Hub</p>
+<p>Environmental &amp; Reclamation Bond Hub</p>
+<p>Federal &amp; BLM Bond Hub</p>
+<p>Escrow &amp; Real Estate Bond Hub</p>
+<p>License &amp; Permit Bond Hub</p>
+<p>Agriculture &amp; Food Bond Hub</p>
+<p>Surety Bond Learning Center</p>
+
     </div>
   </article>
 
@@ -260,4 +225,3 @@
   </aside>
 </div>
 
-{% endif %}

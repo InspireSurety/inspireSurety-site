@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ title }} | InspireSurety</title>
-<meta name="description" content="{{ description }}">
+<title>Mortgage Broker &amp; MLO Bond | InspireSurety</title>
+<meta name="description" content="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
@@ -111,110 +111,7 @@
 
 <!-- PAGE CONTENT -->
 <main>
-  {% if layout == 'home' %}
-
-  <!-- HOME HERO -->
-  <section class="relative overflow-hidden" style="background:linear-gradient(145deg,#0f0c29,#1e1b4b,#312e81)">
-    <div class="absolute inset-0 dot-w pointer-events-none"></div>
-    <div class="absolute -top-32 right-0 w-[500px] h-[500px] rounded-full pointer-events-none" style="background:radial-gradient(circle,rgba(99,102,241,.22) 0%,transparent 70%)"></div>
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-28 text-center">
-      <div class="inline-flex items-center gap-2 border border-brand-400/25 bg-white/5 text-brand-300 text-[11px] font-bold tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">
-        <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-        Licensed in All 50 States
-      </div>
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.06] tracking-tight max-w-3xl mx-auto">{{ title }}</h1>
-      <p class="mt-5 text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">{{ description }}</p>
-      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/pages/surety-bonds/" class="inline-flex items-center justify-center gap-2 font-bold text-[15px] text-white px-8 py-4 rounded-xl shadow-lg transition" style="background:#5849e4" onmouseover="this.style.background='#4a3ac8'" onmouseout="this.style.background='#5849e4'">
-          Browse Bonds
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a href="/pages/contact/" class="inline-flex items-center justify-center gap-2 font-bold text-[15px] text-brand-200 border border-brand-400/40 px-8 py-4 rounded-xl hover:bg-white/5 transition">
-          Talk to an Agent
-        </a>
-      </div>
-      <div class="mt-14 grid grid-cols-3 max-w-sm mx-auto divide-x divide-white/10 border-t border-white/10 pt-8">
-        <div><p class="text-2xl font-black text-white">8,000+</p><p class="text-xs text-slate-400 mt-0.5">Bond Types</p></div>
-        <div><p class="text-2xl font-black text-white">50</p><p class="text-xs text-slate-400 mt-0.5">States</p></div>
-        <div><p class="text-2xl font-black text-white">24hr</p><p class="text-xs text-slate-400 mt-0.5">Issuance</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOME BODY CONTENT -->
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-16">
-    <div class="prose max-w-none">
-      {{ content | safe }}
-    </div>
-  </div>
-
-  {% elif layout == 'blog' %}
-
-  <!-- BLOG POST LAYOUT -->
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid lg:grid-cols-3 gap-10">
-    <article class="lg:col-span-2">
-      <div class="mb-6">
-        {% if tags %}
-        <div class="flex flex-wrap gap-2 mb-4">
-          {% for tag in tags %}
-          <span class="text-[11px] font-bold uppercase tracking-wide bg-brand-100 text-brand-700 px-3 py-1 rounded-full">{{ tag }}</span>
-          {% endfor %}
-        </div>
-        {% endif %}
-        <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight">{{ title }}</h1>
-        {% if description %}<p class="mt-3 text-lg text-slate-500 leading-relaxed">{{ description }}</p>{% endif %}
-      </div>
-      <div class="h-px bg-slate-200 mb-8"></div>
-      <div class="prose max-w-none">
-        {{ content | safe }}
-      </div>
-    </article>
-
-    <aside class="lg:col-span-1">
-      <div class="sticky top-24 space-y-5">
-        <div class="rounded-2xl p-6 text-white" style="background:linear-gradient(135deg,#4a3ac8,#352c81)">
-          <h3 class="font-bold text-lg">Get This Bond Today</h3>
-          <p class="mt-2 text-brand-200 text-sm leading-relaxed">Fast issuance, nationwide coverage, licensed agents ready to help.</p>
-          <a href="/pages/contact/" class="mt-4 flex items-center justify-center gap-2 bg-white text-brand-700 font-bold text-sm px-5 py-3 rounded-xl hover:bg-brand-50 transition">
-            Apply Now
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-        </div>
-        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
-          <h3 class="font-bold text-slate-900 mb-4">Quick Facts</h3>
-          <ul class="space-y-2.5 text-sm text-slate-600">
-            <li class="flex items-center gap-2">
-              <span class="h-5 w-5 rounded-full flex items-center justify-center shrink-0" style="background:#eef1ff">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#4a3ac8" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
-              </span>
-              Licensed in all 50 states
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="h-5 w-5 rounded-full flex items-center justify-center shrink-0" style="background:#eef1ff">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#4a3ac8" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
-              </span>
-              Same-day approvals available
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="h-5 w-5 rounded-full flex items-center justify-center shrink-0" style="background:#eef1ff">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#4a3ac8" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
-              </span>
-              8,000+ bond solutions
-            </li>
-          </ul>
-        </div>
-        <div class="bg-white border border-slate-200 rounded-2xl p-6">
-          <h3 class="font-bold text-slate-900 mb-1">Have Questions?</h3>
-          <p class="text-sm text-slate-500 mb-4">Stephen Wright, Licensed Agent</p>
-          <a href="/pages/contact/" class="flex items-center justify-center gap-2 border border-brand-300 text-brand-700 font-bold text-sm px-5 py-2.5 rounded-xl hover:bg-brand-50 transition">
-            Contact Us
-          </a>
-        </div>
-      </div>
-    </aside>
-  </div>
-
-{% else %}
+  
 
 <!-- DEFAULT PAGE LAYOUT -->
 <div class="bg-slate-50 border-b border-slate-200 py-10">
@@ -222,17 +119,112 @@
     <div class="flex items-center gap-2 text-xs text-slate-400 mb-4 font-medium">
       <a href="/" class="hover:text-brand-700">Home</a>
       <span>›</span>
-      <span class="text-slate-600">{{ title }}</span>
+      <span class="text-slate-600">Mortgage Broker &amp; MLO Bond</span>
     </div>
-    <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight max-w-3xl">{{ title }}</h1>
-    {% if description %}<p class="mt-3 text-lg text-slate-500 max-w-2xl leading-relaxed">{{ description }}</p>{% endif %}
+    <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight max-w-3xl">Mortgage Broker &amp; MLO Bond</h1>
+    
   </div>
 </div>
 
 <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid lg:grid-cols-3 gap-10">
   <article class="lg:col-span-2">
     <div class="prose max-w-none">
-      {{ content | safe }}
+      <p>Mortgage Broker &amp; MLO Bond</p>
+<p>Fast Approval &amp; Lowest Rates</p>
+<p>Get Your Mortgage Broker or MLO Bond Today</p>
+<p>Fast approvals. Lowest rates. Guaranteed state licensing compliance. Licensed nationwide. A‑rated surety partners.</p>
+<p>Looking for real estate or escrow bond information? Explore our Escrow &amp; Real Estate Bond Hub for escrow agent, title, warehouse, and mortgage bond resources.</p>
+<p>![](/assets/images/Blog Post Bonded to Close Why Mortgage Brokers and Bankers Need NMLS Surety Strength cover image.webp)</p>
+<p>What Is a Mortgage Broker Bond?</p>
+<p>A mortgage broker bond (also called an MLO bond, mortgage lender bond, or mortgage originator bond) is a state‑required surety bond that guarantees mortgage professionals will follow all lending laws, operate ethically, and protect consumers.</p>
+<p>This bond protects the public from:</p>
+<p>Fraudulent lending practices</p>
+<p>Misrepresentation</p>
+<p>Failure to comply with state or federal mortgage laws</p>
+<p>Financial harm to borrowers</p>
+<p>If you’re applying for or renewing a mortgage broker or MLO license, your state requires this bond before issuing the license.</p>
+<p>Mortgage Broker Bond Amount &amp; Cost</p>
+<p>Bond amounts vary by state and license type, often ranging from $10,000 to $150,000.</p>
+<p>Your cost depends on:</p>
+<p>Bond amount</p>
+<p>Credit score</p>
+<p>Business structure</p>
+<p>Loan volume (in some states)</p>
+<p>Most applicants qualify instantly with competitive rates.</p>
+<p>Who Needs a Mortgage Broker or MLO Bond?</p>
+<p>You may need a mortgage bond if you are:</p>
+<p>Mortgage broker</p>
+<p>Mortgage lender</p>
+<p>Mortgage loan originator (MLO)</p>
+<p>Mortgage servicer</p>
+<p>Non‑depository lender</p>
+<p>Branch manager or company owner</p>
+<p>Any professional originating, brokering, or servicing residential mortgage loans may be required to file this bond.</p>
+<p>Mortgage Broker Bond Requirements and Eligibility</p>
+<p>States typically require:</p>
+<p>NMLS registration</p>
+<p>State‑mandated bond amount</p>
+<p>Credit review</p>
+<p>Background check</p>
+<p>Annual renewal</p>
+<p>Some states adjust bond amounts based on loan volume or number of branches.</p>
+<p>How the Mortgage Broker Bond Process Works</p>
+<p>1</p>
+<p>Complete the Application</p>
+<p>Submit the quick, 60‑second application.</p>
+<p>2</p>
+<p>Secure the Lowest Rate</p>
+<p>We match you with the best rate available from A‑rated sureties.</p>
+<p>3</p>
+<p>Receive your bond</p>
+<p>Instant or same‑day issuance for NMLS filing.</p>
+<p>![](/assets/images/Image-Small Town Associates.webp)</p>
+<p>Why Choose Us for Your Mortgage Broker or MLO Bond</p>
+<p>Lowest rates from A‑rated sureties</p>
+<p>Fast approvals</p>
+<p>Digital delivery for immediate NMLS filing</p>
+<p>Mortgage bond specialists</p>
+<p>100% state compliance guaranteed</p>
+<p>![](/assets/images/Top-Questions-Image-Associates.webp)</p>
+<p>Top Mortgage Broker &amp; MLO Bond Questions Answered</p>
+<p>Our most common questions answered efficiently.</p>
+<p>How much does a mortgage broker or MLO bond cost</p>
+<p>How long does approval take?</p>
+<p>What does the bond guarantee?</p>
+<p>Can the bond be refunded?</p>
+<p>Do I need a separate bond for each branch?</p>
+<p>Ready to Get Your Mortgage Broker Bond?</p>
+<p>Customer testimonials</p>
+<p>What our customers are saying about us.</p>
+<p>“Our licensing deadline was approaching fast, and Inspire Surety issued our mortgage broker bond the same day. Their speed kept our application on track.”</p>
+<p>Kara M.</p>
+<p>Mortgage Brokerage Owner</p>
+<p>“As a first‑time broker, I wasn’t familiar with bonding requirements. Inspire Surety explained everything clearly and made the process incredibly easy.”</p>
+<p>Dylan H.</p>
+<p>Independent Mortgage Broker</p>
+<p>“We expanded into two new states and needed multiple mortgage broker bonds at once. Inspire Surety coordinated everything flawlessly.”</p>
+<p>Sonia P.</p>
+<p>Multi‑State Lending Director</p>
+<p>“Our renewal deadline was tight, but Inspire Surety delivered updated bond documents within hours. Their responsiveness is unmatched.”</p>
+<p>Trevor L.</p>
+<p>Mortgage Compliance Manager</p>
+<p>“We switched from another provider and immediately noticed the difference. Better rates, better communication, and faster approvals.”</p>
+<p>Michelle T.</p>
+<p>Residential Lending Specialist</p>
+<p>“State regulators required a higher bond amount due to our loan volume. Inspire Surety secured approval quickly and kept us fully compliant.”</p>
+<p>Sandy V.</p>
+<p>Mortgage Services Director</p>
+<p>Surety Bond Hubs</p>
+<p>Contractors &amp; Construction Bond Hub</p>
+<p>Court &amp; Fiduciary Bond Hub</p>
+<p>Cannabis Bond Hub</p>
+<p>Environmental &amp; Reclamation Bond Hub</p>
+<p>Federal &amp; BLM Bond Hub</p>
+<p>Escrow &amp; Real Estate Bond Hub</p>
+<p>License &amp; Permit Bond Hub</p>
+<p>Agriculture &amp; Food Bond Hub</p>
+<p>Surety Bond Learning Center</p>
+
     </div>
   </article>
 
@@ -260,4 +252,3 @@
   </aside>
 </div>
 
-{% endif %}

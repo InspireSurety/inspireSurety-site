@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ title }} | InspireSurety</title>
-<meta name="description" content="{{ description }}">
+<title>Federal Government &amp; Agency Bonds | InspireSurety</title>
+<meta name="description" content="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
@@ -111,110 +111,7 @@
 
 <!-- PAGE CONTENT -->
 <main>
-  {% if layout == 'home' %}
-
-  <!-- HOME HERO -->
-  <section class="relative overflow-hidden" style="background:linear-gradient(145deg,#0f0c29,#1e1b4b,#312e81)">
-    <div class="absolute inset-0 dot-w pointer-events-none"></div>
-    <div class="absolute -top-32 right-0 w-[500px] h-[500px] rounded-full pointer-events-none" style="background:radial-gradient(circle,rgba(99,102,241,.22) 0%,transparent 70%)"></div>
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-28 text-center">
-      <div class="inline-flex items-center gap-2 border border-brand-400/25 bg-white/5 text-brand-300 text-[11px] font-bold tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">
-        <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-        Licensed in All 50 States
-      </div>
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.06] tracking-tight max-w-3xl mx-auto">{{ title }}</h1>
-      <p class="mt-5 text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">{{ description }}</p>
-      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/pages/surety-bonds/" class="inline-flex items-center justify-center gap-2 font-bold text-[15px] text-white px-8 py-4 rounded-xl shadow-lg transition" style="background:#5849e4" onmouseover="this.style.background='#4a3ac8'" onmouseout="this.style.background='#5849e4'">
-          Browse Bonds
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a href="/pages/contact/" class="inline-flex items-center justify-center gap-2 font-bold text-[15px] text-brand-200 border border-brand-400/40 px-8 py-4 rounded-xl hover:bg-white/5 transition">
-          Talk to an Agent
-        </a>
-      </div>
-      <div class="mt-14 grid grid-cols-3 max-w-sm mx-auto divide-x divide-white/10 border-t border-white/10 pt-8">
-        <div><p class="text-2xl font-black text-white">8,000+</p><p class="text-xs text-slate-400 mt-0.5">Bond Types</p></div>
-        <div><p class="text-2xl font-black text-white">50</p><p class="text-xs text-slate-400 mt-0.5">States</p></div>
-        <div><p class="text-2xl font-black text-white">24hr</p><p class="text-xs text-slate-400 mt-0.5">Issuance</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOME BODY CONTENT -->
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-16">
-    <div class="prose max-w-none">
-      {{ content | safe }}
-    </div>
-  </div>
-
-  {% elif layout == 'blog' %}
-
-  <!-- BLOG POST LAYOUT -->
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid lg:grid-cols-3 gap-10">
-    <article class="lg:col-span-2">
-      <div class="mb-6">
-        {% if tags %}
-        <div class="flex flex-wrap gap-2 mb-4">
-          {% for tag in tags %}
-          <span class="text-[11px] font-bold uppercase tracking-wide bg-brand-100 text-brand-700 px-3 py-1 rounded-full">{{ tag }}</span>
-          {% endfor %}
-        </div>
-        {% endif %}
-        <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight">{{ title }}</h1>
-        {% if description %}<p class="mt-3 text-lg text-slate-500 leading-relaxed">{{ description }}</p>{% endif %}
-      </div>
-      <div class="h-px bg-slate-200 mb-8"></div>
-      <div class="prose max-w-none">
-        {{ content | safe }}
-      </div>
-    </article>
-
-    <aside class="lg:col-span-1">
-      <div class="sticky top-24 space-y-5">
-        <div class="rounded-2xl p-6 text-white" style="background:linear-gradient(135deg,#4a3ac8,#352c81)">
-          <h3 class="font-bold text-lg">Get This Bond Today</h3>
-          <p class="mt-2 text-brand-200 text-sm leading-relaxed">Fast issuance, nationwide coverage, licensed agents ready to help.</p>
-          <a href="/pages/contact/" class="mt-4 flex items-center justify-center gap-2 bg-white text-brand-700 font-bold text-sm px-5 py-3 rounded-xl hover:bg-brand-50 transition">
-            Apply Now
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-        </div>
-        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
-          <h3 class="font-bold text-slate-900 mb-4">Quick Facts</h3>
-          <ul class="space-y-2.5 text-sm text-slate-600">
-            <li class="flex items-center gap-2">
-              <span class="h-5 w-5 rounded-full flex items-center justify-center shrink-0" style="background:#eef1ff">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#4a3ac8" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
-              </span>
-              Licensed in all 50 states
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="h-5 w-5 rounded-full flex items-center justify-center shrink-0" style="background:#eef1ff">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#4a3ac8" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
-              </span>
-              Same-day approvals available
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="h-5 w-5 rounded-full flex items-center justify-center shrink-0" style="background:#eef1ff">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#4a3ac8" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
-              </span>
-              8,000+ bond solutions
-            </li>
-          </ul>
-        </div>
-        <div class="bg-white border border-slate-200 rounded-2xl p-6">
-          <h3 class="font-bold text-slate-900 mb-1">Have Questions?</h3>
-          <p class="text-sm text-slate-500 mb-4">Stephen Wright, Licensed Agent</p>
-          <a href="/pages/contact/" class="flex items-center justify-center gap-2 border border-brand-300 text-brand-700 font-bold text-sm px-5 py-2.5 rounded-xl hover:bg-brand-50 transition">
-            Contact Us
-          </a>
-        </div>
-      </div>
-    </aside>
-  </div>
-
-{% else %}
+  
 
 <!-- DEFAULT PAGE LAYOUT -->
 <div class="bg-slate-50 border-b border-slate-200 py-10">
@@ -222,17 +119,145 @@
     <div class="flex items-center gap-2 text-xs text-slate-400 mb-4 font-medium">
       <a href="/" class="hover:text-brand-700">Home</a>
       <span>›</span>
-      <span class="text-slate-600">{{ title }}</span>
+      <span class="text-slate-600">Federal Government &amp; Agency Bonds</span>
     </div>
-    <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight max-w-3xl">{{ title }}</h1>
-    {% if description %}<p class="mt-3 text-lg text-slate-500 max-w-2xl leading-relaxed">{{ description }}</p>{% endif %}
+    <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight max-w-3xl">Federal Government &amp; Agency Bonds</h1>
+    
   </div>
 </div>
 
 <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid lg:grid-cols-3 gap-10">
   <article class="lg:col-span-2">
     <div class="prose max-w-none">
-      {{ content | safe }}
+      <p>Federal Government &amp; Agency Bonds</p>
+<p>Fast Approval &amp; Lowest Rates</p>
+<p>Get Your Federal Bond Today</p>
+<p>Fast approvals. Lowest rates. Guaranteed federal compliance. Licensed nationwide. A‑rated surety partners.</p>
+<p>Working with federal or agency bond requirements? Explore our Federal &amp; BLM Bond Hub for USDA, BLM, HUD, BIA, and federal agency bond resources.</p>
+<p>![](/assets/images/Bond-US Customs.png)</p>
+<p>What Are Federal Government &amp; Agency Bonds?</p>
+<p>Federal Government &amp; Agency Bonds are surety bonds required by U.S. federal agencies to ensure businesses comply with federal regulations, fulfill contract obligations, and operate ethically when performing work for or regulated by the federal government.</p>
+<p>These bonds protect the federal government and the public from:</p>
+<p>Contract defaults</p>
+<p>Non‑payment of taxes or fees</p>
+<p>Failure to meet regulatory standards</p>
+<p>Misrepresentation or fraud</p>
+<p>Environmental or financial harm</p>
+<p>If your business works with or is regulated by a federal agency, you may be required to file one or more federal bonds before receiving approval.</p>
+<p>Types of Federal Government &amp; Agency Bonds We Provide</p>
+<p>Below are the most common federal bonds required across U.S. agencies.</p>
+<p>1. Federal Contractor Bonds (Miller Act Bonds)</p>
+<p>Required for contractors on federal construction projects over $150,000. Includes Performance Bonds and Payment Bonds.</p>
+<p>2. U.S. Customs Bonds</p>
+<p>Required for importers, exporters, and customs brokers. Ensures compliance with U.S. Customs &amp; Border Protection (CBP) regulations.</p>
+<p>Types include:</p>
+<p>Import Bonds</p>
+<p>Drawback Bonds</p>
+<p>Custodian Bonds</p>
+<p>International Carrier Bonds</p>
+<p>3. SBA Surety Bonds</p>
+<p>For small businesses needing bonding support through the Small Business Administration. Helps contractors qualify for federal, state, and local projects.</p>
+<p>4. DMEPOS Bonds (Medicare / CMS Bonds)</p>
+<p>Required for medical equipment suppliers billing Medicare. Ensures compliance with Centers for Medicare &amp; Medicaid Services (CMS) regulations.</p>
+<p>5. BLM Bonds (Bureau of Land Management)</p>
+<p>Required for oil &amp; gas, mining, right‑of‑way, and renewable energy projects on federal land. Guarantees environmental compliance and land restoration.</p>
+<p>6. USDA Bonds</p>
+<p>Required for agricultural businesses regulated by the U.S. Department of Agriculture. Includes PACA, grain dealer, livestock dealer, and warehouse bonds.</p>
+<p>7. FMCSA Bonds (BMC‑84)</p>
+<p>Required for freight brokers and freight forwarders. Guarantees payment to carriers and compliance with federal transportation rules.</p>
+<p>8. ATF Bonds (Alcohol, Tobacco &amp; Firearms)</p>
+<p>Required for manufacturers, importers, and dealers of regulated products. Ensures compliance with federal excise tax and licensing laws.</p>
+<p>9. EPA Environmental Bonds</p>
+<p>Required for businesses handling hazardous materials or environmental remediation. Guarantees compliance with federal environmental regulations.</p>
+<p>10. Federal Fiduciary &amp; Court Bonds</p>
+<p>Required by federal courts for guardians, trustees, receivers, and administrators. Ensures proper handling of funds and court‑ordered duties.</p>
+<p>Federal Bond Amounts and Cost</p>
+<p>Bond amounts vary widely depending on:</p>
+<p>Federal agency requirements</p>
+<p>Contract size or regulatory exposure</p>
+<p>Type of business or license</p>
+<p>Financial risk level</p>
+<p>Your premium depends on:</p>
+<p>Bond amount</p>
+<p>Credit score</p>
+<p>Company financials</p>
+<p>Industry experience</p>
+<p>Most businesses qualify quickly with competitive rates, even for high‑value federal bonds.</p>
+<p>Who Needs a Federal Government or Agency Bond</p>
+<p>You may need a federal bond if you are:</p>
+<p>A federal contractor or subcontractor</p>
+<p>An importer, exporter, or customs broker</p>
+<p>A Medicare‑billing supplier</p>
+<p>A transportation or logistics provider</p>
+<p>An agricultural or food‑supply business</p>
+<p>An energy, mining, or land‑use operator</p>
+<p>A fiduciary appointed by a federal court</p>
+<p>Any business regulated by or contracting with a federal agency may be required to file one or more bonds.</p>
+<p>Federal Bond Requirements &amp; Eligibility</p>
+<p>Federal agencies typically require:</p>
+<p>Completed federal license or contract application</p>
+<p>Agency‑mandated bond amount</p>
+<p>Credit review</p>
+<p>Financial statements</p>
+<p>Annual or multi‑year renewal</p>
+<p>Some agencies require multiple bonds depending on the scope of work.</p>
+<p>How the Federal Bond Process Works</p>
+<p>1</p>
+<p>Complete the Application</p>
+<p>Submit the quick, 60‑second application.</p>
+<p>2</p>
+<p>Secure the Lowest Rate</p>
+<p>We match you with the best rate available from A‑rated sureties.</p>
+<p>3</p>
+<p>Receive your bond</p>
+<p>Same‑day issuance available for federal filing.</p>
+<p>![](/assets/images/Image-Small Town Associates.webp)</p>
+<p>Why Businesses Choose Us</p>
+<p>Lowest rates from A‑rated sureties</p>
+<p>Fast approvals</p>
+<p>Digital delivery for immediate filing</p>
+<p>Federal‑bond specialists</p>
+<p>100% compliance guaranteed</p>
+<p>![](/assets/images/Top-Questions-Image-Associates.webp)</p>
+<p>Top Federal Bond Questions Answered</p>
+<p>Our most common questions answered efficiently.</p>
+<p>How much does a federal bond cost?</p>
+<p>How long does approval take?</p>
+<p>What does the bond guarantee?</p>
+<p>Can the bond be refunded?</p>
+<p>Do I need separate bonds for different agencies?</p>
+<p>Ready to Get Your Federal Agency Bond?</p>
+<p>Customer testimonials</p>
+<p>What our customers are saying about us.</p>
+<p>“Inspire Surety handled our federal contractor bonds quickly and professionally. We were cleared to start our project without delays.”</p>
+<p>Brian S.</p>
+<p>Federal Bond Customer</p>
+<p>“Our import business needed multiple customs bonds. Inspire Surety delivered excellent rates and fast approval.”</p>
+<p>Jim C.</p>
+<p>Import Business Owner</p>
+<p>“We rely on Inspire Surety for all federal compliance bonds across our divisions. Their expertise is unmatched.”</p>
+<p>Laura Evans</p>
+<p>GSA Provider</p>
+<p>“When expanding into federal land projects, Inspire Surety secured our BLM and EPA bonds with ease.”</p>
+<p>Bobby W.</p>
+<p>Compliance Officer</p>
+<p>“As a new federal contractor, we needed clear guidance. Inspire Surety walked us through every step and delivered our bond instantly.”</p>
+<p>Renee Y.</p>
+<p>Government Contractor</p>
+<p>“Their team understands federal regulations inside and out. The bonding process was incredibly smooth.”</p>
+<p>Alicia P.</p>
+<p>Government Contractor</p>
+<p>Surety Bond Hubs</p>
+<p>Contractors &amp; Construction Bond Hub</p>
+<p>Court &amp; Fiduciary Bond Hub</p>
+<p>Cannabis Bond Hub</p>
+<p>Environmental &amp; Reclamation Bond Hub</p>
+<p>Federal &amp; BLM Bond Hub</p>
+<p>Escrow &amp; Real Estate Bond Hub</p>
+<p>License &amp; Permit Bond Hub</p>
+<p>Agriculture &amp; Food Bond Hub</p>
+<p>Surety Bond Learning Center</p>
+
     </div>
   </article>
 
@@ -260,4 +285,3 @@
   </aside>
 </div>
 
-{% endif %}
