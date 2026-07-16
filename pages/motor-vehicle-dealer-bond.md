@@ -1,316 +1,397 @@
 ---
-
 title: "Motor Vehicle Dealer Bond"
-
 layout: "layout.njk"
-
 ---
 
-
-
-Motor Vehicle Dealer Bond
-
-Fast Approval \& Lowest Rates
-
-
-
-Get Your Auto Dealer Bond Today
-
-
-
-Fast approvals. Lowest rates. Guaranteed state licensing compliance. Licensed nationwide. A‑rated surety partners.
-
-
-
-Protect your dealership and meet all state MVD requirements with confidence. This bond strengthens your credibility and reassures customers that you operate ethically and transparently. 
-
-
-
-A strong dealer bond not only keeps you compliant but also sets you apart in a competitive market by demonstrating professionalism, financial responsibility, and long‑term commitment to customer protection.
-
-
-
-Start your dealer bond application now for fast, hassle‑free approval.
-
-
-
-
-
-Need help with a license or permit bond? Explore our License \& Permit Bond Hub for state‑specific requirements and application guides.
-
-!\[](/assets/Bond-Motor vehicle.png)
-
-
-
-What Is a Motor Vehicle Dealer Bond?
-
-A motor vehicle dealer bond (also called an auto dealer bond or MVD bond) is a state‑required surety bond that guarantees auto dealers operate ethically, follow state laws, and protect consumers from financial harm.
-
-
-
-This bond protects the public from:
-
-
-
-Fraudulent vehicle sales
-
-Title or odometer fraud
-
-Failure to pay taxes or fees
-
-Misrepresentation of vehicle condition
-
-Licensing violations
-
-If you’re applying for or renewing a dealer license, your state requires this bond before issuing the license.
-
-
-
-Motor Vehicle Dealer Bond Amount \& Cost
-
-Bond amounts vary by state and license type, typically ranging from $10,000 to $100,000.
-
-
-
-Your cost depends on:
-
-
-
-Bond amount
-
-Credit score
-
-Dealer type (new, used, wholesale, etc.)
-
-State regulations
-
-Most applicants qualify instantly with competitive rates.
-
-
-
-
-
-Who Needs a Motor Vehicle Dealer Bond?
-
-You may need an auto dealer bond if you are:
-
-
-
-Used car dealer
-
-New car dealer
-
-Wholesale dealer
-
-Motorcycle dealer
-
-RV or trailer dealer
-
-Mobile home dealer (in some states)
-
-Auto broker
-
-Any business selling vehicles to the public or other dealers may be required to file this bond.
-
-
-
-Motor Vehicle Dealer Bond Requirements and Eligibility
-
-States typically require:
-
-
-
-Completed dealer license application
-
-State‑mandated bond amount
-
-Credit review
-
-Business location inspection
-
-Annual or biannual renewal
-
-Some states require separate bonds for wholesale vs. retail dealers.
-
-
-
-How the Auto Dealer Bond Process Works
-
-1
-
-Complete the Application
-
-Submit the quick, 60‑second application.
-
-
-
-
-
-2
-
-Secure the Lowest Rate
-
-We match you with the best rate available from A‑rated sureties.
-
-
-
-3
-
-Receive your bond
-
-Same‑day issuance available for state filing.
-
-
-
-Motor Vehicle Dealer Bond Requirements by State
-
-Arizona MVD Bond - State‑required motor‑vehicle dealer and title bonds with full Arizona MVD compliance.
-
-
-
-
-
-Florida MVD Bond-Florida DHSMV‑approved dealer and title bonds with fast digital delivery.
-
-
-
-
-
-Texas MVD Bond-Dealer, wholesale, and title bonds meeting all Texas DMV bonding requirements.
-
-
-
-!\[](/assets/images/Image-Small Town Associates.webp)
-
-
-
-
-
-Why Choose Us for Your Motor Vehicle Dealer Bond
-
-Lowest rates from A‑rated sureties
-
-Fast approvals
-
-Digital delivery for immediate filing
-
-Auto dealer bond specialists
-
-100% state compliance guaranteed
-
-!\[](/assets/images/Top-Questions-Image-Associates.webp)
-
-
-
-
-
-Top Auto Dealer Bond Questions Answered
-
-Our most common questions answered efficiently.
-
-
-
-
-
-How much does an auto dealer bond cost?
-
-
-
-How long does approval take?
-
-
-
-What does the bond guarantee?
-
-
-
-Can the bond be refunded?
-
-
-
-Do I need a bond for renewal?
-
-
-
-
-
-
-
-Ready to Get Your Motor Vehicle Dealer Bond?
-
-
-
-Customer testimonials
-
-What our customers are saying about us.
-
-
-
-“Our dealership needed a bond fast to finalize our license renewal. Inspire Surety delivered same‑day approval and kept our sales floor open without interruption.”
-
-
-
-RIckey T.
-
-Used Car Dealer
-
-&#x20;“As a first‑time dealer, I wasn’t sure what bond amount I needed. Inspire Surety explained everything clearly and issued my bond within hours.”
-
-
-
-Angela R.
-
-Independent Auto Dealer
-
-“We expanded into wholesale sales and needed an additional dealer bond. Inspire Surety handled the entire process quickly and professionally.”
-
-
-
-Marcus L.
-
-Wholesale Vehicle Dealer
-
-“Our audit required updated bonding documents immediately. Inspire Surety delivered everything the same day and kept us fully compliant.”
-
-
-
-Tara M.
-
-Franchise Dealership
-
-“We switched from another provider and instantly noticed the difference. Better rates, faster service, and excellent communication.”
-
-
-
-Jamal C.
-
-Multi‑Lot Dealer
-
-“State regulators required a higher bond amount due to our increased inventory. Inspire Surety secured approval quickly and made the process stress‑free.”
-
-
-
-Mary B.
-
-Auto Sales Operator
-
-Surety Bond Hubs
-
-Contractors \& Construction Bond Hub
-
-Court \& Fiduciary Bond Hub
-
-Cannabis Bond Hub
-
-Environmental \& Reclamation Bond Hub
-
-Federal \& BLM Bond Hub
-
-Escrow \& Real Estate Bond Hub
-
-License \& Permit Bond Hub
-
-Agriculture \& Food Bond Hub
-
-Surety Bond Learning Center
-
+<style>
+.is-lpb *, .is-lpb *::before, .is-lpb *::after { box-sizing: border-box; }
+.is-lpb {
+  font-family: inherit;
+  color: #0f172a;
+  margin: 0 calc(-50vw + 50%);
+  width: 100vw;
+  padding: 0;
+}
+.is-lpb .is-inner { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+
+/* ---- HERO: LEVEL 3 (teal-cyan) ---- */
+.is-lpb .is-hero-wrap {
+  background: linear-gradient(135deg, #0e7490 0%, #0891b2 60%, #06b6d4 100%);
+  padding: 72px 0 64px;
+  position: relative;
+  overflow: hidden;
+}
+.is-lpb .is-hero-wrap::before {
+  content: "";
+  position: absolute;
+  top: -100px; right: -100px;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.is-lpb .is-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #cffafe;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+  position: relative; z-index: 1;
+}
+.is-lpb .is-hero-wrap h1 {
+  font-size: clamp(32px, 5vw, 52px) !important;
+  font-weight: 900 !important;
+  color: #fff !important;
+  line-height: 1.1 !important;
+  margin: 0 0 12px !important;
+  position: relative; z-index: 1;
+  letter-spacing: -0.02em;
+}
+.is-lpb .is-hero-tag { font-size: 17px; color: #cffafe; font-weight: 700; margin-bottom: 20px; position: relative; z-index: 1; }
+.is-lpb .is-hero-wrap p { font-size: 16px; color: rgba(255,255,255,0.9); line-height: 1.7; max-width: 600px; margin: 0 0 28px; position: relative; z-index: 1; }
+.is-lpb .is-btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #fff; color: #0e7490 !important;
+  padding: 16px 34px; border-radius: 12px;
+  font-size: 16px; font-weight: 800;
+  text-decoration: none !important; transition: all 0.2s;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  position: relative; z-index: 1;
+}
+.is-lpb .is-btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
+.is-lpb .is-hero-note { font-size: 13px; color: rgba(255,255,255,0.65); margin-top: 14px; position: relative; z-index: 1; }
+.is-lpb .is-hero-stats { display: flex; gap: 32px; margin-top: 36px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.2); position: relative; z-index: 1; }
+.is-lpb .is-hero-stat-num { font-size: 26px; font-weight: 900; color: #fff; line-height: 1; display: block; }
+.is-lpb .is-hero-stat-label { font-size: 11px; color: rgba(255,255,255,0.7); font-weight: 600; margin-top: 4px; display: block; }
+
+/* ---- HUB CALLOUT ---- */
+.is-lpb .is-hub-wrap { background: #f0fdf4; border-top: 1px solid #bbf7d0; border-bottom: 1px solid #bbf7d0; padding: 22px 0; }
+.is-lpb .is-hub-callout { font-size: 14.5px; color: #166534; line-height: 1.6; display: flex; align-items: center; gap: 10px; }
+.is-lpb .is-hub-callout a { color: #15803d; font-weight: 700; text-decoration: underline; }
+
+/* ---- TOC ---- */
+.is-lpb .is-toc { background: #0f172a; border-radius: 20px; padding: 32px 36px; margin: -36px auto 0; max-width: 940px; position: relative; z-index: 2; box-shadow: 0 20px 50px rgba(0,0,0,0.25); }
+.is-lpb .is-toc-title { font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #67e8f9; margin-bottom: 16px; }
+.is-lpb .is-toc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 24px; }
+.is-lpb .is-toc-grid a { font-size: 14px; color: #e2e8f0; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; }
+.is-lpb .is-toc-grid a::before { content: "→"; color: #22d3ee; }
+.is-lpb .is-toc-grid a:hover { color: #67e8f9; }
+
+/* ---- SECTIONS ---- */
+.is-lpb .is-sec-white { background: #fff; padding: 64px 0; }
+.is-lpb .is-sec-gray { background: #f8fafc; padding: 64px 0; }
+.is-lpb .is-sec-tint { background: linear-gradient(135deg, #ecfeff, #f0fdfa); padding: 64px 0; }
+.is-lpb .is-sec h2 { font-size: clamp(22px, 2.8vw, 30px) !important; font-weight: 900 !important; color: #0f172a !important; margin: 0 0 16px !important; letter-spacing: -0.01em; }
+.is-lpb .is-eyebrow { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #0891b2; margin-bottom: 10px; }
+.is-lpb .is-sec p { font-size: 15px; color: #475569; line-height: 1.75; margin: 0 0 14px; }
+
+/* ---- CHECKLIST ---- */
+.is-lpb .is-check-list { display: flex; flex-direction: column; gap: 2px; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; margin: 20px 0; background: #fff; }
+.is-lpb .is-check-row { display: flex; align-items: center; gap: 12px; padding: 14px 20px; border-bottom: 1px solid #f1f5f9; }
+.is-lpb .is-check-row:last-child { border-bottom: none; }
+.is-lpb .is-check-icon { width: 26px; height: 26px; border-radius: 50%; background: #ecfeff; color: #0891b2; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 12px; font-weight: 800; }
+.is-lpb .is-check-row span { font-size: 14.5px; color: #334155; font-weight: 500; }
+
+/* ---- STAT BAND ---- */
+.is-lpb .is-stat-band { display: flex; background: #fff; border: 1px solid #e2e8f0; border-radius: 18px; overflow: hidden; margin: 24px 0; box-shadow: 0 8px 28px rgba(0,0,0,0.06); }
+.is-lpb .is-stat-cell { flex: 1; text-align: center; padding: 28px 16px; border-right: 1px solid #f1f5f9; }
+.is-lpb .is-stat-cell:last-child { border-right: none; }
+.is-lpb .is-stat-cell-big { background: linear-gradient(135deg, #0891b2, #06b6d4); color: #fff; }
+.is-lpb .is-stat-num { font-size: 30px; font-weight: 900; color: #0e7490; line-height: 1; }
+.is-lpb .is-stat-cell-big .is-stat-num { color: #fff; }
+.is-lpb .is-stat-label { font-size: 11.5px; color: #64748b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; margin-top: 8px; }
+.is-lpb .is-stat-cell-big .is-stat-label { color: rgba(255,255,255,0.85); }
+
+/* ---- STEPS ---- */
+.is-lpb .is-steps { display: flex; flex-direction: column; gap: 0; margin: 24px 0; }
+.is-lpb .is-step { display: grid; grid-template-columns: 80px 1fr; gap: 24px; align-items: start; padding: 28px 0; border-bottom: 1px solid #e2e8f0; }
+.is-lpb .is-step:last-child { border-bottom: none; }
+.is-lpb .is-step-num { width: 64px; height: 64px; background: linear-gradient(135deg, #0891b2, #06b6d4); border-radius: 18px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 26px; font-weight: 900; flex-shrink: 0; box-shadow: 0 8px 20px rgba(8,145,178,0.3); }
+.is-lpb .is-step h3 { font-size: 18px !important; font-weight: 800 !important; color: #0f172a !important; margin: 0 0 6px !important; }
+.is-lpb .is-step p { font-size: 14.5px; color: #475569; margin: 0; line-height: 1.65; }
+
+/* ---- STATE CARDS ---- */
+.is-lpb .is-state-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 24px 0; }
+.is-lpb .is-state-card { background: #0f172a; border-radius: 18px; padding: 28px 26px; color: #fff; }
+.is-lpb .is-state-flag { font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #67e8f9; margin-bottom: 10px; }
+.is-lpb .is-state-card h4 { font-size: 19px !important; font-weight: 800 !important; color: #fff !important; margin: 0 0 12px !important; }
+.is-lpb .is-state-card p { font-size: 13.5px; color: #cbd5e1; line-height: 1.65; margin: 0 0 16px; }
+.is-lpb .is-state-card a { font-size: 13.5px; color: #67e8f9; font-weight: 700; text-decoration: none; }
+.is-lpb .is-state-card a:hover { text-decoration: underline; }
+
+/* ---- WHY US ---- */
+.is-lpb .is-why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 20px 0; }
+.is-lpb .is-why-pill { background: #fff; border: 2px solid #e2e8f0; border-radius: 14px; padding: 20px; display: flex; align-items: center; gap: 14px; transition: all 0.2s; }
+.is-lpb .is-why-pill:hover { border-color: #0891b2; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(8,145,178,0.1); }
+.is-lpb .is-why-icon { width: 40px; height: 40px; border-radius: 10px; background: #ecfeff; color: #0891b2; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 18px; font-weight: 800; }
+.is-lpb .is-why-pill span { font-size: 14px; color: #1e293b; font-weight: 600; }
+
+/* ---- FAQ ---- */
+.is-lpb .is-faq-list { display: flex; flex-direction: column; gap: 10px; margin: 20px 0; }
+.is-lpb .is-faq-item { border: 1px solid #e2e8f0; border-radius: 14px; background: #fff; overflow: hidden; }
+.is-lpb .is-faq-item[open] { border-color: #67e8f9; box-shadow: 0 6px 20px rgba(8,145,178,0.1); }
+.is-lpb .is-faq-item summary { font-size: 15px; font-weight: 700; color: #0f172a; padding: 18px 22px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; gap: 14px; }
+.is-lpb .is-faq-item summary::-webkit-details-marker { display: none; }
+.is-lpb .is-faq-item summary::after { content: "+"; font-size: 22px; font-weight: 300; color: #0891b2; flex-shrink: 0; transition: transform 0.25s; line-height: 1; }
+.is-lpb .is-faq-item[open] summary::after { transform: rotate(45deg); }
+.is-lpb .is-faq-body { padding: 0 22px 20px; }
+.is-lpb .is-faq-body p { font-size: 14.5px; color: #475569; margin: 0; line-height: 1.7; }
+
+/* ---- TESTIMONIALS ---- */
+.is-lpb .is-testimonials { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 24px 0; }
+.is-lpb .is-testimonial { background: #fff; border-radius: 16px; padding: 24px 22px; position: relative; box-shadow: 0 4px 16px rgba(0,0,0,0.05); border-top: 3px solid #0891b2; }
+.is-lpb .is-testimonial::before { content: '"'; position: absolute; top: 8px; right: 20px; font-size: 48px; color: #ecfeff; font-family: Georgia, serif; line-height: 1; }
+.is-lpb .is-testimonial-text { font-size: 14px; color: #334155; line-height: 1.65; font-style: italic; margin: 0 0 14px; position: relative; z-index: 1; }
+.is-lpb .is-testimonial-name { font-weight: 700; color: #1e293b; font-size: 14px; display: block; }
+.is-lpb .is-testimonial-role { font-size: 12px; color: #94a3b8; }
+
+/* ---- HUB LINKS ---- */
+.is-lpb .is-hub-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 24px; }
+.is-lpb .is-hub-links a { font-size: 13.5px; color: #0e7490; background: #ecfeff; border: 1px solid #a5f3fc; padding: 10px 18px; border-radius: 999px; text-decoration: none; font-weight: 600; transition: all 0.15s; }
+.is-lpb .is-hub-links a:hover { background: #0891b2; color: #fff; border-color: #0891b2; }
+
+/* ---- FINAL CTA ---- */
+.is-lpb .is-final-wrap { background: linear-gradient(135deg, #0e7490, #0891b2, #06b6d4); padding: 72px 0; text-align: center; position: relative; overflow: hidden; }
+.is-lpb .is-final-wrap::before { content: ""; position: absolute; top: -80px; left: -80px; width: 320px; height: 320px; background: rgba(255,255,255,0.08); border-radius: 50%; }
+.is-lpb .is-final-wrap::after { content: ""; position: absolute; bottom: -100px; right: -60px; width: 380px; height: 380px; background: rgba(255,255,255,0.05); border-radius: 50%; }
+.is-lpb .is-final-wrap h2 { font-size: clamp(26px, 3.5vw, 40px) !important; color: #fff !important; margin: 0 0 14px !important; position: relative; z-index: 1; font-weight: 900 !important; }
+.is-lpb .is-final-wrap p { font-size: 17px; color: rgba(255,255,255,0.9); margin: 0 auto 32px; max-width: 480px; position: relative; z-index: 1; }
+.is-lpb .is-btn-white { display: inline-block; background: #fff; color: #0e7490 !important; padding: 17px 40px; border-radius: 12px; font-size: 16px; font-weight: 800; text-decoration: none !important; position: relative; z-index: 1; transition: all 0.2s; box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+.is-lpb .is-btn-white:hover { background: #ecfeff; transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.25); }
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 720px) {
+  .is-lpb .is-toc { margin: -24px 20px 0; padding: 24px 22px; }
+  .is-lpb .is-toc-grid { grid-template-columns: 1fr; }
+  .is-lpb .is-stat-band { flex-wrap: wrap; }
+  .is-lpb .is-stat-cell { flex: 1 1 50%; border-bottom: 1px solid #f1f5f9; }
+  .is-lpb .is-state-grid { grid-template-columns: 1fr; }
+  .is-lpb .is-why-grid { grid-template-columns: 1fr; }
+  .is-lpb .is-testimonials { grid-template-columns: 1fr; }
+  .is-lpb .is-hero-stats { flex-wrap: wrap; gap: 20px; }
+  .is-lpb .is-sec-white, .is-lpb .is-sec-gray, .is-lpb .is-sec-tint { padding: 44px 0; }
+  .is-lpb .is-hero-wrap { padding: 48px 0 56px; }
+}
+</style>
+
+<div class="is-lpb">
+
+  <div class="is-hero-wrap">
+    <div class="is-inner">
+      <div class="is-hero-badge">License &amp; Permit Bond</div>
+      <h1>Motor Vehicle Dealer Bond</h1>
+      <div class="is-hero-tag">Fast Approval &amp; Lowest Rates</div>
+      <p>Fast approvals. Lowest rates. Guaranteed state compliance. Licensed nationwide. A-rated surety partners.</p>
+      <a href="/pages/contact/" class="is-btn-primary">
+        Start Your Application
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0e7490" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <div class="is-hero-note">Your state lookup happens during the application.</div>
+      <div class="is-hero-stats">
+        <div><span class="is-hero-stat-num">$10K–$50K</span><span class="is-hero-stat-label">Bond Range</span></div>
+        <div><span class="is-hero-stat-num">$100–$500</span><span class="is-hero-stat-label">Typical Cost</span></div>
+        <div><span class="is-hero-stat-num">1–2 Yrs</span><span class="is-hero-stat-label">Term Length</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-toc">
+    <div class="is-toc-title">On This Page</div>
+    <div class="is-toc-grid">
+      <a href="#what-is">What Is a Motor Vehicle Dealer Bond?</a>
+      <a href="#cost">Bond Amount &amp; Cost</a>
+      <a href="#who-needs">Who Needs This Bond?</a>
+      <a href="#eligibility">Requirements and Eligibility</a>
+      <a href="#process">How the Process Works</a>
+      <a href="#states">State-Specific Requirements</a>
+      <a href="#why-us">Why Choose Us</a>
+      <a href="#faq">Top Questions Answered</a>
+    </div>
+  </div>
+
+  <div class="is-hub-wrap">
+    <div class="is-inner">
+      <div class="is-hub-callout">💡 <span>Need help with a license or permit bond? Explore our <a href="/pages/license-permit-bond-hub/">License &amp; Permit Bond Hub</a> for state-specific requirements and application guides.</span></div>
+    </div>
+  </div>
+
+  <div class="is-sec-white" id="what-is">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">The Basics</span>
+      <h2>What Is a Motor Vehicle Dealer Bond?</h2>
+      <p>A motor vehicle dealer bond is a state-required surety bond that protects consumers and the public from financial harm caused by a dealer's dishonest, fraudulent, or unlawful sales practices.</p>
+      <p>This bond ensures that if a dealer:</p>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Misrepresents a vehicle's condition or title</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Fails to transfer a title properly</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Engages in fraudulent sales practices</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Violates state motor vehicle dealer laws</span></div>
+      </div>
+      <p>…the public can be compensated for resulting losses.</p>
+      <p>Most states require this bond before a motor vehicle dealer license can be issued or renewed.</p>
+    </div>
+  </div>
+
+  <div class="is-sec-gray" id="cost">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Pricing</span>
+      <h2>Motor Vehicle Dealer Bond Amount &amp; Cost</h2>
+      <p>Bond amounts are set by each state, typically ranging from $10,000 to $50,000.</p>
+      <p>Your cost depends on:</p>
+      <div class="is-stat-band">
+        <div class="is-stat-cell"><div class="is-stat-num">State</div><div class="is-stat-label">Requirements</div></div>
+        <div class="is-stat-cell is-stat-cell-big"><div class="is-stat-num">$10K–$50K</div><div class="is-stat-label">Bond Amount</div></div>
+        <div class="is-stat-cell"><div class="is-stat-num">Credit</div><div class="is-stat-label">&amp; Business History</div></div>
+      </div>
+      <p>Dealer bonds are affordable relative to the coverage amount, with premiums typically ranging from $100 to $500 depending on credit and state requirements.</p>
+      <p style="font-weight:700;color:#0e7490;font-size:16px;">Apply once — your state lookup happens during the application.</p>
+    </div>
+  </div>
+
+  <div class="is-sec-white" id="who-needs">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Eligibility</span>
+      <h2>Who Needs This Motor Vehicle Dealer Bond?</h2>
+      <p>You need a motor vehicle dealer bond if you are:</p>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Applying for a new dealer license</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Renewing your dealer license</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Operating as a new or used vehicle dealer</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Selling motorcycles, RVs, or specialty vehicles requiring a dealer license</span></div>
+      </div>
+      <p>If your state requires a motor vehicle dealer license, it likely requires this bond.</p>
+    </div>
+  </div>
+
+  <div class="is-sec-tint" id="eligibility">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Requirements</span>
+      <h2>Requirements and Eligibility</h2>
+      <p>States typically require:</p>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Completed dealer license application</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>State-mandated bond amount</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Dealer lot or place of business verification</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Filing with the state DMV or licensing agency</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Renewal every 1–2 years</span></div>
+      </div>
+      <p>Some states also require a dealer training course or additional insurance coverage.</p>
+    </div>
+  </div>
+
+  <div class="is-sec-white" id="process">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Simple Process</span>
+      <h2>How the Bond Process Works</h2>
+      <div class="is-steps">
+        <div class="is-step"><div class="is-step-num">1</div><div><h3>Complete the Application</h3><p>Submit the quick, 60-second application. Your state lookup happens during the application.</p></div></div>
+        <div class="is-step"><div class="is-step-num">2</div><div><h3>Secure the Lowest Rate</h3><p>We match you with the best rate available from A-rated sureties.</p></div></div>
+        <div class="is-step"><div class="is-step-num">3</div><div><h3>Receive Your Bond</h3><p>Instant digital delivery for state filing.</p></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-sec-gray" id="states">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">By State</span>
+      <h2>State-Specific Motor Vehicle Dealer Bond Requirements</h2>
+      <div class="is-state-grid">
+        <div class="is-state-card">
+          <div class="is-state-flag">Arizona</div>
+          <h4>Arizona Dealer Bond</h4>
+          <p>Arizona requires a $10,000 motor vehicle dealer bond for new and used dealers, filed with the Arizona Department of Transportation.</p>
+          <a href="/pages/motor-vehicle-dealer-bond-arizona/">View Arizona Requirements →</a>
+        </div>
+        <div class="is-state-card">
+          <div class="is-state-flag">Florida</div>
+          <h4>Florida Dealer Bond</h4>
+          <p>Florida requires a $25,000 or $50,000 motor vehicle dealer bond depending on dealer classification, filed with the Florida DMV.</p>
+          <a href="/pages/motor-vehicle-dealer-bond-florida/">View Florida Requirements →</a>
+        </div>
+        <div class="is-state-card">
+          <div class="is-state-flag">Texas</div>
+          <h4>Texas Dealer Bond</h4>
+          <p>Texas requires a $25,000 to $50,000 motor vehicle dealer bond, filed with the Texas Department of Motor Vehicles.</p>
+          <a href="/pages/motor-vehicle-dealer-bond-texas/">View Texas Requirements →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-sec-tint" id="why-us">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Our Advantage</span>
+      <h2>Why Choose Us for Your Motor Vehicle Dealer Bond</h2>
+      <div class="is-why-grid">
+        <div class="is-why-pill"><div class="is-why-icon">$</div><span>Lowest rates from A-rated sureties</span></div>
+        <div class="is-why-pill"><div class="is-why-icon">⚡</div><span>Fast approvals</span></div>
+        <div class="is-why-pill"><div class="is-why-icon">📲</div><span>Instant digital delivery</span></div>
+        <div class="is-why-pill"><div class="is-why-icon">🎯</div><span>Dealer bond specialists</span></div>
+        <div class="is-why-pill"><div class="is-why-icon">✓</div><span>100% state compliance guaranteed</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-sec-white" id="faq">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Questions</span>
+      <h2>Top Motor Vehicle Dealer Bond Questions Answered</h2>
+      <p>Our most common questions answered efficiently.</p>
+      <div class="is-faq-list">
+        <details class="is-faq-item"><summary>How much does a motor vehicle dealer bond cost?</summary><div class="is-faq-body"><p>Premiums typically range from $100 to $500 per year depending on the required bond amount, your credit profile, and your state.</p></div></details>
+        <details class="is-faq-item"><summary>How long does approval take?</summary><div class="is-faq-body"><p>Approvals are fast, with instant digital delivery available for most states and dealer types.</p></div></details>
+        <details class="is-faq-item"><summary>What does the bond guarantee?</summary><div class="is-faq-body"><p>The bond guarantees the public can be compensated if the dealer misrepresents a vehicle, mishandles a title transfer, or violates state dealer laws.</p></div></details>
+        <details class="is-faq-item"><summary>Can the bond be refunded?</summary><div class="is-faq-body"><p>Refund policies vary by surety. Contact us for specifics on your dealer bond.</p></div></details>
+        <details class="is-faq-item"><summary>Do I need additional insurance?</summary><div class="is-faq-body"><p>Some states require additional garage liability insurance in addition to your dealer bond. This is separate coverage from the bond itself.</p></div></details>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-sec-gray">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Real Results</span>
+      <h2>Customer Testimonials</h2>
+      <p>What our customers are saying about us.</p>
+      <div class="is-testimonials">
+        <div class="is-testimonial"><p class="is-testimonial-text">Opening my used car lot required a dealer bond fast. Inspire Surety had it issued the same day so I could get licensed on schedule.</p><span class="is-testimonial-name">Carlos M.</span><span class="is-testimonial-role">Independent Auto Dealer</span></div>
+        <div class="is-testimonial"><p class="is-testimonial-text">My dealer license renewal snuck up on me. Inspire Surety turned around my updated bond in hours, not days.</p><span class="is-testimonial-name">Denise F.</span><span class="is-testimonial-role">Used Car Dealership Owner</span></div>
+        <div class="is-testimonial"><p class="is-testimonial-text">We operate dealer lots in three states and needed bonds for each. Inspire Surety handled all three quickly and professionally.</p><span class="is-testimonial-name">Tyrell B.</span><span class="is-testimonial-role">Multi-State Dealer Group</span></div>
+        <div class="is-testimonial"><p class="is-testimonial-text">The DMV required a corrected bond during my license review. Inspire Surety responded immediately with exactly what I needed.</p><span class="is-testimonial-name">Angela P.</span><span class="is-testimonial-role">New Car Dealer</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-sec-white">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Explore More</span>
+      <h2>Surety Bond Hubs</h2>
+      <div class="is-hub-links">
+        <a href="/pages/contractors-construction-bond-hub/">Contractors &amp; Construction Bond Hub</a>
+        <a href="/pages/court-fiduciary-bond-hub/">Court &amp; Fiduciary Bond Hub</a>
+        <a href="/pages/cannabis-bond-hub/">Cannabis Bond Hub</a>
+        <a href="/pages/environmental-reclamation-bond-hub/">Environmental &amp; Reclamation Bond Hub</a>
+        <a href="/pages/federal-blm-bond-hub/">Federal &amp; BLM Bond Hub</a>
+        <a href="/pages/escrow-real-estate-bond-hub/">Escrow &amp; Real Estate Bond Hub</a>
+        <a href="/pages/license-permit-bond-hub/">License &amp; Permit Bond Hub</a>
+        <a href="/pages/agriculture-food-bond-hub/">Agriculture &amp; Food Bond Hub</a>
+      </div>
+      <a href="/pages/surety-bond-learning-center/" style="color:#0e7490;font-weight:700;font-size:14.5px;text-decoration:none;">Surety Bond Learning Center →</a>
+    </div>
+  </div>
+
+  <div class="is-final-wrap">
+    <div class="is-inner">
+      <h2>Ready to Get Your Motor Vehicle Dealer Bond?</h2>
+      <p>Fast approvals, lowest rates, guaranteed state compliance.</p>
+      <a href="/pages/contact/" class="is-btn-white">Start My Application</a>
+    </div>
+  </div>
+
+</div>

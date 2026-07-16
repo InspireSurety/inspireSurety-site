@@ -386,7 +386,7 @@ layout: "layout.njk"
     <div class="is-inner">
       <h2>Ready to Get Your Notary Bond?</h2>
       <p>Fast approvals, lowest rates, guaranteed state compliance.</p>
-      <a href="/pages/contact/" class="is-btn-white">Start My Application</a>
+      <a href="https://fc16062.propeller.insure/axelerator-public/#do=show+widget+page&name=public+home&one_search_search=notary" class="is-btn-white">Start My Application</a>
     </div>
   </div>
 
