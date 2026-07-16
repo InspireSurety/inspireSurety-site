@@ -89,18 +89,22 @@ layout: "layout.njk"
 .is-af .is-eyebrow { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #b45309; margin-bottom: 10px; }
 .is-af .is-sec > p.is-desc { font-size: 15px; color: #64748b; margin: 0 0 26px; max-width: 620px; }
 
-/* ---- WHY LIST ---- */
+/* ---- WHY LIST: FIXED CONTRAST ---- */
 .is-af .is-why-list { display: flex; flex-direction: column; gap: 0; margin: 20px 0; }
-.is-af .is-why-item { display: flex; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid #e7e5e4; }
+.is-af .is-why-item { display: flex; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid rgba(0,0,0,0.08); }
 .is-af .is-why-item:last-child { border-bottom: none; }
-.is-af .is-why-num { width: 30px; height: 30px; border-radius: 50%; background: #fffbeb; color: #b45309; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.is-af .is-why-num { width: 30px; height: 30px; border-radius: 50%; background: #d97706; color: #fff; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 2px 8px rgba(180,83,9,0.3); }
 .is-af .is-why-item span { font-size: 14.5px; color: #334155; }
 
-/* ---- ICON TILE GRID ---- */
+/* On white/gray backgrounds, use lighter circle since contrast already exists */
+.is-af .is-sec-white .is-why-num,
+.is-af .is-sec-gray .is-why-num { background: #fffbeb; color: #b45309; box-shadow: none; }
+
+/* ---- ICON TILE GRID: FIXED CONTRAST ---- */
 .is-af .is-tile-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 24px 0; }
 .is-af .is-tile { background: #fff; border: 1px solid #e7e5e4; border-radius: 14px; padding: 20px; display: flex; gap: 14px; align-items: flex-start; transition: all 0.2s; }
 .is-af .is-tile:hover { border-color: #fbbf24; box-shadow: 0 8px 24px rgba(180,83,9,0.1); transform: translateY(-2px); }
-.is-af .is-tile-icon { width: 42px; height: 42px; border-radius: 10px; background: #fffbeb; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 20px; }
+.is-af .is-tile-icon { width: 42px; height: 42px; border-radius: 10px; background: #fef3c7; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 20px; }
 .is-af .is-tile h4 { font-size: 14.5px !important; font-weight: 700 !important; color: #0f172a !important; margin: 0 0 4px !important; }
 .is-af .is-tile p { font-size: 13px; color: #64748b; margin: 0; line-height: 1.5; }
 
@@ -111,7 +115,7 @@ layout: "layout.njk"
 .is-af .is-guide-row:hover { background: #fafaf9; }
 .is-af .is-guide-row a { font-size: 14.5px; color: #1e293b; text-decoration: none; font-weight: 500; flex: 1; }
 .is-af .is-guide-row a:hover { color: #b45309; }
-.is-af .is-guide-arrow { color: #fbbf24; flex-shrink: 0; }
+.is-af .is-guide-arrow { width: 22px; height: 22px; border-radius: 50%; background: #fef3c7; color: #b45309; display: flex; align-items: center; justify-content: center; font-size: 12px; flex-shrink: 0; }
 
 /* ---- FINAL CTA ---- */
 .is-af .is-final-wrap {
