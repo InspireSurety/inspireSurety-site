@@ -1,276 +1,372 @@
 ---
-
 title: "Bid Bond"
-
 layout: "layout.njk"
-
 ---
 
-
-
-What Is a Bid Bond?
-
-&#x20;A bid bond (also called a construction bid bond or bid bond application) is a required surety bond that guarantees a contractor will honor their bid, sign the contract if awarded, and provide the required performance and payment bonds. This bond protects project owners from financial loss if a contractor backs out after winning a bid.
-
-
-
-A bid bond protects project owners from:
-
-
-
-Contractors withdrawing bids
-
-Failure to sign the contract
-
-Inability to provide performance or payment bonds
-
-Misrepresentation of qualifications
-
-Financial loss caused by non‑performance at the award stage
-
-If you’re bidding on public or private construction projects, you may be required to submit a bid bond with your proposal.
-
-
-
-Bid Bond Amounts and Cost
-
-Bid bond amounts typically equal 5% to 20% of the total bid, depending on:
-
-
-
-Project size
-
-Owner or government requirements
-
-Contractor experience
-
-Contract type
-
-Your premium depends on:
-
-
-
-Bond amount
-
-Credit score
-
-Business financials
-
-Work history and backlog
-
-Most contractors qualify instantly with competitive rates—many bid bonds are issued at no cost for qualified applicants.
-
-
-
-Strengthens your bid package with fast approval, competitive rates, and guaranteed compliance—ideal for contractors who need a reliable Arizona bid bond to qualify confidently.
-
-
-
-
-
-Who Needs a Bid Bond
-
-You may need a bid bond if you operate as a:
-
-
-
-General contractor
-
-Subcontractor
-
-Construction firm
-
-Engineering or infrastructure contractor
-
-Public works contractor
-
-Commercial builder
-
-Any contractor bidding on bonded projects—especially government or municipal work—may be required to file a bid bond.
-
-
-
-Bid Bond Requirements \& Eligibility
-
-Project owners typically require:
-
-
-
-Completed bid bond application
-
-Project bid details
-
-Contractor financial review
-
-Work history and references
-
-Ability to qualify for performance and payment bonds
-
-Most public projects require a bid bond before the bid will be accepted.
-
-
-
-How the Bid Bond Application Process Works
-
-1
-
-Complete the Application
-
-Submit the quick, 60‑second bid bond application with project details.
-
-
-
-Strengthens your bid package with fast approval, competitive rates, and guaranteed compliance—ideal for contractors who need a reliable Arizona bid bond to qualify confidently.
-
-
-
-
-
-2
-
-Secure the Lowest Rate
-
-We match you with the best rate available from A‑rated sureties.
-
-
-
-3
-
-Receive your bond
-
-Same‑day issuance available for immediate bid submission.
-
-
-
-!\[](/assets/images/Image-Small Town Associates.webp)
-
-
-
-Why Contractors Choose Us
-
-Lowest rates from A‑rated sureties
-
-Fast approvals for all project sizes
-
-Digital delivery for immediate bid submission
-
-Construction bond specialists
-
-100% compliance guaranteed
-
-
-
-!\[](/assets/images/Top-Questions-Image-Associates.webp)
-
-
-
-Top Bid Bond Questions Answered
-
-Our most common questions answered efficiently.
-
-
-
-
-
-How much does a bid bond cost?
-
-
-
-How long does approval take?
-
-
-
-What does a bid bond guarantee?
-
-
-
-Can the bond be refunded?
-
-
-
-Do I need a bid bond for private projects?
-
-
-
-
-
-
-
-Ready to Get Your Bid Bond?
-
-
-
-Customer testimonials
-
-What our customers are saying about us.
-
-
-
-“Inspire Surety made our bid bond application effortless. We received approval the same day.”  
-
-
-
-Mark D.
-
-General Contractor
-
-“We bid on multiple municipal projects, and Inspire Surety always delivers our bid bonds fast.”  
-
-
-
-Rachel S.
-
-Project Manager
-
-“As a growing construction firm, we needed reliable bonding. Inspire Surety exceeded expectations.”  
-
-
-
-Leo H.
-
-Construction Co. Owner
-
-“Clear communication and quick turnaround. Their team understands construction bonding inside and out.”  
-
-
-
-Tina W.
-
-Operations Director
-
-“We secured a major public works contract thanks to Inspire Surety’s fast bid bond issuance.”  
-
-
-
-Otis H.
-
-Infrastructure Contractor
-
-“Our family needed a higher bond amount due to the size of the estate. Inspire Surety secured approval quickly and made the entire process stress‑free.”
-
-
-
-Hank C.
-
-Commercial Builder
-
-Surety Bond Hubs
-
-Contractors \& Construction Bond Hub
-
-Court \& Fiduciary Bond Hub
-
-Cannabis Bond Hub
-
-Environmental \& Reclamation Bond Hub
-
-Federal \& BLM Bond Hub
-
-Escrow \& Real Estate Bond Hub
-
-License \& Permit Bond Hub
-
-Agriculture \& Food Bond Hub
-
-Surety Bond Learning Center
-
+<style>
+.is-ccb *, .is-ccb *::before, .is-ccb *::after { box-sizing: border-box; }
+.is-ccb {
+  font-family: inherit;
+  color: #0f172a;
+  margin: 0 calc(-50vw + 50%);
+  width: 100vw;
+  padding: 0;
+}
+.is-ccb .is-inner { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+
+/* ---- HERO: LEVEL 3 (steel gray + safety amber, construction family) ---- */
+.is-ccb .is-hero-wrap {
+  background: linear-gradient(135deg, #44403c 0%, #92400e 60%, #d97706 100%);
+  padding: 72px 0 64px;
+  position: relative;
+  overflow: hidden;
+}
+.is-ccb .is-hero-wrap::before {
+  content: "";
+  position: absolute;
+  top: -100px; right: -100px;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.is-ccb .is-hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25);
+  color: #fed7aa; font-size: 11px; font-weight: 800; letter-spacing: 0.08em;
+  text-transform: uppercase; padding: 6px 16px; border-radius: 999px;
+  margin-bottom: 20px; position: relative; z-index: 1;
+}
+.is-ccb .is-hero-wrap h1 {
+  font-size: clamp(32px, 5vw, 52px) !important; font-weight: 900 !important;
+  color: #fff !important; line-height: 1.1 !important; margin: 0 0 12px !important;
+  position: relative; z-index: 1; letter-spacing: -0.02em;
+}
+.is-ccb .is-hero-tag { font-size: 17px; color: #fed7aa; font-weight: 700; margin-bottom: 20px; position: relative; z-index: 1; }
+.is-ccb .is-hero-wrap p { font-size: 16px; color: rgba(255,255,255,0.9); line-height: 1.7; max-width: 600px; margin: 0 0 28px; position: relative; z-index: 1; }
+.is-ccb .is-btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #fff; color: #92400e !important;
+  padding: 16px 34px; border-radius: 12px;
+  font-size: 16px; font-weight: 800;
+  text-decoration: none !important; transition: all 0.2s;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  position: relative; z-index: 1;
+}
+.is-ccb .is-btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
+.is-ccb .is-hero-note { font-size: 13px; color: rgba(255,255,255,0.65); margin-top: 14px; position: relative; z-index: 1; }
+.is-ccb .is-hero-stats { display: flex; gap: 32px; margin-top: 36px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.2); position: relative; z-index: 1; }
+.is-ccb .is-hero-stat-num { font-size: 26px; font-weight: 900; color: #fff; line-height: 1; display: block; }
+.is-ccb .is-hero-stat-label { font-size: 11px; color: rgba(255,255,255,0.7); font-weight: 600; margin-top: 4px; display: block; }
+
+/* ---- HUB CALLOUT ---- */
+.is-ccb .is-hub-wrap { background: #f0fdf4; border-top: 1px solid #bbf7d0; border-bottom: 1px solid #bbf7d0; padding: 22px 0; }
+.is-ccb .is-hub-callout { font-size: 14.5px; color: #166534; line-height: 1.6; display: flex; align-items: center; gap: 10px; }
+.is-ccb .is-hub-callout a { color: #15803d; font-weight: 700; text-decoration: underline; }
+
+/* ---- TOC ---- */
+.is-ccb .is-toc { background: #1c1917; border-radius: 20px; padding: 32px 36px; margin: -36px auto 0; max-width: 940px; position: relative; z-index: 2; box-shadow: 0 20px 50px rgba(0,0,0,0.25); }
+.is-ccb .is-toc-title { font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #fdba74; margin-bottom: 16px; }
+.is-ccb .is-toc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 24px; }
+.is-ccb .is-toc-grid a { font-size: 14px; color: #e2e8f0; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; }
+.is-ccb .is-toc-grid a::before { content: "→"; color: #ea580c; }
+.is-ccb .is-toc-grid a:hover { color: #fdba74; }
+
+/* ---- SECTIONS ---- */
+.is-ccb .is-sec-white { background: #fff; padding: 64px 0; }
+.is-ccb .is-sec-gray { background: #fafaf9; padding: 64px 0; }
+.is-ccb .is-sec-tint { background: linear-gradient(135deg, #fff7ed, #fef3c7); padding: 64px 0; }
+.is-ccb .is-sec h2 { font-size: clamp(22px, 2.8vw, 30px) !important; font-weight: 900 !important; color: #0f172a !important; margin: 0 0 16px !important; letter-spacing: -0.01em; }
+.is-ccb .is-eyebrow { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #b45309; margin-bottom: 10px; }
+.is-ccb .is-sec p { font-size: 15px; color: #475569; line-height: 1.75; margin: 0 0 14px; }
+
+/* ---- CHECKLIST ---- */
+.is-ccb .is-check-list { display: flex; flex-direction: column; gap: 2px; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; margin: 20px 0; background: #fff; }
+.is-ccb .is-check-row { display: flex; align-items: center; gap: 12px; padding: 14px 20px; border-bottom: 1px solid #f1f5f9; }
+.is-ccb .is-check-row:last-child { border-bottom: none; }
+.is-ccb .is-check-icon { width: 26px; height: 26px; border-radius: 50%; background: #fff7ed; color: #b45309; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 12px; font-weight: 800; }
+.is-ccb .is-check-row span { font-size: 14.5px; color: #334155; font-weight: 500; }
+
+/* ---- STAT BAND ---- */
+.is-ccb .is-stat-band { display: flex; background: #fff; border: 1px solid #e2e8f0; border-radius: 18px; overflow: hidden; margin: 24px 0; box-shadow: 0 8px 28px rgba(0,0,0,0.06); }
+.is-ccb .is-stat-cell { flex: 1; text-align: center; padding: 28px 16px; border-right: 1px solid #f1f5f9; }
+.is-ccb .is-stat-cell:last-child { border-right: none; }
+.is-ccb .is-stat-cell-big { background: linear-gradient(135deg, #92400e, #d97706); color: #fff; }
+.is-ccb .is-stat-num { font-size: 30px; font-weight: 900; color: #92400e; line-height: 1; }
+.is-ccb .is-stat-cell-big .is-stat-num { color: #fff; }
+.is-ccb .is-stat-label { font-size: 11.5px; color: #64748b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; margin-top: 8px; }
+.is-ccb .is-stat-cell-big .is-stat-label { color: rgba(255,255,255,0.85); }
+
+/* ---- STEPS ---- */
+.is-ccb .is-steps { display: flex; flex-direction: column; gap: 0; margin: 24px 0; }
+.is-ccb .is-step { display: grid; grid-template-columns: 80px 1fr; gap: 24px; align-items: start; padding: 28px 0; border-bottom: 1px solid #e2e8f0; }
+.is-ccb .is-step:last-child { border-bottom: none; }
+.is-ccb .is-step-num { width: 64px; height: 64px; background: linear-gradient(135deg, #92400e, #d97706); border-radius: 18px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 26px; font-weight: 900; flex-shrink: 0; box-shadow: 0 8px 20px rgba(146,64,14,0.3); }
+.is-ccb .is-step h3 { font-size: 18px !important; font-weight: 800 !important; color: #0f172a !important; margin: 0 0 6px !important; }
+.is-ccb .is-step p { font-size: 14.5px; color: #475569; margin: 0; line-height: 1.65; }
+
+/* ---- STATE CARDS ---- */
+.is-ccb .is-state-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin: 24px 0; }
+.is-ccb .is-state-card { background: #1c1917; border-radius: 18px; padding: 28px 26px; color: #fff; }
+.is-ccb .is-state-flag { font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #fdba74; margin-bottom: 10px; }
+.is-ccb .is-state-card h4 { font-size: 19px !important; font-weight: 800 !important; color: #fff !important; margin: 0 0 12px !important; }
+.is-ccb .is-state-card p { font-size: 13.5px; color: #d6d3d1; line-height: 1.65; margin: 0 0 16px; }
+.is-ccb .is-state-card a { font-size: 13.5px; color: #fdba74; font-weight: 700; text-decoration: none; }
+.is-ccb .is-state-card a:hover { text-decoration: underline; }
+
+/* ---- WHY US ---- */
+.is-ccb .is-why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 20px 0; }
+.is-ccb .is-why-pill { background: #fff; border: 2px solid #e2e8f0; border-radius: 14px; padding: 20px; display: flex; align-items: center; gap: 14px; transition: all 0.2s; }
+.is-ccb .is-why-pill:hover { border-color: #d97706; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(146,64,14,0.1); }
+.is-ccb .is-why-icon { width: 40px; height: 40px; border-radius: 10px; background: #fff7ed; color: #b45309; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 18px; font-weight: 800; }
+.is-ccb .is-why-pill span { font-size: 14px; color: #1e293b; font-weight: 600; }
+
+/* ---- FAQ ---- */
+.is-ccb .is-faq-list { display: flex; flex-direction: column; gap: 10px; margin: 20px 0; }
+.is-ccb .is-faq-item { border: 1px solid #e2e8f0; border-radius: 14px; background: #fff; overflow: hidden; }
+.is-ccb .is-faq-item[open] { border-color: #fdba74; box-shadow: 0 6px 20px rgba(146,64,14,0.1); }
+.is-ccb .is-faq-item summary { font-size: 15px; font-weight: 700; color: #0f172a; padding: 18px 22px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; gap: 14px; }
+.is-ccb .is-faq-item summary::-webkit-details-marker { display: none; }
+.is-ccb .is-faq-item summary::after { content: "+"; font-size: 22px; font-weight: 300; color: #b45309; flex-shrink: 0; transition: transform 0.25s; line-height: 1; }
+.is-ccb .is-faq-item[open] summary::after { transform: rotate(45deg); }
+.is-ccb .is-faq-body { padding: 0 22px 20px; }
+.is-ccb .is-faq-body p { font-size: 14.5px; color: #475569; margin: 0; line-height: 1.7; }
+
+/* ---- TESTIMONIALS ---- */
+.is-ccb .is-testimonials { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 24px 0; }
+.is-ccb .is-testimonial { background: #fff; border-radius: 16px; padding: 24px 22px; position: relative; box-shadow: 0 4px 16px rgba(0,0,0,0.05); border-top: 3px solid #b45309; }
+.is-ccb .is-testimonial::before { content: '"'; position: absolute; top: 8px; right: 20px; font-size: 48px; color: #fff7ed; font-family: Georgia, serif; line-height: 1; }
+.is-ccb .is-testimonial-text { font-size: 14px; color: #334155; line-height: 1.65; font-style: italic; margin: 0 0 14px; position: relative; z-index: 1; }
+.is-ccb .is-testimonial-name { font-weight: 700; color: #1e293b; font-size: 14px; display: block; }
+.is-ccb .is-testimonial-role { font-size: 12px; color: #94a3b8; }
+
+/* ---- HUB LINKS ---- */
+.is-ccb .is-hub-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 24px; }
+.is-ccb .is-hub-links a { font-size: 13.5px; color: #92400e; background: #fff7ed; border: 1px solid #fed7aa; padding: 10px 18px; border-radius: 999px; text-decoration: none; font-weight: 600; transition: all 0.15s; }
+.is-ccb .is-hub-links a:hover { background: #d97706; color: #fff; border-color: #d97706; }
+
+/* ---- FINAL CTA ---- */
+.is-ccb .is-final-wrap { background: linear-gradient(135deg, #44403c, #92400e, #d97706); padding: 72px 0; text-align: center; position: relative; overflow: hidden; }
+.is-ccb .is-final-wrap::before { content: ""; position: absolute; top: -80px; left: -80px; width: 320px; height: 320px; background: rgba(255,255,255,0.08); border-radius: 50%; }
+.is-ccb .is-final-wrap::after { content: ""; position: absolute; bottom: -100px; right: -60px; width: 380px; height: 380px; background: rgba(255,255,255,0.05); border-radius: 50%; }
+.is-ccb .is-final-wrap h2 { font-size: clamp(26px, 3.5vw, 40px) !important; color: #fff !important; margin: 0 0 14px !important; position: relative; z-index: 1; font-weight: 900 !important; }
+.is-ccb .is-final-wrap p { font-size: 17px; color: rgba(255,255,255,0.9); margin: 0 auto 32px; max-width: 480px; position: relative; z-index: 1; }
+.is-ccb .is-btn-white { display: inline-block; background: #fff; color: #92400e !important; padding: 17px 40px; border-radius: 12px; font-size: 16px; font-weight: 800; text-decoration: none !important; position: relative; z-index: 1; transition: all 0.2s; box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+.is-ccb .is-btn-white:hover { background: #fff7ed; transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.25); }
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 720px) {
+  .is-ccb .is-toc { margin: -24px 20px 0; padding: 24px 22px; }
+  .is-ccb .is-toc-grid { grid-template-columns: 1fr; }
+  .is-ccb .is-stat-band { flex-wrap: wrap; }
+  .is-ccb .is-stat-cell { flex: 1 1 50%; border-bottom: 1px solid #f1f5f9; }
+  .is-ccb .is-state-grid { grid-template-columns: 1fr; }
+  .is-ccb .is-why-grid { grid-template-columns: 1fr; }
+  .is-ccb .is-testimonials { grid-template-columns: 1fr; }
+  .is-ccb .is-hero-stats { flex-wrap: wrap; gap: 20px; }
+  .is-ccb .is-sec-white, .is-ccb .is-sec-gray, .is-ccb .is-sec-tint { padding: 44px 0; }
+  .is-ccb .is-hero-wrap { padding: 48px 0 56px; }
+}
+</style>
+
+<div class="is-ccb">
+
+  <div class="is-hero-wrap">
+    <div class="is-inner">
+      <div class="is-hero-badge">Contract Bond</div>
+      <h1>Bid Bond</h1>
+      <div class="is-hero-tag">Fast Approval &amp; Competitive Rates</div>
+      <p>Fast approvals. Competitive rates. Guaranteed bid compliance. Licensed nationwide. A-rated surety partners.</p>
+      <a href="/pages/contact/" class="is-btn-primary">
+        Start Your Application
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#92400e" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <div class="is-hero-note">Your project details are captured during the application.</div>
+      <div class="is-hero-stats">
+        <div><span class="is-hero-stat-num">5%–20%</span><span class="is-hero-stat-label">Typical Bid Amount</span></div>
+        <div><span class="is-hero-stat-num">24hr</span><span class="is-hero-stat-label">Typical Issuance</span></div>
+        <div><span class="is-hero-stat-num">1 Yr</span><span class="is-hero-stat-label">Typical Term</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-toc">
+    <div class="is-toc-title">On This Page</div>
+    <div class="is-toc-grid">
+      <a href="#what-is">What Is a Bid Bond?</a>
+      <a href="#cost">Bid Bond Amount &amp; Cost</a>
+      <a href="#who-needs">Who Needs This Bond?</a>
+      <a href="#eligibility">Requirements and Eligibility</a>
+      <a href="#process">How the Process Works</a>
+      <a href="#states">State-Specific Requirements</a>
+      <a href="#why-us">Why Choose Us</a>
+      <a href="#faq">Top Questions Answered</a>
+    </div>
+  </div>
+
+  <div class="is-hub-wrap">
+    <div class="is-inner">
+      <div class="is-hub-callout">💡 <span>Need help with a construction bond? Explore our <a href="/pages/contractors-construction-bond-hub/">Contractors &amp; Construction Bond Hub</a> for state-specific requirements and application guides.</span></div>
+    </div>
+  </div>
+
+  <div class="is-sec-white" id="what-is">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">The Basics</span>
+      <h2>What Is a Bid Bond?</h2>
+      <p>A bid bond is a contract bond required by project owners when a contractor submits a bid on a construction project. It guarantees that if the contractor is awarded the contract, they will enter into it and provide the required performance and payment bonds.</p>
+      <p>This bond ensures that if a contractor:</p>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Wins the bid but refuses to sign the contract</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Fails to provide required performance and payment bonds</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Submits a bid in bad faith</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Withdraws a bid improperly after submission</span></div>
+      </div>
+      <p>…the project owner can be compensated for the difference between the winning bid and the next-lowest qualified bid.</p>
+      <p>Most public construction projects require bid bonds as part of the bidding process.</p>
+    </div>
+  </div>
+
+  <div class="is-sec-gray" id="cost">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Pricing</span>
+      <h2>Bid Bond Amount &amp; Cost</h2>
+      <p>Bid bond amounts are typically set as a percentage of the total bid, commonly ranging from 5% to 20%.</p>
+      <p>Your cost depends on:</p>
+      <div class="is-stat-band">
+        <div class="is-stat-cell"><div class="is-stat-num">Project</div><div class="is-stat-label">Size &amp; Scope</div></div>
+        <div class="is-stat-cell is-stat-cell-big"><div class="is-stat-num">5%–20%</div><div class="is-stat-label">Bid Percentage</div></div>
+        <div class="is-stat-cell"><div class="is-stat-num">Credit</div><div class="is-stat-label">&amp; Financials</div></div>
+      </div>
+      <p>Because bid bonds carry low claim risk relative to their face value, premiums are typically a small percentage of the bond amount.</p>
+      <p style="font-weight:700;color:#92400e;font-size:16px;">Apply once — your project details are captured during the application.</p>
+    </div>
+  </div>
+
+  <div class="is-sec-white" id="who-needs">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Eligibility</span>
+      <h2>Who Needs This Bond?</h2>
+      <p>You need a bid bond if you are:</p>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Submitting a bid on a public construction project</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Bidding on a private project that requires bid security</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>A general contractor competing for a government contract</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Required to demonstrate financial capacity before bidding</span></div>
+      </div>
+      <p>If the project specifications require bid security, a bid bond is typically the preferred option.</p>
+    </div>
+  </div>
+
+  <div class="is-sec-tint" id="eligibility">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Requirements</span>
+      <h2>Requirements and Eligibility</h2>
+      <p>Sureties typically require:</p>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Completed bond application</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Bid or project details, including bond amount</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Credit review of the contractor or business</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Financial statements for larger bid amounts</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Contractor licensing verification where applicable</span></div>
+      </div>
+      <p>Larger bid amounts may require additional underwriting, including work-in-progress schedules and bank references.</p>
+    </div>
+  </div>
+
+  <div class="is-sec-white" id="process">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Simple Process</span>
+      <h2>How the Process Works</h2>
+      <div class="is-steps">
+        <div class="is-step"><div class="is-step-num">1</div><div><h3>Complete the Application</h3><p>Submit the quick application with your bid and project details.</p></div></div>
+        <div class="is-step"><div class="is-step-num">2</div><div><h3>Secure the Lowest Rate</h3><p>We match you with the best rate available from A-rated sureties.</p></div></div>
+        <div class="is-step"><div class="is-step-num">3</div><div><h3>Receive Your Bond</h3><p>Fast digital delivery so you can submit your bid on time.</p></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-sec-gray" id="states">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">By State</span>
+      <h2>State-Specific Bid Bond Requirements</h2>
+      <div class="is-state-grid">
+        <div class="is-state-card">
+          <div class="is-state-flag">Multi-State</div>
+          <h4>Bid Bonds Nationwide</h4>
+          <p>Bid bond requirements are typically set by the project owner or public agency rather than uniform state statute. We issue bid bonds for public and private construction projects across all 50 states.</p>
+          <a href="/pages/contractors-construction-bond-hub/">View Construction Bond Hub →</a>
+        </div>
+        <div class="is-state-card">
+          <div class="is-state-flag">Public Works</div>
+          <h4>Government Contract Bidding</h4>
+          <p>Public construction projects almost always require a bid bond alongside performance and payment bonds. We help contractors secure all three quickly to meet bidding deadlines.</p>
+          <a href="/pages/payment-performance-bonds/">View Payment &amp; Performance Bonds →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-sec-tint" id="why-us">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Our Advantage</span>
+      <h2>Why Choose Us for Your Bid Bond</h2>
+      <div class="is-why-grid">
+        <div class="is-why-pill"><div class="is-why-icon">$</div><span>Competitive rates from A-rated sureties</span></div>
+        <div class="is-why-pill"><div class="is-why-icon">⚡</div><span>Fast approvals to meet bid deadlines</span></div>
+        <div class="is-why-pill"><div class="is-why-icon">📲</div><span>Instant digital delivery</span></div>
+        <div class="is-why-pill"><div class="is-why-icon">🎯</div><span>Construction bond specialists</span></div>
+        <div class="is-why-pill"><div class="is-why-icon">✓</div><span>Support through performance and payment bonds too</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-sec-white" id="faq">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Questions</span>
+      <h2>Top Questions Answered</h2>
+      <p>Our most common bid bond questions answered efficiently.</p>
+      <div class="is-faq-list">
+        <details class="is-faq-item"><summary>How much does a bid bond cost?</summary><div class="is-faq-body"><p>Bid bond premiums are typically a small percentage of the bond amount, which itself is usually 5% to 20% of the total bid.</p></div></details>
+        <details class="is-faq-item"><summary>How long does approval take?</summary><div class="is-faq-body"><p>Approvals are fast, with digital delivery available in many cases, so you can meet tight bid submission deadlines.</p></div></details>
+        <details class="is-faq-item"><summary>What does the bond guarantee?</summary><div class="is-faq-body"><p>The bond guarantees that if you win the bid, you will enter into the contract and provide any required performance and payment bonds.</p></div></details>
+        <details class="is-faq-item"><summary>What happens if I don't get the contract?</summary><div class="is-faq-body"><p>If you are not awarded the contract, the bid bond is typically released with no obligation.</p></div></details>
+        <details class="is-faq-item"><summary>Do I need performance and payment bonds too?</summary><div class="is-faq-body"><p>Most public projects require performance and payment bonds in addition to a bid bond once the contract is awarded. We can help secure all three.</p></div></details>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-sec-gray">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Real Results</span>
+      <h2>Customer Testimonials</h2>
+      <p>What our customers are saying about us.</p>
+      <div class="is-testimonials">
+        <div class="is-testimonial"><p class="is-testimonial-text">We needed a bid bond fast to meet a tight submission deadline. Inspire Surety delivered it same day.</p><span class="is-testimonial-name">Carlos M.</span><span class="is-testimonial-role">General Contractor</span></div>
+        <div class="is-testimonial"><p class="is-testimonial-text">Our bonding capacity needs grew quickly. Inspire Surety scaled with us across multiple public bids.</p><span class="is-testimonial-name">Denise F.</span><span class="is-testimonial-role">Construction Firm Owner</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-sec-white">
+    <div class="is-inner is-sec">
+      <span class="is-eyebrow">Explore More</span>
+      <h2>Surety Bond Hubs</h2>
+      <div class="is-hub-links">
+        <a href="/pages/contractors-construction-bond-hub/">Contractors &amp; Construction Bond Hub</a>
+        <a href="/pages/court-fiduciary-bond-hub/">Court &amp; Fiduciary Bond Hub</a>
+        <a href="/pages/license-permit-bond-hub/">License &amp; Permit Bond Hub</a>
+        <a href="/pages/environmental-reclamation-bond-hub/">Environmental &amp; Reclamation Bond Hub</a>
+      </div>
+      <a href="/pages/surety-bond-learning-center/" style="color:#92400e;font-weight:700;font-size:14.5px;text-decoration:none;">Surety Bond Learning Center →</a>
+    </div>
+  </div>
+
+  <div class="is-final-wrap">
+    <div class="is-inner">
+      <h2>Ready to Get Your Bid Bond?</h2>
+      <p>Fast approvals, competitive rates, guaranteed bid compliance.</p>
+      <a href="/pages/contact/" class="is-btn-white">Start My Application</a>
+    </div>
+  </div>
+
+</div>
