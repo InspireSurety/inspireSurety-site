@@ -14,9 +14,9 @@ layout: "layout.njk"
 }
 .is-fb .is-inner { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
 
-/* ---- HERO: SLATE/NAVY ---- */
+/* ---- HERO: STEEL BLUE-GRAY ---- */
 .is-fb .is-hero-wrap {
-  background: linear-gradient(135deg, #020617 0%, #0f172a 60%, #1e293b 100%);
+  background: linear-gradient(135deg, #1e293b 0%, #334155 60%, #475569 100%);
   padding: 68px 0 60px;
   position: relative;
   overflow: hidden;
@@ -48,9 +48,9 @@ layout: "layout.njk"
 
 /* ---- TOC ---- */
 .is-fb .is-toc {
-  background: #000000; border-radius: 20px; padding: 30px 34px;
+  background: #0f172a; border-radius: 20px; padding: 30px 34px;
   margin: -32px auto 0; max-width: 940px; position: relative; z-index: 2;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
 }
 .is-fb .is-toc-title { font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #94a3b8; margin-bottom: 14px; }
 .is-fb .is-toc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 24px; }
@@ -71,7 +71,7 @@ layout: "layout.njk"
 .is-fb .is-why-item:last-child { border-bottom: none; }
 .is-fb .is-why-num {
   width: 28px; height: 28px; border-radius: 8px;
-  background: #1e293b; color: #fff;
+  background: #334155; color: #fff;
   font-size: 12.5px; font-weight: 800;
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
@@ -80,12 +80,12 @@ layout: "layout.njk"
 /* ---- CORE BOND TYPES: CLEAN CARDS ---- */
 .is-fb .is-tile-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0; }
 .is-fb .is-tile {
-  background: #fff; border: 1px solid #e2e8f0; border-top: 3px solid #1e293b;
+  background: #fff; border: 1px solid #e2e8f0; border-top: 3px solid #334155;
   border-radius: 12px; padding: 22px 20px; transition: all 0.2s;
 }
-.is-fb .is-tile:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0,0,0,0.08); border-top-color: #475569; }
+.is-fb .is-tile:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0,0,0,0.08); border-top-color: #64748b; }
 .is-fb .is-tile-icon {
-  width: 40px; height: 40px; border-radius: 10px; background: #f8fafc;
+  width: 40px; height: 40px; border-radius: 10px; background: #f1f5f9;
   display: flex; align-items: center; justify-content: center; font-size: 19px; margin-bottom: 14px;
 }
 .is-fb .is-tile h4 { font-size: 14.5px !important; font-weight: 700 !important; color: #0f172a !important; margin: 0 0 6px !important; }
@@ -95,13 +95,13 @@ layout: "layout.njk"
 .is-fb .is-guide-list { display: flex; flex-direction: column; gap: 0; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; margin: 20px 0; max-width: 700px; }
 .is-fb .is-guide-row { display: flex; align-items: center; gap: 14px; padding: 15px 20px; background: #fff; border-bottom: 1px solid #f1f5f9; transition: background 0.15s; }
 .is-fb .is-guide-row:last-child { border-bottom: none; }
-.is-fb .is-guide-row:hover { background: #f8fafc; }
+.is-fb .is-guide-row:hover { background: #f1f5f9; }
 .is-fb .is-guide-row a { font-size: 14.5px; color: #1e293b; text-decoration: none; font-weight: 500; flex: 1; }
-.is-fb .is-guide-row a:hover { color: #1e293b; }
-.is-fb .is-guide-arrow { color: #475569; flex-shrink: 0; font-size: 15px; }
+.is-fb .is-guide-row a:hover { color: #334155; }
+.is-fb .is-guide-arrow { color: #64748b; flex-shrink: 0; font-size: 15px; }
 
 /* ---- SINGLE PREMIUM MOMENT: DARK STAT BAND ---- */
-.is-fb .is-stat-wrap { background: #000000; border-radius: 20px; padding: 40px 36px; margin: 24px 0; }
+.is-fb .is-stat-wrap { background: #0f172a; border-radius: 20px; padding: 40px 36px; margin: 24px 0; }
 .is-fb .is-stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .is-fb .is-stat-item { text-align: center; }
 .is-fb .is-stat-num { font-size: 32px; font-weight: 900; color: #cbd5e1; line-height: 1; }
@@ -109,15 +109,15 @@ layout: "layout.njk"
 
 /* ---- FINAL CTA ---- */
 .is-fb .is-final-wrap {
-  background: linear-gradient(135deg, #020617, #0f172a, #1e293b);
+  background: linear-gradient(135deg, #1e293b, #334155, #475569);
   padding: 68px 0; text-align: center; position: relative; overflow: hidden;
 }
 .is-fb .is-final-wrap::before { content: ""; position: absolute; top: -80px; left: -80px; width: 300px; height: 300px; background: rgba(255,255,255,0.06); border-radius: 50%; }
 .is-fb .is-final-wrap::after { content: ""; position: absolute; bottom: -100px; right: -60px; width: 360px; height: 360px; background: rgba(255,255,255,0.04); border-radius: 50%; }
 .is-fb .is-final-wrap h2 { font-size: clamp(24px, 3.2vw, 34px) !important; color: #fff !important; margin: 0 0 12px !important; position: relative; z-index: 1; font-weight: 900 !important; }
 .is-fb .is-final-wrap p { font-size: 15.5px; color: rgba(255,255,255,0.85); margin: 0 auto 28px; max-width: 460px; position: relative; z-index: 1; }
-.is-fb .is-btn-white { display: inline-block; background: #fff; color: #0f172a !important; padding: 15px 36px; border-radius: 12px; font-size: 15px; font-weight: 800; text-decoration: none !important; position: relative; z-index: 1; transition: all 0.2s; box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
-.is-fb .is-btn-white:hover { background: #f8fafc; transform: translateY(-3px); }
+.is-fb .is-btn-white { display: inline-block; background: #fff; color: #334155 !important; padding: 15px 36px; border-radius: 12px; font-size: 15px; font-weight: 800; text-decoration: none !important; position: relative; z-index: 1; transition: all 0.2s; box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+.is-fb .is-btn-white:hover { background: #f1f5f9; transform: translateY(-3px); }
 
 /* ---- RESPONSIVE ---- */
 @media (max-width: 720px) {
@@ -158,11 +158,11 @@ layout: "layout.njk"
       <div class="is-why-list">
         <div class="is-why-item"><div class="is-why-num">1</div><span>Compliance with federal regulations</span></div>
         <div class="is-why-item"><div class="is-why-num">2</div><span>Protection of public lands and natural resources</span></div>
-        <div class="is-why-item"><div class="is-why-num">3</div><span>Payment of federal fees, royalties, and penalties</span></div>
-        <div class="is-why-item"><div class="is-why-num">4</div><span>Proper conduct of federally licensed activities</span></div>
-        <div class="is-why-item"><div class="is-why-num">5</div><span>Financial accountability to federal agencies</span></div>
+        <div class="is-why-item"><div class="is-why-num">3</div><span>Proper conduct of federally regulated activities</span></div>
+        <div class="is-why-item"><div class="is-why-num">4</div><span>Financial accountability to federal agencies</span></div>
+        <div class="is-why-item"><div class="is-why-num">5</div><span>Fulfillment of lease, permit, or contract obligations</span></div>
       </div>
-      <p style="font-size:14.5px;color:#64748b;margin-top:16px;">These bonds apply to businesses working with the BLM, U.S. Customs, USDA, and other federal agencies.</p>
+      <p style="font-size:14.5px;color:#64748b;margin-top:16px;">These bonds are commonly required by the BLM, U.S. Customs, USDA, and other federal agencies.</p>
     </div>
   </div>
 
@@ -170,14 +170,14 @@ layout: "layout.njk"
     <div class="is-inner">
       <span class="is-eyebrow">Core Bond Types</span>
       <h2>Core Types of Federal &amp; BLM Bonds</h2>
-      <p class="is-desc">The most common bonds required for federally regulated activities.</p>
+      <p class="is-desc">The most common bonds required across federal agencies and land management programs.</p>
       <div class="is-tile-grid">
-        <div class="is-tile"><div class="is-tile-icon">🗺️</div><h4>BLM Right of Way Bonds</h4><p>Required for businesses using public land for pipelines, roads, or utility access.</p></div>
-        <div class="is-tile"><div class="is-tile-icon">⛽</div><h4>BLM Oil &amp; Gas Lease Bonds</h4><p>Guarantee compliance with lease terms and reclamation requirements on public land.</p></div>
-        <div class="is-tile"><div class="is-tile-icon">🏛️</div><h4>Bureau of Indian Affairs Bonds</h4><p>Required for lease and permit activity on tribal land.</p></div>
-        <div class="is-tile"><div class="is-tile-icon">🚢</div><h4>U.S. Customs Bonds</h4><p>Required for importers to guarantee payment of duties, taxes, and fees.</p></div>
-        <div class="is-tile"><div class="is-tile-icon">🌊</div><h4>Ocean Transport Bonds (FMC)</h4><p>Required for ocean freight forwarders and non-vessel operating common carriers.</p></div>
-        <div class="is-tile"><div class="is-tile-icon">🌲</div><h4>USDA Forest Service Bonds</h4><p>Guarantee compliance with timber sale and land use contract terms.</p></div>
+        <div class="is-tile"><div class="is-tile-icon">🏞️</div><h4>BLM Bonds</h4><p>Required for right-of-way permits and land use on Bureau of Land Management property.</p></div>
+        <div class="is-tile"><div class="is-tile-icon">🛃</div><h4>U.S. Customs Bonds</h4><p>Required for importers to guarantee payment of duties, taxes, and penalties.</p></div>
+        <div class="is-tile"><div class="is-tile-icon">🌾</div><h4>USDA Bonds</h4><p>Cover various USDA program requirements including livestock and food assistance bonds.</p></div>
+        <div class="is-tile"><div class="is-tile-icon">🏛️</div><h4>Bureau of Indian Affairs Bonds</h4><p>Required for leases and permits involving tribal lands.</p></div>
+        <div class="is-tile"><div class="is-tile-icon">🚢</div><h4>FMC Ocean Transport Bonds</h4><p>Required for ocean transportation intermediaries under FMC regulations.</p></div>
+        <div class="is-tile"><div class="is-tile-icon">🏭</div><h4>HUD Bonds</h4><p>Required for manufactured housing installers under HUD program requirements.</p></div>
       </div>
 
       <div class="is-stat-wrap">
@@ -198,12 +198,12 @@ layout: "layout.njk"
       <div class="is-guide-list">
         <div class="is-guide-row"><a href="/pages/federal-blm-bond-guide/">Federal &amp; BLM Bond Guide</a><span class="is-guide-arrow">→</span></div>
         <div class="is-guide-row"><a href="/pages/blm-bonds/">BLM Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/bureau-of-indian-affairs-bond/">Bureau of Indian Affairs Bond Guide</a><span class="is-guide-arrow">→</span></div>
         <div class="is-guide-row"><a href="/pages/u-s-customs-bonds/">U.S. Customs Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/ocean-transport-bond/">Ocean Transport Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/federal-government-agency-bonds/">Federal Government Agency Bonds</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/pages/usda-bonds/">USDA Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/pages/bureau-of-indian-affairs-bond/">Bureau of Indian Affairs Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/pages/ocean-transport-bond/">Ocean Transport Bond Guide (FMC-48/FMC-69)</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/pages/hud-bonds/">HUD Manufactured Housing Bond Guide</a><span class="is-guide-arrow">→</span></div>
         <div class="is-guide-row"><a href="/pages/usda-forest-service-timber-sale/">USDA Forest Service Timber Sale Bond</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/usda-bonds/">USDA Bonds Guide</a><span class="is-guide-arrow">→</span></div>
       </div>
     </div>
   </div>
@@ -214,11 +214,11 @@ layout: "layout.njk"
       <h2>Why Businesses Need Federal &amp; BLM Bonds</h2>
       <p class="is-desc">Federal and BLM bonds help businesses:</p>
       <div class="is-why-list">
-        <div class="is-why-item"><div class="is-why-num">1</div><span>Meet federal agency licensing requirements</span></div>
-        <div class="is-why-item"><div class="is-why-num">2</div><span>Access public land for commercial activity</span></div>
-        <div class="is-why-item"><div class="is-why-num">3</div><span>Avoid penalties and permit suspension</span></div>
+        <div class="is-why-item"><div class="is-why-num">1</div><span>Meet federal agency licensing and permit requirements</span></div>
+        <div class="is-why-item"><div class="is-why-num">2</div><span>Operate legally on federal and tribal lands</span></div>
+        <div class="is-why-item"><div class="is-why-num">3</div><span>Avoid penalties and permit revocation</span></div>
         <div class="is-why-item"><div class="is-why-num">4</div><span>Demonstrate financial responsibility to federal agencies</span></div>
-        <div class="is-why-item"><div class="is-why-num">5</div><span>Operate legally within federal regulations</span></div>
+        <div class="is-why-item"><div class="is-why-num">5</div><span>Protect public resources and government interests</span></div>
       </div>
     </div>
   </div>
