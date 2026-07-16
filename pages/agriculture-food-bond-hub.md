@@ -30,49 +30,26 @@ layout: "layout.njk"
   border-radius: 50%;
 }
 .is-af .is-hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(255,255,255,0.1);
-  border: 1px solid rgba(255,255,255,0.2);
-  color: #fde68a;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 6px 16px;
-  border-radius: 999px;
-  margin-bottom: 20px;
-  position: relative; z-index: 1;
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+  color: #fde68a; font-size: 11px; font-weight: 800; letter-spacing: 0.08em;
+  text-transform: uppercase; padding: 6px 16px; border-radius: 999px;
+  margin-bottom: 20px; position: relative; z-index: 1;
 }
 .is-af .is-hero-wrap h1 {
-  font-size: clamp(28px, 4.5vw, 44px) !important;
-  font-weight: 900 !important;
-  color: #fff !important;
-  line-height: 1.15 !important;
-  margin: 0 0 16px !important;
-  position: relative; z-index: 1;
-  letter-spacing: -0.02em;
-  max-width: 640px;
+  font-size: clamp(28px, 4.5vw, 44px) !important; font-weight: 900 !important;
+  color: #fff !important; line-height: 1.15 !important; margin: 0 0 16px !important;
+  position: relative; z-index: 1; letter-spacing: -0.02em; max-width: 640px;
 }
 .is-af .is-hero-wrap p {
-  font-size: 16px;
-  color: rgba(255,255,255,0.85);
-  line-height: 1.7;
-  max-width: 620px;
-  margin: 0;
-  position: relative; z-index: 1;
+  font-size: 16px; color: rgba(255,255,255,0.85); line-height: 1.7;
+  max-width: 620px; margin: 0; position: relative; z-index: 1;
 }
 
 /* ---- TOC ---- */
 .is-af .is-toc {
-  background: #1c0f05;
-  border-radius: 20px;
-  padding: 30px 34px;
-  margin: -32px auto 0;
-  max-width: 940px;
-  position: relative;
-  z-index: 2;
+  background: #1c0f05; border-radius: 20px; padding: 30px 34px;
+  margin: -32px auto 0; max-width: 940px; position: relative; z-index: 2;
   box-shadow: 0 20px 50px rgba(0,0,0,0.25);
 }
 .is-af .is-toc-title { font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #fbbf24; margin-bottom: 14px; }
@@ -81,57 +58,59 @@ layout: "layout.njk"
 .is-af .is-toc-grid a::before { content: "→"; color: #d97706; }
 .is-af .is-toc-grid a:hover { color: #fbbf24; }
 
-/* ---- SECTIONS: WHITE / SOLID AMBER ALTERNATING ---- */
-.is-af .is-sec-white { background: #fff; padding: 64px 0; }
-.is-af .is-sec-amber { background: linear-gradient(135deg, #b45309, #92400e); padding: 64px 0; }
+/* ---- BASE: WHITE CANVAS ---- */
+.is-af .is-sec { background: #fff; padding: 60px 0; }
+.is-af .is-sec + .is-sec { border-top: 1px solid #f1f5f9; }
+.is-af .is-sec h2 { font-size: clamp(21px, 2.6vw, 28px) !important; font-weight: 900 !important; color: #0f172a !important; margin: 0 0 8px !important; letter-spacing: -0.01em; }
+.is-af .is-eyebrow { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #b45309; margin-bottom: 10px; }
+.is-af .is-desc { font-size: 15px; color: #64748b; margin: 0 0 26px; max-width: 620px; }
 
-.is-af .is-sec-white h2 { font-size: clamp(21px, 2.6vw, 28px) !important; font-weight: 900 !important; color: #0f172a !important; margin: 0 0 8px !important; letter-spacing: -0.01em; }
-.is-af .is-sec-white .is-eyebrow { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #b45309; margin-bottom: 10px; }
-.is-af .is-sec-white > p.is-desc { font-size: 15px; color: #64748b; margin: 0 0 26px; max-width: 620px; }
+/* ---- WHY LIST (numbered, clean, accent-only) ---- */
+.is-af .is-why-list { display: flex; flex-direction: column; gap: 0; margin: 20px 0; max-width: 640px; }
+.is-af .is-why-item { display: flex; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid #f1f5f9; }
+.is-af .is-why-item:last-child { border-bottom: none; }
+.is-af .is-why-num {
+  width: 28px; height: 28px; border-radius: 8px;
+  background: #92400e; color: #fff;
+  font-size: 12.5px; font-weight: 800;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.is-af .is-why-item span { font-size: 14.5px; color: #334155; }
 
-.is-af .is-sec-amber h2 { font-size: clamp(21px, 2.6vw, 28px) !important; font-weight: 900 !important; color: #fff !important; margin: 0 0 8px !important; letter-spacing: -0.01em; }
-.is-af .is-sec-amber .is-eyebrow { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #fde68a; margin-bottom: 10px; }
-.is-af .is-sec-amber > p.is-desc { font-size: 15px; color: rgba(255,255,255,0.85); margin: 0 0 26px; max-width: 620px; }
+/* ---- CORE BOND TYPES: CLEAN CARDS, ACCENT BORDER ONLY ---- */
+.is-af .is-tile-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0; }
+.is-af .is-tile {
+  background: #fff; border: 1px solid #e2e8f0; border-top: 3px solid #b45309;
+  border-radius: 12px; padding: 22px 20px; transition: all 0.2s;
+}
+.is-af .is-tile:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0,0,0,0.08); border-color: #fbbf24; }
+.is-af .is-tile-icon {
+  width: 40px; height: 40px; border-radius: 10px; background: #fffbeb;
+  display: flex; align-items: center; justify-content: center; font-size: 19px; margin-bottom: 14px;
+}
+.is-af .is-tile h4 { font-size: 14.5px !important; font-weight: 700 !important; color: #0f172a !important; margin: 0 0 6px !important; }
+.is-af .is-tile p { font-size: 13px; color: #64748b; margin: 0; line-height: 1.55; }
 
-/* ---- WHY LIST (used on both backgrounds) ---- */
-.is-af .is-why-list { display: flex; flex-direction: column; gap: 0; margin: 20px 0; }
-.is-af .is-why-item { display: flex; align-items: center; gap: 16px; padding: 14px 0; }
-.is-af .is-why-num { width: 30px; height: 30px; border-radius: 50%; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-
-.is-af .is-sec-white .is-why-item { border-bottom: 1px solid #e7e5e4; }
-.is-af .is-sec-white .is-why-item:last-child { border-bottom: none; }
-.is-af .is-sec-white .is-why-num { background: #b45309; color: #fff; }
-.is-af .is-sec-white .is-why-item span { font-size: 14.5px; color: #334155; }
-
-.is-af .is-sec-amber .is-why-item { border-bottom: 1px solid rgba(255,255,255,0.15); }
-.is-af .is-sec-amber .is-why-item:last-child { border-bottom: none; }
-.is-af .is-sec-amber .is-why-num { background: #fff; color: #92400e; }
-.is-af .is-sec-amber .is-why-item span { font-size: 14.5px; color: #fff; font-weight: 500; }
-
-/* ---- ICON TILE GRID (on amber background) ---- */
-.is-af .is-tile-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 24px 0; }
-.is-af .is-tile { background: #fff; border-radius: 14px; padding: 20px; display: flex; gap: 14px; align-items: flex-start; transition: all 0.2s; }
-.is-af .is-tile:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0,0,0,0.2); }
-.is-af .is-tile-icon { width: 42px; height: 42px; border-radius: 10px; background: #fef3c7; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 20px; }
-.is-af .is-tile h4 { font-size: 14.5px !important; font-weight: 700 !important; color: #0f172a !important; margin: 0 0 4px !important; }
-.is-af .is-tile p { font-size: 13px; color: #64748b; margin: 0; line-height: 1.5; }
-
-/* ---- GUIDE LIST (on white background) ---- */
-.is-af .is-guide-list { display: flex; flex-direction: column; gap: 2px; border: 1px solid #e7e5e4; border-radius: 14px; overflow: hidden; margin: 20px 0; }
-.is-af .is-guide-row { display: flex; align-items: center; gap: 14px; padding: 14px 20px; background: #fff; border-bottom: 1px solid #f5f5f4; }
+/* ---- GUIDE LIST: CLEAN, ACCENT ARROW ONLY ---- */
+.is-af .is-guide-list { display: flex; flex-direction: column; gap: 0; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; margin: 20px 0; max-width: 700px; }
+.is-af .is-guide-row { display: flex; align-items: center; gap: 14px; padding: 15px 20px; background: #fff; border-bottom: 1px solid #f1f5f9; transition: background 0.15s; }
 .is-af .is-guide-row:last-child { border-bottom: none; }
 .is-af .is-guide-row:hover { background: #fffbeb; }
 .is-af .is-guide-row a { font-size: 14.5px; color: #1e293b; text-decoration: none; font-weight: 500; flex: 1; }
-.is-af .is-guide-row a:hover { color: #b45309; }
-.is-af .is-guide-arrow { width: 24px; height: 24px; border-radius: 50%; background: #b45309; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 12px; flex-shrink: 0; }
+.is-af .is-guide-row a:hover { color: #92400e; }
+.is-af .is-guide-arrow { color: #d97706; flex-shrink: 0; font-size: 15px; }
+
+/* ---- SINGLE PREMIUM MOMENT: DARK STAT BAND ---- */
+.is-af .is-stat-wrap { background: #1c0f05; border-radius: 20px; padding: 40px 36px; margin: 24px 0; }
+.is-af .is-stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.is-af .is-stat-item { text-align: center; }
+.is-af .is-stat-num { font-size: 32px; font-weight: 900; color: #fbbf24; line-height: 1; }
+.is-af .is-stat-label { font-size: 12px; color: #cbd5e1; font-weight: 600; margin-top: 8px; }
 
 /* ---- FINAL CTA ---- */
 .is-af .is-final-wrap {
   background: linear-gradient(135deg, #431407, #78350f, #92400e);
-  padding: 68px 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+  padding: 68px 0; text-align: center; position: relative; overflow: hidden;
 }
 .is-af .is-final-wrap::before { content: ""; position: absolute; top: -80px; left: -80px; width: 300px; height: 300px; background: rgba(255,255,255,0.06); border-radius: 50%; }
 .is-af .is-final-wrap::after { content: ""; position: absolute; bottom: -100px; right: -60px; width: 360px; height: 360px; background: rgba(255,255,255,0.04); border-radius: 50%; }
@@ -145,8 +124,9 @@ layout: "layout.njk"
   .is-af .is-toc { margin: -24px 20px 0; padding: 24px 22px; }
   .is-af .is-toc-grid { grid-template-columns: 1fr; }
   .is-af .is-tile-grid { grid-template-columns: 1fr; }
+  .is-af .is-stat-grid { grid-template-columns: 1fr; gap: 20px; }
   .is-af .is-hero-wrap { padding: 44px 0 52px; }
-  .is-af .is-sec-white, .is-af .is-sec-amber { padding: 40px 0; }
+  .is-af .is-sec { padding: 44px 0; }
 }
 </style>
 
@@ -170,7 +150,7 @@ layout: "layout.njk"
     </div>
   </div>
 
-  <div class="is-sec-white" id="what-are">
+  <div class="is-sec" id="what-are">
     <div class="is-inner">
       <span class="is-eyebrow">Overview</span>
       <h2>What Are Agriculture &amp; Food Bonds?</h2>
@@ -186,23 +166,31 @@ layout: "layout.njk"
     </div>
   </div>
 
-  <div class="is-sec-amber" id="core-types">
+  <div class="is-sec" id="core-types">
     <div class="is-inner">
       <span class="is-eyebrow">Core Bond Types</span>
       <h2>Core Types of Agriculture &amp; Food Bonds</h2>
       <p class="is-desc">The most common bonds required across the agricultural supply chain.</p>
       <div class="is-tile-grid">
-        <div class="is-tile"><div class="is-tile-icon">🌾</div><div><h4>Grain Dealer Bonds</h4><p>Required for businesses that buy and sell grain to protect producers from non-payment.</p></div></div>
-        <div class="is-tile"><div class="is-tile-icon">🐄</div><div><h4>Livestock Dealer Bonds</h4><p>Guarantee payment to sellers of livestock in commercial transactions.</p></div></div>
-        <div class="is-tile"><div class="is-tile-icon">🥬</div><div><h4>Produce Dealer Bonds (PACA)</h4><p>Required under the Perishable Agricultural Commodities Act for produce buyers and brokers.</p></div></div>
-        <div class="is-tile"><div class="is-tile-icon">🌲</div><div><h4>Timber Sale Bonds</h4><p>Guarantee compliance with USDA Forest Service timber sale contract terms.</p></div></div>
-        <div class="is-tile"><div class="is-tile-icon">👨‍🌾</div><div><h4>H-2A Farm Labor Contractor Bonds</h4><p>Required for farm labor contractors to protect agricultural workers.</p></div></div>
-        <div class="is-tile"><div class="is-tile-icon">🍽️</div><div><h4>USDA SNAP Bonds</h4><p>Required for retailers participating in the Supplemental Nutrition Assistance Program.</p></div></div>
+        <div class="is-tile"><div class="is-tile-icon">🌾</div><h4>Grain Dealer Bonds</h4><p>Required for businesses that buy and sell grain to protect producers from non-payment.</p></div>
+        <div class="is-tile"><div class="is-tile-icon">🐄</div><h4>Livestock Dealer Bonds</h4><p>Guarantee payment to sellers of livestock in commercial transactions.</p></div>
+        <div class="is-tile"><div class="is-tile-icon">🥬</div><h4>Produce Dealer Bonds (PACA)</h4><p>Required under the Perishable Agricultural Commodities Act for produce buyers and brokers.</p></div>
+        <div class="is-tile"><div class="is-tile-icon">🌲</div><h4>Timber Sale Bonds</h4><p>Guarantee compliance with USDA Forest Service timber sale contract terms.</p></div>
+        <div class="is-tile"><div class="is-tile-icon">👨‍🌾</div><h4>H-2A Farm Labor Contractor Bonds</h4><p>Required for farm labor contractors to protect agricultural workers.</p></div>
+        <div class="is-tile"><div class="is-tile-icon">🍽️</div><h4>USDA SNAP Bonds</h4><p>Required for retailers participating in the Supplemental Nutrition Assistance Program.</p></div>
+      </div>
+
+      <div class="is-stat-wrap">
+        <div class="is-stat-grid">
+          <div class="is-stat-item"><div class="is-stat-num">6+</div><div class="is-stat-label">Core Bond Types</div></div>
+          <div class="is-stat-item"><div class="is-stat-num">USDA</div><div class="is-stat-label">Compliant Coverage</div></div>
+          <div class="is-stat-item"><div class="is-stat-num">50</div><div class="is-stat-label">States Available</div></div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="is-sec-white" id="guides">
+  <div class="is-sec" id="guides">
     <div class="is-inner">
       <span class="is-eyebrow">Deep Dives</span>
       <h2>Agriculture &amp; Food Bond Guides</h2>
@@ -219,7 +207,7 @@ layout: "layout.njk"
     </div>
   </div>
 
-  <div class="is-sec-amber" id="why-matters">
+  <div class="is-sec" id="why-matters">
     <div class="is-inner">
       <span class="is-eyebrow">Why It Matters</span>
       <h2>Why Agriculture Businesses Need These Bonds</h2>
