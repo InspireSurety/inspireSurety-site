@@ -1,9 +1,8 @@
 ---
-
-title: "Subdivision Bond"
-
+title: "Notary Bond Guide"
 layout: "layout.njk"
-
+tags: "blog"
+date: 2026-01-01
 ---
 
 

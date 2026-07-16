@@ -1,11 +1,8 @@
 ---
-
-title: "YOUR TITLE HERE"
-
+title: "Arizona Payment Bond Guide"
 layout: "layout.njk"
-
+tags: "blog"
 date: 2026-01-01
-
 ---
 
 
