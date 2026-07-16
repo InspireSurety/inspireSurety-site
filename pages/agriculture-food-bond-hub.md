@@ -14,7 +14,7 @@ layout: "layout.njk"
 }
 .is-af .is-inner { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
 
-/* ---- HERO: LEVEL 1 (earth brown to amber) ---- */
+/* ---- HERO ---- */
 .is-af .is-hero-wrap {
   background: linear-gradient(135deg, #431407 0%, #78350f 60%, #92400e 100%);
   padding: 68px 0 60px;
@@ -81,41 +81,49 @@ layout: "layout.njk"
 .is-af .is-toc-grid a::before { content: "→"; color: #d97706; }
 .is-af .is-toc-grid a:hover { color: #fbbf24; }
 
-/* ---- SECTIONS ---- */
-.is-af .is-sec-white { background: #fff; padding: 60px 0; }
-.is-af .is-sec-gray { background: #fafaf9; padding: 60px 0; }
-.is-af .is-sec-tint { background: linear-gradient(135deg, #fffbeb, #fef3c7); padding: 60px 0; }
-.is-af .is-sec h2 { font-size: clamp(21px, 2.6vw, 28px) !important; font-weight: 900 !important; color: #0f172a !important; margin: 0 0 8px !important; letter-spacing: -0.01em; }
-.is-af .is-eyebrow { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #b45309; margin-bottom: 10px; }
-.is-af .is-sec > p.is-desc { font-size: 15px; color: #64748b; margin: 0 0 26px; max-width: 620px; }
+/* ---- SECTIONS: WHITE / SOLID AMBER ALTERNATING ---- */
+.is-af .is-sec-white { background: #fff; padding: 64px 0; }
+.is-af .is-sec-amber { background: linear-gradient(135deg, #b45309, #92400e); padding: 64px 0; }
 
-/* ---- WHY LIST: FIXED CONTRAST ---- */
+.is-af .is-sec-white h2 { font-size: clamp(21px, 2.6vw, 28px) !important; font-weight: 900 !important; color: #0f172a !important; margin: 0 0 8px !important; letter-spacing: -0.01em; }
+.is-af .is-sec-white .is-eyebrow { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #b45309; margin-bottom: 10px; }
+.is-af .is-sec-white > p.is-desc { font-size: 15px; color: #64748b; margin: 0 0 26px; max-width: 620px; }
+
+.is-af .is-sec-amber h2 { font-size: clamp(21px, 2.6vw, 28px) !important; font-weight: 900 !important; color: #fff !important; margin: 0 0 8px !important; letter-spacing: -0.01em; }
+.is-af .is-sec-amber .is-eyebrow { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #fde68a; margin-bottom: 10px; }
+.is-af .is-sec-amber > p.is-desc { font-size: 15px; color: rgba(255,255,255,0.85); margin: 0 0 26px; max-width: 620px; }
+
+/* ---- WHY LIST (used on both backgrounds) ---- */
 .is-af .is-why-list { display: flex; flex-direction: column; gap: 0; margin: 20px 0; }
-.is-af .is-why-item { display: flex; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid rgba(0,0,0,0.08); }
-.is-af .is-why-item:last-child { border-bottom: none; }
-.is-af .is-why-num { width: 30px; height: 30px; border-radius: 50%; background: #d97706; color: #fff; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 2px 8px rgba(180,83,9,0.3); }
-.is-af .is-why-item span { font-size: 14.5px; color: #334155; }
+.is-af .is-why-item { display: flex; align-items: center; gap: 16px; padding: 14px 0; }
+.is-af .is-why-num { width: 30px; height: 30px; border-radius: 50%; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 
-/* On white/gray backgrounds, use lighter circle since contrast already exists */
-.is-af .is-sec-white .is-why-num,
-.is-af .is-sec-gray .is-why-num { background: #fffbeb; color: #b45309; box-shadow: none; }
+.is-af .is-sec-white .is-why-item { border-bottom: 1px solid #e7e5e4; }
+.is-af .is-sec-white .is-why-item:last-child { border-bottom: none; }
+.is-af .is-sec-white .is-why-num { background: #b45309; color: #fff; }
+.is-af .is-sec-white .is-why-item span { font-size: 14.5px; color: #334155; }
 
-/* ---- ICON TILE GRID: FIXED CONTRAST ---- */
+.is-af .is-sec-amber .is-why-item { border-bottom: 1px solid rgba(255,255,255,0.15); }
+.is-af .is-sec-amber .is-why-item:last-child { border-bottom: none; }
+.is-af .is-sec-amber .is-why-num { background: #fff; color: #92400e; }
+.is-af .is-sec-amber .is-why-item span { font-size: 14.5px; color: #fff; font-weight: 500; }
+
+/* ---- ICON TILE GRID (on amber background) ---- */
 .is-af .is-tile-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 24px 0; }
-.is-af .is-tile { background: #fff; border: 1px solid #e7e5e4; border-radius: 14px; padding: 20px; display: flex; gap: 14px; align-items: flex-start; transition: all 0.2s; }
-.is-af .is-tile:hover { border-color: #fbbf24; box-shadow: 0 8px 24px rgba(180,83,9,0.1); transform: translateY(-2px); }
+.is-af .is-tile { background: #fff; border-radius: 14px; padding: 20px; display: flex; gap: 14px; align-items: flex-start; transition: all 0.2s; }
+.is-af .is-tile:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0,0,0,0.2); }
 .is-af .is-tile-icon { width: 42px; height: 42px; border-radius: 10px; background: #fef3c7; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 20px; }
 .is-af .is-tile h4 { font-size: 14.5px !important; font-weight: 700 !important; color: #0f172a !important; margin: 0 0 4px !important; }
 .is-af .is-tile p { font-size: 13px; color: #64748b; margin: 0; line-height: 1.5; }
 
-/* ---- GUIDE LIST ---- */
+/* ---- GUIDE LIST (on white background) ---- */
 .is-af .is-guide-list { display: flex; flex-direction: column; gap: 2px; border: 1px solid #e7e5e4; border-radius: 14px; overflow: hidden; margin: 20px 0; }
 .is-af .is-guide-row { display: flex; align-items: center; gap: 14px; padding: 14px 20px; background: #fff; border-bottom: 1px solid #f5f5f4; }
 .is-af .is-guide-row:last-child { border-bottom: none; }
-.is-af .is-guide-row:hover { background: #fafaf9; }
+.is-af .is-guide-row:hover { background: #fffbeb; }
 .is-af .is-guide-row a { font-size: 14.5px; color: #1e293b; text-decoration: none; font-weight: 500; flex: 1; }
 .is-af .is-guide-row a:hover { color: #b45309; }
-.is-af .is-guide-arrow { width: 22px; height: 22px; border-radius: 50%; background: #fef3c7; color: #b45309; display: flex; align-items: center; justify-content: center; font-size: 12px; flex-shrink: 0; }
+.is-af .is-guide-arrow { width: 24px; height: 24px; border-radius: 50%; background: #b45309; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 12px; flex-shrink: 0; }
 
 /* ---- FINAL CTA ---- */
 .is-af .is-final-wrap {
@@ -138,7 +146,7 @@ layout: "layout.njk"
   .is-af .is-toc-grid { grid-template-columns: 1fr; }
   .is-af .is-tile-grid { grid-template-columns: 1fr; }
   .is-af .is-hero-wrap { padding: 44px 0 52px; }
-  .is-af .is-sec-white, .is-af .is-sec-gray, .is-af .is-sec-tint { padding: 40px 0; }
+  .is-af .is-sec-white, .is-af .is-sec-amber { padding: 40px 0; }
 }
 </style>
 
@@ -163,7 +171,7 @@ layout: "layout.njk"
   </div>
 
   <div class="is-sec-white" id="what-are">
-    <div class="is-inner is-sec">
+    <div class="is-inner">
       <span class="is-eyebrow">Overview</span>
       <h2>What Are Agriculture &amp; Food Bonds?</h2>
       <p class="is-desc">Agriculture and food bonds are surety bonds required for businesses involved in the buying, selling, processing, or distribution of agricultural products. These bonds guarantee that businesses:</p>
@@ -178,8 +186,8 @@ layout: "layout.njk"
     </div>
   </div>
 
-  <div class="is-sec-tint" id="core-types">
-    <div class="is-inner is-sec">
+  <div class="is-sec-amber" id="core-types">
+    <div class="is-inner">
       <span class="is-eyebrow">Core Bond Types</span>
       <h2>Core Types of Agriculture &amp; Food Bonds</h2>
       <p class="is-desc">The most common bonds required across the agricultural supply chain.</p>
@@ -195,7 +203,7 @@ layout: "layout.njk"
   </div>
 
   <div class="is-sec-white" id="guides">
-    <div class="is-inner is-sec">
+    <div class="is-inner">
       <span class="is-eyebrow">Deep Dives</span>
       <h2>Agriculture &amp; Food Bond Guides</h2>
       <p class="is-desc">Detailed guides on specific agriculture and food bond types.</p>
@@ -211,8 +219,8 @@ layout: "layout.njk"
     </div>
   </div>
 
-  <div class="is-sec-tint" id="why-matters">
-    <div class="is-inner is-sec">
+  <div class="is-sec-amber" id="why-matters">
+    <div class="is-inner">
       <span class="is-eyebrow">Why It Matters</span>
       <h2>Why Agriculture Businesses Need These Bonds</h2>
       <p class="is-desc">Agriculture and food bonds help businesses:</p>
