@@ -267,13 +267,13 @@ layout: "layout.njk"
           <div class="is-state-flag">Arizona</div>
           <h4>Arizona Money Transmitter Bond</h4>
           <p>Arizona requires a money transmitter bond as part of its licensing process for businesses transmitting money on behalf of consumers.</p>
-          <a href="/pages/money-transmitter-bond-arizona/">View Arizona Requirements →</a>
+          <a href="/money-transmitter-bond-arizona/">View Arizona Requirements →</a>
         </div>
         <div class="is-state-card">
           <div class="is-state-flag">Texas</div>
           <h4>Texas Money Transmitter Bond</h4>
           <p>Texas requires a money transmitter bond under the Texas Department of Banking's licensing requirements.</p>
-          <a href="/pages/money-transmitter-bond-texas/">View Texas Requirements →</a>
+          <a href="/money-transmitter-bond-texas/">View Texas Requirements →</a>
         </div>
       </div>
     </div>

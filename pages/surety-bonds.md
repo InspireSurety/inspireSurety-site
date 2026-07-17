@@ -207,14 +207,14 @@ layout: "layout.njk"
       <h2>Browse Bond Categories</h2>
       <p>Find your bond category and explore requirements, guides, and applications.</p>
       <div class="is-cat-grid">
-        <a href="/pages/license-permit-bond-hub/" class="is-cat-card cat-1"><h4>License &amp; Permit</h4><p>Auto dealer, notary, mortgage broker &amp; more.</p></a>
-        <a href="/pages/contractors-construction-bond-hub/" class="is-cat-card cat-2"><h4>Construction</h4><p>Bid, performance, payment &amp; contractor bonds.</p></a>
-        <a href="/pages/court-fiduciary-bond-hub/" class="is-cat-card cat-3"><h4>Court &amp; Fiduciary</h4><p>Probate, guardian, trustee &amp; public official bonds.</p></a>
-        <a href="/pages/environmental-reclamation-bond-hub/" class="is-cat-card cat-4"><h4>Environmental</h4><p>Reclamation, oil &amp; gas, remediation bonds.</p></a>
-        <a href="/pages/federal-blm-bond-hub/" class="is-cat-card cat-5"><h4>Federal &amp; BLM</h4><p>BLM, U.S. Customs, USDA &amp; federal bonds.</p></a>
-        <a href="/pages/escrow-real-estate-bond-hub/" class="is-cat-card cat-6"><h4>Escrow &amp; Real Estate</h4><p>Escrow agent, title &amp; mortgage broker bonds.</p></a>
-        <a href="/pages/cannabis-bond-hub/" class="is-cat-card cat-7"><h4>Cannabis</h4><p>License, tax &amp; cultivator bonds.</p></a>
-        <a href="/pages/agriculture-food-bond-hub/" class="is-cat-card cat-8"><h4>Agriculture &amp; Food</h4><p>Grain, livestock, USDA &amp; PACA bonds.</p></a>
+        <a href="/license-permit-bond-hub/" class="is-cat-card cat-1"><h4>License &amp; Permit</h4><p>Auto dealer, notary, mortgage broker &amp; more.</p></a>
+        <a href="/contractors-construction-bond-hub/" class="is-cat-card cat-2"><h4>Construction</h4><p>Bid, performance, payment &amp; contractor bonds.</p></a>
+        <a href="/court-fiduciary-bond-hub/" class="is-cat-card cat-3"><h4>Court &amp; Fiduciary</h4><p>Probate, guardian, trustee &amp; public official bonds.</p></a>
+        <a href="/environmental-reclamation-bond-hub/" class="is-cat-card cat-4"><h4>Environmental</h4><p>Reclamation, oil &amp; gas, remediation bonds.</p></a>
+        <a href="/federal-blm-bond-hub/" class="is-cat-card cat-5"><h4>Federal &amp; BLM</h4><p>BLM, U.S. Customs, USDA &amp; federal bonds.</p></a>
+        <a href="/escrow-real-estate-bond-hub/" class="is-cat-card cat-6"><h4>Escrow &amp; Real Estate</h4><p>Escrow agent, title &amp; mortgage broker bonds.</p></a>
+        <a href="/cannabis-bond-hub/" class="is-cat-card cat-7"><h4>Cannabis</h4><p>License, tax &amp; cultivator bonds.</p></a>
+        <a href="/agriculture-food-bond-hub/" class="is-cat-card cat-8"><h4>Agriculture &amp; Food</h4><p>Grain, livestock, USDA &amp; PACA bonds.</p></a>
       </div>
       <div class="is-stat-wrap">
         <div class="is-stat-grid">
@@ -296,7 +296,7 @@ layout: "layout.njk"
     <div class="is-inner">
       <h2>Ready to Get Your Bond?</h2>
       <p>Fast approvals, lowest rates, A-rated surety partners standing by.</p>
-      <a href="/pages/contact/" class="is-btn-white">Get Started</a>
+      <a href="/contact/" class="is-btn-white">Get Started</a>
     </div>
   </div>
 

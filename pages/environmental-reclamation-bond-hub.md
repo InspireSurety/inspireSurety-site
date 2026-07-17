@@ -208,13 +208,13 @@ layout: "layout.njk"
       <h2>Environmental &amp; Reclamation Bond Guides</h2>
       <p class="is-desc">Detailed guides on specific environmental bond types, requirements, and costs.</p>
       <div class="is-guide-list">
-        <div class="is-guide-row"><a href="/pages/environmental-reclamation-bond-guide/">Environmental &amp; Reclamation Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/reclamation-bond/">Reclamation Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/oil-gas-bonds/">Oil &amp; Gas Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/solar-decommissioning-bond/">Solar Decommissioning Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/remediation-bond/">Remediation Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/standby-trust-agreement/">Standby Trust Agreement Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/environmental-bond/">Environmental Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/environmental-reclamation-bond-guide/">Environmental &amp; Reclamation Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/reclamation-bond/">Reclamation Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/oil-gas-bonds/">Oil &amp; Gas Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/solar-decommissioning-bond/">Solar Decommissioning Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/remediation-bond/">Remediation Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/standby-trust-agreement/">Standby Trust Agreement Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/environmental-bond/">Environmental Bond Guide</a><span class="is-guide-arrow">→</span></div>
       </div>
     </div>
   </div>
@@ -228,7 +228,7 @@ layout: "layout.njk"
         <table>
           <thead><tr><th>Bond Type</th><th>Available States</th></tr></thead>
           <tbody>
-            <tr><td>Reclamation Bonds</td><td><a href="/pages/colorado-reclamation-bond/">Colorado</a><a href="/pages/kentucky-reclamation-bond/">Kentucky</a><a href="/pages/montana-reclamation-bond/">Montana</a><a href="/pages/pennsylvania-reclamation-bond/">Pennsylvania</a><a href="/pages/south-dakota-reclamation-bond/">South Dakota</a><a href="/pages/west-virginia-reclamation-bond/">West Virginia</a><a href="/pages/wyoming-reclamation-bond/">Wyoming</a></td></tr>
+            <tr><td>Reclamation Bonds</td><td><a href="/colorado-reclamation-bond/">Colorado</a><a href="/kentucky-reclamation-bond/">Kentucky</a><a href="/montana-reclamation-bond/">Montana</a><a href="/pennsylvania-reclamation-bond/">Pennsylvania</a><a href="/south-dakota-reclamation-bond/">South Dakota</a><a href="/west-virginia-reclamation-bond/">West Virginia</a><a href="/wyoming-reclamation-bond/">Wyoming</a></td></tr>
           </tbody>
         </table>
       </div>
@@ -254,7 +254,7 @@ layout: "layout.njk"
     <div class="is-inner">
       <h2>Get Your Environmental Bond Today</h2>
       <p>Fast approvals. Competitive rates. A-rated surety partners. Licensed nationwide where permitted.</p>
-      <a href="/pages/contact/" class="is-btn-white">Apply Now</a>
+      <a href="/contact/" class="is-btn-white">Apply Now</a>
     </div>
   </div>
 

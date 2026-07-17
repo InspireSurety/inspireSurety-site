@@ -267,13 +267,13 @@ layout: "layout.njk"
           <div class="is-state-flag">Arizona</div>
           <h4>Arizona Mortgage Broker Bond</h4>
           <p>Arizona requires a mortgage broker/banker bond as part of the state licensing process, filed alongside NMLS registration.</p>
-          <a href="/pages/mortgage-broker-banker-bond-arizona/">View Arizona Requirements →</a>
+          <a href="/mortgage-broker-banker-bond-arizona/">View Arizona Requirements →</a>
         </div>
         <div class="is-state-card">
           <div class="is-state-flag">Nationwide</div>
           <h4>Commercial Mortgage Broker Bond</h4>
           <p>Required for brokers handling commercial real estate financing transactions across multiple states.</p>
-          <a href="/pages/commercial-mortgage-broker-bond/">View Commercial Requirements →</a>
+          <a href="/commercial-mortgage-broker-bond/">View Commercial Requirements →</a>
         </div>
       </div>
     </div>

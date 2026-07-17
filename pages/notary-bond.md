@@ -286,13 +286,13 @@ layout: "layout.njk"
           <div class="is-state-flag">Arizona</div>
           <h4>Arizona Notary Bond</h4>
           <p>Arizona requires a $5,000 notary bond for all new and renewing notary commissions. The bond protects the public from notarial errors or misconduct and must be filed with the Arizona Secretary of State before the commission becomes active.</p>
-          <a href="/pages/notary-bond-arizona/">View Arizona Notary Bond Requirements →</a>
+          <a href="/notary-bond-arizona/">View Arizona Notary Bond Requirements →</a>
         </div>
         <div class="is-state-card">
           <div class="is-state-flag">Texas</div>
           <h4>Texas Notary Bond</h4>
           <p>Texas requires a $10,000 notary bond for all commissioned notaries. The bond must be filed with the Texas Secretary of State and ensures compliance with Texas notarial laws, including identity verification and proper recordkeeping.</p>
-          <a href="/pages/notary-bond-texas/">View Texas Notary Bond Requirements →</a>
+          <a href="/notary-bond-texas/">View Texas Notary Bond Requirements →</a>
         </div>
       </div>
     </div>
@@ -348,16 +348,16 @@ layout: "layout.njk"
       <span class="is-eyebrow">Explore More</span>
       <h2>Surety Bond Hubs</h2>
       <div class="is-hub-links">
-        <a href="/pages/contractors-construction-bond-hub/">Contractors &amp; Construction Bond Hub</a>
-        <a href="/pages/court-fiduciary-bond-hub/">Court &amp; Fiduciary Bond Hub</a>
-        <a href="/pages/cannabis-bond-hub/">Cannabis Bond Hub</a>
-        <a href="/pages/environmental-reclamation-bond-hub/">Environmental &amp; Reclamation Bond Hub</a>
-        <a href="/pages/federal-blm-bond-hub/">Federal &amp; BLM Bond Hub</a>
-        <a href="/pages/escrow-real-estate-bond-hub/">Escrow &amp; Real Estate Bond Hub</a>
-        <a href="/pages/license-permit-bond-hub/">License &amp; Permit Bond Hub</a>
-        <a href="/pages/agriculture-food-bond-hub/">Agriculture &amp; Food Bond Hub</a>
+        <a href="/contractors-construction-bond-hub/">Contractors &amp; Construction Bond Hub</a>
+        <a href="/court-fiduciary-bond-hub/">Court &amp; Fiduciary Bond Hub</a>
+        <a href="/cannabis-bond-hub/">Cannabis Bond Hub</a>
+        <a href="/environmental-reclamation-bond-hub/">Environmental &amp; Reclamation Bond Hub</a>
+        <a href="/federal-blm-bond-hub/">Federal &amp; BLM Bond Hub</a>
+        <a href="/escrow-real-estate-bond-hub/">Escrow &amp; Real Estate Bond Hub</a>
+        <a href="/license-permit-bond-hub/">License &amp; Permit Bond Hub</a>
+        <a href="/agriculture-food-bond-hub/">Agriculture &amp; Food Bond Hub</a>
       </div>
-      <a href="/pages/surety-bond-learning-center/" style="color:#2563eb;font-weight:700;font-size:14.5px;text-decoration:none;">Surety Bond Learning Center →</a>
+      <a href="/surety-bond-learning-center/" style="color:#2563eb;font-weight:700;font-size:14.5px;text-decoration:none;">Surety Bond Learning Center →</a>
     </div>
   </div>
 

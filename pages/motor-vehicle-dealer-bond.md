@@ -267,19 +267,19 @@ layout: "layout.njk"
           <div class="is-state-flag">Arizona</div>
           <h4>Arizona Dealer Bond</h4>
           <p>Arizona requires a motor vehicle dealer bond for all new and used vehicle dealer licenses.</p>
-          <a href="/pages/motor-vehicle-dealer-bond-arizona/">View Arizona Requirements →</a>
+          <a href="/motor-vehicle-dealer-bond-arizona/">View Arizona Requirements →</a>
         </div>
         <div class="is-state-card">
           <div class="is-state-flag">Florida</div>
           <h4>Florida Dealer Bond</h4>
           <p>Florida requires a dealer bond for independent, franchise, and wholesale motor vehicle dealers.</p>
-          <a href="/pages/motor-vehicle-dealer-bond-florida/">View Florida Requirements →</a>
+          <a href="/motor-vehicle-dealer-bond-florida/">View Florida Requirements →</a>
         </div>
         <div class="is-state-card">
           <div class="is-state-flag">Texas</div>
           <h4>Texas Dealer Bond</h4>
           <p>Texas requires a dealer bond for GDN (General Distinguishing Number) holders selling motor vehicles.</p>
-          <a href="/pages/motor-vehicle-dealer-bond-texas/">View Texas Requirements →</a>
+          <a href="/motor-vehicle-dealer-bond-texas/">View Texas Requirements →</a>
         </div>
       </div>
     </div>

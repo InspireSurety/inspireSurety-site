@@ -196,14 +196,14 @@ layout: "layout.njk"
       <h2>Federal &amp; BLM Bond Guides</h2>
       <p class="is-desc">Detailed guides on specific federal bond types, requirements, and costs.</p>
       <div class="is-guide-list">
-        <div class="is-guide-row"><a href="/pages/federal-blm-bond-guide/">Federal &amp; BLM Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/blm-bonds/">BLM Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/u-s-customs-bonds/">U.S. Customs Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/usda-bonds/">USDA Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/bureau-of-indian-affairs-bond/">Bureau of Indian Affairs Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/ocean-transport-bond/">Ocean Transport Bond Guide (FMC-48/FMC-69)</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/hud-bonds/">HUD Manufactured Housing Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/usda-forest-service-timber-sale/">USDA Forest Service Timber Sale Bond</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/federal-blm-bond-guide/">Federal &amp; BLM Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/blm-bonds/">BLM Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/u-s-customs-bonds/">U.S. Customs Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/usda-bonds/">USDA Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/bureau-of-indian-affairs-bond/">Bureau of Indian Affairs Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/ocean-transport-bond/">Ocean Transport Bond Guide (FMC-48/FMC-69)</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/hud-bonds/">HUD Manufactured Housing Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/usda-forest-service-timber-sale/">USDA Forest Service Timber Sale Bond</a><span class="is-guide-arrow">→</span></div>
       </div>
     </div>
   </div>
@@ -227,7 +227,7 @@ layout: "layout.njk"
     <div class="is-inner">
       <h2>Get Your Federal or BLM Bond Today</h2>
       <p>Fast approvals. Competitive rates. A-rated surety partners. Licensed nationwide where permitted.</p>
-      <a href="/pages/contact/" class="is-btn-white">Apply Now</a>
+      <a href="/contact/" class="is-btn-white">Apply Now</a>
     </div>
   </div>
 

@@ -196,13 +196,13 @@ layout: "layout.njk"
       <h2>Agriculture &amp; Food Bond Guides</h2>
       <p class="is-desc">Detailed guides on specific agriculture and food bond types.</p>
       <div class="is-guide-list">
-        <div class="is-guide-row"><a href="/pages/agriculture-food-bond-guide/">Agriculture &amp; Food Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/usda-livestock-bonds/">USDA Livestock Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/usda-paca-bond/">USDA PACA Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/usda-snap-bond/">USDA SNAP Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/usda-forest-service-timber-sale/">USDA Forest Service Timber Sale Bond</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/h-2a-farm-labor-contractor-bond/">H-2A Farm Labor Contractor Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/oklahoma-growers-license-bond/">Oklahoma Growers License Bond</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/agriculture-food-bond-guide/">Agriculture &amp; Food Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/usda-livestock-bonds/">USDA Livestock Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/usda-paca-bond/">USDA PACA Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/usda-snap-bond/">USDA SNAP Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/usda-forest-service-timber-sale/">USDA Forest Service Timber Sale Bond</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/h-2a-farm-labor-contractor-bond/">H-2A Farm Labor Contractor Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/oklahoma-growers-license-bond/">Oklahoma Growers License Bond</a><span class="is-guide-arrow">→</span></div>
       </div>
     </div>
   </div>
@@ -226,7 +226,7 @@ layout: "layout.njk"
     <div class="is-inner">
       <h2>Get Your Agriculture or Food Bond Today</h2>
       <p>Fast approvals. Competitive rates. A-rated surety partners. Licensed nationwide where permitted.</p>
-      <a href="/pages/contact/" class="is-btn-white">Apply Now</a>
+      <a href="/contact/" class="is-btn-white">Apply Now</a>
     </div>
   </div>
 

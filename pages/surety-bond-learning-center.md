@@ -182,35 +182,35 @@ layout: "layout.njk"
       <h2>Explore Bond Category Hubs</h2>
       <p class="is-desc">Each hub is a complete resource for a specific bond category, including core bond types, guides, and state-specific requirements.</p>
       <div class="is-hub-grid">
-        <a href="/pages/contractors-construction-bond-hub/" class="is-hub-card hub-construction">
+        <a href="/contractors-construction-bond-hub/" class="is-hub-card hub-construction">
           <div class="is-hub-icon">🏗️</div>
           <div><h4>Contractors &amp; Construction</h4><p>Bid, performance, and payment bonds</p></div>
         </a>
-        <a href="/pages/license-permit-bond-hub/" class="is-hub-card hub-license">
+        <a href="/license-permit-bond-hub/" class="is-hub-card hub-license">
           <div class="is-hub-icon">📋</div>
           <div><h4>License &amp; Permit</h4><p>Auto dealers, notaries, brokers &amp; more</p></div>
         </a>
-        <a href="/pages/court-fiduciary-bond-hub/" class="is-hub-card hub-court">
+        <a href="/court-fiduciary-bond-hub/" class="is-hub-card hub-court">
           <div class="is-hub-icon">⚖️</div>
           <div><h4>Court &amp; Fiduciary</h4><p>Probate, guardian &amp; trustee bonds</p></div>
         </a>
-        <a href="/pages/environmental-reclamation-bond-hub/" class="is-hub-card hub-environmental">
+        <a href="/environmental-reclamation-bond-hub/" class="is-hub-card hub-environmental">
           <div class="is-hub-icon">🌲</div>
           <div><h4>Environmental &amp; Reclamation</h4><p>Mining, oil &amp; gas, solar bonds</p></div>
         </a>
-        <a href="/pages/federal-blm-bond-hub/" class="is-hub-card hub-federal">
+        <a href="/federal-blm-bond-hub/" class="is-hub-card hub-federal">
           <div class="is-hub-icon">🏛️</div>
           <div><h4>Federal &amp; BLM</h4><p>BLM, customs &amp; USDA bonds</p></div>
         </a>
-        <a href="/pages/escrow-real-estate-bond-hub/" class="is-hub-card hub-escrow">
+        <a href="/escrow-real-estate-bond-hub/" class="is-hub-card hub-escrow">
           <div class="is-hub-icon">🏠</div>
           <div><h4>Escrow &amp; Real Estate</h4><p>Escrow, title &amp; mortgage bonds</p></div>
         </a>
-        <a href="/pages/cannabis-bond-hub/" class="is-hub-card hub-cannabis">
+        <a href="/cannabis-bond-hub/" class="is-hub-card hub-cannabis">
           <div class="is-hub-icon">🌿</div>
           <div><h4>Cannabis</h4><p>Cultivation, tax &amp; license bonds</p></div>
         </a>
-        <a href="/pages/agriculture-food-bond-hub/" class="is-hub-card hub-agriculture">
+        <a href="/agriculture-food-bond-hub/" class="is-hub-card hub-agriculture">
           <div class="is-hub-icon">🌾</div>
           <div><h4>Agriculture &amp; Food</h4><p>USDA, grain &amp; livestock bonds</p></div>
         </a>
@@ -233,11 +233,11 @@ layout: "layout.njk"
       <h2>Surety Bond Basics</h2>
       <p class="is-desc">New to surety bonds? Start with these foundational guides.</p>
       <div class="is-guide-list">
-        <div class="is-guide-row"><a href="/pages/surety-bond-basics-guide/">Surety Bond Basics Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/how-surety-bond-cost-are-calculated/">How Surety Bond Costs Are Calculated</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/glossary-of-surety-bond-terms/">Glossary of Surety Bond Terms</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/state-by-state-bond-requirement-guides/">State-by-State Bond Requirement Guides</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/licensing-checklist/">Licensing Checklist</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/surety-bond-basics-guide/">Surety Bond Basics Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/how-surety-bond-cost-are-calculated/">How Surety Bond Costs Are Calculated</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/glossary-of-surety-bond-terms/">Glossary of Surety Bond Terms</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/state-by-state-bond-requirement-guides/">State-by-State Bond Requirement Guides</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/licensing-checklist/">Licensing Checklist</a><span class="is-guide-arrow">→</span></div>
       </div>
     </div>
   </div>
@@ -248,9 +248,9 @@ layout: "layout.njk"
       <h2>Tools &amp; Resources</h2>
       <p class="is-desc">Helpful tools to guide your bonding process.</p>
       <div class="is-tool-grid">
-        <div class="is-tool-card"><div class="is-tool-icon">🧮</div><h4><a href="/pages/how-surety-bond-cost-are-calculated/">Bond Cost Calculator</a></h4></div>
-        <div class="is-tool-card"><div class="is-tool-icon">✅</div><h4><a href="/pages/licensing-checklist/">Licensing Checklist</a></h4></div>
-        <div class="is-tool-card"><div class="is-tool-icon">📖</div><h4><a href="/pages/glossary-of-surety-bond-terms/">Bond Terms Glossary</a></h4></div>
+        <div class="is-tool-card"><div class="is-tool-icon">🧮</div><h4><a href="/how-surety-bond-cost-are-calculated/">Bond Cost Calculator</a></h4></div>
+        <div class="is-tool-card"><div class="is-tool-icon">✅</div><h4><a href="/licensing-checklist/">Licensing Checklist</a></h4></div>
+        <div class="is-tool-card"><div class="is-tool-icon">📖</div><h4><a href="/glossary-of-surety-bond-terms/">Bond Terms Glossary</a></h4></div>
       </div>
     </div>
   </div>
@@ -274,7 +274,7 @@ layout: "layout.njk"
     <div class="is-inner">
       <h2>Ready to Get Bonded?</h2>
       <p>Explore our full range of surety bonds and find the right coverage for your needs.</p>
-      <a href="/pages/surety-bonds/" class="is-btn-white">Browse All Bonds</a>
+      <a href="/surety-bonds/" class="is-btn-white">Browse All Bonds</a>
     </div>
   </div>
 

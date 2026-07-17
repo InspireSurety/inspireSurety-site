@@ -249,25 +249,25 @@ layout: "layout.njk"
       <h2>License &amp; Permit Bond Guides</h2>
       <p class="is-desc">Detailed guides on specific bond types, requirements, and costs.</p>
       <div class="is-guide-grid">
-        <div class="is-guide-card"><div class="is-guide-num">1</div><a href="/pages/business-services-bond-what-it-is-and-why-it-matters/">Business Services Bond</a></div>
-        <div class="is-guide-card"><div class="is-guide-num">2</div><a href="/pages/money-transmitter-bond/">Money Transmitter Bond Guide</a></div>
-        <div class="is-guide-card"><div class="is-guide-num">3</div><a href="/pages/freight-broker-bonds/">Freight Broker Bond Guide</a></div>
-        <div class="is-guide-card"><div class="is-guide-num">4</div><a href="/pages/janitorial-bonds/">Janitorial Service Bond Overview</a></div>
-        <div class="is-guide-card"><div class="is-guide-num">5</div><a href="/pages/warehouse-operator-bond/">Warehouse Operator Bond Guide</a></div>
-        <div class="is-guide-card"><div class="is-guide-num">6</div><a href="/pages/utility-deposit-bonds/">Utility Deposit Bond Guide</a></div>
-        <div class="is-guide-card"><div class="is-guide-num">7</div><a href="/pages/union-bonds/">Union Wage &amp; Welfare Bond Guide</a></div>
-        <div class="is-guide-card"><div class="is-guide-num">8</div><a href="/pages/trade-schools-bond/">Trade School Surety Bond Guide</a></div>
-        <div class="is-guide-card"><div class="is-guide-num">9</div><a href="/pages/private-schools-bond/">Private School Bond Guide</a></div>
-        <div class="is-guide-card"><div class="is-guide-num">10</div><a href="/pages/pharmacy-benefit-manager-pbm-bonds/">PBM Surety Bond Guide</a></div>
-        <div class="is-guide-card"><div class="is-guide-num">11</div><a href="/pages/motor-vehicle-dealer-bond/">Auto Dealer Bond Guide</a></div>
-        <div class="is-guide-card"><div class="is-guide-num">12</div><a href="/pages/liquor-license-bond/">Liquor License Bond Guide</a></div>
-        <div class="is-guide-card"><div class="is-guide-num">13</div><a href="/pages/insurance-adjuster-bond/">Insurance Adjuster Bond Guide</a></div>
-        <div class="is-guide-card"><div class="is-guide-num">14</div><a href="/pages/health-club-bonds/">Health Club Bond Guide</a></div>
-        <div class="is-guide-card"><div class="is-guide-num">15</div><a href="/pages/employment-agency-bond/">Employment Agency Bond Guide</a></div>
-        <div class="is-guide-card"><div class="is-guide-num">16</div><a href="/pages/driving-schools-bond/">Driving School Bond Guide</a></div>
-        <div class="is-guide-card"><div class="is-guide-num">17</div><a href="/pages/distributor-bond/">Distributor Surety Bond Guide</a></div>
-        <div class="is-guide-card"><div class="is-guide-num">18</div><a href="/pages/collection-agency-bond/">Collection Agency Bond Guide</a></div>
-        <div class="is-guide-card"><div class="is-guide-num">19</div><a href="/pages/auctioneer-bond/">Auctioneer Bond Guide</a></div>
+        <div class="is-guide-card"><div class="is-guide-num">1</div><a href="/business-services-bond-what-it-is-and-why-it-matters/">Business Services Bond</a></div>
+        <div class="is-guide-card"><div class="is-guide-num">2</div><a href="/money-transmitter-bond/">Money Transmitter Bond Guide</a></div>
+        <div class="is-guide-card"><div class="is-guide-num">3</div><a href="/freight-broker-bonds/">Freight Broker Bond Guide</a></div>
+        <div class="is-guide-card"><div class="is-guide-num">4</div><a href="/janitorial-bonds/">Janitorial Service Bond Overview</a></div>
+        <div class="is-guide-card"><div class="is-guide-num">5</div><a href="/warehouse-operator-bond/">Warehouse Operator Bond Guide</a></div>
+        <div class="is-guide-card"><div class="is-guide-num">6</div><a href="/utility-deposit-bonds/">Utility Deposit Bond Guide</a></div>
+        <div class="is-guide-card"><div class="is-guide-num">7</div><a href="/union-bonds/">Union Wage &amp; Welfare Bond Guide</a></div>
+        <div class="is-guide-card"><div class="is-guide-num">8</div><a href="/trade-schools-bond/">Trade School Surety Bond Guide</a></div>
+        <div class="is-guide-card"><div class="is-guide-num">9</div><a href="/private-schools-bond/">Private School Bond Guide</a></div>
+        <div class="is-guide-card"><div class="is-guide-num">10</div><a href="/pharmacy-benefit-manager-pbm-bonds/">PBM Surety Bond Guide</a></div>
+        <div class="is-guide-card"><div class="is-guide-num">11</div><a href="/motor-vehicle-dealer-bond/">Auto Dealer Bond Guide</a></div>
+        <div class="is-guide-card"><div class="is-guide-num">12</div><a href="/liquor-license-bond/">Liquor License Bond Guide</a></div>
+        <div class="is-guide-card"><div class="is-guide-num">13</div><a href="/insurance-adjuster-bond/">Insurance Adjuster Bond Guide</a></div>
+        <div class="is-guide-card"><div class="is-guide-num">14</div><a href="/health-club-bonds/">Health Club Bond Guide</a></div>
+        <div class="is-guide-card"><div class="is-guide-num">15</div><a href="/employment-agency-bond/">Employment Agency Bond Guide</a></div>
+        <div class="is-guide-card"><div class="is-guide-num">16</div><a href="/driving-schools-bond/">Driving School Bond Guide</a></div>
+        <div class="is-guide-card"><div class="is-guide-num">17</div><a href="/distributor-bond/">Distributor Surety Bond Guide</a></div>
+        <div class="is-guide-card"><div class="is-guide-num">18</div><a href="/collection-agency-bond/">Collection Agency Bond Guide</a></div>
+        <div class="is-guide-card"><div class="is-guide-num">19</div><a href="/auctioneer-bond/">Auctioneer Bond Guide</a></div>
       </div>
     </div>
   </div>
@@ -281,11 +281,11 @@ layout: "layout.njk"
         <table>
           <thead><tr><th>Bond Type</th><th>Available States</th></tr></thead>
           <tbody>
-            <tr><td>Motor Vehicle Dealer Bonds</td><td><a href="/pages/motor-vehicle-dealer-bond-arizona/">Arizona</a><a href="/pages/motor-vehicle-dealer-bond-florida/">Florida</a><a href="/pages/motor-vehicle-dealer-bond-texas/">Texas</a></td></tr>
-            <tr><td>Mortgage Broker Bonds</td><td><a href="/pages/mortgage-broker-banker-bond-arizona/">Arizona</a></td></tr>
-            <tr><td>Collection Agency Bonds</td><td><a href="/pages/collection-agency-bond-arizona/">Arizona</a><a href="/pages/collection-agency-bond-florida/">Florida</a><a href="/pages/collection-agency-bond-texas/">Texas</a></td></tr>
-            <tr><td>Health Club Bonds</td><td><a href="/pages/health-club-bonds-arizona/">Arizona</a><a href="/pages/health-club-bonds-florida/">Florida</a><a href="/pages/health-club-bonds-texas/">Texas</a></td></tr>
-            <tr><td>Money Transmitter Bonds</td><td><a href="/pages/money-transmitter-bond-arizona/">Arizona</a><a href="/pages/money-transmitter-bond-texas/">Texas</a></td></tr>
+            <tr><td>Motor Vehicle Dealer Bonds</td><td><a href="/motor-vehicle-dealer-bond-arizona/">Arizona</a><a href="/motor-vehicle-dealer-bond-florida/">Florida</a><a href="/motor-vehicle-dealer-bond-texas/">Texas</a></td></tr>
+            <tr><td>Mortgage Broker Bonds</td><td><a href="/mortgage-broker-banker-bond-arizona/">Arizona</a></td></tr>
+            <tr><td>Collection Agency Bonds</td><td><a href="/collection-agency-bond-arizona/">Arizona</a><a href="/collection-agency-bond-florida/">Florida</a><a href="/collection-agency-bond-texas/">Texas</a></td></tr>
+            <tr><td>Health Club Bonds</td><td><a href="/health-club-bonds-arizona/">Arizona</a><a href="/health-club-bonds-florida/">Florida</a><a href="/health-club-bonds-texas/">Texas</a></td></tr>
+            <tr><td>Money Transmitter Bonds</td><td><a href="/money-transmitter-bond-arizona/">Arizona</a><a href="/money-transmitter-bond-texas/">Texas</a></td></tr>
           </tbody>
         </table>
       </div>
@@ -298,11 +298,11 @@ layout: "layout.njk"
       <h2>Educational Resources</h2>
       <p class="is-desc">From the Learning Center — background on how bonds work.</p>
       <div class="is-simple-links">
-        <a href="/pages/how-surety-bond-cost-are-calculated/">How Bond Underwriting Works for Small Businesses</a>
-        <a href="/pages/how-surety-bond-cost-are-calculated/">What Affects the Cost of a License &amp; Permit Bond</a>
-        <a href="/pages/surety-bond-basics-guide/">Surety Bond vs. Insurance</a>
-        <a href="/pages/surety-bond-basics-guide/">How Bond Claims Work</a>
-        <a href="/pages/how-surety-bond-cost-are-calculated/">How Bond Rates Are Calculated</a>
+        <a href="/how-surety-bond-cost-are-calculated/">How Bond Underwriting Works for Small Businesses</a>
+        <a href="/how-surety-bond-cost-are-calculated/">What Affects the Cost of a License &amp; Permit Bond</a>
+        <a href="/surety-bond-basics-guide/">Surety Bond vs. Insurance</a>
+        <a href="/surety-bond-basics-guide/">How Bond Claims Work</a>
+        <a href="/how-surety-bond-cost-are-calculated/">How Bond Rates Are Calculated</a>
       </div>
     </div>
   </div>
@@ -314,7 +314,7 @@ layout: "layout.njk"
       <div class="is-tool-grid">
         <div class="is-tool-card"><div class="is-tool-icon">🧮</div><h4>License &amp; Permit Bond Cost Calculator</h4></div>
         <div class="is-tool-card"><div class="is-tool-icon">✅</div><h4>State Licensing Requirement Checklists</h4></div>
-        <div class="is-tool-card"><div class="is-tool-icon">📖</div><h4><a href="/pages/glossary-of-surety-bond-terms/">Glossary of License &amp; Permit Bond Terms</a></h4></div>
+        <div class="is-tool-card"><div class="is-tool-icon">📖</div><h4><a href="/glossary-of-surety-bond-terms/">Glossary of License &amp; Permit Bond Terms</a></h4></div>
       </div>
     </div>
   </div>
@@ -338,7 +338,7 @@ layout: "layout.njk"
     <div class="is-inner">
       <h2>Get Your License or Permit Bond Today</h2>
       <p>Fast approvals. Competitive rates. A-rated surety partners. Licensed nationwide where permitted.</p>
-      <a href="/pages/contact/" class="is-btn-white">Apply Now</a>
+      <a href="/contact/" class="is-btn-white">Apply Now</a>
     </div>
   </div>
 

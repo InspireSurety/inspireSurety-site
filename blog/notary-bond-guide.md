@@ -244,7 +244,7 @@ date: 2026-01-01
     <div class="is-inner">
       <h2>Ready to Get Commissioned?</h2>
       <p>Fast, affordable notary bonds available in all states that require one.</p>
-      <a href="/pages/notary-bond/" class="is-btn-white">Get My Notary Bond</a>
+      <a href="/notary-bond/" class="is-btn-white">Get My Notary Bond</a>
     </div>
   </div>
 

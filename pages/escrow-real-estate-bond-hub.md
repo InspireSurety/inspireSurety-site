@@ -196,11 +196,11 @@ layout: "layout.njk"
       <h2>Escrow &amp; Real Estate Bond Guides</h2>
       <p class="is-desc">Detailed guides on specific escrow and real estate bond types, requirements, and costs.</p>
       <div class="is-guide-list">
-        <div class="is-guide-row"><a href="/pages/escrow-agent-bond/">Escrow Agent Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/bonded-title/">Bonded Title Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/mortgage-broker-banker-bond/">Mortgage Broker/Banker Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/commercial-mortgage-broker-bond/">Commercial Mortgage Broker Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/certificate-of-title-bond-guide/">Certificate of Title Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/escrow-agent-bond/">Escrow Agent Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/bonded-title/">Bonded Title Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/mortgage-broker-banker-bond/">Mortgage Broker/Banker Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/commercial-mortgage-broker-bond/">Commercial Mortgage Broker Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/certificate-of-title-bond-guide/">Certificate of Title Bond Guide</a><span class="is-guide-arrow">→</span></div>
       </div>
     </div>
   </div>
@@ -224,7 +224,7 @@ layout: "layout.njk"
     <div class="is-inner">
       <h2>Get Your Escrow or Real Estate Bond Today</h2>
       <p>Fast approvals. Competitive rates. A-rated surety partners. Licensed nationwide where permitted.</p>
-      <a href="/pages/contact/" class="is-btn-white">Apply Now</a>
+      <a href="/contact/" class="is-btn-white">Apply Now</a>
     </div>
   </div>
 

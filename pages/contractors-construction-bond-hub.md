@@ -208,13 +208,13 @@ layout: "layout.njk"
       <h2>Construction Bond Guides</h2>
       <p class="is-desc">Detailed guides on specific construction bond types, requirements, and costs.</p>
       <div class="is-guide-list">
-        <div class="is-guide-row"><a href="/pages/construction-contractor-bond-guide/">Construction Contractor Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/bid-bond/">Bid Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/payment-performance-bonds/">Payment &amp; Performance Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/subdivision-bond/">Subdivision Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/maintenance-bond-guide/">Maintenance Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/contractor-prequalification/">Contractor Prequalification Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/contractor-license-bond/">Contractor License Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/construction-contractor-bond-guide/">Construction Contractor Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/bid-bond/">Bid Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/payment-performance-bonds/">Payment &amp; Performance Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/subdivision-bond/">Subdivision Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/maintenance-bond-guide/">Maintenance Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/contractor-prequalification/">Contractor Prequalification Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/contractor-license-bond/">Contractor License Bond Guide</a><span class="is-guide-arrow">→</span></div>
       </div>
     </div>
   </div>
@@ -228,11 +228,11 @@ layout: "layout.njk"
         <table>
           <thead><tr><th>Bond Type</th><th>Available States</th></tr></thead>
           <tbody>
-            <tr><td>Contractor License Bonds</td><td><a href="/pages/construction-contractor-license-bonds-arizona/">Arizona</a><a href="/pages/construction-contractor-license-bonds-florida/">Florida</a><a href="/pages/construction-contractor-license-bonds-texas/">Texas</a></td></tr>
-            <tr><td>Bid Bonds</td><td><a href="/pages/arizona-bid-bond/">Arizona</a><a href="/pages/california-bid-bond/">California</a><a href="/pages/florida-bid-bond/">Florida</a><a href="/pages/georgia-bid-bond/">Georgia</a><a href="/pages/illinois-bid-bond/">Illinois</a><a href="/pages/new-york-bid-bond/">New York</a><a href="/pages/texas-bid-bond/">Texas</a></td></tr>
-            <tr><td>Payment Bonds</td><td><a href="/pages/arizona-payment-bond-guide/">Arizona</a><a href="/pages/california-payment-bond-guide/">California</a><a href="/pages/florida-payment-bond-guide/">Florida</a><a href="/pages/georgia-payment-bond-guide/">Georgia</a><a href="/pages/illinois-payment-bond-guide/">Illinois</a><a href="/pages/new-york-payment-bond-guide/">New York</a><a href="/pages/texas-payment-bond-guide/">Texas</a></td></tr>
-            <tr><td>Performance Bonds</td><td><a href="/pages/arizona-performance-bond-guide/">Arizona</a><a href="/pages/california-performance-bond-guide/">California</a><a href="/pages/florida-performance-bond-guide/">Florida</a><a href="/pages/georgia-performance-bond-guide/">Georgia</a><a href="/pages/illinois-performance-bond-guide/">Illinois</a><a href="/pages/new-york-performance-bond-guide/">New York</a><a href="/pages/texas-performance-bond-guide/">Texas</a></td></tr>
-            <tr><td>Subdivision Bonds</td><td><a href="/pages/arizona-subdivision-bond/">Arizona</a><a href="/pages/california-subdivision-bond/">California</a><a href="/pages/florida-subdivision-bond/">Florida</a><a href="/pages/georgia-subdivision-bond/">Georgia</a><a href="/pages/illinois-subdivision-bond/">Illinois</a><a href="/pages/new-york-subdivision-bond/">New York</a><a href="/pages/texas-subdivision-bond/">Texas</a></td></tr>
+            <tr><td>Contractor License Bonds</td><td><a href="/construction-contractor-license-bonds-arizona/">Arizona</a><a href="/construction-contractor-license-bonds-florida/">Florida</a><a href="/construction-contractor-license-bonds-texas/">Texas</a></td></tr>
+            <tr><td>Bid Bonds</td><td><a href="/arizona-bid-bond/">Arizona</a><a href="/california-bid-bond/">California</a><a href="/florida-bid-bond/">Florida</a><a href="/georgia-bid-bond/">Georgia</a><a href="/illinois-bid-bond/">Illinois</a><a href="/new-york-bid-bond/">New York</a><a href="/texas-bid-bond/">Texas</a></td></tr>
+            <tr><td>Payment Bonds</td><td><a href="/arizona-payment-bond-guide/">Arizona</a><a href="/california-payment-bond-guide/">California</a><a href="/florida-payment-bond-guide/">Florida</a><a href="/georgia-payment-bond-guide/">Georgia</a><a href="/illinois-payment-bond-guide/">Illinois</a><a href="/new-york-payment-bond-guide/">New York</a><a href="/texas-payment-bond-guide/">Texas</a></td></tr>
+            <tr><td>Performance Bonds</td><td><a href="/arizona-performance-bond-guide/">Arizona</a><a href="/california-performance-bond-guide/">California</a><a href="/florida-performance-bond-guide/">Florida</a><a href="/georgia-performance-bond-guide/">Georgia</a><a href="/illinois-performance-bond-guide/">Illinois</a><a href="/new-york-performance-bond-guide/">New York</a><a href="/texas-performance-bond-guide/">Texas</a></td></tr>
+            <tr><td>Subdivision Bonds</td><td><a href="/arizona-subdivision-bond/">Arizona</a><a href="/california-subdivision-bond/">California</a><a href="/florida-subdivision-bond/">Florida</a><a href="/georgia-subdivision-bond/">Georgia</a><a href="/illinois-subdivision-bond/">Illinois</a><a href="/new-york-subdivision-bond/">New York</a><a href="/texas-subdivision-bond/">Texas</a></td></tr>
           </tbody>
         </table>
       </div>
@@ -258,7 +258,7 @@ layout: "layout.njk"
     <div class="is-inner">
       <h2>Get Your Construction Bond Today</h2>
       <p>Fast approvals. Competitive rates. A-rated surety partners. Licensed nationwide where permitted.</p>
-      <a href="/pages/contact/" class="is-btn-white">Apply Now</a>
+      <a href="/contact/" class="is-btn-white">Apply Now</a>
     </div>
   </div>
 

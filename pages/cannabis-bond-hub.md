@@ -194,9 +194,9 @@ layout: "layout.njk"
       <h2>Cannabis Bond Guides</h2>
       <p class="is-desc">Detailed guides on specific cannabis bond types, requirements, and costs.</p>
       <div class="is-guide-list">
-        <div class="is-guide-row"><a href="/pages/cannabis-bond-guide/">Cannabis Bond Guide</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/cannabis-bonds/">Cannabis Bonds Overview</a><span class="is-guide-arrow">→</span></div>
-        <div class="is-guide-row"><a href="/pages/oklahoma-growers-license-bond/">Oklahoma Growers License Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/cannabis-bond-guide/">Cannabis Bond Guide</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/cannabis-bonds/">Cannabis Bonds Overview</a><span class="is-guide-arrow">→</span></div>
+        <div class="is-guide-row"><a href="/oklahoma-growers-license-bond/">Oklahoma Growers License Bond Guide</a><span class="is-guide-arrow">→</span></div>
       </div>
     </div>
   </div>
@@ -220,7 +220,7 @@ layout: "layout.njk"
     <div class="is-inner">
       <h2>Get Your Cannabis Bond Today</h2>
       <p>Fast approvals. Competitive rates. A-rated surety partners. Licensed where permitted.</p>
-      <a href="/pages/contact/" class="is-btn-white">Apply Now</a>
+      <a href="/contact/" class="is-btn-white">Apply Now</a>
     </div>
   </div>
 
