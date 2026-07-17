@@ -1,298 +1,290 @@
 ---
-
 title: "Public Official Bond"
-
 layout: "layout.njk"
-
 ---
 
-
-
-Public Official Bond 
-
-Fast Approval \& Lowest Rates
-
-
-
-Fast approvals. Lowest rates. Guaranteed compliance with state and local requirements. Licensed nationwide. A‑rated surety partners.
-
-
-
-A public official bond ensures that elected and appointed officials carry out their duties with honesty, integrity, and full adherence to the law. 
-
-
-
-This bond protects taxpayers and government agencies from financial loss caused by misconduct, negligence, or misuse of public funds.
-
-
-
-
-
-Need help with a license or permit bond? Explore our License \& Permit Bond Hub for state‑specific requirements and application guides.
-
-!\[](/assets/images/Bond-Public Official.png)
-
-
-
-
-
-What Is a Public Official Bond?
-
-A public official bond is a surety bond required for individuals appointed or elected to government positions. It guarantees that the official will perform their duties honestly, ethically, and in accordance with the law.
-
-
-
-This bond protects taxpayers and government agencies from:
-
-
-
-Misuse of public funds
-
-Fraud or dishonesty
-
-Failure to perform official duties
-
-Negligence or misconduct
-
-If you are taking office in a public role, you may be required to file this bond before assuming your responsibilities.
-
-
-
-Public Official Bond Amount \& Cost
-
-Bond amounts are set by state law or local government agencies and typically range from $5,000 to $250,000, depending on the position.
-
-
-
-Your cost depends on:
-
-
-
-Bond amount
-
-Credit score
-
-Position held
-
-State requirements
-
-Most applicants qualify instantly with competitive rates.
-
-
-
-
-
-Who Needs a Public Official  Bond?
-
-You may need a public official bond if you are appointed or elected as:
-
-
-
-Treasurer
-
-Tax collector
-
-Clerk of court
-
-Sheriff or deputy
-
-Judge or magistrate
-
-Constable
-
-County commissioner
-
-School board official
-
-Registrar or recorder
-
-Any position handling public funds
-
-Any official responsible for public money, records, or decision‑making may be required to file this bond.
-
-
-
-Public Official Bond Requirements and Eligibility
-
-Government agencies typically require:
-
-
-
-Bond amount set by statute
-
-Proof of appointment or election
-
-Credit review
-
-Oath of office
-
-Filing before taking office
-
-Some positions require additional coverage depending on responsibilities.
-
-
-
-How the Public Official Bond Process Works
-
-1
-
-Complete the Application
-
-Submit the quick, 60‑second application.
-
-
-
-
-
-2
-
-Secure the Lowest Rate
-
-We match you with the best rate available from A‑rated sureties.
-
-
-
-3
-
-Receive your bond
-
-Same‑day issuance available for government filing.
-
-
-
-!\[](/assets/images/Image-Small Town Associates.webp)
-
-
-
-
-
-Why Choose Us for Your Public Official Bond
-
-Lowest rates from A‑rated sureties
-
-Fast approvals
-
-Digital delivery for immediate filing
-
-Public official bond specialists
-
-100% compliance guaranteed
-
-
-
-!\[](/assets/images/Top-Questions-Image-Associates.webp)
-
-
-
-
-
-Top Public Official Bond Questions Answered
-
-Our most common questions answered efficiently.
-
-
-
-
-
-How much does a public official bond cost
-
-
-
-How long does approval take?
-
-
-
-What does the bond guarantee?
-
-
-
-Can the bond be refunded?
-
-
-
-Do I need a bond before taking office?
-
-
-
-
-
-
-
-Ready to Get Your Public Official Bond?
-
-
-
-Customer testimonials
-
-What our customers are saying about us.
-
-
-
-“When I was appointed city treasurer, Inspire Surety made the bonding process incredibly smooth. They issued my public official bond the same day and kept everything on schedule.”
-
-
-
-Marcia C.
-
-City Treasurer
-
-“Our county required updated bonding documents before swearing‑in. Inspire Surety delivered everything within hours and ensured full compliance.”
-
-
-
-Harvey L.
-
-County Clerk
-
-“As a first‑time elected official, I wasn’t familiar with bonding requirements. Inspire Surety explained everything clearly and made the process stress‑free.”
-
-
-
-Elena R.
-
-School Board Member
-
-“A last‑minute audit required corrected bond forms. Inspire Surety responded immediately and provided exactly what the auditors needed.”
-
-
-
-Harriet S.
-
-Water District Supervisor
-
-“We switched from another provider and immediately noticed the difference—better communication, faster approvals, and a much smoother process overall.”
-
-
-
-Tom H.
-
-County Commissioner
-
-“We needed multiple public official bonds for our department. Inspire Surety coordinated everything flawlessly and at excellent rates.”
-
-
-
-Timothy P.
-
-Municipal Administration Director
-
-Surety Bond Hubs
-
-Contractors \& Construction Bond Hub
-
-Court \& Fiduciary Bond Hub
-
-Cannabis Bond Hub
-
-Environmental \& Reclamation Bond Hub
-
-Federal \& BLM Bond Hub
-
-Escrow \& Real Estate Bond Hub
-
-License \& Permit Bond Hub
-
-Agriculture \& Food Bond Hub
-
-Surety Bond Learning Center
-
+<style>
+.is-po *, .is-po *::before, .is-po *::after { box-sizing: border-box; }
+.is-po {
+  font-family: inherit;
+  color: #0f172a;
+  margin: 0 calc(-50vw + 50%);
+  width: 100vw;
+  padding: 0;
+}
+.is-po .is-inner { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+
+/* ---- HERO: DARK SLATE-PLUM + LAVENDER ---- */
+.is-po .is-hero-wrap {
+  background: linear-gradient(135deg, #1e1b2e 0%, #44337a 45%, #9333ea 100%);
+  padding: 72px 0 64px;
+  position: relative;
+  overflow: hidden;
+}
+.is-po .is-hero-wrap::before {
+  content: "";
+  position: absolute;
+  top: -100px; right: -100px;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.is-po .is-hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.22);
+  color: #e9d5ff; font-size: 11px; font-weight: 800; letter-spacing: 0.08em;
+  text-transform: uppercase; padding: 6px 16px; border-radius: 999px;
+  margin-bottom: 20px; position: relative; z-index: 1;
+}
+.is-po .is-hero-wrap h1 {
+  font-size: clamp(32px, 5vw, 52px) !important; font-weight: 900 !important;
+  color: #fff !important; line-height: 1.1 !important; margin: 0 0 12px !important;
+  position: relative; z-index: 1; letter-spacing: -0.02em;
+}
+.is-po .is-hero-tag { font-size: 17px; color: #d8b4fe; font-weight: 700; margin-bottom: 20px; position: relative; z-index: 1; }
+.is-po .is-hero-wrap p { font-size: 16px; color: rgba(255,255,255,0.88); line-height: 1.7; max-width: 600px; margin: 0 0 28px; position: relative; z-index: 1; }
+.is-po .is-btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #fff; color: #44337a !important;
+  padding: 16px 34px; border-radius: 12px;
+  font-size: 16px; font-weight: 800;
+  text-decoration: none !important; transition: all 0.2s;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  position: relative; z-index: 1;
+}
+.is-po .is-btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
+.is-po .is-hero-note { font-size: 13px; color: rgba(255,255,255,0.6); margin-top: 14px; position: relative; z-index: 1; }
+.is-po .is-hero-stats { display: flex; gap: 32px; margin-top: 36px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.2); position: relative; z-index: 1; flex-wrap: wrap; }
+.is-po .is-hero-stat-num { font-size: 26px; font-weight: 900; color: #fff; line-height: 1; display: block; }
+.is-po .is-hero-stat-label { font-size: 11px; color: rgba(255,255,255,0.65); font-weight: 600; margin-top: 4px; display: block; }
+
+/* ---- TOC ---- */
+.is-po .is-toc {
+  background: #1a1625; border-radius: 20px; padding: 32px 36px;
+  margin: -36px auto 0; max-width: 940px; position: relative; z-index: 2;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+}
+.is-po .is-toc-title { font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #d8b4fe; margin-bottom: 16px; }
+.is-po .is-toc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 24px; }
+.is-po .is-toc-grid a { font-size: 14px; color: #e2e8f0; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; }
+.is-po .is-toc-grid a::before { content: "→"; color: #9333ea; }
+.is-po .is-toc-grid a:hover { color: #d8b4fe; }
+
+/* ---- SECTIONS: WHITE CANVAS ---- */
+.is-po .is-sec { background: #fff; padding: 64px 0; }
+.is-po .is-sec + .is-sec { border-top: 1px solid #f1f5f9; }
+.is-po .is-sec h2 { font-size: clamp(22px, 2.8vw, 30px) !important; font-weight: 900 !important; color: #0f172a !important; margin: 0 0 16px !important; letter-spacing: -0.01em; }
+.is-po .is-eyebrow { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #6b21a8; margin-bottom: 10px; }
+.is-po .is-sec p { font-size: 15px; color: #475569; line-height: 1.75; margin: 0 0 14px; }
+
+/* ---- CHECKLIST ---- */
+.is-po .is-check-list { display: flex; flex-direction: column; gap: 2px; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; margin: 20px 0; background: #fff; }
+.is-po .is-check-row { display: flex; align-items: center; gap: 12px; padding: 14px 20px; border-bottom: 1px solid #f1f5f9; }
+.is-po .is-check-row:last-child { border-bottom: none; }
+.is-po .is-check-icon { width: 26px; height: 26px; border-radius: 50%; background: #faf5ff; color: #6b21a8; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 12px; font-weight: 800; }
+.is-po .is-check-row span { font-size: 14.5px; color: #334155; font-weight: 500; }
+
+/* ---- STAT BAND ---- */
+.is-po .is-stat-band { display: flex; background: #fff; border: 1px solid #e2e8f0; border-radius: 18px; overflow: hidden; margin: 24px 0; box-shadow: 0 8px 28px rgba(0,0,0,0.06); }
+.is-po .is-stat-cell { flex: 1; text-align: center; padding: 28px 16px; border-right: 1px solid #f1f5f9; }
+.is-po .is-stat-cell:last-child { border-right: none; }
+.is-po .is-stat-cell-big { background: linear-gradient(135deg, #44337a, #9333ea); color: #fff; }
+.is-po .is-stat-num { font-size: 30px; font-weight: 900; color: #44337a; line-height: 1; }
+.is-po .is-stat-cell-big .is-stat-num { color: #fff; }
+.is-po .is-stat-label { font-size: 11.5px; color: #64748b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; margin-top: 8px; }
+.is-po .is-stat-cell-big .is-stat-label { color: rgba(255,255,255,0.85); }
+
+/* ---- STEPS ---- */
+.is-po .is-steps { display: flex; flex-direction: column; gap: 0; margin: 24px 0; }
+.is-po .is-step { display: grid; grid-template-columns: 80px 1fr; gap: 24px; align-items: start; padding: 28px 0; border-bottom: 1px solid #e2e8f0; }
+.is-po .is-step:last-child { border-bottom: none; }
+.is-po .is-step-num { width: 64px; height: 64px; background: linear-gradient(135deg, #44337a, #9333ea); border-radius: 18px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 26px; font-weight: 900; flex-shrink: 0; box-shadow: 0 8px 20px rgba(68,51,122,0.35); }
+.is-po .is-step h3 { font-size: 18px !important; font-weight: 800 !important; color: #0f172a !important; margin: 0 0 6px !important; }
+.is-po .is-step p { font-size: 14.5px; color: #475569; margin: 0; line-height: 1.65; }
+
+/* ---- ROLES/TILES ---- */
+.is-po .is-tile-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0; }
+.is-po .is-tile { background: #fff; border: 1px solid #e2e8f0; border-top: 3px solid #44337a; border-radius: 12px; padding: 22px 20px; transition: all 0.2s; }
+.is-po .is-tile:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0,0,0,0.08); border-top-color: #9333ea; }
+.is-po .is-tile-icon { width: 40px; height: 40px; border-radius: 10px; background: #faf5ff; display: flex; align-items: center; justify-content: center; font-size: 19px; margin-bottom: 14px; }
+.is-po .is-tile h4 { font-size: 14.5px !important; font-weight: 700 !important; color: #0f172a !important; margin: 0 0 6px !important; }
+.is-po .is-tile p { font-size: 13px; color: #64748b; margin: 0; line-height: 1.55; }
+
+/* ---- WHY US ---- */
+.is-po .is-why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 20px 0; }
+.is-po .is-why-pill { background: #fff; border: 2px solid #e2e8f0; border-radius: 14px; padding: 20px; display: flex; align-items: center; gap: 14px; transition: all 0.2s; }
+.is-po .is-why-pill:hover { border-color: #9333ea; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(147,51,234,0.12); }
+.is-po .is-why-icon { width: 40px; height: 40px; border-radius: 10px; background: #faf5ff; color: #6b21a8; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 18px; font-weight: 800; }
+.is-po .is-why-pill span { font-size: 14px; color: #1e293b; font-weight: 600; }
+
+/* ---- FAQ ---- */
+.is-po .is-faq-list { display: flex; flex-direction: column; gap: 10px; margin: 20px 0; }
+.is-po .is-faq-item { border: 1px solid #e2e8f0; border-radius: 14px; background: #fff; overflow: hidden; }
+.is-po .is-faq-item[open] { border-color: #d8b4fe; box-shadow: 0 6px 20px rgba(147,51,234,0.1); }
+.is-po .is-faq-item summary { font-size: 15px; font-weight: 700; color: #0f172a; padding: 18px 22px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; gap: 14px; }
+.is-po .is-faq-item summary::-webkit-details-marker { display: none; }
+.is-po .is-faq-item summary::after { content: "+"; font-size: 22px; font-weight: 300; color: #6b21a8; flex-shrink: 0; transition: transform 0.25s; line-height: 1; }
+.is-po .is-faq-item[open] summary::after { transform: rotate(45deg); }
+.is-po .is-faq-body { padding: 0 22px 20px; }
+.is-po .is-faq-body p { font-size: 14.5px; color: #475569; margin: 0; line-height: 1.7; }
+
+/* ---- FINAL CTA ---- */
+.is-po .is-final-wrap { background: linear-gradient(135deg, #1e1b2e, #44337a, #9333ea); padding: 72px 0; text-align: center; position: relative; overflow: hidden; }
+.is-po .is-final-wrap::before { content: ""; position: absolute; top: -80px; left: -80px; width: 320px; height: 320px; background: rgba(255,255,255,0.06); border-radius: 50%; }
+.is-po .is-final-wrap::after { content: ""; position: absolute; bottom: -100px; right: -60px; width: 380px; height: 380px; background: rgba(255,255,255,0.04); border-radius: 50%; }
+.is-po .is-final-wrap h2 { font-size: clamp(26px, 3.5vw, 40px) !important; color: #fff !important; margin: 0 0 14px !important; position: relative; z-index: 1; font-weight: 900 !important; }
+.is-po .is-final-wrap p { font-size: 17px; color: rgba(255,255,255,0.88); margin: 0 auto 32px; max-width: 480px; position: relative; z-index: 1; }
+.is-po .is-btn-white { display: inline-block; background: #fff; color: #44337a !important; padding: 17px 40px; border-radius: 12px; font-size: 16px; font-weight: 800; text-decoration: none !important; position: relative; z-index: 1; transition: all 0.2s; box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+.is-po .is-btn-white:hover { background: #faf5ff; transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.25); }
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 720px) {
+  .is-po .is-toc { margin: -24px 20px 0; padding: 24px 22px; }
+  .is-po .is-toc-grid { grid-template-columns: 1fr; }
+  .is-po .is-stat-band { flex-wrap: wrap; }
+  .is-po .is-stat-cell { flex: 1 1 50%; border-bottom: 1px solid #f1f5f9; }
+  .is-po .is-tile-grid { grid-template-columns: 1fr; }
+  .is-po .is-why-grid { grid-template-columns: 1fr; }
+  .is-po .is-hero-stats { flex-wrap: wrap; gap: 20px; }
+  .is-po .is-sec { padding: 44px 0; }
+  .is-po .is-hero-wrap { padding: 48px 0 56px; }
+}
+</style>
+
+<div class="is-po">
+
+  <div class="is-hero-wrap">
+    <div class="is-inner">
+      <div class="is-hero-badge">Court &amp; Fiduciary Bond</div>
+      <h1>Public Official Bond</h1>
+      <div class="is-hero-tag">Fast Approval &amp; Lowest Rates</div>
+      <p>Fast approvals. Lowest rates. Guaranteed public trust compliance. Licensed nationwide. A-rated surety partners.</p>
+      <a href="https://fc16062.propeller.insure/axelerator-public/#do=show+widget+page&State_search_scheme_property=Arizona&State_search_scheme_property=Federal&name=public+home&one_search_search=public+official" class="is-btn-primary">
+        Start Your Application
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#44337a" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <div class="is-hero-note">100% automated application — apply and get matched instantly.</div>
+      <div class="is-hero-stats">
+        <div><span class="is-hero-stat-num">Public</span><span class="is-hero-stat-label">Trust Coverage</span></div>
+        <div><span class="is-hero-stat-num">Fast</span><span class="is-hero-stat-label">Digital Issuance</span></div>
+        <div><span class="is-hero-stat-num">50</span><span class="is-hero-stat-label">States Available</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-toc">
+    <div class="is-toc-title">On This Page</div>
+    <div class="is-toc-grid">
+      <a href="#what-is">What Is a Public Official Bond?</a>
+      <a href="#who-needs">Who Needs This Bond?</a>
+      <a href="#eligibility">Requirements and Eligibility</a>
+      <a href="#process">How the Process Works</a>
+      <a href="#why-us">Why Choose Us</a>
+      <a href="#faq">Frequently Asked Questions</a>
+    </div>
+  </div>
+
+  <div class="is-sec" id="what-is">
+    <div class="is-inner">
+      <span class="is-eyebrow">The Basics</span>
+      <h2>What Is a Public Official Bond?</h2>
+      <p>A public official bond is a surety bond required for individuals elected or appointed to a position of public trust. The bond guarantees that the official will faithfully perform the duties of their office, follow the law, and handle public funds and responsibilities honestly.</p>
+      <p>If a public official commits fraud, misappropriates funds, or fails to perform their official duties as required by law, the government entity or an affected party can file a claim against the bond.</p>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Guarantees faithful performance of official duties</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Guarantees honest handling of public funds</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Protects the public from misconduct or malfeasance</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Required before taking office in many elected and appointed roles</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-sec" id="who-needs">
+    <div class="is-inner">
+      <span class="is-eyebrow">Eligibility</span>
+      <h2>Who Needs a Public Official Bond?</h2>
+      <p>You likely need a public official bond if you are serving as:</p>
+      <div class="is-tile-grid">
+        <div class="is-tile"><div class="is-tile-icon">🏛️</div><h4>Elected Official</h4><p>Treasurers, clerks, sheriffs, and other elected government positions.</p></div>
+        <div class="is-tile"><div class="is-tile-icon">📋</div><h4>Appointed Official</h4><p>Positions appointed by a governing body that handle public funds or duties.</p></div>
+        <div class="is-tile"><div class="is-tile-icon">🏢</div><h4>Municipal Employee</h4><p>City, county, or district employees required to be bonded by statute.</p></div>
+      </div>
+      <div class="is-stat-band">
+        <div class="is-stat-cell"><div class="is-stat-num">Statutory</div><div class="is-stat-label">Bond Amount</div></div>
+        <div class="is-stat-cell is-stat-cell-big"><div class="is-stat-num">Public</div><div class="is-stat-label">Trust Requirement</div></div>
+        <div class="is-stat-cell"><div class="is-stat-num">Fast</div><div class="is-stat-label">Digital Issuance</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-sec" id="eligibility">
+    <div class="is-inner">
+      <span class="is-eyebrow">Requirements</span>
+      <h2>Public Official Bond Requirements and Eligibility</h2>
+      <p>Government entities typically require:</p>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Election or appointment to a covered public office</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Bond amount set by statute or the governing body</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Completed bond application</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Credit review for larger bond amounts</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-sec" id="process">
+    <div class="is-inner">
+      <span class="is-eyebrow">Simple Process</span>
+      <h2>How the Process Works</h2>
+      <div class="is-steps">
+        <div class="is-step">
+          <div class="is-step-num">1</div>
+          <div><h3>Complete the Application</h3><p>Submit our fully automated application with your office and jurisdiction details.</p></div>
+        </div>
+        <div class="is-step">
+          <div class="is-step-num">2</div>
+          <div><h3>Get Matched Instantly</h3><p>Our system matches you with the best rate available from A-rated sureties.</p></div>
+        </div>
+        <div class="is-step">
+          <div class="is-step-num">3</div>
+          <div><h3>Receive Your Bond</h3><p>Fast digital delivery, ready to file before taking office.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-sec" id="why-us">
+    <div class="is-inner">
+      <span class="is-eyebrow">Our Advantage</span>
+      <h2>Why Choose Us for Your Public Official Bond</h2>
+      <div class="is-why-grid">
+        <div class="is-why-pill"><div class="is-why-icon">$</div><span>Lowest rates from A-rated sureties</span></div>
+        <div class="is-why-pill"><div class="is-why-icon">⚡</div><span>100% automated application process</span></div>
+        <div class="is-why-pill"><div class="is-why-icon">📲</div><span>Fast digital delivery</span></div>
+        <div class="is-why-pill"><div class="is-why-icon">🎯</div><span>Public official bond specialists</span></div>
+        <div class="is-why-pill"><div class="is-why-icon">✓</div><span>100% state compliance guaranteed</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-sec" id="faq">
+    <div class="is-inner">
+      <span class="is-eyebrow">Questions</span>
+      <h2>Frequently Asked Questions</h2>
+      <div class="is-faq-list">
+        <details class="is-faq-item"><summary>How much does a public official bond cost?</summary><div class="is-faq-body"><p>Cost depends on the bond amount set by statute or your governing body, along with your credit profile.</p></div></details>
+        <details class="is-faq-item"><summary>Is this bond required for every public position?</summary><div class="is-faq-body"><p>Requirements vary by state and office. Many elected treasurers, clerks, and officials handling public funds are required to be bonded by law.</p></div></details>
+        <details class="is-faq-item"><summary>How fast can I get bonded?</summary><div class="is-faq-body"><p>Our automated application matches you with a surety instantly, with digital bond delivery available the same day for qualifying applicants.</p></div></details>
+        <details class="is-faq-item"><summary>What happens if I mismanage public funds?</summary><div class="is-faq-body"><p>The government entity or an affected party can file a claim against the bond. The surety pays the claim, then seeks reimbursement from the official.</p></div></details>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-final-wrap">
+    <div class="is-inner">
+      <h2>Ready to Get Bonded?</h2>
+      <p>Fast approvals, lowest rates, 100% automated application.</p>
+      <a href="https://fc16062.propeller.insure/axelerator-public/#do=show+widget+page&State_search_scheme_property=Arizona&State_search_scheme_property=Federal&name=public+home&one_search_search=public+official" class="is-btn-white">Start My Application</a>
+    </div>
+  </div>
+
+</div>
