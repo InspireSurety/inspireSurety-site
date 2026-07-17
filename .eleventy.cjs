@@ -1,6 +1,7 @@
 module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy({"_redirects": "_redirects"});
 
   // ============================================
   // PREMIUM SHORTCODES
@@ -87,7 +88,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPairedShortcode("ctaBanner", function(content, buttonText, buttonUrl) {
     return `<div class="cta-banner">
       <p class="cta-text">${content}</p>
-      <a href="${buttonUrl || '/pages/contact/'}" class="cta-button">${buttonText || 'Get Started'}
+      <a href="${buttonUrl || '/contact/'}" class="cta-button">${buttonText || 'Get Started'}
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
     </div>`;
