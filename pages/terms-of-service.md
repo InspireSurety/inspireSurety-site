@@ -13,6 +13,7 @@ layout: "layout.njk"
   padding: 0;
 }
 .is-lg .is-inner { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
 .is-lg .is-hero-wrap {
   background: linear-gradient(135deg, #0f0c29 0%, #1e1b4b 45%, #4a3ac8 100%);
   padding: 64px 0 56px;
@@ -40,6 +41,7 @@ layout: "layout.njk"
   position: relative; z-index: 1; letter-spacing: -0.02em;
 }
 .is-lg .is-hero-wrap p { font-size: 15px; color: rgba(255,255,255,0.8); max-width: 600px; margin: 0; position: relative; z-index: 1; }
+
 .is-lg .is-sec { background: #fff; padding: 56px 0; }
 .is-lg .is-sec h2 { font-size: 22px !important; font-weight: 800 !important; color: #1e1b4b !important; margin: 36px 0 12px !important; }
 .is-lg .is-sec h2:first-child { margin-top: 0 !important; }
@@ -57,7 +59,6 @@ layout: "layout.njk"
 </style>
 
 <div class="is-lg">
-
   <div class="is-hero-wrap">
     <div class="is-inner">
       <div class="is-hero-badge">Legal</div>
@@ -68,10 +69,10 @@ layout: "layout.njk"
 
   <div class="is-sec">
     <div class="is-inner">
-      <p class="is-updated">Last updated: [DATE PLACEHOLDER — insert publish date]</p>
+      <p class="is-updated">Last updated: November 4, 2025</p>
 
       <h2>Agreement to Terms</h2>
-      <p>By accessing or using inspiresurety.com (the "Site"), operated by Inspire Risk Advisors LLC, dba Inspire Surety ("InspireSurety," "we," "us," or "our"), you agree to be bound by these Terms of Service. If you do not agree, please do not use the Site.</p>
+<p>By accessing or using inspiresurety.com (the "Site"), operated by Inspire Risk Advisors LLC, dba Inspire Surety ("InspireSurety," "we," "us," or "our"), you agree to be bound by these Terms of Service. If you do not agree, please do not use the Site.</p>
 
       <h2>Nature of Services</h2>
       <p>InspireSurety is a surety bond marketplace that connects applicants with licensed surety underwriters and carriers. We are not the surety or insurer. Bond approval, pricing, and issuance are determined solely by the underwriting surety company, not by InspireSurety.</p>
@@ -99,8 +100,6 @@ layout: "layout.njk"
 
       <h2>Contact Us</h2>
       <p>If you have questions about these Terms of Service, please <a href="/contact/">contact us</a> or call +1 928-227-0054.</p>
-
     </div>
   </div>
-
 </div>
