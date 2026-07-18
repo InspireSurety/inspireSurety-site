@@ -1,334 +1,328 @@
----
-
-title: "H‑2A Farm Labor Contractor Bond"
-
+﻿---
+title: "H-2A Farm Labor Contractor Bond"
 layout: "layout.njk"
-
 ---
 
-
-
-H‑2A Farm Labor Contractor Bond
-
-Fast Approval \& Lowest Rates
-
-
-
-Get Your H‑2A Farm Labor Contractor Bond Today
-
-
-
-Guaranteed compliance with U.S. Department of Labor (DOL) requirements. Licensed nationwide. A‑rated surety partners. 
-
-
-
-Protect your workers, stay compliant, and keep your operations running without interruption. Start your application now for fast, hassle‑free approval.
-
-
-
-
-
-Need agriculture or food bond information? Visit our Agriculture \& Food Bond Hub for USDA, PACA, SNAP, H‑2A, and grain dealer bond resources.
-
-
-
-!\[](/assets/images/Blog Post H2A Bond Guide cover image.webp)
-
-
-
-What Is an H‑2A Farm Labor Contractor Bond?
-
-&#x20;An H‑2A farm labor contractor bond is a federal surety bond required by the U.S. Department of Labor for anyone acting as an H‑2A farm labor contractor (FLC) or farm labor contractor employee (FLCE).
-
-
-
-This bond protects agricultural workers and the government from:
-
-
-
-Wage violations
-
-Failure to provide required housing or transportation
-
-Misrepresentation of job terms
-
-Breach of contract
-
-Violations of H‑2A program regulations
-
-If you recruit, hire, transport, house, or employ H‑2A workers, you must secure this bond before receiving your federal certificate of registration.
-
-
-
-H‑2A Farm Labor Contractor Bond Amount \& Cost
-
-Bond amounts are set by the DOL and depend on the number of workers employed:
-
-
-
-Number of Workers
-
-
-
-Required Bond Amount
-
-
-
-1–24 workers
-
-
-
-$5,000
-
-
-
-25–49 workers
-
-
-
-$10,000
-
-
-
-50–74 workers
-
-
-
-$20,000
-
-
-
-75–99 workers
-
-
-
-$30,000
-
-
-
-100+ workers
-
-
-
-$50,000
-
-
-
-Your cost depends on:
-
-
-
-Bond amount
-
-Credit score
-
-Business history
-
-Most applicants qualify instantly with competitive rates.
-
-
-
-
-
-Who Needs a H‑2A Farm Labor Contractor Bond?
-
-You may need an H‑2A farm labor contractor bond if you:
-
-
-
-Recruit H‑2A workers
-
-Transport workers to job sites
-
-Provide housing or meals
-
-Manage payroll for H‑2A employees
-
-Act as a farm labor contractor or subcontractor
-
-Operate as an FLC or FLCE under DOL regulations
-
-Any business or individual handling H‑2A labor must file this bond before operating legally.
-
-
-
-H‑2A Bond Requirements and Eligibility
-
-The U.S. Department of Labor requires:
-
-
-
-Completed FLC or FLCE application
-
-Bond amount based on number of workers
-
-Credit review
-
-Compliance with H‑2A program rules
-
-Annual renewal
-
-You must maintain an active bond to keep your federal registration valid.
-
-
-
-How the H‑2A Bond Process Works
-
-1
-
-Complete the Application
-
-Submit the quick, 60‑second application.
-
-
-
-
-
-2
-
-Secure the Lowest Rate
-
-We match you with the best rate available from A‑rated sureties.
-
-
-
-3
-
-Receive your bond
-
-Same‑day issuance available for DOL filing.
-
-
-
-!\[](/assets/images/Image-Small Town Associates.webp)
-
-
-
-Why Choose Us for Your H‑2A Farm Labor Contractor Bond
-
-Lowest rates from A‑rated sureties
-
-Fast approvals
-
-Digital delivery for immediate filing
-
-Agricultural labor bond specialists
-
-100% DOL compliance guaranteed
-
-image representing H2A bond compliance with secure agricultural employment documents, financial protection symbols, and federal program assurance.
-
-!\[](/assets/images/Top-Questions-Image-Associates.webp)
-
-
-
-Top H‑2A Farm Labor Contractor Bond Questions Answered
-
-Our most common questions answered efficiently.
-
-
-
-
-
-How much does an H‑2A farm labor contractor bond cost?
-
-
-
-How long does approval take?
-
-
-
-What does the bond guarantee?
-
-
-
-Can the bond be refunded?
-
-
-
-Do I need a bond for renewal?
-
-
-
-
-
-Visual concept of an H2A bond showing paperwork, security icons, and regulatory compliance elements for employers hiring seasonal agricultural workers.
-
-Ready to Get Your H‑2A Farm Labor Contractor Bond?
-
-
-
-Customer testimonials
-
-What our customers are saying about us.
-
-
-
-“Our H‑2A filing deadline was only days away, and Inspire Surety got our bond approved the same afternoon. Their speed kept our season on track.”
-
-
-
-Rafael M.
-
-Farm Labor Contractor
-
-“We bring in workers every year and the bonding process used to be stressful. Inspire Surety made it simple, fast, and completely hassle‑free.”
-
-
-
-Linda B.
-
-Agricultural Operations Manager
-
-“As a first‑time H‑2A contractor, I had no idea what bond amount I needed. Inspire Surety walked me through everything and issued the bond within hours.”
-
-
-
-Carlos J.
-
-New FLC Applicant
-
-“We expanded our labor program and needed a higher bond. Inspire Surety handled the increase immediately and kept us compliant with the Department of Labor.”
-
-
-
-Tina C.
-
-Farm Workforce Coordinator
-
-“Our audit required updated bonding documents right away. Inspire Surety delivered everything the same day and helped us avoid delays.”
-
-
-
-Miguel A.
-
-Seasonal Labor Program Director
-
-“We operate across multiple farms and needed several H‑2A bonds at once. Inspire Surety coordinated everything flawlessly and at a great rate.”
-
-
-
-Sarah W.
-
-Multi‑Farm Operations Supervisor
-
-Surety Bond Hubs
-
-Contractors \& Construction Bond Hub
-
-Court \& Fiduciary Bond Hub
-
-Cannabis Bond Hub
-
-Environmental \& Reclamation Bond Hub
-
-Federal \& BLM Bond Hub
-
-Escrow \& Real Estate Bond Hub
-
-License \& Permit Bond Hub
-
-Agriculture \& Food Bond Hub
-
-Surety Bond Learning Center
-
+<style>
+.is-h2 *, .is-h2 *::before, .is-h2 *::after { box-sizing: border-box; }
+.is-h2 {
+  font-family: inherit;
+  color: #0f172a;
+  margin: 0 calc(-50vw + 50%);
+  width: 100vw;
+  padding: 0;
+}
+.is-h2 .is-inner { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+
+.is-h2 .is-hero-wrap {
+  background: linear-gradient(135deg, #431407 0%, #92400e 55%, #f59e0b 100%);
+  padding: 72px 0 64px;
+  position: relative;
+  overflow: hidden;
+}
+.is-h2 .is-hero-wrap::before {
+  content: "";
+  position: absolute;
+  top: -100px; right: -100px;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.is-h2 .is-hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25);
+  color: #fde68a; font-size: 11px; font-weight: 800; letter-spacing: 0.08em;
+  text-transform: uppercase; padding: 6px 16px; border-radius: 999px;
+  margin-bottom: 20px; position: relative; z-index: 1;
+}
+.is-h2 .is-hero-wrap h1 {
+  font-size: clamp(32px, 5vw, 52px) !important; font-weight: 900 !important;
+  color: #fff !important; line-height: 1.1 !important; margin: 0 0 12px !important;
+  position: relative; z-index: 1; letter-spacing: -0.02em;
+}
+.is-h2 .is-hero-wrap p { font-size: 16px; color: rgba(255,255,255,0.9); line-height: 1.7; max-width: 620px; margin: 0 0 28px; position: relative; z-index: 1; }
+.is-h2 .is-btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #fff; color: #9a3412 !important;
+  padding: 16px 34px; border-radius: 12px;
+  font-size: 16px; font-weight: 800;
+  text-decoration: none !important; transition: all 0.2s;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  position: relative; z-index: 1;
+}
+.is-h2 .is-btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
+.is-h2 .is-hero-note { font-size: 13px; color: rgba(255,255,255,0.65); margin-top: 14px; position: relative; z-index: 1; }
+
+.is-h2 .is-toc {
+  background: #431407; border-radius: 20px; padding: 32px 36px;
+  margin: -36px auto 0; max-width: 940px; position: relative; z-index: 2;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+}
+.is-h2 .is-toc-title { font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #fdba74; margin-bottom: 16px; }
+.is-h2 .is-toc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 24px; }
+.is-h2 .is-toc-grid a { font-size: 14px; color: #e2e8f0; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; }
+.is-h2 .is-toc-grid a::before { content: "→"; color: #f59e0b; }
+.is-h2 .is-toc-grid a:hover { color: #fdba74; }
+
+.is-h2 .is-sec { background: #fff; padding: 64px 0; }
+.is-h2 .is-sec + .is-sec { border-top: 1px solid #f1f5f9; }
+.is-h2 .is-sec h2 { font-size: clamp(22px, 2.8vw, 30px) !important; font-weight: 900 !important; color: #0f172a !important; margin: 0 0 16px !important; letter-spacing: -0.01em; }
+.is-h2 .is-eyebrow { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #9a3412; margin-bottom: 10px; }
+.is-h2 .is-sec p { font-size: 15px; color: #475569; line-height: 1.75; margin: 0 0 14px; }
+
+.is-h2 .is-check-list { display: flex; flex-direction: column; gap: 2px; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; margin: 20px 0; background: #fff; }
+.is-h2 .is-check-row { display: flex; align-items: center; gap: 12px; padding: 14px 20px; border-bottom: 1px solid #f1f5f9; }
+.is-h2 .is-check-row:last-child { border-bottom: none; }
+.is-h2 .is-check-icon { width: 26px; height: 26px; border-radius: 50%; background: #fff7ed; color: #9a3412; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 12px; font-weight: 800; }
+.is-h2 .is-check-row span { font-size: 14.5px; color: #334155; font-weight: 500; }
+
+.is-h2 .is-tier-table { width: 100%; border-collapse: collapse; margin: 20px 0; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; }
+.is-h2 .is-tier-table th { background: #fff7ed; color: #9a3412; font-weight: 800; padding: 12px 16px; text-align: left; font-size: 13.5px; border-bottom: 2px solid #fed7aa; }
+.is-h2 .is-tier-table td { padding: 12px 16px; font-size: 14px; color: #334155; border-bottom: 1px solid #f1f5f9; }
+.is-h2 .is-tier-table tr:last-child td { border-bottom: none; }
+.is-h2 .is-tier-table td:last-child { font-weight: 700; color: #9a3412; }
+
+.is-h2 .is-steps { display: flex; flex-direction: column; gap: 0; margin: 24px 0; }
+.is-h2 .is-step { display: grid; grid-template-columns: 80px 1fr; gap: 24px; align-items: start; padding: 28px 0; border-bottom: 1px solid #e2e8f0; }
+.is-h2 .is-step:last-child { border-bottom: none; }
+.is-h2 .is-step-num { width: 64px; height: 64px; background: linear-gradient(135deg, #92400e, #f59e0b); border-radius: 18px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 26px; font-weight: 900; flex-shrink: 0; box-shadow: 0 8px 20px rgba(245,158,11,0.35); }
+.is-h2 .is-step h3 { font-size: 18px !important; font-weight: 800 !important; color: #0f172a !important; margin: 0 0 6px !important; }
+.is-h2 .is-step p { font-size: 14.5px; color: #475569; margin: 0; line-height: 1.65; }
+
+.is-h2 .is-why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 20px 0; }
+.is-h2 .is-why-pill { background: #fff; border: 2px solid #e2e8f0; border-radius: 14px; padding: 20px; display: flex; align-items: center; gap: 14px; transition: all 0.2s; }
+.is-h2 .is-why-pill:hover { border-color: #f59e0b; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(245,158,11,0.15); }
+.is-h2 .is-why-icon { width: 40px; height: 40px; border-radius: 10px; background: #fff7ed; color: #9a3412; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 18px; font-weight: 800; }
+.is-h2 .is-why-pill span { font-size: 14px; color: #1e293b; font-weight: 600; }
+
+.is-h2 .is-faq-list { display: flex; flex-direction: column; gap: 10px; margin: 20px 0; }
+.is-h2 .is-faq-item { border: 1px solid #e2e8f0; border-radius: 14px; background: #fff; overflow: hidden; }
+.is-h2 .is-faq-item[open] { border-color: #fdba74; box-shadow: 0 6px 20px rgba(154,52,18,0.1); }
+.is-h2 .is-faq-item summary { font-size: 15px; font-weight: 700; color: #0f172a; padding: 18px 22px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; gap: 14px; }
+.is-h2 .is-faq-item summary::-webkit-details-marker { display: none; }
+.is-h2 .is-faq-item summary::after { content: "+"; font-size: 22px; font-weight: 300; color: #9a3412; flex-shrink: 0; transition: transform 0.25s; line-height: 1; }
+.is-h2 .is-faq-item[open] summary::after { transform: rotate(45deg); }
+.is-h2 .is-faq-body { padding: 0 22px 20px; }
+.is-h2 .is-faq-body p { font-size: 14.5px; color: #475569; margin: 0; line-height: 1.7; }
+
+.is-h2 .is-testimonials { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 24px 0; }
+.is-h2 .is-testimonial { background: #fff; border-radius: 16px; padding: 24px 22px; position: relative; box-shadow: 0 4px 16px rgba(0,0,0,0.05); border-top: 3px solid #9a3412; }
+.is-h2 .is-testimonial::before { content: '"'; position: absolute; top: 8px; right: 20px; font-size: 48px; color: #fff7ed; font-family: Georgia, serif; line-height: 1; }
+.is-h2 .is-testimonial-text { font-size: 14px; color: #334155; line-height: 1.65; font-style: italic; margin: 0 0 14px; position: relative; z-index: 1; }
+.is-h2 .is-testimonial-name { font-weight: 700; color: #1e293b; font-size: 14px; display: block; }
+.is-h2 .is-testimonial-role { font-size: 12px; color: #94a3b8; }
+
+.is-h2 .is-hub-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 24px; }
+.is-h2 .is-hub-links a { font-size: 13.5px; color: #9a3412; background: #fff7ed; border: 1px solid #fed7aa; padding: 10px 18px; border-radius: 999px; text-decoration: none; font-weight: 600; transition: all 0.15s; }
+.is-h2 .is-hub-links a:hover { background: #9a3412; color: #fff; border-color: #9a3412; }
+
+.is-h2 .is-final-wrap { background: linear-gradient(135deg, #431407, #92400e, #f59e0b); padding: 72px 0; text-align: center; position: relative; overflow: hidden; }
+.is-h2 .is-final-wrap::before { content: ""; position: absolute; top: -80px; left: -80px; width: 320px; height: 320px; background: rgba(255,255,255,0.08); border-radius: 50%; }
+.is-h2 .is-final-wrap::after { content: ""; position: absolute; bottom: -100px; right: -60px; width: 380px; height: 380px; background: rgba(255,255,255,0.05); border-radius: 50%; }
+.is-h2 .is-final-wrap h2 { font-size: clamp(26px, 3.5vw, 40px) !important; color: #fff !important; margin: 0 0 14px !important; position: relative; z-index: 1; font-weight: 900 !important; }
+.is-h2 .is-final-wrap p { font-size: 17px; color: rgba(255,255,255,0.9); margin: 0 auto 32px; max-width: 480px; position: relative; z-index: 1; }
+.is-h2 .is-btn-white { display: inline-block; background: #fff; color: #9a3412 !important; padding: 17px 40px; border-radius: 12px; font-size: 16px; font-weight: 800; text-decoration: none !important; position: relative; z-index: 1; transition: all 0.2s; box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+.is-h2 .is-btn-white:hover { background: #fff7ed; transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.25); }
+
+@media (max-width: 720px) {
+  .is-h2 .is-toc { margin: -24px 20px 0; padding: 24px 22px; }
+  .is-h2 .is-toc-grid { grid-template-columns: 1fr; }
+  .is-h2 .is-why-grid { grid-template-columns: 1fr; }
+  .is-h2 .is-testimonials { grid-template-columns: 1fr; }
+  .is-h2 .is-sec { padding: 44px 0; }
+  .is-h2 .is-hero-wrap { padding: 48px 0 56px; }
+  .is-h2 .is-tier-table { font-size: 12px; }
+}
+</style>
+
+<div class="is-h2">
+
+  <div class="is-hero-wrap">
+    <div class="is-inner">
+      <div class="is-hero-badge">Agriculture &amp; Food Bond</div>
+      <h1>H-2A Farm Labor Contractor Bond</h1>
+      <p>Guaranteed compliance with U.S. Department of Labor (DOL) requirements. Licensed nationwide. A-rated surety partners.</p>
+      <a href="https://fc16062.propeller.insure/axelerator-public/#do=show+widget+page&State_search_scheme_property=Arizona&State_search_scheme_property=Federal&name=public+home&one_search_search=h2a" class="is-btn-primary">
+        Start Your Application
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#9a3412" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <div class="is-hero-note">Protect your workers, stay compliant, and keep your operations running without interruption. Start your application now for fast, hassle-free approval.</div>
+    </div>
+  </div>
+
+  <div class="is-toc">
+    <div class="is-toc-title">On This Page</div>
+    <div class="is-toc-grid">
+      <a href="#what-is">What Is an H-2A Farm Labor Contractor Bond?</a>
+      <a href="#cost">Bond Amount &amp; Cost</a>
+      <a href="#who-needs">Who Needs This Bond?</a>
+      <a href="#eligibility">Requirements &amp; Eligibility</a>
+      <a href="#process">How the Process Works</a>
+      <a href="#why-us">Why Choose Us</a>
+      <a href="#faq">Top Questions Answered</a>
+    </div>
+  </div>
+
+  <div class="is-sec">
+    <div class="is-inner">
+      <p>Need agriculture or food bond information? Visit our <a href="/agriculture-food-bond-hub/" style="color:#9a3412;font-weight:700;">Agriculture &amp; Food Bond Hub</a> for USDA, PACA, SNAP, H-2A, and grain dealer bond resources.</p>
+    </div>
+  </div>
+
+  <div class="is-sec" id="what-is">
+    <div class="is-inner">
+      <span class="is-eyebrow">The Basics</span>
+      <h2>What Is an H-2A Farm Labor Contractor Bond?</h2>
+      <p>An H-2A farm labor contractor bond is a federal surety bond required by the U.S. Department of Labor for anyone acting as an H-2A farm labor contractor (FLC) or farm labor contractor employee (FLCE).</p>
+      <p>This bond protects agricultural workers and the government from:</p>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Wage violations</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Failure to provide required housing or transportation</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Misrepresentation of job terms</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Breach of contract</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Violations of H-2A program regulations</span></div>
+      </div>
+      <p>If you recruit, hire, transport, house, or employ H-2A workers, you must secure this bond before receiving your federal certificate of registration.</p>
+    </div>
+  </div>
+
+  <div class="is-sec" id="cost">
+    <div class="is-inner">
+      <span class="is-eyebrow">Pricing</span>
+      <h2>H-2A Farm Labor Contractor Bond Amount &amp; Cost</h2>
+      <p>Bond amounts are set by the DOL and depend on the number of workers employed:</p>
+      <table class="is-tier-table">
+        <tr><th>Number of Workers</th><th>Required Bond Amount</th></tr>
+        <tr><td>1–24 workers</td><td>$5,000</td></tr>
+        <tr><td>25–49 workers</td><td>$10,000</td></tr>
+        <tr><td>50–74 workers</td><td>$20,000</td></tr>
+        <tr><td>75–99 workers</td><td>$30,000</td></tr>
+        <tr><td>100+ workers</td><td>$50,000</td></tr>
+      </table>
+      <p>Your cost depends on:</p>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Bond amount</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Credit score</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Business history</span></div>
+      </div>
+      <p style="font-weight:700;color:#9a3412;font-size:16px;">Most applicants qualify instantly with competitive rates.</p>
+    </div>
+  </div>
+
+  <div class="is-sec" id="who-needs">
+    <div class="is-inner">
+      <span class="is-eyebrow">Eligibility</span>
+      <h2>Who Needs a H-2A Farm Labor Contractor Bond?</h2>
+      <p>You may need an H-2A farm labor contractor bond if you:</p>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Recruit H-2A workers</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Transport workers to job sites</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Provide housing or meals</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Manage payroll for H-2A employees</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Act as a farm labor contractor or subcontractor</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Operate as an FLC or FLCE under DOL regulations</span></div>
+      </div>
+      <p>Any business or individual handling H-2A labor must file this bond before operating legally.</p>
+    </div>
+  </div>
+
+  <div class="is-sec" id="eligibility">
+    <div class="is-inner">
+      <span class="is-eyebrow">Requirements</span>
+      <h2>H-2A Bond Requirements and Eligibility</h2>
+      <p>The U.S. Department of Labor requires:</p>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Completed FLC or FLCE application</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Bond amount based on number of workers</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Credit review</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Compliance with H-2A program rules</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Annual renewal</span></div>
+      </div>
+      <p>You must maintain an active bond to keep your federal registration valid.</p>
+    </div>
+  </div>
+
+  <div class="is-sec" id="process">
+    <div class="is-inner">
+      <span class="is-eyebrow">Simple Process</span>
+      <h2>How the H-2A Bond Process Works</h2>
+      <div class="is-steps">
+        <div class="is-step"><div class="is-step-num">1</div><div><h3>Complete the Application</h3><p>Submit the quick, 60-second application.</p></div></div>
+        <div class="is-step"><div class="is-step-num">2</div><div><h3>Secure the Lowest Rate</h3><p>We match you with the best rate available from A-rated sureties.</p></div></div>
+        <div class="is-step"><div class="is-step-num">3</div><div><h3>Receive Your Bond</h3><p>Same-day issuance available for DOL filing.</p></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-sec" id="why-us">
+    <div class="is-inner">
+      <span class="is-eyebrow">Our Advantage</span>
+      <h2>Why Choose Us for Your H-2A Farm Labor Contractor Bond</h2>
+      <div class="is-why-grid">
+        <div class="is-why-pill"><div class="is-why-icon">$</div><span>Lowest rates from A-rated sureties</span></div>
+        <div class="is-why-pill"><div class="is-why-icon">⚡</div><span>Fast approvals</span></div>
+        <div class="is-why-pill"><div class="is-why-icon">📲</div><span>Digital delivery for immediate filing</span></div>
+        <div class="is-why-pill"><div class="is-why-icon">🎯</div><span>Agricultural labor bond specialists</span></div>
+        <div class="is-why-pill"><div class="is-why-icon">✓</div><span>100% DOL compliance guaranteed</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-sec" id="faq">
+    <div class="is-inner">
+      <span class="is-eyebrow">Questions</span>
+      <h2>Top H-2A Farm Labor Contractor Bond Questions Answered</h2>
+      <p>Our most common questions answered efficiently.</p>
+      <div class="is-faq-list">
+        <details class="is-faq-item"><summary>How much does an H-2A farm labor contractor bond cost?</summary><div class="is-faq-body"><p>Bond amounts range from $5,000 to $50,000 based on the number of workers employed. Your specific cost depends on bond amount, credit score, and business history.</p></div></details>
+        <details class="is-faq-item"><summary>How long does approval take?</summary><div class="is-faq-body"><p>Approvals are fast, with same-day issuance available for DOL filing.</p></div></details>
+        <details class="is-faq-item"><summary>What does the bond guarantee?</summary><div class="is-faq-body"><p>The bond guarantees compliance with H-2A program regulations, protecting workers from wage violations, housing/transportation failures, and contract breaches.</p></div></details>
+        <details class="is-faq-item"><summary>Can the bond be refunded?</summary><div class="is-faq-body"><p>Refund policies vary by surety. Contact us for specifics on your H-2A bond.</p></div></details>
+        <details class="is-faq-item"><summary>Do I need a bond for renewal?</summary><div class="is-faq-body"><p>Yes, you must maintain an active bond and renew annually to keep your federal registration valid.</p></div></details>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-sec">
+    <div class="is-inner">
+      <span class="is-eyebrow">Real Results</span>
+      <h2>Customer Testimonials</h2>
+      <p>What our customers are saying about us.</p>
+      <div class="is-testimonials">
+        <div class="is-testimonial"><p class="is-testimonial-text">Our H-2A filing deadline was only days away, and Inspire Surety got our bond approved the same afternoon. Their speed kept our season on track.</p><span class="is-testimonial-name">Rafael M.</span><span class="is-testimonial-role">Farm Labor Contractor</span></div>
+        <div class="is-testimonial"><p class="is-testimonial-text">We bring in workers every year and the bonding process used to be stressful. Inspire Surety made it simple, fast, and completely hassle-free.</p><span class="is-testimonial-name">Linda B.</span><span class="is-testimonial-role">Agricultural Operations Manager</span></div>
+        <div class="is-testimonial"><p class="is-testimonial-text">As a first-time H-2A contractor, I had no idea what bond amount I needed. Inspire Surety walked me through everything and issued the bond within hours.</p><span class="is-testimonial-name">Carlos J.</span><span class="is-testimonial-role">New FLC Applicant</span></div>
+        <div class="is-testimonial"><p class="is-testimonial-text">We expanded our labor program and needed a higher bond. Inspire Surety handled the increase immediately and kept us compliant with the Department of Labor.</p><span class="is-testimonial-name">Tina C.</span><span class="is-testimonial-role">Farm Workforce Coordinator</span></div>
+        <div class="is-testimonial"><p class="is-testimonial-text">Our audit required updated bonding documents right away. Inspire Surety delivered everything the same day and helped us avoid delays.</p><span class="is-testimonial-name">Miguel A.</span><span class="is-testimonial-role">Seasonal Labor Program Director</span></div>
+        <div class="is-testimonial"><p class="is-testimonial-text">We operate across multiple farms and needed several H-2A bonds at once. Inspire Surety coordinated everything flawlessly and at a great rate.</p><span class="is-testimonial-name">Sarah W.</span><span class="is-testimonial-role">Multi-Farm Operations Supervisor</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-sec">
+    <div class="is-inner">
+      <span class="is-eyebrow">Explore More</span>
+      <h2>Surety Bond Hubs</h2>
+      <div class="is-hub-links">
+        <a href="/contractors-construction-bond-hub/">Contractors &amp; Construction Bond Hub</a>
+        <a href="/court-fiduciary-bond-hub/">Court &amp; Fiduciary Bond Hub</a>
+        <a href="/cannabis-bond-hub/">Cannabis Bond Hub</a>
+        <a href="/environmental-reclamation-bond-hub/">Environmental &amp; Reclamation Bond Hub</a>
+        <a href="/federal-blm-bond-hub/">Federal &amp; BLM Bond Hub</a>
+        <a href="/escrow-real-estate-bond-hub/">Escrow &amp; Real Estate Bond Hub</a>
+        <a href="/license-permit-bond-hub/">License &amp; Permit Bond Hub</a>
+        <a href="/agriculture-food-bond-hub/">Agriculture &amp; Food Bond Hub</a>
+      </div>
+      <a href="/surety-bond-learning-center/" style="color:#9a3412;font-weight:700;font-size:14.5px;text-decoration:none;">Surety Bond Learning Center →</a>
+    </div>
+  </div>
+
+  <div class="is-final-wrap">
+    <div class="is-inner">
+      <h2>Ready to Get Your H-2A Farm Labor Contractor Bond?</h2>
+      <p>Fast approvals, lowest rates, guaranteed DOL compliance.</p>
+      <a href="https://fc16062.propeller.insure/axelerator-public/#do=show+widget+page&State_search_scheme_property=Arizona&State_search_scheme_property=Federal&name=public+home&one_search_search=h2a" class="is-btn-white">Start My Application</a>
+    </div>
+  </div>
+
+</div>
