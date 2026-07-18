@@ -1,148 +1,319 @@
----
-
+﻿---
 title: "Utility Deposit Bonds"
-
 layout: "layout.njk"
-
 ---
 
+<style>
+.is-ud *, .is-ud *::before, .is-ud *::after { box-sizing: border-box; }
+.is-ud {
+  font-family: inherit;
+  color: #0f172a;
+  margin: 0 calc(-50vw + 50%);
+  width: 100vw;
+  padding: 0;
+}
+.is-ud .is-inner { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
 
-Utility Deposit Bonds
-Fast Approval & Lowest Rates
+.is-ud .is-hero-wrap {
+  background: linear-gradient(135deg, #0c1e3d 0%, #2563eb 55%, #38bdf8 100%);
+  padding: 72px 0 64px;
+  position: relative;
+  overflow: hidden;
+}
+.is-ud .is-hero-wrap::before {
+  content: "";
+  position: absolute;
+  top: -100px; right: -100px;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.is-ud .is-hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25);
+  color: #bae6fd; font-size: 11px; font-weight: 800; letter-spacing: 0.08em;
+  text-transform: uppercase; padding: 6px 16px; border-radius: 999px;
+  margin-bottom: 20px; position: relative; z-index: 1;
+}
+.is-ud .is-hero-wrap h1 {
+  font-size: clamp(32px, 5vw, 52px) !important; font-weight: 900 !important;
+  color: #fff !important; line-height: 1.1 !important; margin: 0 0 12px !important;
+  position: relative; z-index: 1; letter-spacing: -0.02em;
+}
+.is-ud .is-hero-tag { font-size: 17px; color: #bae6fd; font-weight: 700; margin-bottom: 20px; position: relative; z-index: 1; }
+.is-ud .is-hero-wrap p { font-size: 16px; color: rgba(255,255,255,0.9); line-height: 1.7; max-width: 600px; margin: 0 0 28px; position: relative; z-index: 1; }
+.is-ud .is-btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #fff; color: #2563eb !important;
+  padding: 16px 34px; border-radius: 12px;
+  font-size: 16px; font-weight: 800;
+  text-decoration: none !important; transition: all 0.2s;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  position: relative; z-index: 1;
+}
+.is-ud .is-btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
 
-Get Your Utility Deposit Bond Today
+.is-ud .is-toc {
+  background: #0c1e3d; border-radius: 20px; padding: 32px 36px;
+  margin: -36px auto 0; max-width: 940px; position: relative; z-index: 2;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+}
+.is-ud .is-toc-title { font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #93c5fd; margin-bottom: 16px; }
+.is-ud .is-toc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 24px; }
+.is-ud .is-toc-grid a { font-size: 14px; color: #e2e8f0; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; }
+.is-ud .is-toc-grid a::before { content: "→"; color: #38bdf8; }
+.is-ud .is-toc-grid a:hover { color: #93c5fd; }
 
-Fast approvals. Lowest rates. Guaranteed acceptance by utility providers. Licensed nationwide. A‑rated surety partners.
+.is-ud .is-sec { background: #fff; padding: 64px 0; }
+.is-ud .is-sec + .is-sec { border-top: 1px solid #f1f5f9; }
+.is-ud .is-sec h2 { font-size: clamp(22px, 2.8vw, 30px) !important; font-weight: 900 !important; color: #0f172a !important; margin: 0 0 16px !important; letter-spacing: -0.01em; }
+.is-ud .is-eyebrow { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #2563eb; margin-bottom: 10px; }
+.is-ud .is-sec p { font-size: 15px; color: #475569; line-height: 1.75; margin: 0 0 14px; }
 
-A utility deposit bond allows your business to activate electric, gas, water, or telecom service without tying up thousands of dollars in cash deposits. Instead of paying a large upfront amount, the bond guarantees the utility provider that you will meet all billing and service obligations.
+.is-ud .is-check-list { display: flex; flex-direction: column; gap: 2px; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; margin: 20px 0; background: #fff; }
+.is-ud .is-check-row { display: flex; align-items: center; gap: 12px; padding: 14px 20px; border-bottom: 1px solid #f1f5f9; }
+.is-ud .is-check-row:last-child { border-bottom: none; }
+.is-ud .is-check-icon { width: 26px; height: 26px; border-radius: 50%; background: #eff6ff; color: #2563eb; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 12px; font-weight: 800; }
+.is-ud .is-check-row span { font-size: 14.5px; color: #334155; font-weight: 500; }
 
-This bond protects utility companies from losses caused by unpaid bills, service defaults, or contract violations—while giving your business the flexibility to preserve working capital and get service turned on quickly. It’s an affordable, fast, and widely accepted alternative to cash deposits for new or expanding businesses.
+.is-ud .is-steps { display: flex; flex-direction: column; gap: 0; margin: 24px 0; }
+.is-ud .is-step { display: grid; grid-template-columns: 80px 1fr; gap: 24px; align-items: start; padding: 28px 0; border-bottom: 1px solid #e2e8f0; }
+.is-ud .is-step:last-child { border-bottom: none; }
+.is-ud .is-step-num { width: 64px; height: 64px; background: linear-gradient(135deg, #2563eb, #38bdf8); border-radius: 18px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 26px; font-weight: 900; flex-shrink: 0; box-shadow: 0 8px 20px rgba(37,99,235,0.35); }
+.is-ud .is-step h3 { font-size: 18px !important; font-weight: 800 !important; color: #0f172a !important; margin: 0 0 6px !important; }
+.is-ud .is-step p { font-size: 14.5px; color: #475569; margin: 0; line-height: 1.65; }
 
+.is-ud .is-why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 20px 0; }
+.is-ud .is-why-pill { background: #fff; border: 2px solid #e2e8f0; border-radius: 14px; padding: 20px; display: flex; align-items: center; gap: 14px; transition: all 0.2s; }
+.is-ud .is-why-pill:hover { border-color: #38bdf8; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(56,189,248,0.15); }
+.is-ud .is-why-icon { width: 40px; height: 40px; border-radius: 10px; background: #eff6ff; color: #2563eb; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 18px; font-weight: 800; }
+.is-ud .is-why-pill span { font-size: 14px; color: #1e293b; font-weight: 600; }
 
-Need help with a license or permit bond? Explore our License & Permit Bond Hub for state‑specific requirements and application guides.
+.is-ud .is-faq-list { display: flex; flex-direction: column; gap: 10px; margin: 20px 0; }
+.is-ud .is-faq-item { border: 1px solid #e2e8f0; border-radius: 14px; background: #fff; overflow: hidden; }
+.is-ud .is-faq-item[open] { border-color: #93c5fd; box-shadow: 0 6px 20px rgba(37,99,235,0.1); }
+.is-ud .is-faq-item summary { font-size: 15px; font-weight: 700; color: #0f172a; padding: 18px 22px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; gap: 14px; }
+.is-ud .is-faq-item summary::-webkit-details-marker { display: none; }
+.is-ud .is-faq-item summary::after { content: "+"; font-size: 22px; font-weight: 300; color: #2563eb; flex-shrink: 0; transition: transform 0.25s; line-height: 1; }
+.is-ud .is-faq-item[open] summary::after { transform: rotate(45deg); }
+.is-ud .is-faq-body { padding: 0 22px 20px; }
+.is-ud .is-faq-body p { font-size: 14.5px; color: #475569; margin: 0; line-height: 1.7; }
 
-What Is a Utility Deposit Bond?
-A utility deposit bond is a surety bond required by utility companies—such as electric, gas, water, or telecommunications providers—when a business wants to activate service without paying a large cash deposit.
+.is-ud .is-testimonials { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 24px 0; }
+.is-ud .is-testimonial { background: #fff; border-radius: 16px; padding: 24px 22px; position: relative; box-shadow: 0 4px 16px rgba(0,0,0,0.05); border-top: 3px solid #2563eb; }
+.is-ud .is-testimonial::before { content: '"'; position: absolute; top: 8px; right: 20px; font-size: 48px; color: #eff6ff; font-family: Georgia, serif; line-height: 1; }
+.is-ud .is-testimonial-text { font-size: 14px; color: #334155; line-height: 1.65; font-style: italic; margin: 0 0 14px; position: relative; z-index: 1; }
+.is-ud .is-testimonial-name { font-weight: 700; color: #1e293b; font-size: 14px; display: block; }
+.is-ud .is-testimonial-role { font-size: 12px; color: #94a3b8; }
 
-This bond protects the utility provider from:
+.is-ud .is-hub-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 24px; }
+.is-ud .is-hub-links a { font-size: 13.5px; color: #1e40af; background: #eff6ff; border: 1px solid #bfdbfe; padding: 10px 18px; border-radius: 999px; text-decoration: none; font-weight: 600; transition: all 0.15s; }
+.is-ud .is-hub-links a:hover { background: #2563eb; color: #fff; border-color: #2563eb; }
 
-Non‑payment of utility bills
-Service defaults
-Contract violations
-Failure to meet payment terms
-Instead of tying up thousands of dollars in cash, businesses can use a utility deposit bond to secure service quickly and affordably.
+.is-ud .is-final-wrap { background: linear-gradient(135deg, #0c1e3d, #2563eb, #38bdf8); padding: 72px 0; text-align: center; position: relative; overflow: hidden; }
+.is-ud .is-final-wrap::before { content: ""; position: absolute; top: -80px; left: -80px; width: 320px; height: 320px; background: rgba(255,255,255,0.08); border-radius: 50%; }
+.is-ud .is-final-wrap::after { content: ""; position: absolute; bottom: -100px; right: -60px; width: 380px; height: 380px; background: rgba(255,255,255,0.05); border-radius: 50%; }
+.is-ud .is-final-wrap h2 { font-size: clamp(26px, 3.5vw, 40px) !important; color: #fff !important; margin: 0 0 14px !important; position: relative; z-index: 1; font-weight: 900 !important; }
+.is-ud .is-final-wrap p { font-size: 17px; color: rgba(255,255,255,0.9); margin: 0 auto 32px; max-width: 480px; position: relative; z-index: 1; }
+.is-ud .is-btn-white { display: inline-block; background: #fff; color: #2563eb !important; padding: 17px 40px; border-radius: 12px; font-size: 16px; font-weight: 800; text-decoration: none !important; position: relative; z-index: 1; transition: all 0.2s; box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+.is-ud .is-btn-white:hover { background: #eff6ff; transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.25); }
 
-Utility Deposit Bond Amounts and Cost
-Bond amounts are set by the utility provider and typically range from $5,000 to $100,000+, depending on:
+@media (max-width: 720px) {
+  .is-ud .is-toc { margin: -24px 20px 0; padding: 24px 22px; }
+  .is-ud .is-toc-grid { grid-template-columns: 1fr; }
+  .is-ud .is-why-grid { grid-template-columns: 1fr; }
+  .is-ud .is-testimonials { grid-template-columns: 1fr; }
+  .is-ud .is-sec { padding: 44px 0; }
+  .is-ud .is-hero-wrap { padding: 48px 0 56px; }
+}
+</style>
 
-Estimated monthly usage
-Business credit and payment history
-Type of utility service
-Size of the facility or operation
-Your premium depends on:
+<div class="is-ud">
 
-Bond amount
-Credit score
-Business financials
-Most businesses qualify instantly with competitive rates.
+  <div class="is-hero-wrap">
+    <div class="is-inner">
+      <div class="is-hero-badge">License &amp; Permit Bond</div>
+      <h1>Utility Deposit Bonds</h1>
+      <div class="is-hero-tag">Fast Approval &amp; Lowest Rates</div>
+      <p>Get Your Utility Deposit Bond Today. Fast approvals. Lowest rates. Guaranteed acceptance by utility providers. Licensed nationwide. A-rated surety partners.</p>
+      <a href="https://fc16062.propeller.insure/axelerator-public/#do=show+widget+page&name=public+home&one_search_search=utility" class="is-btn-primary">
+        Start Your Application
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
 
+  <div class="is-toc">
+    <div class="is-toc-title">On This Page</div>
+    <div class="is-toc-grid">
+      <a href="#what-is">What Is a Utility Deposit Bond?</a>
+      <a href="#cost">Bond Amounts and Cost</a>
+      <a href="#who-needs">Who Needs This Bond</a>
+      <a href="#eligibility">Requirements &amp; Eligibility</a>
+      <a href="#process">How the Process Works</a>
+      <a href="#why-us">Why Businesses Choose Us</a>
+      <a href="#faq">Top Questions Answered</a>
+    </div>
+  </div>
 
-Who Needs a Utility Deposit Bond
-You may need a utility deposit bond if you are:
+  <div class="is-sec">
+    <div class="is-inner">
+      <p>A utility deposit bond allows your business to activate electric, gas, water, or telecom service without tying up thousands of dollars in cash deposits. Instead of paying a large upfront amount, the bond guarantees the utility provider that you will meet all billing and service obligations.</p>
+      <p>This bond protects utility companies from losses caused by unpaid bills, service defaults, or contract violations—while giving your business the flexibility to preserve working capital and get service turned on quickly. It's an affordable, fast, and widely accepted alternative to cash deposits for new or expanding businesses.</p>
+      <p>Need help with a license or permit bond? Explore our <a href="/license-permit-bond-hub/" style="color:#2563eb;font-weight:700;">License &amp; Permit Bond Hub</a> for state-specific requirements and application guides.</p>
+    </div>
+  </div>
 
-Opening a new business location
-Expanding into a larger facility
-Operating a high‑usage business (manufacturing, warehouses, restaurants, etc.)
-Lacking established credit with the utility provider
-Avoiding large upfront cash deposits
-Any business seeking utility service without paying a full cash deposit may be required to file this bond.
+  <div class="is-sec" id="what-is">
+    <div class="is-inner">
+      <span class="is-eyebrow">The Basics</span>
+      <h2>What Is a Utility Deposit Bond?</h2>
+      <p>A utility deposit bond is a surety bond required by utility companies—such as electric, gas, water, or telecommunications providers—when a business wants to activate service without paying a large cash deposit.</p>
+      <p>This bond protects the utility provider from:</p>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Non-payment of utility bills</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Service defaults</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Contract violations</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Failure to meet payment terms</span></div>
+      </div>
+      <p>Instead of tying up thousands of dollars in cash, businesses can use a utility deposit bond to secure service quickly and affordably.</p>
+    </div>
+  </div>
 
-Utility Deposit Bond Requirements & Eligibility
-Utility companies typically require:
+  <div class="is-sec" id="cost">
+    <div class="is-inner">
+      <span class="is-eyebrow">Pricing</span>
+      <h2>Utility Deposit Bond Amounts and Cost</h2>
+      <p>Bond amounts are set by the utility provider and typically range from $5,000 to $100,000+, depending on:</p>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Estimated monthly usage</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Business credit and payment history</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Type of utility service</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Size of the facility or operation</span></div>
+      </div>
+      <p>Your premium depends on:</p>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Bond amount</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Credit score</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Business financials</span></div>
+      </div>
+      <p style="font-weight:700;color:#2563eb;font-size:16px;">Most businesses qualify instantly with competitive rates.</p>
+    </div>
+  </div>
 
-Completed bond application
-Utility‑mandated bond amount
-Credit review
-Proof of business identity
-Annual renewal (in some cases)
-Some providers require higher bond amounts for high‑usage or high‑risk accounts.
+  <div class="is-sec" id="who-needs">
+    <div class="is-inner">
+      <span class="is-eyebrow">Eligibility</span>
+      <h2>Who Needs a Utility Deposit Bond</h2>
+      <p>You may need a utility deposit bond if you are:</p>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Opening a new business location</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Expanding into a larger facility</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Operating a high-usage business (manufacturing, warehouses, restaurants, etc.)</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Lacking established credit with the utility provider</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Avoiding large upfront cash deposits</span></div>
+      </div>
+      <p>Any business seeking utility service without paying a full cash deposit may be required to file this bond.</p>
+    </div>
+  </div>
 
-How the Utility Deposit Bond Process Works
-1
-Complete the Application
-Submit the quick, 60‑second application.
+  <div class="is-sec" id="eligibility">
+    <div class="is-inner">
+      <span class="is-eyebrow">Requirements</span>
+      <h2>Utility Deposit Bond Requirements &amp; Eligibility</h2>
+      <p>Utility companies typically require:</p>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Completed bond application</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Utility-mandated bond amount</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Credit review</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Proof of business identity</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Annual renewal (in some cases)</span></div>
+      </div>
+      <p>Some providers require higher bond amounts for high-usage or high-risk accounts.</p>
+    </div>
+  </div>
 
+  <div class="is-sec" id="process">
+    <div class="is-inner">
+      <span class="is-eyebrow">Simple Process</span>
+      <h2>How the Utility Deposit Bond Process Works</h2>
+      <div class="is-steps">
+        <div class="is-step"><div class="is-step-num">1</div><div><h3>Complete the Application</h3><p>Submit the quick, 60-second application.</p></div></div>
+        <div class="is-step"><div class="is-step-num">2</div><div><h3>Secure the Lowest Rate</h3><p>We match you with the best rate available from A-rated sureties.</p></div></div>
+        <div class="is-step"><div class="is-step-num">3</div><div><h3>Receive Your Bond</h3><p>Same-day issuance available for utility filing.</p></div></div>
+      </div>
+    </div>
+  </div>
 
-2
-Secure the Lowest Rate
-We match you with the best rate available from A‑rated sureties.
+  <div class="is-sec" id="why-us">
+    <div class="is-inner">
+      <span class="is-eyebrow">Our Advantage</span>
+      <h2>Why Businesses Choose Us</h2>
+      <div class="is-why-grid">
+        <div class="is-why-pill"><div class="is-why-icon">$</div><span>Lowest rates from A-rated sureties</span></div>
+        <div class="is-why-pill"><div class="is-why-icon">⚡</div><span>Fast approvals</span></div>
+        <div class="is-why-pill"><div class="is-why-icon">📲</div><span>Digital delivery for immediate filing</span></div>
+        <div class="is-why-pill"><div class="is-why-icon">🎯</div><span>Utility-deposit bond specialists</span></div>
+        <div class="is-why-pill"><div class="is-why-icon">✓</div><span>100% acceptance guaranteed</span></div>
+      </div>
+    </div>
+  </div>
 
-3
-Receive your bond
-Same‑day issuance available for utility filing.
+  <div class="is-sec" id="faq">
+    <div class="is-inner">
+      <span class="is-eyebrow">Questions</span>
+      <h2>Top Utility Deposit Bond Questions Answered</h2>
+      <p>Our most common questions answered efficiently.</p>
+      <div class="is-faq-list">
+        <details class="is-faq-item"><summary>How much does a utility deposit bond cost?</summary><div class="is-faq-body"><p>Costs vary by provider, with bond amounts typically ranging from $5,000 to $100,000+. Your premium depends on bond amount, credit score, and business financials.</p></div></details>
+        <details class="is-faq-item"><summary>How long does approval take?</summary><div class="is-faq-body"><p>Approvals are fast, with same-day issuance available for utility filing.</p></div></details>
+        <details class="is-faq-item"><summary>What does the bond guarantee?</summary><div class="is-faq-body"><p>The bond guarantees payment of utility bills and compliance with service terms, protecting the utility provider from unpaid bills or contract violations.</p></div></details>
+        <details class="is-faq-item"><summary>Can the bond be refunded?</summary><div class="is-faq-body"><p>Refund policies vary by surety. Contact us for specifics on your utility deposit bond.</p></div></details>
+        <details class="is-faq-item"><summary>Do I need a bond for each utility provider?</summary><div class="is-faq-body"><p>Yes, each utility provider typically requires its own bond based on their specific account and usage requirements.</p></div></details>
+      </div>
+    </div>
+  </div>
 
-Why Businesses Choose Us
-Lowest rates from A‑rated sureties
-Fast approvals
-Digital delivery for immediate filing
-Utility‑deposit bond specialists
-100% acceptance guaranteed
+  <div class="is-sec">
+    <div class="is-inner">
+      <span class="is-eyebrow">Real Results</span>
+      <h2>Customer Testimonials</h2>
+      <p>What our customers are saying about us.</p>
+      <div class="is-testimonials">
+        <div class="is-testimonial"><p class="is-testimonial-text">Our utility provider required a huge cash deposit we couldn't tie up. Inspire Surety issued our bond the same day and saved us thousands.</p><span class="is-testimonial-name">Kendra W.</span><span class="is-testimonial-role">Restaurant Franchise Owner</span></div>
+        <div class="is-testimonial"><p class="is-testimonial-text">We were opening multiple locations at once and needed several utility bonds fast. Inspire Surety coordinated everything flawlessly.</p><span class="is-testimonial-name">Derrick M.</span><span class="is-testimonial-role">Retail Operations Director</span></div>
+        <div class="is-testimonial"><p class="is-testimonial-text">The utility company wouldn't activate service without a bond. Inspire Surety stepped in immediately and got us approved within hours.</p><span class="is-testimonial-name">Sonia P.</span><span class="is-testimonial-role">Manufacturing Facility Manager</span></div>
+        <div class="is-testimonial"><p class="is-testimonial-text">Cash flow is critical for our startup, so avoiding a large utility deposit was a big win. Inspire Surety made the process simple and affordable.</p><span class="is-testimonial-name">Evan B.</span><span class="is-testimonial-role">Tech Startup Founder</span></div>
+        <div class="is-testimonial"><p class="is-testimonial-text">We've expanded into three new states and Inspire Surety has handled every utility bond quickly and professionally.</p><span class="is-testimonial-name">Linda C.</span><span class="is-testimonial-role">Multi-State Property Manager</span></div>
+        <div class="is-testimonial"><p class="is-testimonial-text">Our construction project needed temporary power, and the utility required a bond before activation. Inspire Surety delivered fast and kept us on schedule.</p><span class="is-testimonial-name">Harold K.</span><span class="is-testimonial-role">Commercial Construction Superintendent</span></div>
+      </div>
+    </div>
+  </div>
 
-Top Utility Deposit Bond Questions Answered
-Our most common questions answered efficiently.
+  <div class="is-sec">
+    <div class="is-inner">
+      <span class="is-eyebrow">Explore More</span>
+      <h2>Surety Bond Hubs</h2>
+      <div class="is-hub-links">
+        <a href="/contractors-construction-bond-hub/">Contractors &amp; Construction Bond Hub</a>
+        <a href="/court-fiduciary-bond-hub/">Court &amp; Fiduciary Bond Hub</a>
+        <a href="/cannabis-bond-hub/">Cannabis Bond Hub</a>
+        <a href="/environmental-reclamation-bond-hub/">Environmental &amp; Reclamation Bond Hub</a>
+        <a href="/federal-blm-bond-hub/">Federal &amp; BLM Bond Hub</a>
+        <a href="/escrow-real-estate-bond-hub/">Escrow &amp; Real Estate Bond Hub</a>
+        <a href="/license-permit-bond-hub/">License &amp; Permit Bond Hub</a>
+        <a href="/agriculture-food-bond-hub/">Agriculture &amp; Food Bond Hub</a>
+      </div>
+      <a href="/surety-bond-learning-center/" style="color:#2563eb;font-weight:700;font-size:14.5px;text-decoration:none;">Surety Bond Learning Center →</a>
+    </div>
+  </div>
 
+  <div class="is-final-wrap">
+    <div class="is-inner">
+      <h2>Ready to Get Your Utility Deposit Bond?</h2>
+      <p>Fast approvals, lowest rates, guaranteed acceptance.</p>
+      <a href="https://fc16062.propeller.insure/axelerator-public/#do=show+widget+page&name=public+home&one_search_search=utility" class="is-btn-white">Start My Application</a>
+    </div>
+  </div>
 
-How much does a utility deposit bond cost?
-
-How long does approval take?
-
-What does the bond guarantee?
-
-Can the bond be refunded?
-
-Do I need a bond for each utility provider?
-
-
-
-Ready to Get Your Utility Deposit Bond?
-
-Customer testimonials
-What our customers are saying about us.
-
-“Our utility provider required a huge cash deposit we couldn’t tie up. Inspire Surety issued our bond the same day and saved us thousands.”
-
-Kendra W.
-Restaurant Franchise Owner
-“We were opening multiple locations at once and needed several utility bonds fast. Inspire Surety coordinated everything flawlessly.”
-
-Derrick M.
-Retail Operations Director
-“The utility company wouldn’t activate service without a bond. Inspire Surety stepped in immediately and got us approved within hours.”
-
-Sonia P.
-Manufacturing Facility Manager
-“Cash flow is critical for our startup, so avoiding a large utility deposit was a big win. Inspire Surety made the process simple and affordable.”
-
-Evan B.
-Tech Startup Founder
-“We’ve expanded into three new states and Inspire Surety has handled every utility bond quickly and professionally.”
-
-Linda C.
-Multi‑State Property Manager
-“Our construction project needed temporary power, and the utility required a bond before activation. Inspire Surety delivered fast and kept us on schedule.”
-
-Harold K.
-Commercial Construction Superintendent
-Surety Bond Hubs
-Contractors & Construction Bond Hub
-Court & Fiduciary Bond Hub
-Cannabis Bond Hub
-Environmental & Reclamation Bond Hub
-Federal & BLM Bond Hub
-Escrow & Real Estate Bond Hub
-License & Permit Bond Hub
-Agriculture & Food Bond Hub
-Surety Bond Learning Center
-
-
-
+</div>
