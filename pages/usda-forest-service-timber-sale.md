@@ -1,5 +1,4 @@
-﻿```
----
+﻿---
 title: "USDA Forest Service Timber Sale Bonds"
 layout: "layout.njk"
 ---
@@ -100,13 +99,6 @@ layout: "layout.njk"
 .is-tsb .is-faq-body { padding: 0 22px 20px; }
 .is-tsb .is-faq-body p { font-size: 14.5px; color: #475569; margin: 0; line-height: 1.7; }
 
-.is-tsb .is-testimonials { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 24px 0; }
-.is-tsb .is-testimonial { background: #fff; border-radius: 16px; padding: 24px 22px; position: relative; box-shadow: 0 4px 16px rgba(0,0,0,0.05); border-top: 3px solid #475569; }
-.is-tsb .is-testimonial::before { content: '"'; position: absolute; top: 8px; right: 20px; font-size: 48px; color: #f1f5f9; font-family: Georgia, serif; line-height: 1; }
-.is-tsb .is-testimonial-text { font-size: 14px; color: #334155; line-height: 1.65; font-style: italic; margin: 0 0 14px; position: relative; z-index: 1; }
-.is-tsb .is-testimonial-name { font-weight: 700; color: #1e293b; font-size: 14px; display: block; }
-.is-tsb .is-testimonial-role { font-size: 12px; color: #94a3b8; }
-
 .is-tsb .is-hub-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 24px; }
 .is-tsb .is-hub-links a { font-size: 13.5px; color: #334155; background: #f1f5f9; border: 1px solid #e2e8f0; padding: 10px 18px; border-radius: 999px; text-decoration: none; font-weight: 600; transition: all 0.15s; }
 .is-tsb .is-hub-links a:hover { background: #334155; color: #fff; border-color: #334155; }
@@ -123,7 +115,6 @@ layout: "layout.njk"
   .is-tsb .is-toc { margin: -24px 20px 0; padding: 24px 22px; }
   .is-tsb .is-toc-grid { grid-template-columns: 1fr; }
   .is-tsb .is-why-grid { grid-template-columns: 1fr; }
-  .is-tsb .is-testimonials { grid-template-columns: 1fr; }
   .is-tsb .is-sec { padding: 44px 0; }
   .is-tsb .is-hero-wrap { padding: 48px 0 56px; }
 }
@@ -267,22 +258,6 @@ layout: "layout.njk"
 
   <div class="is-sec">
     <div class="is-inner">
-      <span class="is-eyebrow">Real Results</span>
-      <h2>Customer Testimonials</h2>
-      <p>What our customers are saying about us.</p>
-      <div class="is-testimonials">
-        <div class="is-testimonial"><p class="is-testimonial-text">Our PACA license renewal depended on fast bonding. Inspire Surety delivered same-day approval and kept our produce shipments moving without interruption.</p><span class="is-testimonial-name">Hector R.</span><span class="is-testimonial-role">Produce Importer &amp; Distributor</span></div>
-        <div class="is-testimonial"><p class="is-testimonial-text">We operate grain facilities in multiple states and needed several USDA bonds at once. Inspire Surety coordinated everything flawlessly and at excellent rates.</p><span class="is-testimonial-name">Molly J.</span><span class="is-testimonial-role">Grain Elevator Operations Manager</span></div>
-        <div class="is-testimonial"><p class="is-testimonial-text">As a new livestock dealer, I was overwhelmed by the USDA requirements. Inspire Surety explained the process clearly and issued my bond within hours.</p><span class="is-testimonial-name">Caleb F.</span><span class="is-testimonial-role">Livestock Buyer</span></div>
-        <div class="is-testimonial"><p class="is-testimonial-text">We switched to Inspire Surety after years with another provider. The service was faster, the communication better, and the filing was handled immediately.</p><span class="is-testimonial-name">Rita C.</span><span class="is-testimonial-role">Agricultural Commodities Broker</span></div>
-        <div class="is-testimonial"><p class="is-testimonial-text">Our warehouse needed a high-value USDA bond for expansion. Inspire Surety secured approval quickly and made the entire process stress-free.</p><span class="is-testimonial-name">Damon L.</span><span class="is-testimonial-role">Agricultural Storage Facility Owner</span></div>
-        <div class="is-testimonial"><p class="is-testimonial-text">We handle perishable goods and can't afford delays. Inspire Surety's speed and accuracy with our USDA bonds have been a game-changer for our business.</p><span class="is-testimonial-name">Sofia N.</span><span class="is-testimonial-role">Cold Storage &amp; Distribution Manager</span></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="is-sec">
-    <div class="is-inner">
       <span class="is-eyebrow">Explore More</span>
       <h2>Surety Bond Hubs</h2>
       <div class="is-hub-links">
@@ -308,4 +283,3 @@ layout: "layout.njk"
   </div>
 
 </div>
-```
