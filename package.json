@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "InspireSurety website built with Eleventy",
   "scripts": {
-    "build": "eleventy",
+    "build": "eleventy --config=.eleventy.cjs",
     "start": "eleventy --serve"
   },
   "dependencies": {
