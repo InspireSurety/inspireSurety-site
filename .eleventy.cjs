@@ -5,6 +5,7 @@ eleventyConfig.addPassthroughCopy({"robots.txt": "robots.txt"});
   eleventyConfig.addPassthroughCopy({"_redirects": "_redirects"});
   eleventyConfig.addPassthroughCopy({"sitemap.xml": "sitemap.xml"});
 
+
   eleventyConfig.addPairedShortcode("heroIntro", function(content, stats) {
     let statsHtml = "";
     if (stats) {
