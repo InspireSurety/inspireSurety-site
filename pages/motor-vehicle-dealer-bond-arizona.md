@@ -4,23 +4,23 @@ layout: "layout.njk"
 ---
 
 <style>
-.is-adaz *, .is-adaz *::before, .is-adaz *::after { box-sizing: border-box; }
-.is-adaz {
+.is-mvaz *, .is-mvaz *::before, .is-mvaz *::after { box-sizing: border-box; }
+.is-mvaz {
   font-family: inherit;
   color: #0f172a;
   margin: 0 calc(-50vw + 50%);
   width: 100vw;
   padding: 0;
 }
-.is-adaz .is-inner { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+.is-mvaz .is-inner { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
 
-.is-adaz .is-hero-wrap {
+.is-mvaz .is-hero-wrap {
   background: linear-gradient(135deg, #0c1e3d 0%, #2563eb 55%, #38bdf8 100%);
   padding: 72px 0 64px;
   position: relative;
   overflow: hidden;
 }
-.is-adaz .is-hero-wrap::before {
+.is-mvaz .is-hero-wrap::before {
   content: "";
   position: absolute;
   top: -100px; right: -100px;
@@ -28,20 +28,21 @@ layout: "layout.njk"
   background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
   border-radius: 50%;
 }
-.is-adaz .is-hero-badge {
+.is-mvaz .is-hero-badge {
   display: inline-flex; align-items: center; gap: 8px;
   background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25);
   color: #bae6fd; font-size: 11px; font-weight: 800; letter-spacing: 0.08em;
   text-transform: uppercase; padding: 6px 16px; border-radius: 999px;
   margin-bottom: 20px; position: relative; z-index: 1;
 }
-.is-adaz .is-hero-wrap h1 {
-  font-size: clamp(30px, 4.8vw, 50px) !important; font-weight: 900 !important;
+.is-mvaz .is-hero-wrap h1 {
+  font-size: clamp(32px, 5vw, 52px) !important; font-weight: 900 !important;
   color: #fff !important; line-height: 1.1 !important; margin: 0 0 12px !important;
   position: relative; z-index: 1; letter-spacing: -0.02em;
 }
-.is-adaz .is-hero-wrap p { font-size: 16px; color: rgba(255,255,255,0.9); line-height: 1.7; max-width: 620px; margin: 0 0 28px; position: relative; z-index: 1; }
-.is-adaz .is-btn-primary {
+.is-mvaz .is-hero-tag { font-size: 17px; color: #bae6fd; font-weight: 700; margin-bottom: 20px; position: relative; z-index: 1; }
+.is-mvaz .is-hero-wrap p { font-size: 16px; color: rgba(255,255,255,0.9); line-height: 1.7; max-width: 600px; margin: 0 0 28px; position: relative; z-index: 1; }
+.is-mvaz .is-btn-primary {
   display: inline-flex; align-items: center; gap: 8px;
   background: #fff; color: #2563eb !important;
   padding: 16px 34px; border-radius: 12px;
@@ -50,100 +51,117 @@ layout: "layout.njk"
   box-shadow: 0 8px 24px rgba(0,0,0,0.25);
   position: relative; z-index: 1;
 }
-.is-adaz .is-btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
-.is-adaz .is-hero-note { font-size: 13px; color: rgba(255,255,255,0.65); margin-top: 14px; position: relative; z-index: 1; }
+.is-mvaz .is-btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
+.is-mvaz .is-hero-note { font-size: 13px; color: rgba(255,255,255,0.65); margin-top: 14px; position: relative; z-index: 1; }
+.is-mvaz .is-hero-stats { display: flex; gap: 32px; margin-top: 36px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.2); position: relative; z-index: 1; flex-wrap: wrap; }
+.is-mvaz .is-hero-stat-num { font-size: 26px; font-weight: 900; color: #fff; line-height: 1; display: block; }
+.is-mvaz .is-hero-stat-label { font-size: 11px; color: rgba(255,255,255,0.7); font-weight: 600; margin-top: 4px; display: block; }
 
-.is-adaz .is-toc {
+.is-mvaz .is-toc {
   background: #0c1e3d; border-radius: 20px; padding: 32px 36px;
   margin: -36px auto 0; max-width: 940px; position: relative; z-index: 2;
   box-shadow: 0 20px 50px rgba(0,0,0,0.25);
 }
-.is-adaz .is-toc-title { font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #93c5fd; margin-bottom: 16px; }
-.is-adaz .is-toc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 24px; }
-.is-adaz .is-toc-grid a { font-size: 14px; color: #e2e8f0; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; }
-.is-adaz .is-toc-grid a::before { content: "→"; color: #38bdf8; }
-.is-adaz .is-toc-grid a:hover { color: #93c5fd; }
+.is-mvaz .is-toc-title { font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #93c5fd; margin-bottom: 16px; }
+.is-mvaz .is-toc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 24px; }
+.is-mvaz .is-toc-grid a { font-size: 14px; color: #e2e8f0; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; }
+.is-mvaz .is-toc-grid a::before { content: "→"; color: #38bdf8; }
+.is-mvaz .is-toc-grid a:hover { color: #93c5fd; }
 
-.is-adaz .is-sec { background: #fff; padding: 64px 0; }
-.is-adaz .is-sec + .is-sec { border-top: 1px solid #f1f5f9; }
-.is-adaz .is-sec h2 { font-size: clamp(22px, 2.8vw, 30px) !important; font-weight: 900 !important; color: #0f172a !important; margin: 0 0 16px !important; letter-spacing: -0.01em; }
-.is-adaz .is-eyebrow { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #2563eb; margin-bottom: 10px; }
-.is-adaz .is-sec p { font-size: 15px; color: #475569; line-height: 1.75; margin: 0 0 14px; }
+.is-mvaz .is-sec { background: #fff; padding: 64px 0; }
+.is-mvaz .is-sec + .is-sec { border-top: 1px solid #f1f5f9; }
+.is-mvaz .is-sec h2 { font-size: clamp(22px, 2.8vw, 30px) !important; font-weight: 900 !important; color: #0f172a !important; margin: 0 0 16px !important; letter-spacing: -0.01em; }
+.is-mvaz .is-eyebrow { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #2563eb; margin-bottom: 10px; }
+.is-mvaz .is-sec p { font-size: 15px; color: #475569; line-height: 1.75; margin: 0 0 14px; }
 
-.is-adaz .is-check-list { display: flex; flex-direction: column; gap: 2px; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; margin: 16px 0; background: #fff; }
-.is-adaz .is-check-row { display: flex; align-items: center; gap: 12px; padding: 14px 20px; border-bottom: 1px solid #f1f5f9; }
-.is-adaz .is-check-row:last-child { border-bottom: none; }
-.is-adaz .is-check-icon { width: 26px; height: 26px; border-radius: 50%; background: #eff6ff; color: #2563eb; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 12px; font-weight: 800; }
-.is-adaz .is-check-row span { font-size: 14.5px; color: #334155; font-weight: 500; }
+.is-mvaz .is-check-list { display: flex; flex-direction: column; gap: 2px; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; margin: 20px 0; background: #fff; }
+.is-mvaz .is-check-row { display: flex; align-items: center; gap: 12px; padding: 14px 20px; border-bottom: 1px solid #f1f5f9; }
+.is-mvaz .is-check-row:last-child { border-bottom: none; }
+.is-mvaz .is-check-icon { width: 26px; height: 26px; border-radius: 50%; background: #eff6ff; color: #2563eb; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 12px; font-weight: 800; }
+.is-mvaz .is-check-row span { font-size: 14.5px; color: #334155; font-weight: 500; }
 
-.is-adaz .is-price-box { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 16px 20px; margin: 14px 0 24px; display: flex; align-items: center; gap: 12px; }
-.is-adaz .is-price-icon { font-size: 20px; }
-.is-adaz .is-price-box p { margin: 0; font-size: 14px; color: #1e40af; font-weight: 600; line-height: 1.6; }
+.is-mvaz .is-stat-band { display: flex; background: #fff; border: 1px solid #e2e8f0; border-radius: 18px; overflow: hidden; margin: 24px 0; box-shadow: 0 8px 28px rgba(0,0,0,0.06); }
+.is-mvaz .is-stat-cell { flex: 1; text-align: center; padding: 28px 16px; border-right: 1px solid #f1f5f9; }
+.is-mvaz .is-stat-cell:last-child { border-right: none; }
+.is-mvaz .is-stat-cell-big { background: linear-gradient(135deg, #2563eb, #38bdf8); color: #fff; }
+.is-mvaz .is-stat-num { font-size: 30px; font-weight: 900; color: #2563eb; line-height: 1; }
+.is-mvaz .is-stat-cell-big .is-stat-num { color: #fff; }
+.is-mvaz .is-stat-label { font-size: 11.5px; color: #64748b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; margin-top: 8px; }
+.is-mvaz .is-stat-cell-big .is-stat-label { color: rgba(255,255,255,0.85); }
 
-.is-adaz .is-steps { display: flex; flex-direction: column; gap: 0; margin: 24px 0; }
-.is-adaz .is-step { display: grid; grid-template-columns: 80px 1fr; gap: 24px; align-items: start; padding: 28px 0; border-bottom: 1px solid #e2e8f0; }
-.is-adaz .is-step:last-child { border-bottom: none; }
-.is-adaz .is-step-num { width: 64px; height: 64px; background: linear-gradient(135deg, #2563eb, #38bdf8); border-radius: 18px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 26px; font-weight: 900; flex-shrink: 0; box-shadow: 0 8px 20px rgba(37,99,235,0.35); }
-.is-adaz .is-step h3 { font-size: 18px !important; font-weight: 800 !important; color: #0f172a !important; margin: 0 0 6px !important; }
-.is-adaz .is-step p { font-size: 14.5px; color: #475569; margin: 0; line-height: 1.65; }
+.is-mvaz .is-steps { display: flex; flex-direction: column; gap: 0; margin: 24px 0; }
+.is-mvaz .is-step { display: grid; grid-template-columns: 80px 1fr; gap: 24px; align-items: start; padding: 28px 0; border-bottom: 1px solid #e2e8f0; }
+.is-mvaz .is-step:last-child { border-bottom: none; }
+.is-mvaz .is-step-num { width: 64px; height: 64px; background: linear-gradient(135deg, #2563eb, #38bdf8); border-radius: 18px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 26px; font-weight: 900; flex-shrink: 0; box-shadow: 0 8px 20px rgba(37,99,235,0.35); }
+.is-mvaz .is-step h3 { font-size: 18px !important; font-weight: 800 !important; color: #0f172a !important; margin: 0 0 6px !important; }
+.is-mvaz .is-step p { font-size: 14.5px; color: #475569; margin: 0; line-height: 1.65; }
 
-.is-adaz .is-why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 20px 0; }
-.is-adaz .is-why-pill { background: #fff; border: 2px solid #e2e8f0; border-radius: 14px; padding: 20px; display: flex; align-items: center; gap: 14px; transition: all 0.2s; }
-.is-adaz .is-why-pill:hover { border-color: #38bdf8; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(56,189,248,0.15); }
-.is-adaz .is-why-icon { width: 40px; height: 40px; border-radius: 10px; background: #eff6ff; color: #2563eb; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 18px; font-weight: 800; }
-.is-adaz .is-why-pill span { font-size: 14px; color: #1e293b; font-weight: 600; }
+.is-mvaz .is-why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 20px 0; }
+.is-mvaz .is-why-pill { background: #fff; border: 2px solid #e2e8f0; border-radius: 14px; padding: 20px; display: flex; align-items: center; gap: 14px; transition: all 0.2s; }
+.is-mvaz .is-why-pill:hover { border-color: #38bdf8; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(56,189,248,0.15); }
+.is-mvaz .is-why-icon { width: 40px; height: 40px; border-radius: 10px; background: #eff6ff; color: #2563eb; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 18px; font-weight: 800; }
+.is-mvaz .is-why-pill span { font-size: 14px; color: #1e293b; font-weight: 600; }
 
-.is-adaz .is-faq-list { display: flex; flex-direction: column; gap: 10px; margin: 20px 0; }
-.is-adaz .is-faq-item { border: 1px solid #e2e8f0; border-radius: 14px; background: #fff; overflow: hidden; }
-.is-adaz .is-faq-item[open] { border-color: #93c5fd; box-shadow: 0 6px 20px rgba(37,99,235,0.1); }
-.is-adaz .is-faq-item summary { font-size: 15px; font-weight: 700; color: #0f172a; padding: 18px 22px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; gap: 14px; }
-.is-adaz .is-faq-item summary::-webkit-details-marker { display: none; }
-.is-adaz .is-faq-item summary::after { content: "+"; font-size: 22px; font-weight: 300; color: #2563eb; flex-shrink: 0; transition: transform 0.25s; line-height: 1; }
-.is-adaz .is-faq-item[open] summary::after { transform: rotate(45deg); }
-.is-adaz .is-faq-body { padding: 0 22px 20px; }
-.is-adaz .is-faq-body p { font-size: 14.5px; color: #475569; margin: 0; line-height: 1.7; }
+.is-mvaz .is-faq-list { display: flex; flex-direction: column; gap: 10px; margin: 20px 0; }
+.is-mvaz .is-faq-item { border: 1px solid #e2e8f0; border-radius: 14px; background: #fff; overflow: hidden; }
+.is-mvaz .is-faq-item[open] { border-color: #93c5fd; box-shadow: 0 6px 20px rgba(37,99,235,0.1); }
+.is-mvaz .is-faq-item summary { font-size: 15px; font-weight: 700; color: #0f172a; padding: 18px 22px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; gap: 14px; }
+.is-mvaz .is-faq-item summary::-webkit-details-marker { display: none; }
+.is-mvaz .is-faq-item summary::after { content: "+"; font-size: 22px; font-weight: 300; color: #2563eb; flex-shrink: 0; transition: transform 0.25s; line-height: 1; }
+.is-mvaz .is-faq-item[open] summary::after { transform: rotate(45deg); }
+.is-mvaz .is-faq-body { padding: 0 22px 20px; }
+.is-mvaz .is-faq-body p { font-size: 14.5px; color: #475569; margin: 0; line-height: 1.7; }
 
-.is-adaz .is-testimonials { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 24px 0; }
-.is-adaz .is-testimonial { background: #fff; border-radius: 16px; padding: 24px 22px; position: relative; box-shadow: 0 4px 16px rgba(0,0,0,0.05); border-top: 3px solid #2563eb; }
-.is-adaz .is-testimonial::before { content: '"'; position: absolute; top: 8px; right: 20px; font-size: 48px; color: #eff6ff; font-family: Georgia, serif; line-height: 1; }
-.is-adaz .is-testimonial-text { font-size: 14px; color: #334155; line-height: 1.65; font-style: italic; margin: 0 0 14px; position: relative; z-index: 1; }
-.is-adaz .is-testimonial-name { font-weight: 700; color: #1e293b; font-size: 14px; display: block; }
-.is-adaz .is-testimonial-role { font-size: 12px; color: #94a3b8; }
+.is-mvaz .is-testimonials { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 24px 0; }
+.is-mvaz .is-testimonial { background: #fff; border-radius: 16px; padding: 24px 22px; position: relative; box-shadow: 0 4px 16px rgba(0,0,0,0.05); border-top: 3px solid #2563eb; }
+.is-mvaz .is-testimonial::before { content: '"'; position: absolute; top: 8px; right: 20px; font-size: 48px; color: #eff6ff; font-family: Georgia, serif; line-height: 1; }
+.is-mvaz .is-testimonial-text { font-size: 14px; color: #334155; line-height: 1.65; font-style: italic; margin: 0 0 14px; position: relative; z-index: 1; }
+.is-mvaz .is-testimonial-name { font-weight: 700; color: #1e293b; font-size: 14px; display: block; }
+.is-mvaz .is-testimonial-role { font-size: 12px; color: #94a3b8; }
 
-.is-adaz .is-hub-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 24px; }
-.is-adaz .is-hub-links a { font-size: 13.5px; color: #1e40af; background: #eff6ff; border: 1px solid #bfdbfe; padding: 10px 18px; border-radius: 999px; text-decoration: none; font-weight: 600; transition: all 0.15s; }
-.is-adaz .is-hub-links a:hover { background: #2563eb; color: #fff; border-color: #2563eb; }
+.is-mvaz .is-hub-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 24px; }
+.is-mvaz .is-hub-links a { font-size: 13.5px; color: #1e40af; background: #eff6ff; border: 1px solid #bfdbfe; padding: 10px 18px; border-radius: 999px; text-decoration: none; font-weight: 600; transition: all 0.15s; }
+.is-mvaz .is-hub-links a:hover { background: #2563eb; color: #fff; border-color: #2563eb; }
 
-.is-adaz .is-final-wrap { background: linear-gradient(135deg, #0c1e3d, #2563eb, #38bdf8); padding: 72px 0; text-align: center; position: relative; overflow: hidden; }
-.is-adaz .is-final-wrap::before { content: ""; position: absolute; top: -80px; left: -80px; width: 320px; height: 320px; background: rgba(255,255,255,0.08); border-radius: 50%; }
-.is-adaz .is-final-wrap::after { content: ""; position: absolute; bottom: -100px; right: -60px; width: 380px; height: 380px; background: rgba(255,255,255,0.05); border-radius: 50%; }
-.is-adaz .is-final-wrap h2 { font-size: clamp(26px, 3.5vw, 40px) !important; color: #fff !important; margin: 0 0 14px !important; position: relative; z-index: 1; font-weight: 900 !important; }
-.is-adaz .is-final-wrap p { font-size: 17px; color: rgba(255,255,255,0.9); margin: 0 auto 32px; max-width: 480px; position: relative; z-index: 1; }
-.is-adaz .is-btn-white { display: inline-block; background: #fff; color: #2563eb !important; padding: 17px 40px; border-radius: 12px; font-size: 16px; font-weight: 800; text-decoration: none !important; position: relative; z-index: 1; transition: all 0.2s; box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
-.is-adaz .is-btn-white:hover { background: #eff6ff; transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.25); }
+.is-mvaz .is-final-wrap { background: linear-gradient(135deg, #0c1e3d, #2563eb, #38bdf8); padding: 72px 0; text-align: center; position: relative; overflow: hidden; }
+.is-mvaz .is-final-wrap::before { content: ""; position: absolute; top: -80px; left: -80px; width: 320px; height: 320px; background: rgba(255,255,255,0.08); border-radius: 50%; }
+.is-mvaz .is-final-wrap::after { content: ""; position: absolute; bottom: -100px; right: -60px; width: 380px; height: 380px; background: rgba(255,255,255,0.05); border-radius: 50%; }
+.is-mvaz .is-final-wrap h2 { font-size: clamp(26px, 3.5vw, 40px) !important; color: #fff !important; margin: 0 0 14px !important; position: relative; z-index: 1; font-weight: 900 !important; }
+.is-mvaz .is-final-wrap p { font-size: 17px; color: rgba(255,255,255,0.9); margin: 0 auto 32px; max-width: 480px; position: relative; z-index: 1; }
+.is-mvaz .is-btn-white { display: inline-block; background: #fff; color: #2563eb !important; padding: 17px 40px; border-radius: 12px; font-size: 16px; font-weight: 800; text-decoration: none !important; position: relative; z-index: 1; transition: all 0.2s; box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+.is-mvaz .is-btn-white:hover { background: #eff6ff; transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.25); }
 
 @media (max-width: 720px) {
-  .is-adaz .is-toc { margin: -24px 20px 0; padding: 24px 22px; }
-  .is-adaz .is-toc-grid { grid-template-columns: 1fr; }
-  .is-adaz .is-why-grid { grid-template-columns: 1fr; }
-  .is-adaz .is-testimonials { grid-template-columns: 1fr; }
-  .is-adaz .is-sec { padding: 44px 0; }
-  .is-adaz .is-hero-wrap { padding: 48px 0 56px; }
+  .is-mvaz .is-toc { margin: -24px 20px 0; padding: 24px 22px; }
+  .is-mvaz .is-toc-grid { grid-template-columns: 1fr; }
+  .is-mvaz .is-stat-band { flex-wrap: wrap; }
+  .is-mvaz .is-stat-cell { flex: 1 1 50%; border-bottom: 1px solid #f1f5f9; }
+  .is-mvaz .is-why-grid { grid-template-columns: 1fr; }
+  .is-mvaz .is-testimonials { grid-template-columns: 1fr; }
+  .is-mvaz .is-hero-stats { flex-wrap: wrap; gap: 20px; }
+  .is-mvaz .is-sec { padding: 44px 0; }
+  .is-mvaz .is-hero-wrap { padding: 48px 0 56px; }
 }
 </style>
 
-<div class="is-adaz">
+<div class="is-mvaz">
 
   <div class="is-hero-wrap">
     <div class="is-inner">
       <div class="is-hero-badge">License &amp; Permit Bond — Arizona</div>
       <h1>Arizona Auto Dealer Bond (Motor Vehicle Dealer Bond)</h1>
-      <p>Fast Approval &amp; Lowest Rates. Lowest rates. Same-day issuance. Guaranteed AZ MVD compliance.</p>
+      <div class="is-hero-tag">Fast Approval &amp; Lowest Rates</div>
+      <p>Lowest rates. Same-day issuance. Guaranteed AZ MVD compliance.</p>
       <a href="https://fc16062.propeller.insure/axelerator-public/#do=show+widget+page&State_search_scheme_property=Arizona&State_search_scheme_property=Federal&name=public+home&one_search_search=motor+vehicle" class="is-btn-primary">
         Start Your Application
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
       <div class="is-hero-note">An Arizona dealer bond protects consumers from fraud, title issues, and other violations while demonstrating that your dealership operates with honesty and financial responsibility. It's a required step for obtaining and maintaining your Arizona motor vehicle dealer license.</div>
+      <div class="is-hero-stats">
+        <div><span class="is-hero-stat-num">$100,000</span><span class="is-hero-stat-label">Bond Amount</span></div>
+        <div><span class="is-hero-stat-num">Annual</span><span class="is-hero-stat-label">License Renewal</span></div>
+        <div><span class="is-hero-stat-num">Same-Day</span><span class="is-hero-stat-label">Digital Issuance</span></div>
+      </div>
     </div>
   </div>
 
@@ -156,7 +174,6 @@ layout: "layout.njk"
       <a href="#requirements">Requirements</a>
       <a href="#license">Auto Dealer License</a>
       <a href="#surety-req">Surety Bond Requirements</a>
-      <a href="#amount">Bond Amount &amp; Pricing</a>
       <a href="#process">How the Process Works</a>
       <a href="#why-us">Why Choose Us</a>
       <a href="#faq">Top Questions Answered</a>
@@ -191,6 +208,11 @@ layout: "layout.njk"
       <span class="is-eyebrow">Pricing</span>
       <h2>Arizona Auto Dealer Bond Cost</h2>
       <p>Arizona sets the bond amount at $100,000 for most dealer license types.</p>
+      <div class="is-stat-band">
+        <div class="is-stat-cell"><div class="is-stat-num">$100,000</div><div class="is-stat-label">Required Bond</div></div>
+        <div class="is-stat-cell is-stat-cell-big"><div class="is-stat-num">1%–5%</div><div class="is-stat-label">Premium Rate</div></div>
+        <div class="is-stat-cell"><div class="is-stat-num">$750–$2,500</div><div class="is-stat-label">Typical Annual Cost</div></div>
+      </div>
       <p>Your premium depends on:</p>
       <div class="is-check-list">
         <div class="is-check-row"><div class="is-check-icon">✓</div><span>Credit score</span></div>
@@ -198,7 +220,6 @@ layout: "layout.njk"
         <div class="is-check-row"><div class="is-check-icon">✓</div><span>Business experience</span></div>
         <div class="is-check-row"><div class="is-check-icon">✓</div><span>Bond amount required</span></div>
       </div>
-      <div class="is-price-box"><span class="is-price-icon">💲</span><p>Typical Pricing: Most qualified applicants pay $750–$2,500 per year depending on credit.</p></div>
     </div>
   </div>
 
@@ -260,14 +281,6 @@ layout: "layout.njk"
         <div class="is-check-row"><div class="is-check-icon">✓</div><span>Bond must match the legal business name</span></div>
       </div>
       <p>Failure to maintain the bond results in license suspension.</p>
-    </div>
-  </div>
-
-  <div class="is-sec" id="amount">
-    <div class="is-inner">
-      <span class="is-eyebrow">Pricing Detail</span>
-      <h2>Arizona Bond Amount and Pricing</h2>
-      <div class="is-price-box"><span class="is-price-icon">💲</span><p>Bond amount: $100,000. Premium: 1%–5% for qualified applicants.</p></div>
     </div>
   </div>
 
