@@ -36,11 +36,12 @@ layout: "layout.njk"
   margin-bottom: 20px; position: relative; z-index: 1;
 }
 .is-mttx .is-hero-wrap h1 {
-  font-size: clamp(30px, 4.8vw, 50px) !important; font-weight: 900 !important;
+  font-size: clamp(32px, 5vw, 52px) !important; font-weight: 900 !important;
   color: #fff !important; line-height: 1.1 !important; margin: 0 0 12px !important;
   position: relative; z-index: 1; letter-spacing: -0.02em;
 }
-.is-mttx .is-hero-wrap p { font-size: 16px; color: rgba(255,255,255,0.9); line-height: 1.7; max-width: 620px; margin: 0 0 28px; position: relative; z-index: 1; }
+.is-mttx .is-hero-tag { font-size: 17px; color: #bae6fd; font-weight: 700; margin-bottom: 20px; position: relative; z-index: 1; }
+.is-mttx .is-hero-wrap p { font-size: 16px; color: rgba(255,255,255,0.9); line-height: 1.7; max-width: 600px; margin: 0 0 28px; position: relative; z-index: 1; }
 .is-mttx .is-btn-primary {
   display: inline-flex; align-items: center; gap: 8px;
   background: #fff; color: #2563eb !important;
@@ -52,6 +53,9 @@ layout: "layout.njk"
 }
 .is-mttx .is-btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
 .is-mttx .is-hero-note { font-size: 13px; color: rgba(255,255,255,0.65); margin-top: 14px; position: relative; z-index: 1; }
+.is-mttx .is-hero-stats { display: flex; gap: 32px; margin-top: 36px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.2); position: relative; z-index: 1; flex-wrap: wrap; }
+.is-mttx .is-hero-stat-num { font-size: 26px; font-weight: 900; color: #fff; line-height: 1; display: block; }
+.is-mttx .is-hero-stat-label { font-size: 11px; color: rgba(255,255,255,0.7); font-weight: 600; margin-top: 4px; display: block; }
 
 .is-mttx .is-toc {
   background: #0c1e3d; border-radius: 20px; padding: 32px 36px;
@@ -70,15 +74,20 @@ layout: "layout.njk"
 .is-mttx .is-eyebrow { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #2563eb; margin-bottom: 10px; }
 .is-mttx .is-sec p { font-size: 15px; color: #475569; line-height: 1.75; margin: 0 0 14px; }
 
-.is-mttx .is-check-list { display: flex; flex-direction: column; gap: 2px; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; margin: 16px 0; background: #fff; }
+.is-mttx .is-check-list { display: flex; flex-direction: column; gap: 2px; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; margin: 20px 0; background: #fff; }
 .is-mttx .is-check-row { display: flex; align-items: center; gap: 12px; padding: 14px 20px; border-bottom: 1px solid #f1f5f9; }
 .is-mttx .is-check-row:last-child { border-bottom: none; }
 .is-mttx .is-check-icon { width: 26px; height: 26px; border-radius: 50%; background: #eff6ff; color: #2563eb; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 12px; font-weight: 800; }
 .is-mttx .is-check-row span { font-size: 14.5px; color: #334155; font-weight: 500; }
 
-.is-mttx .is-price-box { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 16px 20px; margin: 14px 0 24px; display: flex; align-items: center; gap: 12px; }
-.is-mttx .is-price-icon { font-size: 20px; }
-.is-mttx .is-price-box p { margin: 0; font-size: 14px; color: #1e40af; font-weight: 600; line-height: 1.6; }
+.is-mttx .is-stat-band { display: flex; background: #fff; border: 1px solid #e2e8f0; border-radius: 18px; overflow: hidden; margin: 24px 0; box-shadow: 0 8px 28px rgba(0,0,0,0.06); }
+.is-mttx .is-stat-cell { flex: 1; text-align: center; padding: 28px 16px; border-right: 1px solid #f1f5f9; }
+.is-mttx .is-stat-cell:last-child { border-right: none; }
+.is-mttx .is-stat-cell-big { background: linear-gradient(135deg, #2563eb, #38bdf8); color: #fff; }
+.is-mttx .is-stat-num { font-size: 30px; font-weight: 900; color: #2563eb; line-height: 1; }
+.is-mttx .is-stat-cell-big .is-stat-num { color: #fff; }
+.is-mttx .is-stat-label { font-size: 11.5px; color: #64748b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; margin-top: 8px; }
+.is-mttx .is-stat-cell-big .is-stat-label { color: rgba(255,255,255,0.85); }
 
 .is-mttx .is-steps { display: flex; flex-direction: column; gap: 0; margin: 24px 0; }
 .is-mttx .is-step { display: grid; grid-template-columns: 80px 1fr; gap: 24px; align-items: start; padding: 28px 0; border-bottom: 1px solid #e2e8f0; }
@@ -125,8 +134,11 @@ layout: "layout.njk"
 @media (max-width: 720px) {
   .is-mttx .is-toc { margin: -24px 20px 0; padding: 24px 22px; }
   .is-mttx .is-toc-grid { grid-template-columns: 1fr; }
+  .is-mttx .is-stat-band { flex-wrap: wrap; }
+  .is-mttx .is-stat-cell { flex: 1 1 50%; border-bottom: 1px solid #f1f5f9; }
   .is-mttx .is-why-grid { grid-template-columns: 1fr; }
   .is-mttx .is-testimonials { grid-template-columns: 1fr; }
+  .is-mttx .is-hero-stats { flex-wrap: wrap; gap: 20px; }
   .is-mttx .is-sec { padding: 44px 0; }
   .is-mttx .is-hero-wrap { padding: 48px 0 56px; }
 }
@@ -138,12 +150,18 @@ layout: "layout.njk"
     <div class="is-inner">
       <div class="is-hero-badge">License &amp; Permit Bond — Texas</div>
       <h1>Texas Money Transmitter Bond</h1>
-      <p>Fast Approval &amp; Lowest Rates. Secure Your Texas Money Transmitter Bond Quickly and Affordably.</p>
+      <div class="is-hero-tag">Fast Approval &amp; Lowest Rates</div>
+      <p>Secure Your Texas Money Transmitter Bond Quickly and Affordably.</p>
       <a href="https://fc16062.propeller.insure/axelerator-public/#do=show+widget+page&State_search_scheme_property=Texas&State_search_scheme_property=Federal&name=public+home&one_search_search=money+transmitter" class="is-btn-primary">
         Start Your Application
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
       <div class="is-hero-note">Guaranteed Texas compliance — we determine the correct bond for your MSB based on your state's regulations.</div>
+      <div class="is-hero-stats">
+        <div><span class="is-hero-stat-num">$300K–$2M</span><span class="is-hero-stat-label">Bond Range</span></div>
+        <div><span class="is-hero-stat-num">NMLS</span><span class="is-hero-stat-label">Filing Platform</span></div>
+        <div><span class="is-hero-stat-num">Same-Day</span><span class="is-hero-stat-label">Digital Issuance</span></div>
+      </div>
     </div>
   </div>
 
@@ -187,6 +205,11 @@ layout: "layout.njk"
       <span class="is-eyebrow">Pricing</span>
       <h2>Texas Money Transmitter Bond Cost</h2>
       <p>Texas sets the bond amount based on business volume, typically $300,000 to $2,000,000.</p>
+      <div class="is-stat-band">
+        <div class="is-stat-cell"><div class="is-stat-num">$300K–$2M</div><div class="is-stat-label">Bond Amount</div></div>
+        <div class="is-stat-cell is-stat-cell-big"><div class="is-stat-num">1%–5%</div><div class="is-stat-label">Annual Premium Rate</div></div>
+        <div class="is-stat-cell"><div class="is-stat-num">TX DOB</div><div class="is-stat-label">Regulating Agency</div></div>
+      </div>
       <p>Your premium depends on:</p>
       <div class="is-check-list">
         <div class="is-check-row"><div class="is-check-icon">✓</div><span>Bond amount</span></div>
@@ -194,8 +217,7 @@ layout: "layout.njk"
         <div class="is-check-row"><div class="is-check-icon">✓</div><span>Financial strength</span></div>
         <div class="is-check-row"><div class="is-check-icon">✓</div><span>Business experience</span></div>
       </div>
-      <div class="is-price-box"><span class="is-price-icon">💲</span><p>Typical Pricing: Most qualified applicants pay 1%–5% of the bond amount annually.</p></div>
-      <p>Texas-ready issuance — fast approvals and digital delivery for immediate filing with the state.</p>
+      <p style="font-weight:700;color:#2563eb;font-size:16px;">Texas-ready issuance — fast approvals and digital delivery for immediate filing with the state.</p>
     </div>
   </div>
 
