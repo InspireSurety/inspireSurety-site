@@ -1,354 +1,385 @@
----
-
+﻿---
 title: "Arizona Construction & Contractor License Bonds"
-
 layout: "layout.njk"
-
 ---
 
-
-
-Arizona Construction \& Contractor License Bonds
-
-Get Your Construction Bond Today
-
-
-
-Fast approvals. Lowest rates. Guaranteed Arizona compliance. A‑rated surety partners.
-
-
-
-!\[](/assets/images/Home-AZSubdivision row homes.png)
-
-
-
-What Are Arizona Construction \& Contractor License Bonds?
-
-Arizona requires several construction‑related surety bonds to protect project owners, suppliers, and the public from financial loss. These bonds ensure contractors follow Arizona laws, honor contracts, and complete work properly.
-
-
-
-This page covers:
-
-
-
-Arizona Bid Bonds
-
-Arizona Performance \& Payment Bonds
-
-Arizona Contractor License Bonds
-
-Arizona Pre‑Qualification Bonds
-
-Each bond type serves a different purpose in the construction process.
-
-
-
-Arizona Bid Bond
-
-An Arizona Bid Bond guarantees that a contractor will honor their bid and sign the contract if awarded the project. It protects project owners from:
-
-
-
-Bid withdrawal
-
-Failure to sign the contract
-
-Failure to provide required performance \& payment bonds
-
-Typical Pricing: Most bid bonds are issued at no cost for qualified contractors.
-
-
-
-
-
-Arizona Performance \& Payment Bond
-
-Arizona Performance \& Payment Bonds guarantee:
-
-
-
-The project will be completed according to contract
-
-Subcontractors and suppliers will be paid
-
-These bonds are required for:
-
-
-
-Public works projects
-
-Many private commercial projects
-
-General contractors and specialty trades
-
-Typical Pricing: Rates typically range from 1%–3% of the contract amount for qualified applicants.
-
-
-
-
-
-Arizona Contractor License Bond
-
-Arizona requires a Contractor License Bond for all licensed contractors. Bond amounts depend on:
-
-
-
-License type (residential, commercial, dual)
-
-Annual volume
-
-Business classification
-
-Typical Pricing: Most contractor license bonds cost $70–$500 annually, depending on credit and bond amount.
-
-
-
-
-
-Arizona Pre‑Qualification Bond
-
-Some public agencies require a Pre‑Qualification Bond to verify a contractor’s:
-
-
-
-Financial strength
-
-Experience
-
-Ability to complete future projects
-
-This bond strengthens a contractor’s eligibility for bidding.
-
-
-
-Typical Pricing: Most pre‑qualification bonds cost 1%–3% of the bond amount.
-
-
-
-
-
-Arizona Construction Bond Cost
-
-Your premium depends on:
-
-
-
-Bond type
-
-Bond amount
-
-Credit score
-
-Financial history
-
-Project size (for contract bonds)
-
-General Pricing Ranges:
-
-
-
-Bid Bonds: Often free
-
-Performance \& Payment Bonds: 1%–3% of contract
-
-Contractor License Bonds: $70–$500 annually
-
-Pre‑Qualification Bonds: 1%–3% of bond amount
-
-Who Needs an Arizona Construction Bond?
-
-You need a construction bond in Arizona if you are:
-
-
-
-A general contractor
-
-A subcontractor
-
-A specialty trade contractor
-
-A construction company bidding public or private work
-
-A contractor applying for or renewing a license
-
-Any contractor performing regulated work must maintain the appropriate bond.
-
-
-
-Arizona Construction Bond Requirements
-
-Arizona requires:
-
-
-
-Completed bond application
-
-Credit review
-
-Financial statements (for larger contract bonds)
-
-Bond amount based on license or project size
-
-Filing with the Arizona Registrar of Contractors or project owner
-
-How to Get a Construction Bond
-
-1
-
-Complete the Application
-
-Submit contractor information, financials, and project details.
-
-
-
-
-
-2
-
-Secure the Lowest Rate
-
-Matched with the best pricing from A‑rated sureties.
-
-
-
-3
-
-Receive your bond
-
-Issued digitally for immediate filing; larger performance bonds may require deeper underwriting.
-
-
-
-!\[](/assets/images/Image-Small Town Associates.webp)
-
-
-
-Why Choose Us for Your Construction Bonds
-
-Lowest rates from A‑rated sureties
-
-Fast approvals
-
-Digital delivery for immediate filing
-
-Dedicated construction bond specialists
-
-100% compliance guaranteed
-
-image representing contractor license bond compliance, showing symbols of construction licensing, financial protection, and state regulatory assurance.
-
-Top Construction Bond Questions Answered
-
-Our most common questions answered efficiently.
-
-
-
-
-
-!\[](/assets/images/Top-Questions-Image-Associates.webp)
-
-
-
-How much does a construction bond cost?
-
-
-
-Can small contractors get bonded?
-
-
-
-Do I need financials?
-
-
-
-What happens if a contractor defaults?
-
-
-
-Do bonds affect credit?
-
-
-
-
-
-Professional contractor reviewing bond and licensing documents, symbolizing secure bonding, state compliance, and trusted construction practices.
-
-Ready to Get Your Construction Bond?
-
-
-
-Customer testimonials
-
-What our customers are saying about us.
-
-
-
-“Fast approval and great pricing. Perfect for our new project bid.”
-
-
-
-Caleb R.
-
-General Contractor
-
-“Very smooth process from start to finish.”  
-
-
-
-Nina S.
-
-Commercial Builder
-
-“Excellent communication and support.”
-
-
-
-Omar L.
-
-Roofing Contractor
-
-“They made everything easy and quick.” 
-
-
-
-Jenna M.
-
-Electrical Contractor
-
-“Highly professional and reliable.”
-
-
-
-Derick P.
-
-Concrete Contractor
-
-“Best rate I found anywhere.”
-
-
-
-Liam T.
-
-Residential Contractor
-
-Surety Bond Hubs
-
-Contractors \& Construction Bond Hub
-
-Court \& Fiduciary Bond Hub
-
-Cannabis Bond Hub
-
-Environmental \& Reclamation Bond Hub
-
-Federal \& BLM Bond Hub
-
-Escrow \& Real Estate Bond Hub
-
-License \& Permit Bond Hub
-
-Agriculture \& Food Bond Hub
-
-Surety Bond Learning Center
-
+<style>
+.is-acb *, .is-acb *::before, .is-acb *::after { box-sizing: border-box; }
+.is-acb {
+  font-family: inherit;
+  color: #0f172a;
+  margin: 0 calc(-50vw + 50%);
+  width: 100vw;
+  padding: 0;
+}
+.is-acb .is-inner { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+
+.is-acb .is-hero-wrap {
+  background: linear-gradient(135deg, #292524 0%, #57534e 55%, #d97706 100%);
+  padding: 72px 0 64px;
+  position: relative;
+  overflow: hidden;
+}
+.is-acb .is-hero-wrap::before {
+  content: "";
+  position: absolute;
+  top: -100px; right: -100px;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.is-acb .is-hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25);
+  color: #fde68a; font-size: 11px; font-weight: 800; letter-spacing: 0.08em;
+  text-transform: uppercase; padding: 6px 16px; border-radius: 999px;
+  margin-bottom: 20px; position: relative; z-index: 1;
+}
+.is-acb .is-hero-wrap h1 {
+  font-size: clamp(30px, 4.8vw, 50px) !important; font-weight: 900 !important;
+  color: #fff !important; line-height: 1.1 !important; margin: 0 0 12px !important;
+  position: relative; z-index: 1; letter-spacing: -0.02em;
+}
+.is-acb .is-hero-wrap p { font-size: 16px; color: rgba(255,255,255,0.9); line-height: 1.7; max-width: 620px; margin: 0 0 28px; position: relative; z-index: 1; }
+.is-acb .is-btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #fff; color: #b45309 !important;
+  padding: 16px 34px; border-radius: 12px;
+  font-size: 16px; font-weight: 800;
+  text-decoration: none !important; transition: all 0.2s;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  position: relative; z-index: 1;
+}
+.is-acb .is-btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
+.is-acb .is-hero-note { font-size: 13px; color: rgba(255,255,255,0.65); margin-top: 14px; position: relative; z-index: 1; }
+
+.is-acb .is-toc {
+  background: #292524; border-radius: 20px; padding: 32px 36px;
+  margin: -36px auto 0; max-width: 940px; position: relative; z-index: 2;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+}
+.is-acb .is-toc-title { font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #fcd34d; margin-bottom: 16px; }
+.is-acb .is-toc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 24px; }
+.is-acb .is-toc-grid a { font-size: 14px; color: #e2e8f0; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; }
+.is-acb .is-toc-grid a::before { content: "→"; color: #d97706; }
+.is-acb .is-toc-grid a:hover { color: #fcd34d; }
+
+.is-acb .is-sec { background: #fff; padding: 64px 0; }
+.is-acb .is-sec + .is-sec { border-top: 1px solid #f1f5f9; }
+.is-acb .is-sec h2 { font-size: clamp(22px, 2.8vw, 30px) !important; font-weight: 900 !important; color: #0f172a !important; margin: 0 0 16px !important; letter-spacing: -0.01em; }
+.is-acb .is-sec h3 { font-size: 19px !important; font-weight: 800 !important; color: #0f172a !important; margin: 28px 0 10px !important; }
+.is-acb .is-eyebrow { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #b45309; margin-bottom: 10px; }
+.is-acb .is-sec p { font-size: 15px; color: #475569; line-height: 1.75; margin: 0 0 14px; }
+
+.is-acb .is-check-list { display: flex; flex-direction: column; gap: 2px; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; margin: 16px 0; background: #fff; }
+.is-acb .is-check-row { display: flex; align-items: center; gap: 12px; padding: 14px 20px; border-bottom: 1px solid #f1f5f9; }
+.is-acb .is-check-row:last-child { border-bottom: none; }
+.is-acb .is-check-icon { width: 26px; height: 26px; border-radius: 50%; background: #fffbeb; color: #b45309; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 12px; font-weight: 800; }
+.is-acb .is-check-row span { font-size: 14.5px; color: #334155; font-weight: 500; }
+
+.is-acb .is-price-box { background: #fffbeb; border: 1px solid #fde68a; border-radius: 12px; padding: 16px 20px; margin: 14px 0 24px; display: flex; align-items: center; gap: 12px; }
+.is-acb .is-price-icon { font-size: 20px; }
+.is-acb .is-price-box p { margin: 0; font-size: 14px; color: #78350f; font-weight: 600; line-height: 1.6; }
+
+.is-acb .is-bond-grid { display: flex; flex-direction: column; gap: 10px; margin: 20px 0 30px; }
+.is-acb .is-bond-pill { background: #fff; border: 2px solid #e2e8f0; border-radius: 12px; padding: 16px 20px; font-size: 14.5px; font-weight: 700; color: #1e293b; }
+
+.is-acb .is-steps { display: flex; flex-direction: column; gap: 0; margin: 24px 0; }
+.is-acb .is-step { display: grid; grid-template-columns: 80px 1fr; gap: 24px; align-items: start; padding: 28px 0; border-bottom: 1px solid #e2e8f0; }
+.is-acb .is-step:last-child { border-bottom: none; }
+.is-acb .is-step-num { width: 64px; height: 64px; background: linear-gradient(135deg, #57534e, #d97706); border-radius: 18px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 26px; font-weight: 900; flex-shrink: 0; box-shadow: 0 8px 20px rgba(217,119,6,0.35); }
+.is-acb .is-step h3 { font-size: 18px !important; font-weight: 800 !important; color: #0f172a !important; margin: 0 0 6px !important; }
+.is-acb .is-step p { font-size: 14.5px; color: #475569; margin: 0; line-height: 1.65; }
+
+.is-acb .is-why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 20px 0; }
+.is-acb .is-why-pill { background: #fff; border: 2px solid #e2e8f0; border-radius: 14px; padding: 20px; display: flex; align-items: center; gap: 14px; transition: all 0.2s; }
+.is-acb .is-why-pill:hover { border-color: #d97706; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(217,119,6,0.15); }
+.is-acb .is-why-icon { width: 40px; height: 40px; border-radius: 10px; background: #fffbeb; color: #b45309; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 18px; font-weight: 800; }
+.is-acb .is-why-pill span { font-size: 14px; color: #1e293b; font-weight: 600; }
+
+.is-acb .is-faq-list { display: flex; flex-direction: column; gap: 10px; margin: 20px 0; }
+.is-acb .is-faq-item { border: 1px solid #e2e8f0; border-radius: 14px; background: #fff; overflow: hidden; }
+.is-acb .is-faq-item[open] { border-color: #fcd34d; box-shadow: 0 6px 20px rgba(217,119,6,0.1); }
+.is-acb .is-faq-item summary { font-size: 15px; font-weight: 700; color: #0f172a; padding: 18px 22px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; gap: 14px; }
+.is-acb .is-faq-item summary::-webkit-details-marker { display: none; }
+.is-acb .is-faq-item summary::after { content: "+"; font-size: 22px; font-weight: 300; color: #b45309; flex-shrink: 0; transition: transform 0.25s; line-height: 1; }
+.is-acb .is-faq-item[open] summary::after { transform: rotate(45deg); }
+.is-acb .is-faq-body { padding: 0 22px 20px; }
+.is-acb .is-faq-body p { font-size: 14.5px; color: #475569; margin: 0; line-height: 1.7; }
+
+.is-acb .is-testimonials { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 24px 0; }
+.is-acb .is-testimonial { background: #fff; border-radius: 16px; padding: 24px 22px; position: relative; box-shadow: 0 4px 16px rgba(0,0,0,0.05); border-top: 3px solid #d97706; }
+.is-acb .is-testimonial::before { content: '"'; position: absolute; top: 8px; right: 20px; font-size: 48px; color: #fffbeb; font-family: Georgia, serif; line-height: 1; }
+.is-acb .is-testimonial-text { font-size: 14px; color: #334155; line-height: 1.65; font-style: italic; margin: 0 0 14px; position: relative; z-index: 1; }
+.is-acb .is-testimonial-name { font-weight: 700; color: #1e293b; font-size: 14px; display: block; }
+.is-acb .is-testimonial-role { font-size: 12px; color: #94a3b8; }
+
+.is-acb .is-hub-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 24px; }
+.is-acb .is-hub-links a { font-size: 13.5px; color: #92400e; background: #fffbeb; border: 1px solid #fde68a; padding: 10px 18px; border-radius: 999px; text-decoration: none; font-weight: 600; transition: all 0.15s; }
+.is-acb .is-hub-links a:hover { background: #d97706; color: #fff; border-color: #d97706; }
+
+.is-acb .is-final-wrap { background: linear-gradient(135deg, #292524, #57534e, #d97706); padding: 72px 0; text-align: center; position: relative; overflow: hidden; }
+.is-acb .is-final-wrap::before { content: ""; position: absolute; top: -80px; left: -80px; width: 320px; height: 320px; background: rgba(255,255,255,0.08); border-radius: 50%; }
+.is-acb .is-final-wrap::after { content: ""; position: absolute; bottom: -100px; right: -60px; width: 380px; height: 380px; background: rgba(255,255,255,0.05); border-radius: 50%; }
+.is-acb .is-final-wrap h2 { font-size: clamp(26px, 3.5vw, 40px) !important; color: #fff !important; margin: 0 0 14px !important; position: relative; z-index: 1; font-weight: 900 !important; }
+.is-acb .is-final-wrap p { font-size: 17px; color: rgba(255,255,255,0.9); margin: 0 auto 32px; max-width: 480px; position: relative; z-index: 1; }
+.is-acb .is-btn-white { display: inline-block; background: #fff; color: #b45309 !important; padding: 17px 40px; border-radius: 12px; font-size: 16px; font-weight: 800; text-decoration: none !important; position: relative; z-index: 1; transition: all 0.2s; box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+.is-acb .is-btn-white:hover { background: #fffbeb; transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.25); }
+
+@media (max-width: 720px) {
+  .is-acb .is-toc { margin: -24px 20px 0; padding: 24px 22px; }
+  .is-acb .is-toc-grid { grid-template-columns: 1fr; }
+  .is-acb .is-why-grid { grid-template-columns: 1fr; }
+  .is-acb .is-testimonials { grid-template-columns: 1fr; }
+  .is-acb .is-sec { padding: 44px 0; }
+  .is-acb .is-hero-wrap { padding: 48px 0 56px; }
+}
+</style>
+
+<div class="is-acb">
+
+  <div class="is-hero-wrap">
+    <div class="is-inner">
+      <div class="is-hero-badge">Construction Bond — Arizona</div>
+      <h1>Arizona Construction &amp; Contractor License Bonds</h1>
+      <p>Fast approvals. Lowest rates. Guaranteed Arizona compliance. A-rated surety partners.</p>
+      <a href="https://fc16062.propeller.insure/axelerator-public/#do=show+widget+page&State_search_scheme_property=Arizona&State_search_scheme_property=Federal&name=public+home&one_search_search=contractor" class="is-btn-primary">
+        Start Your Application
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#b45309" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <div class="is-hero-note">Ensures full compliance with Arizona Registrar of Contractors bonding requirements, with instant access to every bond type nationwide.</div>
+    </div>
+  </div>
+
+  <div class="is-toc">
+    <div class="is-toc-title">On This Page</div>
+    <div class="is-toc-grid">
+      <a href="#overview">What Are These Bonds</a>
+      <a href="#bid-bond">Arizona Bid Bond</a>
+      <a href="#pp-bond">Performance &amp; Payment Bond</a>
+      <a href="#license-bond">Contractor License Bond</a>
+      <a href="#prequal-bond">Pre-Qualification Bond</a>
+      <a href="#cost">Bond Cost</a>
+      <a href="#who-needs">Who Needs This Bond</a>
+      <a href="#requirements">Requirements</a>
+      <a href="#process">How the Process Works</a>
+      <a href="#why-us">Why Choose Us</a>
+      <a href="#faq">Top Questions Answered</a>
+    </div>
+  </div>
+
+  <div class="is-sec" id="overview">
+    <div class="is-inner">
+      <span class="is-eyebrow">Overview</span>
+      <h2>What Are Arizona Construction &amp; Contractor License Bonds?</h2>
+      <p>Arizona requires several construction-related surety bonds to protect project owners, suppliers, and the public from financial loss. These bonds ensure contractors follow Arizona laws, honor contracts, and complete work properly.</p>
+      <p>This page covers:</p>
+      <div class="is-bond-grid">
+        <div class="is-bond-pill">Arizona Bid Bonds</div>
+        <div class="is-bond-pill">Arizona Performance &amp; Payment Bonds</div>
+        <div class="is-bond-pill">Arizona Contractor License Bonds</div>
+        <div class="is-bond-pill">Arizona Pre-Qualification Bonds</div>
+      </div>
+      <p>Each bond type serves a different purpose in the construction process.</p>
+    </div>
+  </div>
+
+  <div class="is-sec" id="bid-bond">
+    <div class="is-inner">
+      <span class="is-eyebrow">Bond Type</span>
+      <h2>Arizona Bid Bond</h2>
+      <p>An Arizona Bid Bond guarantees that a contractor will honor their bid and sign the contract if awarded the project. It protects project owners from:</p>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Bid withdrawal</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Failure to sign the contract</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Failure to provide required performance &amp; payment bonds</span></div>
+      </div>
+      <div class="is-price-box"><span class="is-price-icon">💲</span><p>Typical Pricing: Most bid bonds are issued at no cost for qualified contractors.</p></div>
+    </div>
+  </div>
+
+  <div class="is-sec" id="pp-bond">
+    <div class="is-inner">
+      <span class="is-eyebrow">Bond Type</span>
+      <h2>Arizona Performance &amp; Payment Bond</h2>
+      <p>Arizona Performance &amp; Payment Bonds guarantee:</p>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>The project will be completed according to contract</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Subcontractors and suppliers will be paid</span></div>
+      </div>
+      <p>These bonds are required for:</p>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Public works projects</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Many private commercial projects</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>General contractors and specialty trades</span></div>
+      </div>
+      <div class="is-price-box"><span class="is-price-icon">💲</span><p>Typical Pricing: Rates typically range from 1%–3% of the contract amount for qualified applicants.</p></div>
+    </div>
+  </div>
+
+  <div class="is-sec" id="license-bond">
+    <div class="is-inner">
+      <span class="is-eyebrow">Bond Type</span>
+      <h2>Arizona Contractor License Bond</h2>
+      <p>Arizona requires a Contractor License Bond for all licensed contractors. Bond amounts depend on:</p>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>License type (residential, commercial, dual)</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Annual volume</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Business classification</span></div>
+      </div>
+      <div class="is-price-box"><span class="is-price-icon">💲</span><p>Typical Pricing: Most contractor license bonds cost $70–$500 annually, depending on credit and bond amount.</p></div>
+    </div>
+  </div>
+
+  <div class="is-sec" id="prequal-bond">
+    <div class="is-inner">
+      <span class="is-eyebrow">Bond Type</span>
+      <h2>Arizona Pre-Qualification Bond</h2>
+      <p>Some public agencies require a Pre-Qualification Bond to verify a contractor's:</p>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Financial strength</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Experience</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Ability to complete future projects</span></div>
+      </div>
+      <p>This bond strengthens a contractor's eligibility for bidding.</p>
+      <div class="is-price-box"><span class="is-price-icon">💲</span><p>Typical Pricing: Most pre-qualification bonds cost 1%–3% of the bond amount.</p></div>
+    </div>
+  </div>
+
+  <div class="is-sec" id="cost">
+    <div class="is-inner">
+      <span class="is-eyebrow">Pricing</span>
+      <h2>Arizona Construction Bond Cost</h2>
+      <p>Your premium depends on:</p>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Bond type</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Bond amount</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Credit score</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Financial history</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Project size (for contract bonds)</span></div>
+      </div>
+      <h3>General Pricing Ranges</h3>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">$</div><span>Bid Bonds: Often free</span></div>
+        <div class="is-check-row"><div class="is-check-icon">$</div><span>Performance &amp; Payment Bonds: 1%–3% of contract</span></div>
+        <div class="is-check-row"><div class="is-check-icon">$</div><span>Contractor License Bonds: $70–$500 annually</span></div>
+        <div class="is-check-row"><div class="is-check-icon">$</div><span>Pre-Qualification Bonds: 1%–3% of bond amount</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-sec" id="who-needs">
+    <div class="is-inner">
+      <span class="is-eyebrow">Eligibility</span>
+      <h2>Who Needs an Arizona Construction Bond?</h2>
+      <p>You need a construction bond in Arizona if you are:</p>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>A general contractor</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>A subcontractor</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>A specialty trade contractor</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>A construction company bidding public or private work</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>A contractor applying for or renewing a license</span></div>
+      </div>
+      <p>Any contractor performing regulated work must maintain the appropriate bond.</p>
+    </div>
+  </div>
+
+  <div class="is-sec" id="requirements">
+    <div class="is-inner">
+      <span class="is-eyebrow">Requirements</span>
+      <h2>Arizona Construction Bond Requirements</h2>
+      <p>Arizona requires:</p>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Completed bond application</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Credit review</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Financial statements (for larger contract bonds)</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Bond amount based on license or project size</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Filing with the Arizona Registrar of Contractors or project owner</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-sec" id="process">
+    <div class="is-inner">
+      <span class="is-eyebrow">Simple Process</span>
+      <h2>How to Get a Construction Bond</h2>
+      <div class="is-steps">
+        <div class="is-step"><div class="is-step-num">1</div><div><h3>Complete the Application</h3><p>Submit contractor information, financials, and project details.</p></div></div>
+        <div class="is-step"><div class="is-step-num">2</div><div><h3>Secure the Lowest Rate</h3><p>Matched with the best pricing from A-rated sureties.</p></div></div>
+        <div class="is-step"><div class="is-step-num">3</div><div><h3>Receive Your Bond</h3><p>Issued digitally for immediate filing; larger performance bonds may require deeper underwriting.</p></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-sec" id="why-us">
+    <div class="is-inner">
+      <span class="is-eyebrow">Our Advantage</span>
+      <h2>Why Choose Us for Your Construction Bonds</h2>
+      <div class="is-why-grid">
+        <div class="is-why-pill"><div class="is-why-icon">$</div><span>Lowest rates from A-rated sureties</span></div>
+        <div class="is-why-pill"><div class="is-why-icon">⚡</div><span>Fast approvals</span></div>
+        <div class="is-why-pill"><div class="is-why-icon">📲</div><span>Digital delivery for immediate filing</span></div>
+        <div class="is-why-pill"><div class="is-why-icon">🎯</div><span>Dedicated construction bond specialists</span></div>
+        <div class="is-why-pill"><div class="is-why-icon">✓</div><span>100% compliance guaranteed</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-sec" id="faq">
+    <div class="is-inner">
+      <span class="is-eyebrow">Questions</span>
+      <h2>Top Construction Bond Questions Answered</h2>
+      <p>Our most common questions answered efficiently.</p>
+      <div class="is-faq-list">
+        <details class="is-faq-item"><summary>How much does a construction bond cost?</summary><div class="is-faq-body"><p>Cost depends on bond type, bond amount, credit score, financial history, and project size. Bid bonds are often free, performance &amp; payment bonds run 1%–3% of the contract, contractor license bonds cost $70–$500 annually, and pre-qualification bonds run 1%–3% of the bond amount.</p></div></details>
+        <details class="is-faq-item"><summary>Can small contractors get bonded?</summary><div class="is-faq-body"><p>Yes. Contractor license bonds and smaller bid bonds are generally accessible to small and new contractors, though larger performance and payment bonds may require stronger financials.</p></div></details>
+        <details class="is-faq-item"><summary>Do I need financials?</summary><div class="is-faq-body"><p>Financial statements are typically only required for larger contract bonds, such as Performance &amp; Payment Bonds or Pre-Qualification Bonds. Contractor license bonds usually only require a credit review.</p></div></details>
+        <details class="is-faq-item"><summary>What happens if a contractor defaults?</summary><div class="is-faq-body"><p>If a contractor defaults, the bond provides financial recourse to the project owner, subcontractors, or suppliers up to the bond amount, depending on the bond type involved.</p></div></details>
+        <details class="is-faq-item"><summary>Do bonds affect credit?</summary><div class="is-faq-body"><p>Applying for a bond typically involves a credit review, which may result in a soft or hard inquiry depending on the surety. This is separate from ongoing credit reporting and does not affect credit like a loan would.</p></div></details>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-sec">
+    <div class="is-inner">
+      <span class="is-eyebrow">Real Results</span>
+      <h2>Customer Testimonials</h2>
+      <p>What our customers are saying about us.</p>
+      <div class="is-testimonials">
+        <div class="is-testimonial"><p class="is-testimonial-text">Fast approval and great pricing. Perfect for our new project bid.</p><span class="is-testimonial-name">Caleb R.</span><span class="is-testimonial-role">General Contractor</span></div>
+        <div class="is-testimonial"><p class="is-testimonial-text">Very smooth process from start to finish.</p><span class="is-testimonial-name">Nina S.</span><span class="is-testimonial-role">Commercial Builder</span></div>
+        <div class="is-testimonial"><p class="is-testimonial-text">Excellent communication and support.</p><span class="is-testimonial-name">Omar L.</span><span class="is-testimonial-role">Roofing Contractor</span></div>
+        <div class="is-testimonial"><p class="is-testimonial-text">They made everything easy and quick.</p><span class="is-testimonial-name">Jenna M.</span><span class="is-testimonial-role">Electrical Contractor</span></div>
+        <div class="is-testimonial"><p class="is-testimonial-text">Highly professional and reliable.</p><span class="is-testimonial-name">Derick P.</span><span class="is-testimonial-role">Concrete Contractor</span></div>
+        <div class="is-testimonial"><p class="is-testimonial-text">Best rate I found anywhere.</p><span class="is-testimonial-name">Liam T.</span><span class="is-testimonial-role">Residential Contractor</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="is-sec">
+    <div class="is-inner">
+      <span class="is-eyebrow">Explore More</span>
+      <h2>Surety Bond Hubs</h2>
+      <div class="is-hub-links">
+        <a href="/contractors-construction-bond-hub/">Contractors &amp; Construction Bond Hub</a>
+        <a href="/court-fiduciary-bond-hub/">Court &amp; Fiduciary Bond Hub</a>
+        <a href="/cannabis-bond-hub/">Cannabis Bond Hub</a>
+        <a href="/environmental-reclamation-bond-hub/">Environmental &amp; Reclamation Bond Hub</a>
+        <a href="/federal-blm-bond-hub/">Federal &amp; BLM Bond Hub</a>
+        <a href="/escrow-real-estate-bond-hub/">Escrow &amp; Real Estate Bond Hub</a>
+        <a href="/license-permit-bond-hub/">License &amp; Permit Bond Hub</a>
+        <a href="/agriculture-food-bond-hub/">Agriculture &amp; Food Bond Hub</a>
+      </div>
+      <a href="/surety-bond-learning-center/" style="color:#b45309;font-weight:700;font-size:14.5px;text-decoration:none;">Surety Bond Learning Center →</a>
+    </div>
+  </div>
+
+  <div class="is-final-wrap">
+    <div class="is-inner">
+      <h2>Ready to Get Your Construction Bond?</h2>
+      <p>Fast approvals, lowest rates, guaranteed Arizona compliance.</p>
+      <a href="https://fc16062.propeller.insure/axelerator-public/#do=show+widget+page&State_search_scheme_property=Arizona&State_search_scheme_property=Federal&name=public+home&one_search_search=contractor" class="is-btn-white">Start My Application</a>
+    </div>
+  </div>
+
+</div>
