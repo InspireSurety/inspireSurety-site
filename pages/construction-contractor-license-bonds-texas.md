@@ -84,9 +84,6 @@ layout: "layout.njk"
 .is-tcc .is-bond-grid { display: flex; flex-direction: column; gap: 10px; margin: 20px 0 30px; }
 .is-tcc .is-bond-pill { background: #fff; border: 2px solid #e2e8f0; border-radius: 12px; padding: 16px 20px; font-size: 14.5px; font-weight: 700; color: #1e293b; }
 
-.is-tcc .is-city-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 16px 0 24px; }
-.is-tcc .is-city-pill { background: #fffbeb; border: 1px solid #fde68a; border-radius: 10px; padding: 12px 16px; text-align: center; font-size: 14px; font-weight: 700; color: #92400e; }
-
 .is-tcc .is-steps { display: flex; flex-direction: column; gap: 0; margin: 24px 0; }
 .is-tcc .is-step { display: grid; grid-template-columns: 80px 1fr; gap: 24px; align-items: start; padding: 28px 0; border-bottom: 1px solid #e2e8f0; }
 .is-tcc .is-step:last-child { border-bottom: none; }
@@ -134,7 +131,6 @@ layout: "layout.njk"
   .is-tcc .is-toc-grid { grid-template-columns: 1fr; }
   .is-tcc .is-why-grid { grid-template-columns: 1fr; }
   .is-tcc .is-testimonials { grid-template-columns: 1fr; }
-  .is-tcc .is-city-grid { grid-template-columns: repeat(2, 1fr); }
   .is-tcc .is-sec { padding: 44px 0; }
   .is-tcc .is-hero-wrap { padding: 48px 0 56px; }
 }
@@ -226,13 +222,13 @@ layout: "layout.njk"
       <span class="is-eyebrow">Bond Type</span>
       <h2>Texas Contractor License Bond</h2>
       <p>Texas does not have a statewide contractor license bond requirement, but many cities and counties require one, including:</p>
-      <div class="is-city-grid">
-        <div class="is-city-pill">Houston</div>
-        <div class="is-city-pill">San Antonio</div>
-        <div class="is-city-pill">Dallas</div>
-        <div class="is-city-pill">Fort Worth</div>
-        <div class="is-city-pill">Austin</div>
-        <div class="is-city-pill">El Paso</div>
+      <div class="is-check-list">
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Houston</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>San Antonio</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Dallas</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Fort Worth</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>Austin</span></div>
+        <div class="is-check-row"><div class="is-check-icon">✓</div><span>El Paso</span></div>
       </div>
       <p>These bonds ensure compliance with local building codes and regulations.</p>
       <div class="is-price-box"><span class="is-price-icon">💲</span><p>Typical Pricing: Most city contractor license bonds cost $50–$250 annually, depending on bond amount and credit.</p></div>
