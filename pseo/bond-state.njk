@@ -5,8 +5,9 @@ pagination:
   alias: row
 permalink: "/{{ row.permalink_slug }}/"
 layout: "layout.njk"
-title: "{{ row.meta_title }}"
-description: "{{ row.meta_description }}"
+eleventyComputed:
+  title: "{{ row.meta_title }}"
+  description: "{{ row.meta_description }}"
 ---
 
 <style>
@@ -349,4 +350,5 @@ description: "{{ row.meta_description }}"
   </div>
 
 </div>
+
 
