@@ -1,0 +1,58 @@
+﻿node.exe : [11ty] Problem writing Eleventy templates:
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([11ty] Problem ...enty templates::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[11ty] 1. Error generating template page(s) for ./pseo/bond-state.njk. (via EleventyMapPagesError)
+[11ty] 2. Could not find pagination data (./pseo/bond-state.njk), went looking for: moneyTransmitterBond
+[11ty] 
+[11ty] Original error stack trace: Error: Could not find pagination data (./pseo/bond-state.njk), went looking for: 
+moneyTransmitterBond
+[11ty]     at Pagination._get 
+(file:///C:/Sites/site-inspiresurety/node_modules/@11ty/eleventy/src/Plugins/Pagination.js:125:10)
+[11ty]     at Pagination.setData 
+(file:///C:/Sites/site-inspiresurety/node_modules/@11ty/eleventy/src/Plugins/Pagination.js:81:27)
+[11ty]     at new Pagination 
+(file:///C:/Sites/site-inspiresurety/node_modules/@11ty/eleventy/src/Plugins/Pagination.js:24:8)
+[11ty]     at Template.getTemplates 
+(file:///C:/Sites/site-inspiresurety/node_modules/@11ty/eleventy/src/Template.js:823:18)
+[11ty]     at async #initDependencyMapEntry 
+(file:///C:/Sites/site-inspiresurety/node_modules/@11ty/eleventy/src/TemplateMap.js:192:17)
+[11ty]     at async TemplateMap.initDependencyMap 
+(file:///C:/Sites/site-inspiresurety/node_modules/@11ty/eleventy/src/TemplateMap.js:186:4)
+[11ty]     at async TemplateMap.cache 
+(file:///C:/Sites/site-inspiresurety/node_modules/@11ty/eleventy/src/TemplateMap.js:274:3)
+[11ty]     at async TemplateWriter._createTemplateMap 
+(file:///C:/Sites/site-inspiresurety/node_modules/@11ty/eleventy/src/TemplateWriter.js:352:3)
+[11ty]     at async TemplateWriter.generateTemplates 
+(file:///C:/Sites/site-inspiresurety/node_modules/@11ty/eleventy/src/TemplateWriter.js:382:3)
+[11ty]     at async TemplateWriter.getJSON 
+(file:///C:/Sites/site-inspiresurety/node_modules/@11ty/eleventy/src/TemplateWriter.js:454:18)
+[11ty] Eleventy Fatal Error (CLI):
+[11ty] 1. Error generating template page(s) for ./pseo/bond-state.njk. (via EleventyMapPagesError)
+[11ty] 2. Could not find pagination data (./pseo/bond-state.njk), went looking for: moneyTransmitterBond
+[11ty] 
+[11ty] Original error stack trace: Error: Could not find pagination data (./pseo/bond-state.njk), went looking for: 
+moneyTransmitterBond
+[11ty]     at Pagination._get 
+(file:///C:/Sites/site-inspiresurety/node_modules/@11ty/eleventy/src/Plugins/Pagination.js:125:10)
+[11ty]     at Pagination.setData 
+(file:///C:/Sites/site-inspiresurety/node_modules/@11ty/eleventy/src/Plugins/Pagination.js:81:27)
+[11ty]     at new Pagination 
+(file:///C:/Sites/site-inspiresurety/node_modules/@11ty/eleventy/src/Plugins/Pagination.js:24:8)
+[11ty]     at Template.getTemplates 
+(file:///C:/Sites/site-inspiresurety/node_modules/@11ty/eleventy/src/Template.js:823:18)
+[11ty]     at async #initDependencyMapEntry 
+(file:///C:/Sites/site-inspiresurety/node_modules/@11ty/eleventy/src/TemplateMap.js:192:17)
+[11ty]     at async TemplateMap.initDependencyMap 
+(file:///C:/Sites/site-inspiresurety/node_modules/@11ty/eleventy/src/TemplateMap.js:186:4)
+[11ty]     at async TemplateMap.cache 
+(file:///C:/Sites/site-inspiresurety/node_modules/@11ty/eleventy/src/TemplateMap.js:274:3)
+[11ty]     at async TemplateWriter._createTemplateMap 
+(file:///C:/Sites/site-inspiresurety/node_modules/@11ty/eleventy/src/TemplateWriter.js:352:3)
+[11ty]     at async TemplateWriter.generateTemplates 
+(file:///C:/Sites/site-inspiresurety/node_modules/@11ty/eleventy/src/TemplateWriter.js:382:3)
+[11ty]     at async TemplateWriter.getJSON 
+(file:///C:/Sites/site-inspiresurety/node_modules/@11ty/eleventy/src/TemplateWriter.js:454:18)
