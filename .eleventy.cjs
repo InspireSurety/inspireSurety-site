@@ -1,10 +1,15 @@
 module.exports = function(eleventyConfig) {
 
-eleventyConfig.addPassthroughCopy({"robots.txt": "robots.txt"});
+  eleventyConfig.addPassthroughCopy({"robots.txt": "robots.txt"});
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy({"_redirects": "_redirects"});
   eleventyConfig.addPassthroughCopy({"sitemap.xml": "sitemap.xml"});
 
+ 
+  eleventyConfig.addFilter("splitChecklist", function(str) {
+    if (!str) return [];
+    return str.split(";;").map(item => item.trim()).filter(item => item.length > 0);
+  });
 
   eleventyConfig.addPairedShortcode("heroIntro", function(content, stats) {
     let statsHtml = "";
